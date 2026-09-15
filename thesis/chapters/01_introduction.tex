@@ -1,0 +1,14 @@
+\chapter{Úvod}
+\label{chap:intro}
+
+Trénování velkých jazykových modelů (LLM) se v posledních letech stalo dominantním paradigmatem zpracování přirozeného jazyka. Tento vývoj se však opírá o předpoklad dostupnosti masivních textových korpusů v řádu stovek miliard až bilionů tokenů. V mnoha reálných aplikačních doménách, jako jsou specializované korporátní databáze, historické lingvistické prameny či nízkozdrojové jazyky (low-resource languages), je však objem dostupných dat přísně omezen.
+
+Tato diplomová práce se zaměřuje na zkoumání malých jazykových modelů (Small Language Models, SLM) v kontrolovaném prostředí minimalistického jazyka \textbf{toki pona}. Jazyk toki pona disponuje uzavřeným slovníkem přibližně 137 slov a přísnou, pravidelnou analytickou syntaxí. Tato vlastnost z něj činí ideální modelové prostředí pro izolaci statistických vlivů architektury, tokenizace a datového objemu bez šumu nepravidelné morfologie.
+
+\section{Cíle práce a výzkumné otázky}
+Cílem práce je empiricky a statisticky popsat:
+\begin{enumerate}
+    \item Jak tokenizační strategie (znakový, subword BPE, celoslovní model) ovlivňuje informační efektivitu měřenou v bitech na znak (BPC).
+    \item Zda i v nízkozdrojovém režimu platí mocninné škálovací zákony formulované Kaplanem a Chinchillou.
+    \item Jak interaguje kapacita modelu s objemem dat a volbou tokenizéru za kontroly náhodné variability.
+\end{enumerate}

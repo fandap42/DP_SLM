@@ -5,17 +5,33 @@ __pycache__/
 .venv/
 env/
 
-# Raw external datasets (downloads from HuggingFace)
-data/raw/
-*.parquet
+# Data (Ignored in Git, keeping directory structure via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/tokenized/*
+!data/tokenized/.gitkeep
 
-# Model weights / checkpoints (huge binaries)
+# Results models & weights (Ignored in Git, kept on cloud/local disk)
+results/models/*
+!results/models/.gitkeep
 *.pt
 *.bin
 *.safetensors
 
 # Temporary test runs
 experiments/test_run/
+
+# LaTeX build artifacts
+thesis/*.aux
+thesis/*.log
+thesis/*.out
+thesis/*.toc
+thesis/*.bbl
+thesis/*.blg
+thesis/*.synctex.gz
+thesis/chapters/*.aux
 
 # System & IDE
 .idea/

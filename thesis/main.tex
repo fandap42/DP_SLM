@@ -1,0 +1,59 @@
+\documentclass[12pt,a4paper,oneside]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování}
+\author{Diplomant}
+\date{2026}
+
+\begin{document}
+
+% --- Titulní strana ---
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\scshape\LARGE Vysoká škola ekonomická v Praze \par}
+    {\scshape\Large Fakulta informatiky a statistiky \par}
+    {\large Katedra statistiky a pravděpodobnosti \par}
+    \vspace{2cm}
+    {\bfseries\LARGE DIPLOMOVÁ PRÁCE \par}
+    \vspace{1.5cm}
+    {\huge\bfseries Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování \par}
+    \vspace{2cm}
+    \vfill
+    \begin{flushleft}
+        \large
+        \textbf{Vedoucí práce:} Ing. Karel Šafr, Ph.D. \\
+        \textbf{Autor:} Student \\
+        \textbf{Studijní program:} Statistika a analýza dat \\
+        \textbf{Rok:} 2026
+    \end{flushleft}
+\end{titlepage}
+
+% --- Abstrakt ---
+\chapter*{Abstrakt}
+Umělý minimalistický jazyk toki pona, tvořený jednoduchou syntaxí a slovníkem o zhruba 137 základních slovech, poslouží jako kontrolované nízkozdrojové prostředí pro vývoj Small Language Models (SLM). Cílem diplomové práce je statisticky popsat, jak množství dat, počet parametrů a tokenizace ovlivňují výkon, datovou efektivitu a škálování SLM. Student připraví reprodukovatelný korpus, odstraní duplicity, rozdělí data podle zdrojů a od začátku natrénuje transformerové SLM o velikosti jednotek až desítek milionů parametrů se znakovou, slovní a subword tokenizací. Faktorový experiment zkombinuje několik velikostí korpusu a modelu, více náhodných inicializací a srovnatelný výpočetní rozpočet. Výkon bude hodnocen křížovou entropií normalizovanou na znaky, perplexitou a automaticky generovanými testy gramatické přijatelnosti a kompozičního zobecnění. Křivky učení, hierarchické modely a analýza interakcí odhadnou škálovací vztahy, nejistotu rozdílů a nejefektivnější konfigurace SLM pro učení z malých dat.
+
+\tableofcontents
+
+% --- Kapitoly ---
+\include{chapters/01_introduction}
+\include{chapters/02_theoretical_background}
+\include{chapters/03_toki_pona_corpus}
+\include{chapters/04_experimental_design}
+\include{chapters/05_results_and_scaling}
+\include{chapters/06_conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

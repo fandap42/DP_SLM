@@ -1,0 +1,19 @@
+\chapter{Teoretická východiska a škálovací zákony}
+\label{chap:theory}
+
+\section{Architektura Decoder-Only Transformer}
+V souladu s moderními autoregresivními jazykovými modely \cite{vaswani2017attention} využíváme architekturu Transformeru s kauzální maskou pozornosti, normalizací RMSNorm a aktivační funkcí SwiGLU.
+
+\section{Škálovací zákony pro neuronové jazykové modely}
+Kaplan et al. (2020) \cite{kaplan2020scaling} a Hoffmann et al. (2022) \cite{hoffmann2022training} popsali škálovací chování ztráty modelu $L$ jako funkci počtu ne-embeddingových parametrů $N$ a počtu trénovacích tokenů $D$:
+\begin{equation}
+    L(N, D) = E + \frac{A}{N^\alpha} + \frac{B}{D^\beta}
+\end{equation}
+kde $E$ představuje Bayesovskou ireducibilní entropii jazyka a $\alpha, \beta$ jsou škálovací exponenty.
+
+\section{Metrika Bits-Per-Character (BPC)}
+Standardní křížová entropie závisí na slovníku tokenizéru. Pro srovnání různých tokenizérů definujeme BPC vztažené k délce původního textu:
+\begin{equation}
+    \text{BPC} = \frac{\sum_{i} \mathcal{L}_i}{N_{\text{chars}} \cdot \ln 2}
+\end{equation}
+Tímto způsobem získáváme jednotnou škálu pro objektivní srovnání.

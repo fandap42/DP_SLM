@@ -1,0 +1,12 @@
+{
+  "experiment_name": "factorial_full",
+  "description": "Full factorial experiment matrix (4 Data x 4 Models x 3 Tokenizers x 3 Seeds = 144 runs) for final diploma thesis results",
+  "data_fractions": [0.10, 0.25, 0.50, 1.00],
+  "model_sizes": ["micro", "mini", "small", "medium"],
+  "tokenizers": ["char", "bpe", "word"],
+  "seeds": [42, 1337, 2026],
+  "epochs": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "mixed_precision": true
+}

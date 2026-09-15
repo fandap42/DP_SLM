@@ -1,0 +1,12 @@
+{
+  "experiment_name": "poc_quick",
+  "description": "Proof of concept factorial grid (12 runs) for fast verification on local GPU",
+  "data_fractions": [0.25, 0.75],
+  "model_sizes": ["micro", "mini"],
+  "tokenizers": ["char", "bpe", "word"],
+  "seeds": [42],
+  "epochs": 2,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "mixed_precision": true
+}

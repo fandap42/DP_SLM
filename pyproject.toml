@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diplomka-slm"
+version = "0.2.0"
+description = "Small Language Models na malych datech: statisticka analyza vykonu a skalovani (Toki Pona)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Student FIS VSE", email = "student@vse.cz" }
+]
+dependencies = [
+    "torch>=2.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "statsmodels>=0.14.0",
+    "matplotlib>=3.7.0",
+    "pyarrow>=14.0.0",
+    "tqdm>=4.65.0",
+    "requests>=2.31.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
