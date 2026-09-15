@@ -54,21 +54,22 @@ jobs:
           RELEASE_BODY="### 🎓 Diplomová práce: Small Language Models (SLM) na malých datech
           *Automaticky aktualizovaný koncept z větve \`main\` (poslední commit: \`${{ github.sha }}\`).*
 
-          #### 📥 Přímý odkaz ke stažení (stále stejná URL):
-          👉 **[DP_pavlik_SLM.pdf](https://github.com/${{ github.repository }}/releases/download/latest/DP_pavlik_SLM.pdf)**
+          #### 📥 Přiložené soubory v sekci Assets:
+          - 📄 **\`DP_pavlik_SLM.pdf\`** – Aktuální zkompilovaný text diplomové práce
+          - 🤖 **\`best_models.tar.gz\`** – Váhy nejlepších modelů z faktorového pokusu a tokenizéry
+          - 📚 **\`toki_pona_corpus.tar.gz\`** – Vyčištěný a rozdělený korpus jazyka toki pona
 
-          #### 📦 Co nahrát k diplomce:
-          1. **Vygenerované PDF diplomové práce**: \`DP_pavlik_SLM.pdf\` (ke stažení výše v Assets bez hledání v kódu).
-          2. **Zabalené váhy nejlepších modelů**: \`.pt\` nebo \`.safetensors\`, pokud je budete chtít publikovat pro veřejnost spolu s repozitářem.
-          3. **Zkomprimovaný vyčištěný dataset**: \`toki_pona_corpus.tar.gz\`, pokud nejsou data přímo v repu."
+          👉 **[Stáhnout PDF přímo](https://github.com/${{ github.repository }}/releases/download/latest/DP_pavlik_SLM.pdf)**"
+
+          FILES="thesis/DP_pavlik_SLM.pdf release_assets/best_models.tar.gz release_assets/toki_pona_corpus.tar.gz"
 
           if gh release view latest >/dev/null 2>&1; then
             echo "Aktualizuji existující release 'latest'..."
             gh release edit latest --title "$RELEASE_TITLE" --notes "$RELEASE_BODY" --prerelease
-            gh release upload latest thesis/DP_pavlik_SLM.pdf --clobber
+            gh release upload latest $FILES --clobber
           else
             echo "Vytvářím nový release 'latest'..."
-            gh release create latest thesis/DP_pavlik_SLM.pdf \
+            gh release create latest $FILES \
               --title "$RELEASE_TITLE" \
               --notes "$RELEASE_BODY" \
               --prerelease

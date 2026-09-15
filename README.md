@@ -5,7 +5,7 @@
 [![VŠE FIS](https://img.shields.io/badge/V%C5%A0E-FIS-darkblue.svg)](https://fis.vse.cz/)
 
 > **Diplomová práce:** Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování  
-> **Autor:** Student FIS VŠE  
+> **Autor:** František Pavlík  
 > **Vedoucí práce:** Ing. Karel Šafr, Ph.D.  
 > **Garantující pracoviště:** Katedra statistiky a pravděpodobnosti, Fakulta informatiky a statistiky (FIS), Vysoká škola ekonomická v Praze
 
@@ -14,8 +14,8 @@
 ## 🏛️ Struktura monorepositoráře
 
 ```text
-diplomka-slm/
-├── .gitignore                  # Přesně definovaná pravidla (ignoruje data/, váhy *.pt)
+DP_SLM/
+├── .gitignore                  # Přesně definovaná pravidla (ignoruje data/, váhy *.pt, build PDF)
 ├── README.md                   # Kompletní průvodce a dokumentace projektu
 ├── pyproject.toml              # Moderní Python build & package definice
 │
@@ -23,6 +23,10 @@ diplomka-slm/
 │   ├── raw/                    # Původní nestrukturovaný text toki pona (Parquet)
 │   ├── processed/              # Vyčištěný, deduplikovaný text (JSONL, metadata)
 │   └── tokenized/              # Připravená tokenizovaná data
+│
+├── release_assets/             # Distribuční balíčky pro GitHub Releases
+│   ├── toki_pona_corpus.tar.gz # Zkomprimovaný vyčištěný korpus
+│   └── best_models.tar.gz      # Kontrolní body nejlepších modelů a tokenizéry
 │
 ├── src/                        # Samotný modulární Python balíček
 │   ├── data/                   # Stahování, čištění, normalizace, PyTorch Dataset
@@ -33,7 +37,7 @@ diplomka-slm/
 │
 ├── experiments/                # Orchestrace faktorového pokusu
 │   ├── configs/                # Konfigurace běhů (poc_quick.json, factorial_full.json)
-│   ├── scripts/                # Spouštěcí bash/powershell/slurm skripty pro lokál i cluster
+│   ├── scripts/                # Spouštěcí skripty pro lokál, cluster i balení releasů
 │   └── notebooks/              # Jupyter notebooky čistě na EDA a tvorbu grafů
 │
 ├── results/                    # Výstupy
@@ -47,9 +51,27 @@ diplomka-slm/
 │
 └── thesis/                     # Samotný text práce (LaTeX šablona FIS VŠE)
     ├── main.tex                # Hlavní řídicí LaTeX soubor
-    ├── references.bib          # BibTeX citace (Kaplan, Chinchilla, Vaswani, Lang)
-    ├── chapters/               # Jednotlivé kapitoly (01_intro.tex až 06_conclusion.tex)
-    └── figures/                # Kopie grafů z results/figures/ pro kompilaci PDF
+    ├── main.xmpdata            # PDF/A metadata pro formát FIS
+    ├── makra.sty               # Balíčky a nastavení dokumentu (číslování, fonty)
+    ├── DP_reference.bib        # BibLaTeX APA citace (Kaplan, Chinchilla, Vaswani, Lang)
+    ├── kapitoly/               # Jednotlivé kapitoly práce (00uvod.tex až 05zaver.tex)
+    ├── template/               # Oficiální šablona a logo FIS VŠE (titulka.tex, FIS logo)
+    └── figures/                # Schémata práce a README (grafy se linkují z results/figures/)
+```
+
+---
+
+## 📦 Přílohy diplomové práce (GitHub Releases)
+
+V **GitHub Releases** (v pravém panelu na hlavní stránce repozitáře) jsou v rámci plovoucího *Latest Draft* vydání k dispozici:
+
+* 📄 **`DP_pavlik_SLM.pdf`** – Vygenerované PDF diplomové práce (vždy aktuální zkompilovaný draft z posledního commitu).
+* 🤖 **`best_models.tar.gz`** – Zabalené kontrolní body a váhy nejlepších modelů faktorového pokusu (`.pt`), tokenizéry a metriky.
+* 📚 **`toki_pona_corpus.tar.gz`** – Zkomprimovaný a vyčištěný korpus toki pona (trénovací, validační a testovací split + metadata).
+
+Balíčky příloh lze aktualizovat skriptem:
+```powershell
+python experiments/scripts/pack_release_assets.py
 ```
 
 ---
@@ -81,16 +103,16 @@ sbatch experiments/scripts/run_slurm.sh
 
 ### 4. Spuštění statistické analýzy a přegenerování grafů
 ```powershell
-python analyze_results.py
+slm-analyze
 ```
 Vygeneruje aktualizované grafy v `results/figures/` a statistický report v `results/metrics/statistical_report.md`.
 
 ### 5. Kompilace textu diplomové práce (LaTeX)
-Text práce je připraven v adresáři `thesis/`:
+Při každém pushi do větve `main` se práce automaticky zkompiluje přes GitHub Actions a publikuje do sekce **Releases**. Pro lokální ruční kompilaci:
 ```bash
 cd thesis
 pdflatex main.tex
-bibtex main
+biber main
 pdflatex main.tex
 pdflatex main.tex
 ```
