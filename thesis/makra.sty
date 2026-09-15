@@ -1,0 +1,165 @@
+\ProvidesPackage{makra}
+
+\usepackage[utf8]{inputenc}
+\input template/biblatex-setup
+
+\usepackage[czech]{babel}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{csquotes}
+\usepackage{blindtext}
+\usepackage{caption}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{bbding} 
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{import}
+\usepackage{float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{icomma} 
+\usepackage{setspace}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usepackage[a-2u]{pdfx}
+
+\usepackage{listings} 
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+%Obsahy
+\usepackage{tocloft}
+\setlength\cftparskip{0pt}
+\setlength\cftbeforechapskip{1.5ex}
+\setlength\cftfigindent{0pt}
+\setlength\cfttabindent{0pt}
+\setlength\cftbeforeloftitleskip{0pt}
+\setlength\cftbeforelottitleskip{0pt}
+\setlength\cftbeforetoctitleskip{0pt}
+\renewcommand{\cftlottitlefont}{\Huge\bfseries\sffamily}
+\renewcommand{\cftloftitlefont}{\Huge\bfseries\sffamily}
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries\sffamily}
+
+\usepackage{sectsty}    
+\allsectionsfont{\sffamily}
+
+% Obrázky číslované zvlášť v každé section
+\usepackage{chngcntr}
+%\counterwithin{figure}{section}
+%\counterwithin{table}{section}
+
+\renewcommand{\theequation}{\arabic{equation}}
+
+\hypersetup{hidelinks}
+\graphicspath{{./fig/}}
+
+\urlstyle{same}
+%\addbibresource{zdroje.bib}
+%\nocite{*} 
+
+\clubpenalty=1000
+\widowpenalty=1000
+\displaywidowpenalty=1000
+
+% Trochu volnější nastavení dělení slov, než je default.
+\lefthyphenmin=2
+\righthyphenmin=2
+
+% Zapne černé "slimáky" na koncích řádků, které přetekly, abychom si
+% jich lépe všimli.
+%\overfullrule=1mm
+
+%Hezky chapters
+\makeatletter
+\def\@makechapterhead#1{
+  {\parindent \z@ \raggedright \sffamily
+   \Huge\bfseries \thechapter. #1
+   \par\nobreak
+   \vskip 20\p@
+}}
+\def\@makeschapterhead#1{
+  {\parindent \z@ \raggedright \sffamily
+   \Huge\bfseries #1
+   \par\nobreak
+   \vskip 20\p@
+}}
+\makeatother
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+%%% Prostor reálných, resp. přirozených čísel
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+%%% Užitečné operátory pro statistiku a pravděpodobnost
+\DeclareMathOperator{\pr}{\textsf{P}}
+\DeclareMathOperator{\E}{\textsf{E}\,}
+\DeclareMathOperator{\var}{\textrm{var}}
+\DeclareMathOperator{\sd}{\textrm{sd}}
+\DeclareMathOperator{\normd}{\textsf{N}}
+
+%%% Příkaz pro transpozici vektoru/matice
+\newcommand{\T}[1]{#1^\top}
+
+%%% Vychytávky pro matematiku
+\newcommand{\goto}{\rightarrow}
+\newcommand{\gotop}{\stackrel{P}{\longrightarrow}}
+\newcommand{\maon}[1]{o(n^{#1})}
+\newcommand{\abs}[1]{\left|{#1}\right|}
+\newcommand{\dint}{\int_0^\tau\!\!\int_0^\tau}
+\newcommand{\isqr}[1]{\frac{1}{\sqrt{#1}}}
+
+% Toto makro definuje kapitolu, která není očíslovaná, ale je uvedena v obsahu.
+\def\tocsec#1{
+\section*{#1}
+\addcontentsline{toc}{section}{#1}
+}
+
+\def\tocchap#1{
+\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+}
+
+\def\tocsubsec#1{
+\subsection*{#1}
+\addcontentsline{toc}{subsection}{#1}
+}
+
+
+
+\newtheorem{theorem}{Věta}
+
+\lstset{
+    inputencoding=utf8,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {č}{{\v{c}}}1 {ď}{{\v{d}}}1 {é}{{\'e}}1 {ě}{{\v{e}}}1 {í}{{\'i}}1 {ň}{{\v{n}}}1 {ó}{{\'o}}1 {ř}{{\v{r}}}1 {š}{{\v{s}}}1 {ť}{{\v{t}}}1 {ú}{{\'u}}1 {ů}{{\r{u}}}1 {ý}{{\'y}}1 {ž}{{\v{z}}}1,
+    language=R,
+    basicstyle=\footnotesize\ttfamily, numbers=left, xleftmargin=2em, frame=single, framexleftmargin=2.5em,
+    breaklines=true,
+    breakatwhitespace=false,              % Zalamování pouze na mezerách
+    breaklines=true,
+    keepspaces=true,                      % Zachovává mezery
+    showspaces=false,                     % Nezobrazuje speciálně mezery
+    showstringspaces=false,               % Nezobrazuje mezery v řetězcích
+    showtabs=false
+}
+
+
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\sloppy
+\emergencystretch=3em
+\hyphenpenalty=5000
+\exhyphenpenalty=5000
+% Trochu volnější nastavení dělení slov, než je default.
+\lefthyphenmin=3
+\righthyphenmin=3

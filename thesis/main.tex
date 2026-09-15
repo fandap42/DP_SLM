@@ -1,59 +1,47 @@
-\documentclass[12pt,a4paper,oneside]{report}
+\documentclass[12pt,a4paper]{report} 
+\usepackage{makra}
+%TC:fileinclude \import dir,file
 
-\usepackage[utf8]{inputenc}
-\usepackage[czech]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\usepackage{microtype}
-\usepackage{geometry}
-\geometry{margin=2.5cm}
+\usepackage[top=25mm,bottom=25mm,right=25mm,left=30mm,head=12.5mm,foot=12.5mm]{geometry}
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
+%\setlist[description]{noitemsep, topsep=0pt}
 
-\title{Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování}
-\author{Diplomant}
-\date{2026}
+\linespread{1.2}
+\parindent=0pt
+\parskip=11pt
+
+\def\NazevPrace{Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování}
+\def\TypPrace{DIPLOMOVÁ PRÁCE}
+\def\Autor{František Pavlík}
+\def\Vedouci{Ing. Karel Šafr, Ph.D.}
+\def\Program{Statistika a analýza dat}
+\def\Specializace{Statistické modelování}
+\def\Datum{Praha, 2026}
+\import{kapitoly/}{zacatek}
 
 \begin{document}
 
-% --- Titulní strana ---
-\begin{titlepage}
-    \centering
-    \vspace*{1cm}
-    {\scshape\LARGE Vysoká škola ekonomická v Praze \par}
-    {\scshape\Large Fakulta informatiky a statistiky \par}
-    {\large Katedra statistiky a pravděpodobnosti \par}
-    \vspace{2cm}
-    {\bfseries\LARGE DIPLOMOVÁ PRÁCE \par}
-    \vspace{1.5cm}
-    {\huge\bfseries Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování \par}
-    \vspace{2cm}
-    \vfill
-    \begin{flushleft}
-        \large
-        \textbf{Vedoucí práce:} Ing. Karel Šafr, Ph.D. \\
-        \textbf{Autor:} Student \\
-        \textbf{Studijní program:} Statistika a analýza dat \\
-        \textbf{Rok:} 2026
-    \end{flushleft}
-\end{titlepage}
+\import{template/}{titulka}
 
-% --- Abstrakt ---
-\chapter*{Abstrakt}
-Umělý minimalistický jazyk toki pona, tvořený jednoduchou syntaxí a slovníkem o zhruba 137 základních slovech, poslouží jako kontrolované nízkozdrojové prostředí pro vývoj Small Language Models (SLM). Cílem diplomové práce je statisticky popsat, jak množství dat, počet parametrů a tokenizace ovlivňují výkon, datovou efektivitu a škálování SLM. Student připraví reprodukovatelný korpus, odstraní duplicity, rozdělí data podle zdrojů a od začátku natrénuje transformerové SLM o velikosti jednotek až desítek milionů parametrů se znakovou, slovní a subword tokenizací. Faktorový experiment zkombinuje několik velikostí korpusu a modelu, více náhodných inicializací a srovnatelný výpočetní rozpočet. Výkon bude hodnocen křížovou entropií normalizovanou na znaky, perplexitou a automaticky generovanými testy gramatické přijatelnosti a kompozičního zobecnění. Křivky učení, hierarchické modely a analýza interakcí odhadnou škálovací vztahy, nejistotu rozdílů a nejefektivnější konfigurace SLM pro učení z malých dat.
+\import{kapitoly/}{00uvod}
 
-\tableofcontents
+\import{kapitoly/}{01teorie_slm}
 
-% --- Kapitoly ---
-\include{chapters/01_introduction}
-\include{chapters/02_theoretical_background}
-\include{chapters/03_toki_pona_corpus}
-\include{chapters/04_experimental_design}
-\include{chapters/05_results_and_scaling}
-\include{chapters/06_conclusion}
+\import{kapitoly/}{02toki_pona_korpus}
 
-\bibliographystyle{plain}
-\bibliography{references}
+\import{kapitoly/}{03faktorovy_pokus}
+
+\import{kapitoly/}{04vysledky_a_skalovani}
+
+\import{kapitoly/}{05zaver}
+
+\newpage
+
+\printbibliography[title={Použitá literatura},heading={bibintoc}]
+
+\newpage
+
+\import{kapitoly/}{prilohy}
 
 \end{document}

@@ -1,0 +1,57 @@
+\chapter{Teoretická východiska a škálovací zákony}
+\label{chap:teorie}
+
+V této kapitole formulujeme matematické a teoretické základy jazykového modelování, architekturu dekodérového Transformeru a koncept škálovacích zákonů.
+
+\section{Autoregresivní modelování jazyka}
+Nechť $X = (x_1, x_2, \dots, x_T)$ je sekvence tokenů z konečného slovníku $\mathcal{V}$. Úlohou autoregresivního jazykového modelu je odhadnout sdruženou pravděpodobnost sekvence pomocí řetízkového pravidla pravděpodobnosti:
+\begin{equation}
+    P(X) = \prod_{t=1}^T P(x_t \mid x_{<t}; \theta),
+\end{equation}
+kde $\theta$ představuje vektor parametrů neuronové sítě a $x_{<t} = (x_1, \dots, x_{t-1})$ je předcházející kontext.
+
+Model je optimalizován minimalizací střední křížové entropie (empirického rizika):
+\begin{equation}
+    \mathcal{L}_{\text{CE}}(\theta) = -\frac{1}{T} \sum_{t=1}^T \ln P(x_t \mid x_{<t}; \theta).
+\end{equation}
+
+\section{Architektura Decoder-Only Transformer}
+V souladu s architekturami GPT \cite{radford2019language} a LLaMA \cite{touvron2023llama} využíváme architekturu dekodéru s kauzální maskou pozornosti (Causal Multi-Head Self-Attention). 
+
+Pro zajištění vysoké numerické stability a trénovací efektivity jsou aplikována moderní architektonická vylepšení:
+\begin{enumerate}
+    \item \textbf{RMSNorm (Root Mean Square Normalization):} Nahrazuje standardní vrstevní normalizaci (LayerNorm) výpočtem bez odčítání střední hodnoty, což snižuje výpočetní nároky:
+    \begin{equation}
+        \text{RMSNorm}(x) = \frac{x}{\sqrt{\frac{1}{d} \sum_{i=1}^d x_i^2 + \epsilon}} \odot \gamma.
+    \end{equation}
+    \item \textbf{SwiGLU / GELU aktivační funkce v MLP:} Zajišťuje hladký průchod gradientu.
+    \item \textbf{Sdílení vah (Weight Tying):} Výstupní projekční matice lineární hlavy sdílí váhy se vstupní tabulkou embeddingů ($\mathbf{W}_{\text{head}} = \mathbf{W}_{\text{emb}}^\top$), což dramaticky redukuje počet parametrů v modelech s menší dimenzí skryté vrstvy.
+\end{enumerate}
+
+\section{Škálovací zákony (Scaling Laws)}
+Přelomové práce Kaplana et al. (2020) \cite{kaplan2020scaling} a Hoffmanna et al. (2022) \cite{hoffmann2022training} ukázaly, že testovací ztráta $L$ jazykového modelu závisí mocninným vztahem na výpočetním rozpočtu, počtu ne-embeddingových parametrů $N$ a objemu trénovacích dat $D$:
+\begin{equation}
+    L(N, D) = E + \frac{A}{N^\alpha} + \frac{B}{D^\beta},
+    \label{eq:scaling_law}
+\end{equation}
+kde:
+\begin{itemize}
+    \item $E$ je ireducibilní entropie jazyka (teoretický limit daný náhodností a redundancí jazykového systému),
+    \item $A, B$ jsou normalizační koeficienty závislé na architektuře a optimalizátoru,
+    \item $\alpha$ je škálovací exponent parametrů modelu,
+    \item $\beta$ je škálovací exponent objemu trénovacích dat.
+\end{itemize}
+
+V literatuře se pro velké modely typicky uvádí $\alpha \approx 0{,}076$ a $\beta \approx 0{,}095$ (Kaplan), resp. $\alpha \approx 0{,}34$ a $\beta \approx 0{,}28$ (Chinchilla). Otázkou zůstává, jaké hodnoty tyto exponenty nabývají v nízkozdrojovém režimu minimalistického jazyka.
+
+\section{Informačně-teoretická normalizace (Bits-Per-Character)}
+Protože porovnáváme znakovou tokenizaci (velmi dlouhé sekvence, malý slovník), BPE podslovní tokenizaci a celoslovní tokenizaci (krátké sekvence, větší slovník), standardní křížová entropie na token je nesrovnatelná. 
+
+Ztrátu proto přepočítáváme na jednotný informační základ — bity na znak původního nestrukturovaného textu (BPC):
+\begin{equation}
+    \text{BPC} = \frac{\sum_{i=1}^{M} \mathcal{L}_i}{N_{\text{chars}} \cdot \ln 2},
+\end{equation}
+kde $\mathcal{L}_i$ je součet křížové entropie v přirozených jednotkách (nats) a $N_{\text{chars}}$ je celkový počet znaků vyhodnocovaného textu. Odpovídající normalizovaná znaková perplexita je dána vztahem:
+\begin{equation}
+    \text{PPL}_{\text{char}} = 2^{\text{BPC}}.
+\end{equation}

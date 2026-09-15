@@ -1,0 +1,75 @@
+\chapter{Statistická analýza výsledků a škálování}
+\label{chap:vysledky}
+
+V této kapitole prezentujeme empirické výsledky faktorového experimentu, dekompozici rozptylu (ANOVA), lineární smíšené modely a odhadnuté parametry mocninných škálovacích zákonů.
+
+\section{Naměřené hodnoty BPC a gramatické přesnosti}
+Tabulka \ref{tab:vysledky_grid} shrnuje průměrné hodnoty validačního BPC a úspěšnosti v gramatickém testu pro jednotlivé konfigurace.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Výsledky faktorového pokusu na datech toki pona}
+    \label{tab:vysledky_grid}
+    \begin{tabular}{llcccc}
+        \toprule
+        Tokenizér & Model & Frakce dat ($D$) & Val BPC $\downarrow$ & Znaková PPL $\downarrow$ & Gramatická přesnost $\uparrow$ \\
+        \midrule
+        CHAR & micro & 25\,\% & 1{,}8495 & 3{,}60 & 39{,}0\,\% \\
+        CHAR & micro & 75\,\% & 1{,}4178 & 2{,}67 & 53{,}7\,\% \\
+        CHAR & mini  & 25\,\% & 1{,}3867 & 2{,}61 & 58{,}5\,\% \\
+        CHAR & mini  & 75\,\% & \textbf{1{,}0728} & \textbf{2{,}10} & 85{,}4\,\% \\
+        \midrule
+        BPE  & micro & 25\,\% & 1{,}6536 & 3{,}15 & 75{,}6\,\% \\
+        BPE  & micro & 75\,\% & 1{,}4126 & 2{,}66 & 85{,}4\,\% \\
+        BPE  & mini  & 25\,\% & 1{,}4079 & 2{,}65 & 82{,}9\,\% \\
+        BPE  & mini  & 75\,\% & 1{,}2183 & 2{,}33 & 92{,}7\,\% \\
+        \midrule
+        WORD & micro & 25\,\% & 1{,}2848 & 2{,}44 & 85{,}4\,\% \\
+        WORD & micro & 75\,\% & 1{,}1933 & 2{,}29 & 87{,}8\,\% \\
+        WORD & mini  & 25\,\% & 1{,}1987 & 2{,}30 & 90{,}2\,\% \\
+        WORD & mini  & 75\,\% & \textbf{1{,}1185} & \textbf{2{,}17} & \textbf{100{,}0\,\%} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Analýza rozptylu (ANOVA) a velikost účinku (\texorpdfstring{$\eta^2$}{eta2})}
+Pro ověření statistické významnosti vlivu faktorů byl aplikován model ANOVA typu II. Celkový model vysvětluje 99{,}25\,\% rozptylu BPC:
+\begin{itemize}
+    \item \textbf{Model Size ($N$):} $F = 119{,}21$, $p = 0{,}0016$, $\eta^2 = 29{,}83\,\%$,
+    \item \textbf{Data Size ($D$):} $F = 109{,}14$, $p = 0{,}0019$, $\eta^2 = 27{,}31\,\%$,
+    \item \textbf{Tokenizer ($T$):} $F = 50{,}27$, $p = 0{,}0049$, $\eta^2 = 25{,}16\,\%$,
+    \item \textbf{Interakce Model $\times$ Tokenizer:} $F = 18{,}97$, $p = 0{,}0198$, $\eta^2 = 9{,}50\,\%$,
+    \item \textbf{Interakce Data $\times$ Tokenizer:} $F = 14{,}89$, $p = 0{,}0277$, $\eta^2 = 7{,}45\,\%$,
+    \item \textbf{Reziduální rozptyl:} pouhých $0{,}75\,\%$.
+\end{itemize}
+
+Všechny hlavní efekty i dvojné interakce jsou statisticky signifikantní na hladině významnosti $\alpha = 0{,}05$.
+
+\section{Odhad empirických škálovacích zákonů}
+Nelineární regrese metody nejmenších čtverců odhadla parametry rovnice \eqref{eq:scaling_law} na hodnoty:
+\begin{equation}
+    \text{BPC}(N, D) = 0{,}555 + \frac{77{,}05}{N^{0{,}462}} + \frac{93{,}78}{D^{0{,}390}}.
+\end{equation}
+
+Odhadnutá hodnota $E \approx 0{,}555$ bitů na znak představuje empirický odhad entropie jazyka toki pona. Exponent $\alpha = 0{,}462$ a $\beta = 0{,}390$ potvrzují, že v malém měřítku přináší zvětšování kapacity modelu ještě výraznější relativní přínos než v asymptotické oblasti velkých modelů.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{scaling_data_bpc.pdf}
+    \caption{Škálování validačního BPC v závislosti na objemu dat pro jednotlivé tokenizéry.}
+    \label{fig:scaling_data}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{interaction_effects.pdf}
+    \caption{Interakční graf mezi velikostí korpusu a typem tokenizéru.}
+    \label{fig:interaction}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{grammar_vs_bpc.pdf}
+    \caption{Závislost gramatické přijatelnosti (BLiMP) na Bits-Per-Character.}
+    \label{fig:grammar_vs_bpc}
+\end{figure}

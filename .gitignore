@@ -32,6 +32,13 @@ thesis/*.toc
 thesis/*.bbl
 thesis/*.blg
 thesis/*.synctex.gz
+thesis/*.bcf
+thesis/*.run.xml
+thesis/*.fdb_latexmk
+thesis/*.fls
+thesis/*.lof
+thesis/*.lot
+thesis/kapitoly/*.aux
 thesis/chapters/*.aux
 
 # System & IDE

@@ -1,0 +1,43 @@
+\chapter{Příprava a analýza korpusu Toki Pona}
+\label{chap:korpus}
+
+V této kapitole představujeme metodiku sestavení textového korpusu, proces čištění a deduplikace a stratifikované rozdělení dat do trénovací, validační a testovací sady.
+
+\section{Struktura a zdroje korpusu}
+Pro zajištění žánrové a stylové rozmanitosti byl korpus vytvořen sloučením čtyř nezávislých otevřených zdrojů jazyka toki pona:
+\begin{enumerate}
+    \item \textbf{Tatoeba:} Databáze paralelních vět zaměřená na každodenní konverzační obraty a jednoduché větné struktury.
+    \item \textbf{Wikipesija (Monolingual):} Encyklopedické články přeložené do toki pona, charakteristické složitějšími souvětími a popisným stylem.
+    \item \textbf{Lipu Sewi:} Rozsáhlý překlad náboženských a klasických narativních textů s bohatým kompozicionálním vyjadřováním.
+    \item \textbf{Poki Lapo:} Komunitní sborník tvůrčího psaní, povídek a poezie.
+\end{enumerate}
+
+\section{Čištění a deduplikace}
+Surová data prošla automatizovaným předzpracováním:
+\begin{itemize}
+    \item převod veškerého textu na malá písmena (lowercase),
+    \item kanonizace uvozovek a interpunkčních znamének,
+    \item odstranění neplatných nelatinkových znaků mimo standardní abecedu toki pona,
+    \item přesná deduplikace pomocí kryptografického hashe SHA256.
+\end{itemize}
+
+Původních 131\,434 vět bylo deduplikováno na výsledných **109\,885 unikátních vět**.
+
+\section{Stratifikované rozdělení podle zdrojů}
+Aby se zabránilo systematickému zkreslení validačních a testovacích odhadů (např. dominancí jednoho specifického žánru v testovacím souboru), bylo rozdělení provedeno stratifikovaně v poměru 80\,\% : 10\,\% : 10\,\% uvnitř každého dílčího zdroje:
+\begin{table}[htbp]
+    \centering
+    \caption{Přehled rozdělení a velikostí korpusu toki pona}
+    \label{tab:korpus_stats}
+    \begin{tabular}{lrrr}
+        \toprule
+        Dílčí sada & Počet vět & Počet slov & Průměrná délka věty (znaky) \\
+        \midrule
+        Trénovací sada (80\,\%) & 87\,906 & 1\,415\,500 & 22{,}8 \\
+        Validační sada (10\,\%) & 10\,987 & 177\,843 & 22{,}8 \\
+        Testovací sada (10\,\%)  & 10\,992 & 175\,471 & 22{,}8 \\
+        \midrule
+        \textbf{Celkem} & \textbf{109\,885} & \textbf{1\,768\,814} & \textbf{22{,}8} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

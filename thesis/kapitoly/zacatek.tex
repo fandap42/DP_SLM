@@ -1,0 +1,44 @@
+\def\Podekovani{
+    Rád bych poděkoval vedoucímu své diplomové práce, Ing.~Karlu Šafrovi, Ph.D., za odborné vedení, cenné metodické rady, podnětné konzultace a podporu při realizaci tohoto výzkumu. Poděkování patří také mé rodině a blízkým za jejich neutuchající trpělivost a podporu po celou dobu mého vysokoškolského studia.
+}
+
+\def\Abstrakt{
+Umělý minimalistický jazyk toki pona, tvořený jednoduchou syntaxí a slovníkem o zhruba 137 základních slovech, slouží v této diplomové práci jako kontrolované nízkozdrojové laboratorní prostředí pro vývoj malých jazykových modelů (Small Language Models, SLM). Cílem práce je statisticky popsat a kvantifikovat, jak množství trénovacích dat, počet parametrů a zvolená tokenizace (znaková, podslovní BPE a celoslovní) ovlivňují výkon, datovou efektivitu a škálování modelů. Práce využívá reprodukovatelný deduplikovaný korpus rozdělený stratifikovaně podle čtyř žánrových zdrojů. Modely architektury Decoder-Only Transformer jsou trénovány od začátku a jejich výkon je hodnocen informačně-teoretickou křížovou entropií normalizovanou na znaky (Bits-Per-Character, BPC), perplexitou a automaticky generovanou baterií lingvistických testů gramatické přijatelnosti. Pomocí lineárních smíšených modelů (LMEM), analýzy rozptylu (ANOVA) a nelineární regrese jsou odhadnuty empirické škálovací vztahy typu Kaplan/Chinchilla a identifikována optimální konfigurace SLM pro učení z malých dat.
+}
+
+\def\Abstract{
+The artificial minimalist language Toki Pona, characterized by a simple syntax and a closed vocabulary of approximately 137 basic words, serves in this master's thesis as a controlled low-resource environment for developing Small Language Models (SLMs). The objective is to statistically describe and quantify how training data volume, model parameter count, and tokenization strategy (character-level, subword BPE, and word-level) impact performance, data efficiency, and scaling behavior. The study utilizes a reproducible, deduplicated corpus stratified across four textual genres. Decoder-Only Transformer models are trained from scratch, and their performance is evaluated using information-theoretic bits-per-character (BPC), perplexity, and an automated benchmark of grammatical acceptability minimal pairs. Employing linear mixed-effects models (LMEM), factorial ANOVA, and nonlinear regression, empirical scaling laws (Kaplan/Chinchilla) are fitted to estimate scaling exponents and identify data-efficient SLM configurations for small data regimes.
+}
+
+\def\KlicovaSlova{
+Small Language Models, SLM, toki pona, škálovací zákony, scaling laws, tokenizace, bits per character, nízkozdrojové jazyky, lineární smíšené modely, ANOVA
+}
+
+\def\Keywords{
+Small Language Models, SLM, Toki Pona, scaling laws, tokenization, bits per character, low-resource languages, linear mixed-effects models, ANOVA
+}
+
+\def\Zktratky{
+\begin{table}[h]
+    \renewcommand{\arraystretch}{1.35}
+    \begin{tabular}{ll}
+        SLM & Malé jazykové modely (Small Language Models) \\
+        LLM & Velké jazykové modely (Large Language Models) \\
+        BPC & Bity na znak (Bits-Per-Character) \\
+        PPL & Perplexita (Perplexity) \\
+        BPE & Kódování dvojic bajtů (Byte-Pair Encoding) \\
+        DoE & Návrh experimentů (Design of Experiments) \\
+        LMEM & Lineární smíšený model (Linear Mixed-Effects Model) \\
+        ANOVA & Analýza rozptylu (Analysis of Variance) \\
+        $N$ & Počet ne-embeddingových parametrů modelu \\
+        $D$ & Objem trénovacích dat (počet tokenů či slov) \\
+        $E$ & Ireducibilní entropie jazyka (Bayesovský limit) \\
+        $\alpha$ & Škálovací exponent parametrů modelu \\
+        $\beta$ & Škálovací exponent trénovacích dat \\
+        $\eta^2$ & Velikost účinku v analýze rozptylu (Eta-squared) \\
+        SDPA & Scaled Dot-Product Attention \\
+        RMSNorm & Root Mean Square Normalization \\
+        SwiGLU & Swish Gated Linear Unit \\
+    \end{tabular}
+\end{table}
+}

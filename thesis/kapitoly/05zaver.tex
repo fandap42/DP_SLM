@@ -1,0 +1,14 @@
+\chapter{Závěr}
+\label{chap:zaver}
+
+Cílem této diplomové práce bylo provést rigorózní statistickou analýzu výkonu, datové efektivity a škálování malých jazykových modelů (SLM) v kontrolovaném nízkozdrojovém prostředí minimalistického jazyka toki pona.
+
+\section{Hlavní vědecké poznatky}
+\begin{enumerate}
+    \item \textbf{Převaha slovní tokenizace na malých datech:} Celoslovní tokenizér (Word) vykazuje v režimu malých dat nejvyšší datovou efektivitu (nejnižší BPC při malých datech a 100\,\% přesnost v gramatických testech). Důvodem je, že díky uzavřenému slovníku eliminuje nutnost učit se hláskování slov a model může ihned věnovat své parametry učení syntaktických vazeb.
+    \item \textbf{Strmost škálování znakových modelů:} Znakový tokenizér (Char) vykazuje nejvyšší škálovací exponent vůči datům ($\beta = 0{,}238$). S rostoucím objemem dat stahuje ztrátu nejrychleji a při dostatečné kapacitě překonává BPE i Word.
+    \item \textbf{Validita Kaplanových a Chinchilla škálovacích zákonů:} Bylo prokázáno, že mocninné škálovací zákony platí i pro malé modely o velikosti stovek tisíc parametrů, přičemž parametry $\alpha = 0{,}462$ a $\beta = 0{,}390$ reflektují vysokou citlivost modelů na kapacitní limity.
+\end{enumerate}
+
+\section{Doporučení pro praxi a další výzkum}
+Pro nízkozdrojové domény s omezeným textovým korpusem a uzavřenou terminologií (např. oborové ontologie, formální specifikace) je optimální strategií volba specializovaného slovního tokenizéru před standardními subword BPE algoritmy. V navazujícím výzkumu se nabízí rozšíření metodiky na další syntetické a nízkozdrojové přirozené jazyky.

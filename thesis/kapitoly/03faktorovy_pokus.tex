@@ -1,0 +1,39 @@
+\chapter{Faktorový experimentální design}
+\label{chap:pokus}
+
+Pro statistické vyhodnocení vlivu klíčových faktorů byl experiment navržen podle zásad plánování experimentů (Design of Experiments, DoE).
+
+\section{Faktory a jejich úrovně}
+Experimentální prostor je definován kartézským součinem čtyř faktorů:
+\begin{enumerate}
+    \item \textbf{Objem trénovacích dat ($D$):} Kontrolovaná frakce trénovacího korpusu (např. 25\,\% a 75\,\% v základním rastru, s logaritmickým rozšířením).
+    \item \textbf{Kapacita modelu ($N$):}
+    \begin{itemize}
+        \item \textit{micro:} 2 vrstvy, skrytá dimenze 64, 2 hlavy ($\approx 116\text{k}$ parametrů),
+        \item \textit{mini:} 4 vrstvy, skrytá dimenze 128, 4 hlavy ($\approx 500\text{k} - 884\text{k}$ parametrů),
+        \item \textit{small:} 6 vrstev, skrytá dimenze 256, 8 hlav ($\approx 2{,}5\text{M}$ parametrů).
+    \end{itemize}
+    \item \textbf{Tokenizační strategie ($T$):}
+    \begin{itemize}
+        \item \textit{Znaková (Char):} Slovník o 39 symbolech,
+        \item \textit{Podslovní (BPE):} Slovník o 80 jednotkách trénovaný algoritmem Byte-Pair Encoding \cite{sennrich2016neural},
+        \item \textit{Slovní (Word):} Slovník o 630 slovech pokrývající knihu \textit{pu} a frekventovaná rozšíření.
+    \end{itemize}
+    \item \textbf{Náhodná inicializace ($S$):} Replikace se semínky (seeds) pro separaci systematického rozptylu od náhodné variability.
+\end{enumerate}
+
+\section{Syntetická testovací sada gramatické přijatelnosti (BLiMP)}
+Podle benchmarku BLiMP \cite{warstadt2020blimp} byla vyvinuta baterie 41 minimálních syntaktických párů $(s_{\text{gramatická}}, s_{\text{negramatická}})$. Model přiřazuje oběma větám sekvenční věrohodnost $\log P(s)$. Správná klasifikace nastává tehdy, pokud platí:
+\begin{equation}
+    \log P(s_{\text{gramatická}}) > \log P(s_{\text{negramatická}}).
+\end{equation}
+
+Testované lingvistické kategorie zahrnují:
+\begin{itemize}
+    \item \textbf{Částice \textit{li}:} Povinná pro podměty 3. osoby (\textit{soweli li moku.} vs. \textit{*soweli moku.}).
+    \item \textbf{Odmítnutí \textit{li} u \textit{mi/sina}:} Samotná zájmena nesmí být následována \textit{li} (\textit{mi moku.} vs. \textit{*mi li moku.}).
+    \item \textbf{Předmětová částice \textit{e}:} Povinná u přechodných sloves (\textit{jan li moku e telo.} vs. \textit{*jan li moku telo.}).
+    \item \textbf{Skupinová částice \textit{pi}:} Vyžaduje složený modifikátor (\textit{tomo pi telo nasa.} vs. \textit{*tomo pi telo.}).
+    \item \textbf{Kompozicionální zobecnění:} Pořadí rozvíjejících větných členů.
+    \item \textbf{Lexikální validita:} Schopnost penalizovat fonologicky možná ne-slova.
+\end{itemize}

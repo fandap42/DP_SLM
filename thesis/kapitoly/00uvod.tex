@@ -1,0 +1,28 @@
+\chapter{Úvod}
+\label{chap:uvod}
+
+Výzkum a aplikace velkých jazykových modelů (Large Language Models, LLM) představují v současné době jedno z nejdynamičtěji se rozvíjejících odvětví umělé inteligence a počítačové lingvistiky. Tyto modely, disponující desítkami až stovkami miliard parametrů a trénované na gigantických korpusech čítajících biliony tokenů, vykazují pozoruhodné schopnosti reprezentace jazyka, inference i generování textu.
+
+Tento extenzivní přístup však naráží na zásadní omezení v oblastech, kde velká trénovací data z principu neexistují. Typickými příklady jsou specializované korporátní a medicínské databáze, historické lingvistické prameny, technické manuály či nízkozdrojové jazyky (low-resource languages). V takovýchto podmínkách selhávají běžná empirická pravidla platná pro velké modely a do popředí vystupuje nutnost optimalizace architektury a trénovacího procesu v režimu **malých jazykových modelů (Small Language Models, SLM)** učících se z omezených dat.
+
+\section{Motivace a volba jazyka toki pona}
+Pro zodpovězení otázek spojených s efektivitou SLM na malých datech je klíčové eliminovat matoucí vlivy přirozených jazyků, jako je nepravidelná flexe, rozsáhlá a otevřená slovní zásoba, homonymie a nejednoznačná syntaktická pravidla. 
+
+V této diplomové práci proto využíváme umělý minimalistický jazyk **toki pona** \cite{lang2014toki} jako přísně kontrolované laboratorní prostředí. Jazyk toki pona disponuje uzavřeným slovníkem o přibližně 137 slovech a jednoduchou, bezvýjimečnou analytickou syntaxí. Umožňuje tak přesně izolovat a statisticky popsat:
+\begin{itemize}
+    \item vliv volby tokenizačního paradigmatu (znakový, podslovní BPE, celoslovní),
+    \item škálování výkonu v závislosti na objemu dat a počtu parametrů,
+    \item schopnost modelu osvojit si gramatická pravidla a kompozicionální struktury.
+\end{itemize}
+
+\section{Cíle a struktura práce}
+Hlavním cílem práce je provést rigorózní faktorový experiment a statisticky modelovat vztahy mezi kapacitou modelu, objemem trénovacích dat a tokenizací. Výkonnost modelů je hodnocena pomocí informačně-teoretické křížové entropie normalizované na znaky (Bits-Per-Character, BPC), perplexity a syntetické baterie testů gramatické přijatelnosti.
+
+Práce je členěna následovně:
+\begin{itemize}
+    \item Kapitola \ref{chap:teorie} shrnuje teoretická východiska architektury Transformer a formulaci Kaplanových a Chinchilla škálovacích zákonů.
+    \item Kapitola \ref{chap:korpus} detailně popisuje akvizici, čištění, deduplikaci a stratifikované rozdělení korpusu toki pona podle čtyř žánrových zdrojů.
+    \item Kapitola \ref{chap:pokus} představuje faktorový návrh experimentu (Design of Experiments) a metodiku testování gramatické přijatelnosti.
+    \item Kapitola \ref{chap:vysledky} přináší empirické výsledky, analýzu rozptylu (ANOVA), odhad lineárních smíšených modelů (LMEM) a fitování škálovacích křivek.
+    \item Kapitola \ref{chap:zaver} syntetizuje dosažené poznatky a formuluje doporučení pro trénování SLM na malých datech.
+\end{itemize}

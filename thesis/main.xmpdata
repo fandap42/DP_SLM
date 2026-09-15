@@ -1,0 +1,5 @@
+\Author{František Pavlík}
+\Title{Small Language Models (SLM) na malých datech: statistická analýza výkonu a škálování}
+\Keywords{Small Language Models\sep SLM\sep toki pona\sep škálovací zákony\sep scaling laws\sep tokenizace\sep bits per character\sep ANOVA\sep linear mixed-effects models\sep nízkozdrojové jazyky}
+\Subject{Statistická analýza výkonu a škálování malých jazykových modelů na malých datech}
+\Publisher{Vysoká škola ekonomická v Praze, fakulta informatiky a statistiky}
