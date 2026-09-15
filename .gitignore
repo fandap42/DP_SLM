@@ -38,6 +38,7 @@ thesis/*.fdb_latexmk
 thesis/*.fls
 thesis/*.lof
 thesis/*.lot
+thesis/*.xmpi
 thesis/kapitoly/*.aux
 thesis/chapters/*.aux
 
