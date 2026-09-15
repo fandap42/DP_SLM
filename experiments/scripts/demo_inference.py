@@ -10,7 +10,7 @@ from pathlib import Path
 import torch
 import torch.nn.functional as F
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parent.parent.parent
 if str(root) not in sys.path:
     sys.path.insert(0, str(root))
 

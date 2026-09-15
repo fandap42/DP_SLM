@@ -26,3 +26,8 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["src*"]
+
+[project.scripts]
+slm-run = "src.cli:run_main"
+slm-analyze = "src.cli:analyze_main"
+slm-demo = "src.cli:demo_main"

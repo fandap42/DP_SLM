@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 .venv/
 env/
+*.egg-info/
 
 # Data (Ignored in Git, keeping directory structure via .gitkeep)
 data/raw/*
