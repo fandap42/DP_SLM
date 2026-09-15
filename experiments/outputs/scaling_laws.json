@@ -1,0 +1,41 @@
+{
+  "joint_scaling_law": {
+    "success": true,
+    "params": {
+      "E_irreducible_loss": 0.5553447725336087,
+      "A_param_scale": 77.04621046150046,
+      "B_data_scale": 93.77832642711842,
+      "alpha_param_exponent": 0.4618176302335951,
+      "beta_data_exponent": 0.3897276657381491
+    },
+    "std_errors": {
+      "E_err": 384484.54908119584,
+      "A_err": 666465934.8350946,
+      "B_err": 607012535.8680595,
+      "alpha_err": 847319.7816105116,
+      "beta_err": 603752.0735247496
+    },
+    "r_squared": 0.5714354860645129,
+    "equation": "BPC = 0.555 + (77.05 / N^0.462) + (93.78 / D^0.390)"
+  },
+  "tokenizer_scaling_curves": {
+    "bpe": {
+      "a": 8.842744825921951,
+      "scaling_exponent_beta": 0.13752146349427047,
+      "r_squared": 0.4886578412616892,
+      "formula": "BPC = 8.843 * D^(-0.138)"
+    },
+    "char": {
+      "a": 33.41514245599731,
+      "scaling_exponent_beta": 0.23778349015071776,
+      "r_squared": 0.45927957887670834,
+      "formula": "BPC = 33.415 * D^(-0.238)"
+    },
+    "word": {
+      "a": 2.852536347762049,
+      "scaling_exponent_beta": 0.06514109735349798,
+      "r_squared": 0.5322414627742333,
+      "formula": "BPC = 2.853 * D^(-0.065)"
+    }
+  }
+}

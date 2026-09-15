@@ -1,0 +1,55 @@
+{
+  "total_epochs": 2,
+  "total_steps": 1374,
+  "total_tokens_seen": 2440474,
+  "total_training_time_sec": 23.2,
+  "best_val_bpc": 1.3867,
+  "final_val_bpc": 1.3867,
+  "final_grammar_acc": 0.5854,
+  "history": [
+    {
+      "epoch": 1,
+      "step": 687,
+      "total_tokens": 1220237,
+      "train_loss": 1.7262,
+      "val_loss": 1.3849,
+      "val_bpc": 1.5811,
+      "val_ppl_char": 2.99,
+      "val_ppl_tok": 3.99,
+      "grammar_acc": 0.5366,
+      "grammar_categories": {
+        "particle_li": 0.3,
+        "pronoun_no_li": 1.0,
+        "direct_object_e": 0.4286,
+        "modifier_pi": 0.0,
+        "context_la": 0.5,
+        "compositional_syntax": 0.8,
+        "lexical_validity": 1.0
+      },
+      "epoch_time_sec": 12.12,
+      "lr": 0.0002648
+    },
+    {
+      "epoch": 2,
+      "step": 1374,
+      "total_tokens": 2440474,
+      "train_loss": 1.3569,
+      "val_loss": 1.2146,
+      "val_bpc": 1.3867,
+      "val_ppl_char": 2.61,
+      "val_ppl_tok": 3.37,
+      "grammar_acc": 0.5854,
+      "grammar_categories": {
+        "particle_li": 0.3,
+        "pronoun_no_li": 1.0,
+        "direct_object_e": 0.5714,
+        "modifier_pi": 0.0,
+        "context_la": 1.0,
+        "compositional_syntax": 0.6,
+        "lexical_validity": 1.0
+      },
+      "epoch_time_sec": 9.87,
+      "lr": 0.0
+    }
+  ]
+}

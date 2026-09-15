@@ -1,19 +1,21 @@
-# Python
+# Python environments & caches
 __pycache__/
 *.py[cod]
 *$py.class
 .venv/
 env/
 
-# Datasets & corpus files (both raw and processed)
-data/
-
-# Experiment outputs, run checkpoints, and logs
-experiments/outputs/
-experiments/test_run/
-*.pt
+# Raw external datasets (downloads from HuggingFace)
+data/raw/
 *.parquet
-*.jsonl
+
+# Model weights / checkpoints (huge binaries)
+*.pt
+*.bin
+*.safetensors
+
+# Temporary test runs
+experiments/test_run/
 
 # System & IDE
 .idea/
