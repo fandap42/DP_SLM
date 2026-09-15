@@ -35,17 +35,41 @@ jobs:
           path: thesis/DP_pavlik_SLM.pdf
           if-no-files-found: error
 
-      - name: Update latest tag
+      - name: Update floating 'latest' tag
         if: github.ref == 'refs/heads/main'
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag -f latest ${{ github.sha }}
           git push -f origin latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to GitHub Releases (sidebar)
-        uses: softprops/action-gh-release@v2
+      - name: Publish floating 'Latest Draft' Pre-release
         if: github.ref == 'refs/heads/main'
-        with:
-          tag_name: latest
-          name: "Diplomová práce (aktuální PDF)"
-          body: "Automaticky zkompilovaná diplomová práce z větve `main` (commit `${{ github.sha }}`)."
-          files: thesis/DP_pavlik_SLM.pdf
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RELEASE_TITLE="Diplomová práce (Latest Draft)"
+          RELEASE_BODY="### 🎓 Diplomová práce: Small Language Models (SLM) na malých datech
+          *Automaticky aktualizovaný koncept z větve \`main\` (poslední commit: \`${{ github.sha }}\`).*
+
+          #### 📥 Přímý odkaz ke stažení (stále stejná URL):
+          👉 **[DP_pavlik_SLM.pdf](https://github.com/${{ github.repository }}/releases/download/latest/DP_pavlik_SLM.pdf)**
+
+          #### 📦 Co nahrát k diplomce:
+          1. **Vygenerované PDF diplomové práce**: \`DP_pavlik_SLM.pdf\` (ke stažení výše v Assets bez hledání v kódu).
+          2. **Zabalené váhy nejlepších modelů**: \`.pt\` nebo \`.safetensors\`, pokud je budete chtít publikovat pro veřejnost spolu s repozitářem.
+          3. **Zkomprimovaný vyčištěný dataset**: \`toki_pona_corpus.tar.gz\`, pokud nejsou data přímo v repu."
+
+          if gh release view latest >/dev/null 2>&1; then
+            echo "Aktualizuji existující release 'latest'..."
+            gh release edit latest --title "$RELEASE_TITLE" --notes "$RELEASE_BODY" --prerelease
+            gh release upload latest thesis/DP_pavlik_SLM.pdf --clobber
+          else
+            echo "Vytvářím nový release 'latest'..."
+            gh release create latest thesis/DP_pavlik_SLM.pdf \
+              --title "$RELEASE_TITLE" \
+              --notes "$RELEASE_BODY" \
+              --prerelease
+          fi
