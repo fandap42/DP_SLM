@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+
+# Datasets & corpus files (both raw and processed)
+data/
+
+# Experiment outputs, run checkpoints, and logs
+experiments/outputs/
+experiments/test_run/
+*.pt
+*.parquet
+*.jsonl
+
+# System & IDE
+.idea/
+.vscode/
+*.DS_Store
