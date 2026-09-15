@@ -1,0 +1,30 @@
+name: Build Thesis PDF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compile Diploma Thesis LaTeX
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document (DP_pavlik_SLM.tex)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: DP_pavlik_SLM.tex
+          working_directory: thesis
+          args: -pdf -file-line-error -interaction=nonstopmode
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DP_pavlik_SLM
+          path: thesis/DP_pavlik_SLM.pdf
+          if-no-files-found: error

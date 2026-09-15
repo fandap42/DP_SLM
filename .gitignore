@@ -24,7 +24,10 @@ results/models/*
 # Temporary test runs
 experiments/test_run/
 
-# LaTeX build artifacts
+# LaTeX build artifacts & compiled PDFs
+thesis/*.pdf
+!thesis/template/*.pdf
+!thesis/figures/*.pdf
 thesis/*.aux
 thesis/*.log
 thesis/*.out
