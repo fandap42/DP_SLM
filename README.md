@@ -18,7 +18,6 @@ diplomka-slm/
 ├── .gitignore                  # Přesně definovaná pravidla (ignoruje data/, váhy *.pt)
 ├── README.md                   # Kompletní průvodce a dokumentace projektu
 ├── pyproject.toml              # Moderní Python build & package definice
-├── requirements.txt            # Zmrazené závislosti balíčků
 │
 ├── data/                       # IGNOROVAT V GITU! (pouze .gitkeep)
 │   ├── raw/                    # Původní nestrukturovaný text toki pona (Parquet)
@@ -60,18 +59,18 @@ diplomka-slm/
 ### 1. Příprava virtuálního prostředí
 ```powershell
 .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ### 2. Spuštění faktorového pokusu
-Experiment lze spustit pomocí centrálního konfiguračního souboru:
+Experiment lze spustit buď přes nainstalovaný CLI příkaz, nebo přímo skriptem:
 
 ```powershell
-# Rychlý PoC běh (12 experimentálních běhů)
-python experiments/scripts/run_experiments.py --config experiments/configs/poc_quick.json
+# Možnost A: CLI příkaz (dostupný odkudkoliv ve venvu)
+slm-run --config experiments/configs/poc_quick.json
 
-# Nebo přes kořenový spouštěč:
-python run_poc.py --config experiments/configs/poc_quick.json
+# Možnost B: Spouštěcí skript
+python experiments/scripts/run_experiments.py --config experiments/configs/poc_quick.json
 ```
 
 ### 3. Spuštění na výpočetním clusteru (SLURM)
