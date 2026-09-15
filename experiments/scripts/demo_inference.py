@@ -37,30 +37,50 @@ def load_model_and_tokenizer(run_name: str, project_root: Path):
     tok_type = row["tokenizer"]
     model_size = row["model_size"]
 
-    data_dir = project_root / "data" / "processed"
-    sample_texts = []
-    with open(data_dir / "train.jsonl", "r", encoding="utf-8") as f:
-        for idx, line in enumerate(f):
-            if idx >= 5000: break
-            sample_texts.append(json.loads(line)["text"])
+    from src.tokenization import load_tokenizer
 
-    if tok_type == "char":
-        tokenizer = CharTokenizer(sample_texts)
-    elif tok_type == "word":
-        tokenizer = WordTokenizer(sample_texts)
+    # 1. Load tokenizer: prefer pre-saved tokenizer, fallback to training on sample texts
+    saved_tok_path = project_root / "results" / "metrics" / "tokenizers" / f"{tok_type}_tok.json"
+    if saved_tok_path.exists():
+        tokenizer = load_tokenizer(saved_tok_path)
     else:
-        tokenizer = BPETokenizer(sample_texts, target_vocab_size=80)
+        data_dir = project_root / "data" / "processed"
+        train_file = data_dir / "train.jsonl"
+        sample_texts = []
+        if train_file.exists():
+            with open(train_file, "r", encoding="utf-8") as f:
+                for idx, line in enumerate(f):
+                    if idx >= 5000: break
+                    sample_texts.append(json.loads(line)["text"])
+
+        if tok_type == "char":
+            tokenizer = CharTokenizer(sample_texts)
+        elif tok_type == "word":
+            tokenizer = WordTokenizer(sample_texts)
+        else:
+            tokenizer = BPETokenizer(sample_texts, target_vocab_size=80)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     cfg = TransformerConfig.get_preset(model_size, vocab_size=tokenizer.vocab_size)
     model = TokiPonaTransformer(cfg).to(device)
 
-    weights_path = models_dir / run_name / "best_model.pt"
-    if weights_path.exists():
-        model.load_state_dict(torch.load(weights_path, map_location=device))
+    # 2. Find model checkpoint across standard locations
+    candidate_paths = [
+        project_root / "results" / "metrics" / "runs" / run_name / "best_model.pt",
+        project_root / "results" / "models" / run_name / "best_model.pt",
+        project_root / "results" / "models" / "best_model.pt",
+    ]
+    weights_path = next((p for p in candidate_paths if p.exists()), None)
+
+    if weights_path is not None:
+        try:
+            state_dict = torch.load(weights_path, map_location=device, weights_only=True)
+        except TypeError:
+            state_dict = torch.load(weights_path, map_location=device)
+        model.load_state_dict(state_dict)
         print(f"[Loaded] Checkpoint {weights_path} onto {device}")
     else:
-        print(f"[Notice] Model weights at {weights_path} not found on local disk. Running with architecture evaluation.")
+        print(f"[Notice] Model weights for {run_name} not found locally. Running with architecture initialization.")
 
     model.eval()
     return model, tokenizer, device, row

@@ -9,10 +9,19 @@ import gc
 import json
 import os
 import random
+import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
+
+_project_root = Path(__file__).resolve().parent.parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+_scripts_dir = Path(__file__).resolve().parent
+if str(_scripts_dir) not in sys.path:
+    sys.path.insert(0, str(_scripts_dir))
+
 import pandas as pd
 import torch
 
@@ -191,7 +200,10 @@ def run_pipeline(config_path: Path | str, project_root: Path | str):
                     run_idx += 1
 
     print("\n[Analysis] Generating statistical analysis and figures...")
-    from analyze_results import run_statistical_analysis
+    try:
+        from experiments.scripts.analyze_results import run_statistical_analysis
+    except ModuleNotFoundError:
+        from analyze_results import run_statistical_analysis
     run_statistical_analysis(
         results_csv=metrics_dir / "results.csv",
         output_dir=metrics_dir,

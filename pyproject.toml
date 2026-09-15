@@ -9,7 +9,7 @@ description = "Small Language Models na malych datech: statisticka analyza vykon
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    { name = "Student FIS VSE", email = "student@vse.cz" }
+    { name = "František Pavlík", email = "pavlik.frantisek42@gmail.com" }
 ]
 dependencies = [
     "torch>=2.0.0",
@@ -31,3 +31,4 @@ include = ["src*"]
 slm-run = "src.cli:run_main"
 slm-analyze = "src.cli:analyze_main"
 slm-demo = "src.cli:demo_main"
+slm-pack = "src.cli:pack_main"

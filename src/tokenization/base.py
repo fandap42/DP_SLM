@@ -54,3 +54,35 @@ class BaseTokenizer(ABC):
         }
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def load_tokenizer(filepath: str) -> BaseTokenizer:
+    import json
+    from pathlib import Path
+    path = Path(filepath)
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    t_type = data.get("type")
+    if t_type == "CharTokenizer":
+        from .char_tokenizer import CharTokenizer
+        tok = CharTokenizer.__new__(CharTokenizer)
+    elif t_type == "WordTokenizer":
+        from .word_tokenizer import WordTokenizer
+        tok = WordTokenizer.__new__(WordTokenizer)
+    elif t_type == "BPETokenizer":
+        from .bpe_tokenizer import BPETokenizer
+        tok = BPETokenizer.__new__(BPETokenizer)
+        tok.merges = [tuple(m) for m in data.get("merges", [])]
+        tok.merges_dict = {tuple(m): idx for idx, m in enumerate(tok.merges)}
+    else:
+        raise ValueError(f"Unknown tokenizer type: {t_type}")
+
+    tok.pad_token_id = data["pad_token_id"]
+    tok.bos_token_id = data["bos_token_id"]
+    tok.eos_token_id = data["eos_token_id"]
+    tok.unk_token_id = data["unk_token_id"]
+    tok.token_to_id = data["token_to_id"]
+    tok.id_to_token = {int(idx): token for token, idx in tok.token_to_id.items()}
+    return tok
+

@@ -4,7 +4,7 @@ Dep. Variable:                val_bpc   R-squared:                       0.898
 Model:                            OLS   Adj. R-squared:                  0.775
 Method:                 Least Squares   F-statistic:                     7.300
 Date:                Tue, 15 Sep 2026   Prob (F-statistic):             0.0227
-Time:                        22:10:24   Log-Likelihood:                 15.092
+Time:                        22:59:50   Log-Likelihood:                 15.092
 No. Observations:                  12   AIC:                            -16.18
 Df Residuals:                       5   BIC:                            -12.79
 Df Model:                           6                                         
