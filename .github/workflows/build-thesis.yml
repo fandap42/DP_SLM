@@ -3,8 +3,6 @@ name: Build Thesis PDF
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -15,16 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Compile LaTeX document (DP_pavlik_SLM.tex)
+      - name: Compile LaTeX document (main.tex)
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: DP_pavlik_SLM.tex
+          root_file: main.tex
           working_directory: thesis
           args: -pdf -file-line-error -interaction=nonstopmode
+
+      - name: Rename output PDF to DP_pavlik_SLM.pdf
+        run: mv thesis/main.pdf thesis/DP_pavlik_SLM.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: DP_pavlik_SLM
+          name: DP_pavlik_SLM.pdf
           path: thesis/DP_pavlik_SLM.pdf
           if-no-files-found: error
