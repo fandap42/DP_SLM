@@ -1,0 +1,4169 @@
+[
+  {
+    "item_id": "li_mi_sina_001",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi moku.",
+    "ungrammatical": "mi li moku."
+  },
+  {
+    "item_id": "li_mi_sina_002",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi lape.",
+    "ungrammatical": "mi li lape."
+  },
+  {
+    "item_id": "li_mi_sina_003",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi tawa.",
+    "ungrammatical": "mi li tawa."
+  },
+  {
+    "item_id": "li_mi_sina_004",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi lukin.",
+    "ungrammatical": "mi li lukin."
+  },
+  {
+    "item_id": "li_mi_sina_005",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi kute.",
+    "ungrammatical": "mi li kute."
+  },
+  {
+    "item_id": "li_mi_sina_006",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi pali.",
+    "ungrammatical": "mi li pali."
+  },
+  {
+    "item_id": "li_mi_sina_007",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi toki.",
+    "ungrammatical": "mi li toki."
+  },
+  {
+    "item_id": "li_mi_sina_008",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi awen.",
+    "ungrammatical": "mi li awen."
+  },
+  {
+    "item_id": "li_mi_sina_009",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi kalama.",
+    "ungrammatical": "mi li kalama."
+  },
+  {
+    "item_id": "li_mi_sina_010",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi musi.",
+    "ungrammatical": "mi li musi."
+  },
+  {
+    "item_id": "li_mi_sina_011",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi kama.",
+    "ungrammatical": "mi li kama."
+  },
+  {
+    "item_id": "li_mi_sina_012",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi ante.",
+    "ungrammatical": "mi li ante."
+  },
+  {
+    "item_id": "li_mi_sina_013",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi pilin.",
+    "ungrammatical": "mi li pilin."
+  },
+  {
+    "item_id": "li_mi_sina_014",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "mi pona.",
+    "ungrammatical": "mi li pona."
+  },
+  {
+    "item_id": "li_mi_sina_015",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi moku e kili.",
+    "ungrammatical": "mi li moku e kili."
+  },
+  {
+    "item_id": "li_mi_sina_016",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi lukin e kili.",
+    "ungrammatical": "mi li lukin e kili."
+  },
+  {
+    "item_id": "li_mi_sina_017",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pali e kili.",
+    "ungrammatical": "mi li pali e kili."
+  },
+  {
+    "item_id": "li_mi_sina_018",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pana e kili.",
+    "ungrammatical": "mi li pana e kili."
+  },
+  {
+    "item_id": "li_mi_sina_019",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi wile e kili.",
+    "ungrammatical": "mi li wile e kili."
+  },
+  {
+    "item_id": "li_mi_sina_020",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi moku e telo.",
+    "ungrammatical": "mi li moku e telo."
+  },
+  {
+    "item_id": "li_mi_sina_021",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi lukin e telo.",
+    "ungrammatical": "mi li lukin e telo."
+  },
+  {
+    "item_id": "li_mi_sina_022",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pali e telo.",
+    "ungrammatical": "mi li pali e telo."
+  },
+  {
+    "item_id": "li_mi_sina_023",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pana e telo.",
+    "ungrammatical": "mi li pana e telo."
+  },
+  {
+    "item_id": "li_mi_sina_024",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi wile e telo.",
+    "ungrammatical": "mi li wile e telo."
+  },
+  {
+    "item_id": "li_mi_sina_025",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi moku e pan.",
+    "ungrammatical": "mi li moku e pan."
+  },
+  {
+    "item_id": "li_mi_sina_026",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi lukin e pan.",
+    "ungrammatical": "mi li lukin e pan."
+  },
+  {
+    "item_id": "li_mi_sina_027",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pali e pan.",
+    "ungrammatical": "mi li pali e pan."
+  },
+  {
+    "item_id": "li_mi_sina_028",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pana e pan.",
+    "ungrammatical": "mi li pana e pan."
+  },
+  {
+    "item_id": "li_mi_sina_029",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi wile e pan.",
+    "ungrammatical": "mi li wile e pan."
+  },
+  {
+    "item_id": "li_mi_sina_030",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi moku e lipu.",
+    "ungrammatical": "mi li moku e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_031",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi lukin e lipu.",
+    "ungrammatical": "mi li lukin e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_032",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pali e lipu.",
+    "ungrammatical": "mi li pali e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_033",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pana e lipu.",
+    "ungrammatical": "mi li pana e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_034",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi wile e lipu.",
+    "ungrammatical": "mi li wile e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_035",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi moku e mani.",
+    "ungrammatical": "mi li moku e mani."
+  },
+  {
+    "item_id": "li_mi_sina_036",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi lukin e mani.",
+    "ungrammatical": "mi li lukin e mani."
+  },
+  {
+    "item_id": "li_mi_sina_037",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pali e mani.",
+    "ungrammatical": "mi li pali e mani."
+  },
+  {
+    "item_id": "li_mi_sina_038",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi pana e mani.",
+    "ungrammatical": "mi li pana e mani."
+  },
+  {
+    "item_id": "li_mi_sina_039",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "mi wile e mani.",
+    "ungrammatical": "mi li wile e mani."
+  },
+  {
+    "item_id": "li_mi_sina_040",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina moku.",
+    "ungrammatical": "sina li moku."
+  },
+  {
+    "item_id": "li_mi_sina_041",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina lape.",
+    "ungrammatical": "sina li lape."
+  },
+  {
+    "item_id": "li_mi_sina_042",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina tawa.",
+    "ungrammatical": "sina li tawa."
+  },
+  {
+    "item_id": "li_mi_sina_043",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina lukin.",
+    "ungrammatical": "sina li lukin."
+  },
+  {
+    "item_id": "li_mi_sina_044",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina kute.",
+    "ungrammatical": "sina li kute."
+  },
+  {
+    "item_id": "li_mi_sina_045",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina pali.",
+    "ungrammatical": "sina li pali."
+  },
+  {
+    "item_id": "li_mi_sina_046",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina toki.",
+    "ungrammatical": "sina li toki."
+  },
+  {
+    "item_id": "li_mi_sina_047",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina awen.",
+    "ungrammatical": "sina li awen."
+  },
+  {
+    "item_id": "li_mi_sina_048",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina kalama.",
+    "ungrammatical": "sina li kalama."
+  },
+  {
+    "item_id": "li_mi_sina_049",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina musi.",
+    "ungrammatical": "sina li musi."
+  },
+  {
+    "item_id": "li_mi_sina_050",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina kama.",
+    "ungrammatical": "sina li kama."
+  },
+  {
+    "item_id": "li_mi_sina_051",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina ante.",
+    "ungrammatical": "sina li ante."
+  },
+  {
+    "item_id": "li_mi_sina_052",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina pilin.",
+    "ungrammatical": "sina li pilin."
+  },
+  {
+    "item_id": "li_mi_sina_053",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li",
+    "grammatical": "sina pona.",
+    "ungrammatical": "sina li pona."
+  },
+  {
+    "item_id": "li_mi_sina_054",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina moku e kili.",
+    "ungrammatical": "sina li moku e kili."
+  },
+  {
+    "item_id": "li_mi_sina_055",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina lukin e kili.",
+    "ungrammatical": "sina li lukin e kili."
+  },
+  {
+    "item_id": "li_mi_sina_056",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pali e kili.",
+    "ungrammatical": "sina li pali e kili."
+  },
+  {
+    "item_id": "li_mi_sina_057",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pana e kili.",
+    "ungrammatical": "sina li pana e kili."
+  },
+  {
+    "item_id": "li_mi_sina_058",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina wile e kili.",
+    "ungrammatical": "sina li wile e kili."
+  },
+  {
+    "item_id": "li_mi_sina_059",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina moku e telo.",
+    "ungrammatical": "sina li moku e telo."
+  },
+  {
+    "item_id": "li_mi_sina_060",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina lukin e telo.",
+    "ungrammatical": "sina li lukin e telo."
+  },
+  {
+    "item_id": "li_mi_sina_061",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pali e telo.",
+    "ungrammatical": "sina li pali e telo."
+  },
+  {
+    "item_id": "li_mi_sina_062",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pana e telo.",
+    "ungrammatical": "sina li pana e telo."
+  },
+  {
+    "item_id": "li_mi_sina_063",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina wile e telo.",
+    "ungrammatical": "sina li wile e telo."
+  },
+  {
+    "item_id": "li_mi_sina_064",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina moku e pan.",
+    "ungrammatical": "sina li moku e pan."
+  },
+  {
+    "item_id": "li_mi_sina_065",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina lukin e pan.",
+    "ungrammatical": "sina li lukin e pan."
+  },
+  {
+    "item_id": "li_mi_sina_066",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pali e pan.",
+    "ungrammatical": "sina li pali e pan."
+  },
+  {
+    "item_id": "li_mi_sina_067",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pana e pan.",
+    "ungrammatical": "sina li pana e pan."
+  },
+  {
+    "item_id": "li_mi_sina_068",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina wile e pan.",
+    "ungrammatical": "sina li wile e pan."
+  },
+  {
+    "item_id": "li_mi_sina_069",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina moku e lipu.",
+    "ungrammatical": "sina li moku e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_070",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina lukin e lipu.",
+    "ungrammatical": "sina li lukin e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_071",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pali e lipu.",
+    "ungrammatical": "sina li pali e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_072",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pana e lipu.",
+    "ungrammatical": "sina li pana e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_073",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina wile e lipu.",
+    "ungrammatical": "sina li wile e lipu."
+  },
+  {
+    "item_id": "li_mi_sina_074",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina moku e mani.",
+    "ungrammatical": "sina li moku e mani."
+  },
+  {
+    "item_id": "li_mi_sina_075",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina lukin e mani.",
+    "ungrammatical": "sina li lukin e mani."
+  },
+  {
+    "item_id": "li_mi_sina_076",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pali e mani.",
+    "ungrammatical": "sina li pali e mani."
+  },
+  {
+    "item_id": "li_mi_sina_077",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina pana e mani.",
+    "ungrammatical": "sina li pana e mani."
+  },
+  {
+    "item_id": "li_mi_sina_078",
+    "rule_id": "particle_li",
+    "sub_rule": "pronoun_no_li",
+    "category": "particle_li",
+    "description": "Standalone mi/sina rejects particle li in transitive sentence",
+    "grammatical": "sina wile e mani.",
+    "ungrammatical": "sina li wile e mani."
+  },
+  {
+    "item_id": "li_3rd_omit_001",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li moku.",
+    "ungrammatical": "jan moku."
+  },
+  {
+    "item_id": "li_3rd_omit_002",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li lape.",
+    "ungrammatical": "jan lape."
+  },
+  {
+    "item_id": "li_3rd_omit_003",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li tawa.",
+    "ungrammatical": "jan tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_004",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li lukin.",
+    "ungrammatical": "jan lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_005",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li pali.",
+    "ungrammatical": "jan pali."
+  },
+  {
+    "item_id": "li_3rd_omit_006",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li toki.",
+    "ungrammatical": "jan toki."
+  },
+  {
+    "item_id": "li_3rd_omit_007",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li kalama.",
+    "ungrammatical": "jan kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_008",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "jan li awen.",
+    "ungrammatical": "jan awen."
+  },
+  {
+    "item_id": "li_3rd_omit_009",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li moku.",
+    "ungrammatical": "soweli moku."
+  },
+  {
+    "item_id": "li_3rd_omit_010",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li lape.",
+    "ungrammatical": "soweli lape."
+  },
+  {
+    "item_id": "li_3rd_omit_011",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li tawa.",
+    "ungrammatical": "soweli tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_012",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li lukin.",
+    "ungrammatical": "soweli lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_013",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li pali.",
+    "ungrammatical": "soweli pali."
+  },
+  {
+    "item_id": "li_3rd_omit_014",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li toki.",
+    "ungrammatical": "soweli toki."
+  },
+  {
+    "item_id": "li_3rd_omit_015",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li kalama.",
+    "ungrammatical": "soweli kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_016",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "soweli li awen.",
+    "ungrammatical": "soweli awen."
+  },
+  {
+    "item_id": "li_3rd_omit_017",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li moku.",
+    "ungrammatical": "waso moku."
+  },
+  {
+    "item_id": "li_3rd_omit_018",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li lape.",
+    "ungrammatical": "waso lape."
+  },
+  {
+    "item_id": "li_3rd_omit_019",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li tawa.",
+    "ungrammatical": "waso tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_020",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li lukin.",
+    "ungrammatical": "waso lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_021",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li pali.",
+    "ungrammatical": "waso pali."
+  },
+  {
+    "item_id": "li_3rd_omit_022",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li toki.",
+    "ungrammatical": "waso toki."
+  },
+  {
+    "item_id": "li_3rd_omit_023",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li kalama.",
+    "ungrammatical": "waso kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_024",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "waso li awen.",
+    "ungrammatical": "waso awen."
+  },
+  {
+    "item_id": "li_3rd_omit_025",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li moku.",
+    "ungrammatical": "kasi moku."
+  },
+  {
+    "item_id": "li_3rd_omit_026",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li lape.",
+    "ungrammatical": "kasi lape."
+  },
+  {
+    "item_id": "li_3rd_omit_027",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li tawa.",
+    "ungrammatical": "kasi tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_028",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li lukin.",
+    "ungrammatical": "kasi lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_029",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li pali.",
+    "ungrammatical": "kasi pali."
+  },
+  {
+    "item_id": "li_3rd_omit_030",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li toki.",
+    "ungrammatical": "kasi toki."
+  },
+  {
+    "item_id": "li_3rd_omit_031",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li kalama.",
+    "ungrammatical": "kasi kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_032",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kasi li awen.",
+    "ungrammatical": "kasi awen."
+  },
+  {
+    "item_id": "li_3rd_omit_033",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li moku.",
+    "ungrammatical": "kili moku."
+  },
+  {
+    "item_id": "li_3rd_omit_034",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li lape.",
+    "ungrammatical": "kili lape."
+  },
+  {
+    "item_id": "li_3rd_omit_035",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li tawa.",
+    "ungrammatical": "kili tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_036",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li lukin.",
+    "ungrammatical": "kili lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_037",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li pali.",
+    "ungrammatical": "kili pali."
+  },
+  {
+    "item_id": "li_3rd_omit_038",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li toki.",
+    "ungrammatical": "kili toki."
+  },
+  {
+    "item_id": "li_3rd_omit_039",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li kalama.",
+    "ungrammatical": "kili kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_040",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kili li awen.",
+    "ungrammatical": "kili awen."
+  },
+  {
+    "item_id": "li_3rd_omit_041",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li moku.",
+    "ungrammatical": "ona moku."
+  },
+  {
+    "item_id": "li_3rd_omit_042",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li lape.",
+    "ungrammatical": "ona lape."
+  },
+  {
+    "item_id": "li_3rd_omit_043",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li tawa.",
+    "ungrammatical": "ona tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_044",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li lukin.",
+    "ungrammatical": "ona lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_045",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li pali.",
+    "ungrammatical": "ona pali."
+  },
+  {
+    "item_id": "li_3rd_omit_046",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li toki.",
+    "ungrammatical": "ona toki."
+  },
+  {
+    "item_id": "li_3rd_omit_047",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li kalama.",
+    "ungrammatical": "ona kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_048",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ona li awen.",
+    "ungrammatical": "ona awen."
+  },
+  {
+    "item_id": "li_3rd_omit_049",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li moku.",
+    "ungrammatical": "kulupu moku."
+  },
+  {
+    "item_id": "li_3rd_omit_050",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li lape.",
+    "ungrammatical": "kulupu lape."
+  },
+  {
+    "item_id": "li_3rd_omit_051",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li tawa.",
+    "ungrammatical": "kulupu tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_052",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li lukin.",
+    "ungrammatical": "kulupu lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_053",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li pali.",
+    "ungrammatical": "kulupu pali."
+  },
+  {
+    "item_id": "li_3rd_omit_054",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li toki.",
+    "ungrammatical": "kulupu toki."
+  },
+  {
+    "item_id": "li_3rd_omit_055",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li kalama.",
+    "ungrammatical": "kulupu kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_056",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kulupu li awen.",
+    "ungrammatical": "kulupu awen."
+  },
+  {
+    "item_id": "li_3rd_omit_057",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li moku.",
+    "ungrammatical": "ilo moku."
+  },
+  {
+    "item_id": "li_3rd_omit_058",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li lape.",
+    "ungrammatical": "ilo lape."
+  },
+  {
+    "item_id": "li_3rd_omit_059",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li tawa.",
+    "ungrammatical": "ilo tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_060",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li lukin.",
+    "ungrammatical": "ilo lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_061",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li pali.",
+    "ungrammatical": "ilo pali."
+  },
+  {
+    "item_id": "li_3rd_omit_062",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li toki.",
+    "ungrammatical": "ilo toki."
+  },
+  {
+    "item_id": "li_3rd_omit_063",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li kalama.",
+    "ungrammatical": "ilo kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_064",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ilo li awen.",
+    "ungrammatical": "ilo awen."
+  },
+  {
+    "item_id": "li_3rd_omit_065",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li moku.",
+    "ungrammatical": "akesi moku."
+  },
+  {
+    "item_id": "li_3rd_omit_066",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li lape.",
+    "ungrammatical": "akesi lape."
+  },
+  {
+    "item_id": "li_3rd_omit_067",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li tawa.",
+    "ungrammatical": "akesi tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_068",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li lukin.",
+    "ungrammatical": "akesi lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_069",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li pali.",
+    "ungrammatical": "akesi pali."
+  },
+  {
+    "item_id": "li_3rd_omit_070",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li toki.",
+    "ungrammatical": "akesi toki."
+  },
+  {
+    "item_id": "li_3rd_omit_071",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li kalama.",
+    "ungrammatical": "akesi kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_072",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "akesi li awen.",
+    "ungrammatical": "akesi awen."
+  },
+  {
+    "item_id": "li_3rd_omit_073",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li moku.",
+    "ungrammatical": "kala moku."
+  },
+  {
+    "item_id": "li_3rd_omit_074",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li lape.",
+    "ungrammatical": "kala lape."
+  },
+  {
+    "item_id": "li_3rd_omit_075",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li tawa.",
+    "ungrammatical": "kala tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_076",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li lukin.",
+    "ungrammatical": "kala lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_077",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li pali.",
+    "ungrammatical": "kala pali."
+  },
+  {
+    "item_id": "li_3rd_omit_078",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li toki.",
+    "ungrammatical": "kala toki."
+  },
+  {
+    "item_id": "li_3rd_omit_079",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li kalama.",
+    "ungrammatical": "kala kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_080",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "kala li awen.",
+    "ungrammatical": "kala awen."
+  },
+  {
+    "item_id": "li_3rd_omit_081",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li moku.",
+    "ungrammatical": "pipi moku."
+  },
+  {
+    "item_id": "li_3rd_omit_082",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li lape.",
+    "ungrammatical": "pipi lape."
+  },
+  {
+    "item_id": "li_3rd_omit_083",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li tawa.",
+    "ungrammatical": "pipi tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_084",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li lukin.",
+    "ungrammatical": "pipi lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_085",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li pali.",
+    "ungrammatical": "pipi pali."
+  },
+  {
+    "item_id": "li_3rd_omit_086",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li toki.",
+    "ungrammatical": "pipi toki."
+  },
+  {
+    "item_id": "li_3rd_omit_087",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li kalama.",
+    "ungrammatical": "pipi kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_088",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "pipi li awen.",
+    "ungrammatical": "pipi awen."
+  },
+  {
+    "item_id": "li_3rd_omit_089",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li moku.",
+    "ungrammatical": "tomo moku."
+  },
+  {
+    "item_id": "li_3rd_omit_090",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li lape.",
+    "ungrammatical": "tomo lape."
+  },
+  {
+    "item_id": "li_3rd_omit_091",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li tawa.",
+    "ungrammatical": "tomo tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_092",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li lukin.",
+    "ungrammatical": "tomo lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_093",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li pali.",
+    "ungrammatical": "tomo pali."
+  },
+  {
+    "item_id": "li_3rd_omit_094",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li toki.",
+    "ungrammatical": "tomo toki."
+  },
+  {
+    "item_id": "li_3rd_omit_095",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li kalama.",
+    "ungrammatical": "tomo kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_096",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "tomo li awen.",
+    "ungrammatical": "tomo awen."
+  },
+  {
+    "item_id": "li_3rd_omit_097",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li moku.",
+    "ungrammatical": "mun moku."
+  },
+  {
+    "item_id": "li_3rd_omit_098",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li lape.",
+    "ungrammatical": "mun lape."
+  },
+  {
+    "item_id": "li_3rd_omit_099",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li tawa.",
+    "ungrammatical": "mun tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_100",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li lukin.",
+    "ungrammatical": "mun lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_101",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li pali.",
+    "ungrammatical": "mun pali."
+  },
+  {
+    "item_id": "li_3rd_omit_102",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li toki.",
+    "ungrammatical": "mun toki."
+  },
+  {
+    "item_id": "li_3rd_omit_103",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li kalama.",
+    "ungrammatical": "mun kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_104",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "mun li awen.",
+    "ungrammatical": "mun awen."
+  },
+  {
+    "item_id": "li_3rd_omit_105",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li moku.",
+    "ungrammatical": "suno moku."
+  },
+  {
+    "item_id": "li_3rd_omit_106",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li lape.",
+    "ungrammatical": "suno lape."
+  },
+  {
+    "item_id": "li_3rd_omit_107",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li tawa.",
+    "ungrammatical": "suno tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_108",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li lukin.",
+    "ungrammatical": "suno lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_109",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li pali.",
+    "ungrammatical": "suno pali."
+  },
+  {
+    "item_id": "li_3rd_omit_110",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li toki.",
+    "ungrammatical": "suno toki."
+  },
+  {
+    "item_id": "li_3rd_omit_111",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li kalama.",
+    "ungrammatical": "suno kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_112",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "suno li awen.",
+    "ungrammatical": "suno awen."
+  },
+  {
+    "item_id": "li_3rd_omit_113",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li moku.",
+    "ungrammatical": "ma moku."
+  },
+  {
+    "item_id": "li_3rd_omit_114",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li lape.",
+    "ungrammatical": "ma lape."
+  },
+  {
+    "item_id": "li_3rd_omit_115",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li tawa.",
+    "ungrammatical": "ma tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_116",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li lukin.",
+    "ungrammatical": "ma lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_117",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li pali.",
+    "ungrammatical": "ma pali."
+  },
+  {
+    "item_id": "li_3rd_omit_118",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li toki.",
+    "ungrammatical": "ma toki."
+  },
+  {
+    "item_id": "li_3rd_omit_119",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li kalama.",
+    "ungrammatical": "ma kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_120",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "ma li awen.",
+    "ungrammatical": "ma awen."
+  },
+  {
+    "item_id": "li_3rd_omit_121",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li moku.",
+    "ungrammatical": "telo moku."
+  },
+  {
+    "item_id": "li_3rd_omit_122",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li lape.",
+    "ungrammatical": "telo lape."
+  },
+  {
+    "item_id": "li_3rd_omit_123",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li tawa.",
+    "ungrammatical": "telo tawa."
+  },
+  {
+    "item_id": "li_3rd_omit_124",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li lukin.",
+    "ungrammatical": "telo lukin."
+  },
+  {
+    "item_id": "li_3rd_omit_125",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li pali.",
+    "ungrammatical": "telo pali."
+  },
+  {
+    "item_id": "li_3rd_omit_126",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li toki.",
+    "ungrammatical": "telo toki."
+  },
+  {
+    "item_id": "li_3rd_omit_127",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li kalama.",
+    "ungrammatical": "telo kalama."
+  },
+  {
+    "item_id": "li_3rd_omit_128",
+    "rule_id": "particle_li",
+    "sub_rule": "3rd_person_requires_li",
+    "category": "particle_li",
+    "description": "3rd person and nominal subjects require particle li",
+    "grammatical": "telo li awen.",
+    "ungrammatical": "telo awen."
+  },
+  {
+    "item_id": "li_spurious_e_001",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "jan li moku.",
+    "ungrammatical": "jan e moku."
+  },
+  {
+    "item_id": "li_spurious_e_002",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "jan li lape.",
+    "ungrammatical": "jan e lape."
+  },
+  {
+    "item_id": "li_spurious_e_003",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "jan li tawa.",
+    "ungrammatical": "jan e tawa."
+  },
+  {
+    "item_id": "li_spurious_e_004",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "jan li lukin.",
+    "ungrammatical": "jan e lukin."
+  },
+  {
+    "item_id": "li_spurious_e_005",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "jan li pali.",
+    "ungrammatical": "jan e pali."
+  },
+  {
+    "item_id": "li_spurious_e_006",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "soweli li moku.",
+    "ungrammatical": "soweli e moku."
+  },
+  {
+    "item_id": "li_spurious_e_007",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "soweli li lape.",
+    "ungrammatical": "soweli e lape."
+  },
+  {
+    "item_id": "li_spurious_e_008",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "soweli li tawa.",
+    "ungrammatical": "soweli e tawa."
+  },
+  {
+    "item_id": "li_spurious_e_009",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "soweli li lukin.",
+    "ungrammatical": "soweli e lukin."
+  },
+  {
+    "item_id": "li_spurious_e_010",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "soweli li pali.",
+    "ungrammatical": "soweli e pali."
+  },
+  {
+    "item_id": "li_spurious_e_011",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "waso li moku.",
+    "ungrammatical": "waso e moku."
+  },
+  {
+    "item_id": "li_spurious_e_012",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "waso li lape.",
+    "ungrammatical": "waso e lape."
+  },
+  {
+    "item_id": "li_spurious_e_013",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "waso li tawa.",
+    "ungrammatical": "waso e tawa."
+  },
+  {
+    "item_id": "li_spurious_e_014",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "waso li lukin.",
+    "ungrammatical": "waso e lukin."
+  },
+  {
+    "item_id": "li_spurious_e_015",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "waso li pali.",
+    "ungrammatical": "waso e pali."
+  },
+  {
+    "item_id": "li_spurious_e_016",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "ona li moku.",
+    "ungrammatical": "ona e moku."
+  },
+  {
+    "item_id": "li_spurious_e_017",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "ona li lape.",
+    "ungrammatical": "ona e lape."
+  },
+  {
+    "item_id": "li_spurious_e_018",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "ona li tawa.",
+    "ungrammatical": "ona e tawa."
+  },
+  {
+    "item_id": "li_spurious_e_019",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "ona li lukin.",
+    "ungrammatical": "ona e lukin."
+  },
+  {
+    "item_id": "li_spurious_e_020",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "ona li pali.",
+    "ungrammatical": "ona e pali."
+  },
+  {
+    "item_id": "li_spurious_e_021",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "kulupu li moku.",
+    "ungrammatical": "kulupu e moku."
+  },
+  {
+    "item_id": "li_spurious_e_022",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "kulupu li lape.",
+    "ungrammatical": "kulupu e lape."
+  },
+  {
+    "item_id": "li_spurious_e_023",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "kulupu li tawa.",
+    "ungrammatical": "kulupu e tawa."
+  },
+  {
+    "item_id": "li_spurious_e_024",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "kulupu li lukin.",
+    "ungrammatical": "kulupu e lukin."
+  },
+  {
+    "item_id": "li_spurious_e_025",
+    "rule_id": "particle_li",
+    "sub_rule": "spurious_e_for_li",
+    "category": "particle_li",
+    "description": "Subject marker must be li, not particle e",
+    "grammatical": "kulupu li pali.",
+    "ungrammatical": "kulupu e pali."
+  },
+  {
+    "item_id": "e_object_001",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e kili.",
+    "ungrammatical": "jan li moku kili."
+  },
+  {
+    "item_id": "e_object_002",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e telo.",
+    "ungrammatical": "jan li moku telo."
+  },
+  {
+    "item_id": "e_object_003",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e pan.",
+    "ungrammatical": "jan li moku pan."
+  },
+  {
+    "item_id": "e_object_004",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e lipu.",
+    "ungrammatical": "jan li moku lipu."
+  },
+  {
+    "item_id": "e_object_005",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e mani.",
+    "ungrammatical": "jan li moku mani."
+  },
+  {
+    "item_id": "e_object_006",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e waso.",
+    "ungrammatical": "jan li moku waso."
+  },
+  {
+    "item_id": "e_object_007",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e soweli.",
+    "ungrammatical": "jan li moku soweli."
+  },
+  {
+    "item_id": "e_object_008",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li moku e tomo.",
+    "ungrammatical": "jan li moku tomo."
+  },
+  {
+    "item_id": "e_object_009",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e kili.",
+    "ungrammatical": "jan li lukin kili."
+  },
+  {
+    "item_id": "e_object_010",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e telo.",
+    "ungrammatical": "jan li lukin telo."
+  },
+  {
+    "item_id": "e_object_011",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e pan.",
+    "ungrammatical": "jan li lukin pan."
+  },
+  {
+    "item_id": "e_object_012",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e lipu.",
+    "ungrammatical": "jan li lukin lipu."
+  },
+  {
+    "item_id": "e_object_013",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e mani.",
+    "ungrammatical": "jan li lukin mani."
+  },
+  {
+    "item_id": "e_object_014",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e waso.",
+    "ungrammatical": "jan li lukin waso."
+  },
+  {
+    "item_id": "e_object_015",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e soweli.",
+    "ungrammatical": "jan li lukin soweli."
+  },
+  {
+    "item_id": "e_object_016",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li lukin e tomo.",
+    "ungrammatical": "jan li lukin tomo."
+  },
+  {
+    "item_id": "e_object_017",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e kili.",
+    "ungrammatical": "jan li kute kili."
+  },
+  {
+    "item_id": "e_object_018",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e telo.",
+    "ungrammatical": "jan li kute telo."
+  },
+  {
+    "item_id": "e_object_019",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e pan.",
+    "ungrammatical": "jan li kute pan."
+  },
+  {
+    "item_id": "e_object_020",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e lipu.",
+    "ungrammatical": "jan li kute lipu."
+  },
+  {
+    "item_id": "e_object_021",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e mani.",
+    "ungrammatical": "jan li kute mani."
+  },
+  {
+    "item_id": "e_object_022",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e waso.",
+    "ungrammatical": "jan li kute waso."
+  },
+  {
+    "item_id": "e_object_023",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e soweli.",
+    "ungrammatical": "jan li kute soweli."
+  },
+  {
+    "item_id": "e_object_024",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li kute e tomo.",
+    "ungrammatical": "jan li kute tomo."
+  },
+  {
+    "item_id": "e_object_025",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e kili.",
+    "ungrammatical": "jan li pali kili."
+  },
+  {
+    "item_id": "e_object_026",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e telo.",
+    "ungrammatical": "jan li pali telo."
+  },
+  {
+    "item_id": "e_object_027",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e pan.",
+    "ungrammatical": "jan li pali pan."
+  },
+  {
+    "item_id": "e_object_028",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e lipu.",
+    "ungrammatical": "jan li pali lipu."
+  },
+  {
+    "item_id": "e_object_029",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e mani.",
+    "ungrammatical": "jan li pali mani."
+  },
+  {
+    "item_id": "e_object_030",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e waso.",
+    "ungrammatical": "jan li pali waso."
+  },
+  {
+    "item_id": "e_object_031",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e soweli.",
+    "ungrammatical": "jan li pali soweli."
+  },
+  {
+    "item_id": "e_object_032",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pali e tomo.",
+    "ungrammatical": "jan li pali tomo."
+  },
+  {
+    "item_id": "e_object_033",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e kili.",
+    "ungrammatical": "jan li pana kili."
+  },
+  {
+    "item_id": "e_object_034",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e telo.",
+    "ungrammatical": "jan li pana telo."
+  },
+  {
+    "item_id": "e_object_035",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e pan.",
+    "ungrammatical": "jan li pana pan."
+  },
+  {
+    "item_id": "e_object_036",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e lipu.",
+    "ungrammatical": "jan li pana lipu."
+  },
+  {
+    "item_id": "e_object_037",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e mani.",
+    "ungrammatical": "jan li pana mani."
+  },
+  {
+    "item_id": "e_object_038",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e waso.",
+    "ungrammatical": "jan li pana waso."
+  },
+  {
+    "item_id": "e_object_039",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e soweli.",
+    "ungrammatical": "jan li pana soweli."
+  },
+  {
+    "item_id": "e_object_040",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li pana e tomo.",
+    "ungrammatical": "jan li pana tomo."
+  },
+  {
+    "item_id": "e_object_041",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e kili.",
+    "ungrammatical": "jan li alasa kili."
+  },
+  {
+    "item_id": "e_object_042",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e telo.",
+    "ungrammatical": "jan li alasa telo."
+  },
+  {
+    "item_id": "e_object_043",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e pan.",
+    "ungrammatical": "jan li alasa pan."
+  },
+  {
+    "item_id": "e_object_044",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e lipu.",
+    "ungrammatical": "jan li alasa lipu."
+  },
+  {
+    "item_id": "e_object_045",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e mani.",
+    "ungrammatical": "jan li alasa mani."
+  },
+  {
+    "item_id": "e_object_046",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e waso.",
+    "ungrammatical": "jan li alasa waso."
+  },
+  {
+    "item_id": "e_object_047",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e soweli.",
+    "ungrammatical": "jan li alasa soweli."
+  },
+  {
+    "item_id": "e_object_048",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li alasa e tomo.",
+    "ungrammatical": "jan li alasa tomo."
+  },
+  {
+    "item_id": "e_object_049",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e kili.",
+    "ungrammatical": "jan li wile kili."
+  },
+  {
+    "item_id": "e_object_050",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e telo.",
+    "ungrammatical": "jan li wile telo."
+  },
+  {
+    "item_id": "e_object_051",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e pan.",
+    "ungrammatical": "jan li wile pan."
+  },
+  {
+    "item_id": "e_object_052",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e lipu.",
+    "ungrammatical": "jan li wile lipu."
+  },
+  {
+    "item_id": "e_object_053",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e mani.",
+    "ungrammatical": "jan li wile mani."
+  },
+  {
+    "item_id": "e_object_054",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e waso.",
+    "ungrammatical": "jan li wile waso."
+  },
+  {
+    "item_id": "e_object_055",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e soweli.",
+    "ungrammatical": "jan li wile soweli."
+  },
+  {
+    "item_id": "e_object_056",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li wile e tomo.",
+    "ungrammatical": "jan li wile tomo."
+  },
+  {
+    "item_id": "e_object_057",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e kili.",
+    "ungrammatical": "jan li jo kili."
+  },
+  {
+    "item_id": "e_object_058",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e telo.",
+    "ungrammatical": "jan li jo telo."
+  },
+  {
+    "item_id": "e_object_059",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e pan.",
+    "ungrammatical": "jan li jo pan."
+  },
+  {
+    "item_id": "e_object_060",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e lipu.",
+    "ungrammatical": "jan li jo lipu."
+  },
+  {
+    "item_id": "e_object_061",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e mani.",
+    "ungrammatical": "jan li jo mani."
+  },
+  {
+    "item_id": "e_object_062",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e waso.",
+    "ungrammatical": "jan li jo waso."
+  },
+  {
+    "item_id": "e_object_063",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e soweli.",
+    "ungrammatical": "jan li jo soweli."
+  },
+  {
+    "item_id": "e_object_064",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "jan li jo e tomo.",
+    "ungrammatical": "jan li jo tomo."
+  },
+  {
+    "item_id": "e_object_065",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e kili.",
+    "ungrammatical": "soweli li moku kili."
+  },
+  {
+    "item_id": "e_object_066",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e telo.",
+    "ungrammatical": "soweli li moku telo."
+  },
+  {
+    "item_id": "e_object_067",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e pan.",
+    "ungrammatical": "soweli li moku pan."
+  },
+  {
+    "item_id": "e_object_068",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e lipu.",
+    "ungrammatical": "soweli li moku lipu."
+  },
+  {
+    "item_id": "e_object_069",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e mani.",
+    "ungrammatical": "soweli li moku mani."
+  },
+  {
+    "item_id": "e_object_070",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e waso.",
+    "ungrammatical": "soweli li moku waso."
+  },
+  {
+    "item_id": "e_object_071",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e soweli.",
+    "ungrammatical": "soweli li moku soweli."
+  },
+  {
+    "item_id": "e_object_072",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li moku e tomo.",
+    "ungrammatical": "soweli li moku tomo."
+  },
+  {
+    "item_id": "e_object_073",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e kili.",
+    "ungrammatical": "soweli li lukin kili."
+  },
+  {
+    "item_id": "e_object_074",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e telo.",
+    "ungrammatical": "soweli li lukin telo."
+  },
+  {
+    "item_id": "e_object_075",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e pan.",
+    "ungrammatical": "soweli li lukin pan."
+  },
+  {
+    "item_id": "e_object_076",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e lipu.",
+    "ungrammatical": "soweli li lukin lipu."
+  },
+  {
+    "item_id": "e_object_077",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e mani.",
+    "ungrammatical": "soweli li lukin mani."
+  },
+  {
+    "item_id": "e_object_078",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e waso.",
+    "ungrammatical": "soweli li lukin waso."
+  },
+  {
+    "item_id": "e_object_079",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e soweli.",
+    "ungrammatical": "soweli li lukin soweli."
+  },
+  {
+    "item_id": "e_object_080",
+    "rule_id": "direct_object_e",
+    "sub_rule": "mandatory_e_marker",
+    "category": "direct_object_e",
+    "description": "Direct object requires particle e marker",
+    "grammatical": "soweli li lukin e tomo.",
+    "ungrammatical": "soweli li lukin tomo."
+  },
+  {
+    "item_id": "e_spurious_001",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "jan li tawa lon tomo.",
+    "ungrammatical": "jan li tawa e lon tomo."
+  },
+  {
+    "item_id": "e_spurious_002",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "jan li tawa tawa ma.",
+    "ungrammatical": "jan li tawa e tawa ma."
+  },
+  {
+    "item_id": "e_spurious_003",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "jan li tawa kepeken ilo.",
+    "ungrammatical": "jan li tawa e kepeken ilo."
+  },
+  {
+    "item_id": "e_spurious_004",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "jan li tawa tan tomo.",
+    "ungrammatical": "jan li tawa e tan tomo."
+  },
+  {
+    "item_id": "e_spurious_005",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "soweli li tawa lon tomo.",
+    "ungrammatical": "soweli li tawa e lon tomo."
+  },
+  {
+    "item_id": "e_spurious_006",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "soweli li tawa tawa ma.",
+    "ungrammatical": "soweli li tawa e tawa ma."
+  },
+  {
+    "item_id": "e_spurious_007",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "soweli li tawa kepeken ilo.",
+    "ungrammatical": "soweli li tawa e kepeken ilo."
+  },
+  {
+    "item_id": "e_spurious_008",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "soweli li tawa tan tomo.",
+    "ungrammatical": "soweli li tawa e tan tomo."
+  },
+  {
+    "item_id": "e_spurious_009",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "waso li tawa lon tomo.",
+    "ungrammatical": "waso li tawa e lon tomo."
+  },
+  {
+    "item_id": "e_spurious_010",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "waso li tawa tawa ma.",
+    "ungrammatical": "waso li tawa e tawa ma."
+  },
+  {
+    "item_id": "e_spurious_011",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "waso li tawa kepeken ilo.",
+    "ungrammatical": "waso li tawa e kepeken ilo."
+  },
+  {
+    "item_id": "e_spurious_012",
+    "rule_id": "direct_object_e",
+    "sub_rule": "no_e_before_preposition",
+    "category": "direct_object_e",
+    "description": "Prepositional complement must not take object particle e",
+    "grammatical": "waso li tawa tan tomo.",
+    "ungrammatical": "waso li tawa e tan tomo."
+  },
+  {
+    "item_id": "order_subj_001",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "tomo suli li lon.",
+    "ungrammatical": "suli tomo li lon."
+  },
+  {
+    "item_id": "order_obj_002",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e tomo suli.",
+    "ungrammatical": "mi lukin e suli tomo."
+  },
+  {
+    "item_id": "order_trans_003",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e tomo suli.",
+    "ungrammatical": "jan li moku e suli tomo."
+  },
+  {
+    "item_id": "order_subj_004",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "jan pona li lon.",
+    "ungrammatical": "pona jan li lon."
+  },
+  {
+    "item_id": "order_obj_005",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e jan pona.",
+    "ungrammatical": "mi lukin e pona jan."
+  },
+  {
+    "item_id": "order_trans_006",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e jan pona.",
+    "ungrammatical": "jan li moku e pona jan."
+  },
+  {
+    "item_id": "order_subj_007",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "telo nasa li lon.",
+    "ungrammatical": "nasa telo li lon."
+  },
+  {
+    "item_id": "order_obj_008",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e telo nasa.",
+    "ungrammatical": "mi lukin e nasa telo."
+  },
+  {
+    "item_id": "order_trans_009",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e telo nasa.",
+    "ungrammatical": "jan li moku e nasa telo."
+  },
+  {
+    "item_id": "order_subj_010",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "kasi laso li lon.",
+    "ungrammatical": "laso kasi li lon."
+  },
+  {
+    "item_id": "order_obj_011",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e kasi laso.",
+    "ungrammatical": "mi lukin e laso kasi."
+  },
+  {
+    "item_id": "order_trans_012",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e kasi laso.",
+    "ungrammatical": "jan li moku e laso kasi."
+  },
+  {
+    "item_id": "order_subj_013",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "soweli wawa li lon.",
+    "ungrammatical": "wawa soweli li lon."
+  },
+  {
+    "item_id": "order_obj_014",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e soweli wawa.",
+    "ungrammatical": "mi lukin e wawa soweli."
+  },
+  {
+    "item_id": "order_trans_015",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e soweli wawa.",
+    "ungrammatical": "jan li moku e wawa soweli."
+  },
+  {
+    "item_id": "order_subj_016",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "kili suwi li lon.",
+    "ungrammatical": "suwi kili li lon."
+  },
+  {
+    "item_id": "order_obj_017",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e kili suwi.",
+    "ungrammatical": "mi lukin e suwi kili."
+  },
+  {
+    "item_id": "order_trans_018",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e kili suwi.",
+    "ungrammatical": "jan li moku e suwi kili."
+  },
+  {
+    "item_id": "order_subj_019",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "waso lili li lon.",
+    "ungrammatical": "lili waso li lon."
+  },
+  {
+    "item_id": "order_obj_020",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e waso lili.",
+    "ungrammatical": "mi lukin e lili waso."
+  },
+  {
+    "item_id": "order_trans_021",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e waso lili.",
+    "ungrammatical": "jan li moku e lili waso."
+  },
+  {
+    "item_id": "order_subj_022",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "ilo sin li lon.",
+    "ungrammatical": "sin ilo li lon."
+  },
+  {
+    "item_id": "order_obj_023",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e ilo sin.",
+    "ungrammatical": "mi lukin e sin ilo."
+  },
+  {
+    "item_id": "order_trans_024",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e ilo sin.",
+    "ungrammatical": "jan li moku e sin ilo."
+  },
+  {
+    "item_id": "order_subj_025",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "ma tomo li lon.",
+    "ungrammatical": "tomo ma li lon."
+  },
+  {
+    "item_id": "order_obj_026",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e ma tomo.",
+    "ungrammatical": "mi lukin e tomo ma."
+  },
+  {
+    "item_id": "order_trans_027",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e ma tomo.",
+    "ungrammatical": "jan li moku e tomo ma."
+  },
+  {
+    "item_id": "order_subj_028",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "tenpo suno li lon.",
+    "ungrammatical": "suno tenpo li lon."
+  },
+  {
+    "item_id": "order_obj_029",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e tenpo suno.",
+    "ungrammatical": "mi lukin e suno tenpo."
+  },
+  {
+    "item_id": "order_trans_030",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e tenpo suno.",
+    "ungrammatical": "jan li moku e suno tenpo."
+  },
+  {
+    "item_id": "order_subj_031",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "kiwen pimeja li lon.",
+    "ungrammatical": "pimeja kiwen li lon."
+  },
+  {
+    "item_id": "order_obj_032",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e kiwen pimeja.",
+    "ungrammatical": "mi lukin e pimeja kiwen."
+  },
+  {
+    "item_id": "order_trans_033",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e kiwen pimeja.",
+    "ungrammatical": "jan li moku e pimeja kiwen."
+  },
+  {
+    "item_id": "order_subj_034",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "lipu lili li lon.",
+    "ungrammatical": "lili lipu li lon."
+  },
+  {
+    "item_id": "order_obj_035",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e lipu lili.",
+    "ungrammatical": "mi lukin e lili lipu."
+  },
+  {
+    "item_id": "order_trans_036",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e lipu lili.",
+    "ungrammatical": "jan li moku e lili lipu."
+  },
+  {
+    "item_id": "order_subj_037",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "jan lili li lon.",
+    "ungrammatical": "lili jan li lon."
+  },
+  {
+    "item_id": "order_obj_038",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e jan lili.",
+    "ungrammatical": "mi lukin e lili jan."
+  },
+  {
+    "item_id": "order_trans_039",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e jan lili.",
+    "ungrammatical": "jan li moku e lili jan."
+  },
+  {
+    "item_id": "order_subj_040",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "telo seli li lon.",
+    "ungrammatical": "seli telo li lon."
+  },
+  {
+    "item_id": "order_obj_041",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e telo seli.",
+    "ungrammatical": "mi lukin e seli telo."
+  },
+  {
+    "item_id": "order_trans_042",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e telo seli.",
+    "ungrammatical": "jan li moku e seli telo."
+  },
+  {
+    "item_id": "order_subj_043",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "kulupu suli li lon.",
+    "ungrammatical": "suli kulupu li lon."
+  },
+  {
+    "item_id": "order_obj_044",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e kulupu suli.",
+    "ungrammatical": "mi lukin e suli kulupu."
+  },
+  {
+    "item_id": "order_trans_045",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e kulupu suli.",
+    "ungrammatical": "jan li moku e suli kulupu."
+  },
+  {
+    "item_id": "order_subj_046",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_subject",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in subject",
+    "grammatical": "akesi wawa li lon.",
+    "ungrammatical": "wawa akesi li lon."
+  },
+  {
+    "item_id": "order_obj_047",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_object",
+    "category": "modifier_order",
+    "description": "Toki Pona modifiers must follow the head noun in object",
+    "grammatical": "mi lukin e akesi wawa.",
+    "ungrammatical": "mi lukin e wawa akesi."
+  },
+  {
+    "item_id": "order_trans_048",
+    "rule_id": "modifier_order",
+    "sub_rule": "head_initial_transitive",
+    "category": "modifier_order",
+    "description": "Modifiers must follow head noun in transitive clause",
+    "grammatical": "jan li moku e akesi wawa.",
+    "ungrammatical": "jan li moku e wawa akesi."
+  },
+  {
+    "item_id": "pi_single_001",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "tomo suli li pona.",
+    "ungrammatical": "tomo pi suli li pona."
+  },
+  {
+    "item_id": "pi_single_trans_002",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e tomo suli.",
+    "ungrammatical": "mi lukin e tomo pi suli."
+  },
+  {
+    "item_id": "pi_single_003",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "jan pona li pona.",
+    "ungrammatical": "jan pi pona li pona."
+  },
+  {
+    "item_id": "pi_single_trans_004",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e jan pona.",
+    "ungrammatical": "mi lukin e jan pi pona."
+  },
+  {
+    "item_id": "pi_single_005",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "kili suwi li pona.",
+    "ungrammatical": "kili pi suwi li pona."
+  },
+  {
+    "item_id": "pi_single_trans_006",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e kili suwi.",
+    "ungrammatical": "mi lukin e kili pi suwi."
+  },
+  {
+    "item_id": "pi_single_007",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "telo seli li pona.",
+    "ungrammatical": "telo pi seli li pona."
+  },
+  {
+    "item_id": "pi_single_trans_008",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e telo seli.",
+    "ungrammatical": "mi lukin e telo pi seli."
+  },
+  {
+    "item_id": "pi_single_009",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "ilo sin li pona.",
+    "ungrammatical": "ilo pi sin li pona."
+  },
+  {
+    "item_id": "pi_single_trans_010",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e ilo sin.",
+    "ungrammatical": "mi lukin e ilo pi sin."
+  },
+  {
+    "item_id": "pi_single_011",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "soweli wawa li pona.",
+    "ungrammatical": "soweli pi wawa li pona."
+  },
+  {
+    "item_id": "pi_single_trans_012",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e soweli wawa.",
+    "ungrammatical": "mi lukin e soweli pi wawa."
+  },
+  {
+    "item_id": "pi_single_013",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "waso lili li pona.",
+    "ungrammatical": "waso pi lili li pona."
+  },
+  {
+    "item_id": "pi_single_trans_014",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e waso lili.",
+    "ungrammatical": "mi lukin e waso pi lili."
+  },
+  {
+    "item_id": "pi_single_015",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "lipu lili li pona.",
+    "ungrammatical": "lipu pi lili li pona."
+  },
+  {
+    "item_id": "pi_single_trans_016",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e lipu lili.",
+    "ungrammatical": "mi lukin e lipu pi lili."
+  },
+  {
+    "item_id": "pi_single_017",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "kasi laso li pona.",
+    "ungrammatical": "kasi pi laso li pona."
+  },
+  {
+    "item_id": "pi_single_trans_018",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e kasi laso.",
+    "ungrammatical": "mi lukin e kasi pi laso."
+  },
+  {
+    "item_id": "pi_single_019",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "ma tomo li pona.",
+    "ungrammatical": "ma pi tomo li pona."
+  },
+  {
+    "item_id": "pi_single_trans_020",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e ma tomo.",
+    "ungrammatical": "mi lukin e ma pi tomo."
+  },
+  {
+    "item_id": "pi_single_021",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "kulupu lili li pona.",
+    "ungrammatical": "kulupu pi lili li pona."
+  },
+  {
+    "item_id": "pi_single_trans_022",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e kulupu lili.",
+    "ungrammatical": "mi lukin e kulupu pi lili."
+  },
+  {
+    "item_id": "pi_single_023",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden when only a single modifier follows",
+    "grammatical": "akesi suli li pona.",
+    "ungrammatical": "akesi pi suli li pona."
+  },
+  {
+    "item_id": "pi_single_trans_024",
+    "rule_id": "modifier_pi",
+    "sub_rule": "no_pi_with_single_modifier",
+    "category": "modifier_pi",
+    "description": "Particle pi is forbidden before single modifier in object",
+    "grammatical": "mi lukin e akesi suli.",
+    "ungrammatical": "mi lukin e akesi pi suli."
+  },
+  {
+    "item_id": "pi_compound_subj_025",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "tomo pi telo nasa li suli.",
+    "ungrammatical": "tomo telo pi nasa li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_026",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e tomo pi telo nasa.",
+    "ungrammatical": "mi lukin e tomo telo pi nasa."
+  },
+  {
+    "item_id": "pi_compound_chain_027",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "tomo pi telo nasa li pona.",
+    "ungrammatical": "tomo pi telo pi nasa li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_028",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "jan pi sona mute li suli.",
+    "ungrammatical": "jan sona pi mute li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_029",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e jan pi sona mute.",
+    "ungrammatical": "mi lukin e jan sona pi mute."
+  },
+  {
+    "item_id": "pi_compound_chain_030",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "jan pi sona mute li pona.",
+    "ungrammatical": "jan pi sona pi mute li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_031",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "kili pi suwi mute li suli.",
+    "ungrammatical": "kili suwi pi mute li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_032",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e kili pi suwi mute.",
+    "ungrammatical": "mi lukin e kili suwi pi mute."
+  },
+  {
+    "item_id": "pi_compound_chain_033",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "kili pi suwi mute li pona.",
+    "ungrammatical": "kili pi suwi pi mute li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_034",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "nasin pi toki pona li suli.",
+    "ungrammatical": "nasin toki pi pona li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_035",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e nasin pi toki pona.",
+    "ungrammatical": "mi lukin e nasin toki pi pona."
+  },
+  {
+    "item_id": "pi_compound_chain_036",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "nasin pi toki pona li pona.",
+    "ungrammatical": "nasin pi toki pi pona li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_037",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "ilo pi sitelen sin li suli.",
+    "ungrammatical": "ilo sitelen pi sin li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_038",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e ilo pi sitelen sin.",
+    "ungrammatical": "mi lukin e ilo sitelen pi sin."
+  },
+  {
+    "item_id": "pi_compound_chain_039",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "ilo pi sitelen sin li pona.",
+    "ungrammatical": "ilo pi sitelen pi sin li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_040",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "kulupu pi jan utala li suli.",
+    "ungrammatical": "kulupu jan pi utala li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_041",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e kulupu pi jan utala.",
+    "ungrammatical": "mi lukin e kulupu jan pi utala."
+  },
+  {
+    "item_id": "pi_compound_chain_042",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "kulupu pi jan utala li pona.",
+    "ungrammatical": "kulupu pi jan pi utala li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_043",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "telo pi kasi laso li suli.",
+    "ungrammatical": "telo kasi pi laso li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_044",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e telo pi kasi laso.",
+    "ungrammatical": "mi lukin e telo kasi pi laso."
+  },
+  {
+    "item_id": "pi_compound_chain_045",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "telo pi kasi laso li pona.",
+    "ungrammatical": "telo pi kasi pi laso li pona."
+  },
+  {
+    "item_id": "pi_compound_subj_046",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers; cannot precede a single final modifier",
+    "grammatical": "lipu pi sona suli li suli.",
+    "ungrammatical": "lipu sona pi suli li suli."
+  },
+  {
+    "item_id": "pi_compound_obj_047",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Particle pi must group 2+ modifiers in direct object position",
+    "grammatical": "mi lukin e lipu pi sona suli.",
+    "ungrammatical": "mi lukin e lipu sona pi suli."
+  },
+  {
+    "item_id": "pi_compound_chain_048",
+    "rule_id": "modifier_pi",
+    "sub_rule": "pi_requires_two_modifiers",
+    "category": "modifier_pi",
+    "description": "Chained pi before single modifiers is ungrammatical",
+    "grammatical": "lipu pi sona suli li pona.",
+    "ungrammatical": "lipu pi sona pi suli li pona."
+  },
+  {
+    "item_id": "la_context_001",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo suno ni la mi pali.",
+    "ungrammatical": "tenpo suno ni e mi pali."
+  },
+  {
+    "item_id": "la_context_002",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo suno ni la ona li kama.",
+    "ungrammatical": "tenpo suno ni e ona li kama."
+  },
+  {
+    "item_id": "la_context_003",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo suno ni la kasi li suli.",
+    "ungrammatical": "tenpo suno ni e kasi li suli."
+  },
+  {
+    "item_id": "la_context_004",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo suno ni la jan li lape.",
+    "ungrammatical": "tenpo suno ni e jan li lape."
+  },
+  {
+    "item_id": "la_context_005",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo suno ni la soweli li tawa.",
+    "ungrammatical": "tenpo suno ni e soweli li tawa."
+  },
+  {
+    "item_id": "la_context_006",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo pimeja la mi pali.",
+    "ungrammatical": "tenpo pimeja e mi pali."
+  },
+  {
+    "item_id": "la_context_007",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo pimeja la ona li kama.",
+    "ungrammatical": "tenpo pimeja e ona li kama."
+  },
+  {
+    "item_id": "la_context_008",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo pimeja la kasi li suli.",
+    "ungrammatical": "tenpo pimeja e kasi li suli."
+  },
+  {
+    "item_id": "la_context_009",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo pimeja la jan li lape.",
+    "ungrammatical": "tenpo pimeja e jan li lape."
+  },
+  {
+    "item_id": "la_context_010",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "tenpo pimeja la soweli li tawa.",
+    "ungrammatical": "tenpo pimeja e soweli li tawa."
+  },
+  {
+    "item_id": "la_context_011",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "sina wile la mi pali.",
+    "ungrammatical": "sina wile li mi pali."
+  },
+  {
+    "item_id": "la_context_012",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "sina wile la ona li kama.",
+    "ungrammatical": "sina wile li ona li kama."
+  },
+  {
+    "item_id": "la_context_013",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "sina wile la kasi li suli.",
+    "ungrammatical": "sina wile li kasi li suli."
+  },
+  {
+    "item_id": "la_context_014",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "sina wile la jan li lape.",
+    "ungrammatical": "sina wile li jan li lape."
+  },
+  {
+    "item_id": "la_context_015",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "sina wile la soweli li tawa.",
+    "ungrammatical": "sina wile li soweli li tawa."
+  },
+  {
+    "item_id": "la_context_016",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "mi lape la mi pali.",
+    "ungrammatical": "mi lape li mi pali."
+  },
+  {
+    "item_id": "la_context_017",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "mi lape la ona li kama.",
+    "ungrammatical": "mi lape li ona li kama."
+  },
+  {
+    "item_id": "la_context_018",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "mi lape la kasi li suli.",
+    "ungrammatical": "mi lape li kasi li suli."
+  },
+  {
+    "item_id": "la_context_019",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "mi lape la jan li lape.",
+    "ungrammatical": "mi lape li jan li lape."
+  },
+  {
+    "item_id": "la_context_020",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "mi lape la soweli li tawa.",
+    "ungrammatical": "mi lape li soweli li tawa."
+  },
+  {
+    "item_id": "la_context_021",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "telo li lon la mi pali.",
+    "ungrammatical": "telo li lon e mi pali."
+  },
+  {
+    "item_id": "la_context_022",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "telo li lon la ona li kama.",
+    "ungrammatical": "telo li lon e ona li kama."
+  },
+  {
+    "item_id": "la_context_023",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "telo li lon la kasi li suli.",
+    "ungrammatical": "telo li lon e kasi li suli."
+  },
+  {
+    "item_id": "la_context_024",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "telo li lon la jan li lape.",
+    "ungrammatical": "telo li lon e jan li lape."
+  },
+  {
+    "item_id": "la_context_025",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "telo li lon la soweli li tawa.",
+    "ungrammatical": "telo li lon e soweli li tawa."
+  },
+  {
+    "item_id": "la_context_026",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "ken la mi pali.",
+    "ungrammatical": "ken e mi pali."
+  },
+  {
+    "item_id": "la_context_027",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "ken la ona li kama.",
+    "ungrammatical": "ken e ona li kama."
+  },
+  {
+    "item_id": "la_context_028",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "ken la kasi li suli.",
+    "ungrammatical": "ken e kasi li suli."
+  },
+  {
+    "item_id": "la_context_029",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "ken la jan li lape.",
+    "ungrammatical": "ken e jan li lape."
+  },
+  {
+    "item_id": "la_context_030",
+    "rule_id": "context_la",
+    "sub_rule": "context_marker_la",
+    "category": "context_la",
+    "description": "Context or conditional phrase requires marker la",
+    "grammatical": "ken la soweli li tawa.",
+    "ungrammatical": "ken e soweli li tawa."
+  },
+  {
+    "item_id": "lex_valid_001",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "jan li moku e kili.",
+    "ungrammatical": "jan li moku e blorg."
+  },
+  {
+    "item_id": "lex_valid_002",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "ona li lape lon tomo.",
+    "ungrammatical": "ona li lape lon grok."
+  },
+  {
+    "item_id": "lex_valid_003",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "soweli li tawa noka.",
+    "ungrammatical": "soweli li tawa qwerty."
+  },
+  {
+    "item_id": "lex_valid_004",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "waso lili li kalama.",
+    "ungrammatical": "waso lili li splat."
+  },
+  {
+    "item_id": "lex_valid_005",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "mi lukin e suno.",
+    "ungrammatical": "mi lukin e zorp."
+  },
+  {
+    "item_id": "lex_valid_006",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "kasi li suli lon ma.",
+    "ungrammatical": "kasi li suli lon florp."
+  },
+  {
+    "item_id": "lex_valid_007",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "sina pana e mani tawa mi.",
+    "ungrammatical": "sina pana e snark tawa mi."
+  },
+  {
+    "item_id": "lex_valid_008",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "ilo ni li pakala.",
+    "ungrammatical": "ilo ni li glub."
+  },
+  {
+    "item_id": "lex_valid_009",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "kulupu li toki e toki.",
+    "ungrammatical": "kulupu li toki e plink."
+  },
+  {
+    "item_id": "lex_valid_010",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "telo li kama lon lupa.",
+    "ungrammatical": "telo li vroom lon lupa."
+  },
+  {
+    "item_id": "lex_valid_011",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "akesi li moku e pipi.",
+    "ungrammatical": "akesi li moku e krunk."
+  },
+  {
+    "item_id": "lex_valid_012",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "jan pona mi li sona.",
+    "ungrammatical": "jan pona mi li blip."
+  },
+  {
+    "item_id": "lex_valid_013",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "ona mute li olin.",
+    "ungrammatical": "ona mute li drap."
+  },
+  {
+    "item_id": "lex_valid_014",
+    "rule_id": "lexical_validity",
+    "sub_rule": "valid_tokipona_lexicon",
+    "category": "lexical_validity",
+    "description": "Toki Pona vocabulary word vs pseudo-word",
+    "grammatical": "lipu ni li pona.",
+    "ungrammatical": "lipu ni li frob."
+  }
+]

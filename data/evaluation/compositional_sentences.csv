@@ -1,0 +1,401 @@
+item_id,condition,compound,text,frame_type
+comp_sent_h_0001,heldout,telo nasa,mi lukin e telo nasa lon poka mi.,trans_obj
+comp_sent_h_0002,heldout,tomo telo,mi lukin e tomo telo lon poka mi.,trans_obj
+comp_sent_h_0003,heldout,jan utala,mi lukin e jan utala lon poka mi.,trans_obj
+comp_sent_h_0004,heldout,ilo moku,mi lukin e ilo moku lon poka mi.,trans_obj
+comp_sent_h_0005,heldout,tomo tawa,mi lukin e tomo tawa lon poka mi.,trans_obj
+comp_sent_h_0006,heldout,jan sona,mi lukin e jan sona lon poka mi.,trans_obj
+comp_sent_h_0007,heldout,tomo sona,mi lukin e tomo sona lon poka mi.,trans_obj
+comp_sent_h_0008,heldout,ilo suno,mi lukin e ilo suno lon poka mi.,trans_obj
+comp_sent_h_0009,heldout,ma tomo,mi lukin e ma tomo lon poka mi.,trans_obj
+comp_sent_h_0010,heldout,jan lawa,mi lukin e jan lawa lon poka mi.,trans_obj
+comp_sent_h_0011,heldout,supa lape,mi lukin e supa lape lon poka mi.,trans_obj
+comp_sent_h_0012,heldout,kiwen suwi,mi lukin e kiwen suwi lon poka mi.,trans_obj
+comp_sent_h_0013,heldout,telo kili,mi lukin e telo kili lon poka mi.,trans_obj
+comp_sent_h_0014,heldout,jan alasa,mi lukin e jan alasa lon poka mi.,trans_obj
+comp_sent_h_0015,heldout,kasi suli,mi lukin e kasi suli lon poka mi.,trans_obj
+comp_sent_h_0016,heldout,tomo moku,mi lukin e tomo moku lon poka mi.,trans_obj
+comp_sent_h_0017,heldout,lipu sona,mi lukin e lipu sona lon poka mi.,trans_obj
+comp_sent_h_0018,heldout,ma kasi,mi lukin e ma kasi lon poka mi.,trans_obj
+comp_sent_h_0019,heldout,telo pimeja,mi lukin e telo pimeja lon poka mi.,trans_obj
+comp_sent_h_0020,heldout,supa pali,mi lukin e supa pali lon poka mi.,trans_obj
+comp_sent_s_0021,seen,jan pona,mi lukin e jan pona lon poka mi.,trans_obj
+comp_sent_s_0022,seen,toki pona,mi lukin e toki pona lon poka mi.,trans_obj
+comp_sent_s_0023,seen,tomo suli,mi lukin e tomo suli lon poka mi.,trans_obj
+comp_sent_s_0024,seen,telo seli,mi lukin e telo seli lon poka mi.,trans_obj
+comp_sent_s_0025,seen,tenpo suno,mi lukin e tenpo suno lon poka mi.,trans_obj
+comp_sent_s_0026,seen,jan lili,mi lukin e jan lili lon poka mi.,trans_obj
+comp_sent_s_0027,seen,tenpo ni,mi lukin e tenpo ni lon poka mi.,trans_obj
+comp_sent_s_0028,seen,kili pona,mi lukin e kili pona lon poka mi.,trans_obj
+comp_sent_s_0029,seen,soweli wawa,mi lukin e soweli wawa lon poka mi.,trans_obj
+comp_sent_s_0030,seen,lipu pona,mi lukin e lipu pona lon poka mi.,trans_obj
+comp_sent_s_0031,seen,ma suli,mi lukin e ma suli lon poka mi.,trans_obj
+comp_sent_s_0032,seen,telo pona,mi lukin e telo pona lon poka mi.,trans_obj
+comp_sent_s_0033,seen,kasi lili,mi lukin e kasi lili lon poka mi.,trans_obj
+comp_sent_s_0034,seen,jan suli,mi lukin e jan suli lon poka mi.,trans_obj
+comp_sent_s_0035,seen,suno suli,mi lukin e suno suli lon poka mi.,trans_obj
+comp_sent_s_0036,seen,moku pona,mi lukin e moku pona lon poka mi.,trans_obj
+comp_sent_s_0037,seen,ona mute,mi lukin e ona mute lon poka mi.,trans_obj
+comp_sent_s_0038,seen,ma lili,mi lukin e ma lili lon poka mi.,trans_obj
+comp_sent_s_0039,seen,ilo pona,mi lukin e ilo pona lon poka mi.,trans_obj
+comp_sent_s_0040,seen,supa suli,mi lukin e supa suli lon poka mi.,trans_obj
+comp_sent_h_0041,heldout,telo nasa,ona li moku e telo nasa lon tomo.,trans_eat
+comp_sent_h_0042,heldout,tomo telo,ona li moku e tomo telo lon tomo.,trans_eat
+comp_sent_h_0043,heldout,jan utala,ona li moku e jan utala lon tomo.,trans_eat
+comp_sent_h_0044,heldout,ilo moku,ona li moku e ilo moku lon tomo.,trans_eat
+comp_sent_h_0045,heldout,tomo tawa,ona li moku e tomo tawa lon tomo.,trans_eat
+comp_sent_h_0046,heldout,jan sona,ona li moku e jan sona lon tomo.,trans_eat
+comp_sent_h_0047,heldout,tomo sona,ona li moku e tomo sona lon tomo.,trans_eat
+comp_sent_h_0048,heldout,ilo suno,ona li moku e ilo suno lon tomo.,trans_eat
+comp_sent_h_0049,heldout,ma tomo,ona li moku e ma tomo lon tomo.,trans_eat
+comp_sent_h_0050,heldout,jan lawa,ona li moku e jan lawa lon tomo.,trans_eat
+comp_sent_h_0051,heldout,supa lape,ona li moku e supa lape lon tomo.,trans_eat
+comp_sent_h_0052,heldout,kiwen suwi,ona li moku e kiwen suwi lon tomo.,trans_eat
+comp_sent_h_0053,heldout,telo kili,ona li moku e telo kili lon tomo.,trans_eat
+comp_sent_h_0054,heldout,jan alasa,ona li moku e jan alasa lon tomo.,trans_eat
+comp_sent_h_0055,heldout,kasi suli,ona li moku e kasi suli lon tomo.,trans_eat
+comp_sent_h_0056,heldout,tomo moku,ona li moku e tomo moku lon tomo.,trans_eat
+comp_sent_h_0057,heldout,lipu sona,ona li moku e lipu sona lon tomo.,trans_eat
+comp_sent_h_0058,heldout,ma kasi,ona li moku e ma kasi lon tomo.,trans_eat
+comp_sent_h_0059,heldout,telo pimeja,ona li moku e telo pimeja lon tomo.,trans_eat
+comp_sent_h_0060,heldout,supa pali,ona li moku e supa pali lon tomo.,trans_eat
+comp_sent_s_0061,seen,jan pona,ona li moku e jan pona lon tomo.,trans_eat
+comp_sent_s_0062,seen,toki pona,ona li moku e toki pona lon tomo.,trans_eat
+comp_sent_s_0063,seen,tomo suli,ona li moku e tomo suli lon tomo.,trans_eat
+comp_sent_s_0064,seen,telo seli,ona li moku e telo seli lon tomo.,trans_eat
+comp_sent_s_0065,seen,tenpo suno,ona li moku e tenpo suno lon tomo.,trans_eat
+comp_sent_s_0066,seen,jan lili,ona li moku e jan lili lon tomo.,trans_eat
+comp_sent_s_0067,seen,tenpo ni,ona li moku e tenpo ni lon tomo.,trans_eat
+comp_sent_s_0068,seen,kili pona,ona li moku e kili pona lon tomo.,trans_eat
+comp_sent_s_0069,seen,soweli wawa,ona li moku e soweli wawa lon tomo.,trans_eat
+comp_sent_s_0070,seen,lipu pona,ona li moku e lipu pona lon tomo.,trans_eat
+comp_sent_s_0071,seen,ma suli,ona li moku e ma suli lon tomo.,trans_eat
+comp_sent_s_0072,seen,telo pona,ona li moku e telo pona lon tomo.,trans_eat
+comp_sent_s_0073,seen,kasi lili,ona li moku e kasi lili lon tomo.,trans_eat
+comp_sent_s_0074,seen,jan suli,ona li moku e jan suli lon tomo.,trans_eat
+comp_sent_s_0075,seen,suno suli,ona li moku e suno suli lon tomo.,trans_eat
+comp_sent_s_0076,seen,moku pona,ona li moku e moku pona lon tomo.,trans_eat
+comp_sent_s_0077,seen,ona mute,ona li moku e ona mute lon tomo.,trans_eat
+comp_sent_s_0078,seen,ma lili,ona li moku e ma lili lon tomo.,trans_eat
+comp_sent_s_0079,seen,ilo pona,ona li moku e ilo pona lon tomo.,trans_eat
+comp_sent_s_0080,seen,supa suli,ona li moku e supa suli lon tomo.,trans_eat
+comp_sent_h_0081,heldout,telo nasa,jan ni li jo e telo nasa wawa.,trans_have
+comp_sent_h_0082,heldout,tomo telo,jan ni li jo e tomo telo wawa.,trans_have
+comp_sent_h_0083,heldout,jan utala,jan ni li jo e jan utala wawa.,trans_have
+comp_sent_h_0084,heldout,ilo moku,jan ni li jo e ilo moku wawa.,trans_have
+comp_sent_h_0085,heldout,tomo tawa,jan ni li jo e tomo tawa wawa.,trans_have
+comp_sent_h_0086,heldout,jan sona,jan ni li jo e jan sona wawa.,trans_have
+comp_sent_h_0087,heldout,tomo sona,jan ni li jo e tomo sona wawa.,trans_have
+comp_sent_h_0088,heldout,ilo suno,jan ni li jo e ilo suno wawa.,trans_have
+comp_sent_h_0089,heldout,ma tomo,jan ni li jo e ma tomo wawa.,trans_have
+comp_sent_h_0090,heldout,jan lawa,jan ni li jo e jan lawa wawa.,trans_have
+comp_sent_h_0091,heldout,supa lape,jan ni li jo e supa lape wawa.,trans_have
+comp_sent_h_0092,heldout,kiwen suwi,jan ni li jo e kiwen suwi wawa.,trans_have
+comp_sent_h_0093,heldout,telo kili,jan ni li jo e telo kili wawa.,trans_have
+comp_sent_h_0094,heldout,jan alasa,jan ni li jo e jan alasa wawa.,trans_have
+comp_sent_h_0095,heldout,kasi suli,jan ni li jo e kasi suli wawa.,trans_have
+comp_sent_h_0096,heldout,tomo moku,jan ni li jo e tomo moku wawa.,trans_have
+comp_sent_h_0097,heldout,lipu sona,jan ni li jo e lipu sona wawa.,trans_have
+comp_sent_h_0098,heldout,ma kasi,jan ni li jo e ma kasi wawa.,trans_have
+comp_sent_h_0099,heldout,telo pimeja,jan ni li jo e telo pimeja wawa.,trans_have
+comp_sent_h_0100,heldout,supa pali,jan ni li jo e supa pali wawa.,trans_have
+comp_sent_s_0101,seen,jan pona,jan ni li jo e jan pona wawa.,trans_have
+comp_sent_s_0102,seen,toki pona,jan ni li jo e toki pona wawa.,trans_have
+comp_sent_s_0103,seen,tomo suli,jan ni li jo e tomo suli wawa.,trans_have
+comp_sent_s_0104,seen,telo seli,jan ni li jo e telo seli wawa.,trans_have
+comp_sent_s_0105,seen,tenpo suno,jan ni li jo e tenpo suno wawa.,trans_have
+comp_sent_s_0106,seen,jan lili,jan ni li jo e jan lili wawa.,trans_have
+comp_sent_s_0107,seen,tenpo ni,jan ni li jo e tenpo ni wawa.,trans_have
+comp_sent_s_0108,seen,kili pona,jan ni li jo e kili pona wawa.,trans_have
+comp_sent_s_0109,seen,soweli wawa,jan ni li jo e soweli wawa wawa.,trans_have
+comp_sent_s_0110,seen,lipu pona,jan ni li jo e lipu pona wawa.,trans_have
+comp_sent_s_0111,seen,ma suli,jan ni li jo e ma suli wawa.,trans_have
+comp_sent_s_0112,seen,telo pona,jan ni li jo e telo pona wawa.,trans_have
+comp_sent_s_0113,seen,kasi lili,jan ni li jo e kasi lili wawa.,trans_have
+comp_sent_s_0114,seen,jan suli,jan ni li jo e jan suli wawa.,trans_have
+comp_sent_s_0115,seen,suno suli,jan ni li jo e suno suli wawa.,trans_have
+comp_sent_s_0116,seen,moku pona,jan ni li jo e moku pona wawa.,trans_have
+comp_sent_s_0117,seen,ona mute,jan ni li jo e ona mute wawa.,trans_have
+comp_sent_s_0118,seen,ma lili,jan ni li jo e ma lili wawa.,trans_have
+comp_sent_s_0119,seen,ilo pona,jan ni li jo e ilo pona wawa.,trans_have
+comp_sent_s_0120,seen,supa suli,jan ni li jo e supa suli wawa.,trans_have
+comp_sent_h_0121,heldout,telo nasa,ona li pana e telo nasa tawa mi.,trans_give
+comp_sent_h_0122,heldout,tomo telo,ona li pana e tomo telo tawa mi.,trans_give
+comp_sent_h_0123,heldout,jan utala,ona li pana e jan utala tawa mi.,trans_give
+comp_sent_h_0124,heldout,ilo moku,ona li pana e ilo moku tawa mi.,trans_give
+comp_sent_h_0125,heldout,tomo tawa,ona li pana e tomo tawa tawa mi.,trans_give
+comp_sent_h_0126,heldout,jan sona,ona li pana e jan sona tawa mi.,trans_give
+comp_sent_h_0127,heldout,tomo sona,ona li pana e tomo sona tawa mi.,trans_give
+comp_sent_h_0128,heldout,ilo suno,ona li pana e ilo suno tawa mi.,trans_give
+comp_sent_h_0129,heldout,ma tomo,ona li pana e ma tomo tawa mi.,trans_give
+comp_sent_h_0130,heldout,jan lawa,ona li pana e jan lawa tawa mi.,trans_give
+comp_sent_h_0131,heldout,supa lape,ona li pana e supa lape tawa mi.,trans_give
+comp_sent_h_0132,heldout,kiwen suwi,ona li pana e kiwen suwi tawa mi.,trans_give
+comp_sent_h_0133,heldout,telo kili,ona li pana e telo kili tawa mi.,trans_give
+comp_sent_h_0134,heldout,jan alasa,ona li pana e jan alasa tawa mi.,trans_give
+comp_sent_h_0135,heldout,kasi suli,ona li pana e kasi suli tawa mi.,trans_give
+comp_sent_h_0136,heldout,tomo moku,ona li pana e tomo moku tawa mi.,trans_give
+comp_sent_h_0137,heldout,lipu sona,ona li pana e lipu sona tawa mi.,trans_give
+comp_sent_h_0138,heldout,ma kasi,ona li pana e ma kasi tawa mi.,trans_give
+comp_sent_h_0139,heldout,telo pimeja,ona li pana e telo pimeja tawa mi.,trans_give
+comp_sent_h_0140,heldout,supa pali,ona li pana e supa pali tawa mi.,trans_give
+comp_sent_s_0141,seen,jan pona,ona li pana e jan pona tawa mi.,trans_give
+comp_sent_s_0142,seen,toki pona,ona li pana e toki pona tawa mi.,trans_give
+comp_sent_s_0143,seen,tomo suli,ona li pana e tomo suli tawa mi.,trans_give
+comp_sent_s_0144,seen,telo seli,ona li pana e telo seli tawa mi.,trans_give
+comp_sent_s_0145,seen,tenpo suno,ona li pana e tenpo suno tawa mi.,trans_give
+comp_sent_s_0146,seen,jan lili,ona li pana e jan lili tawa mi.,trans_give
+comp_sent_s_0147,seen,tenpo ni,ona li pana e tenpo ni tawa mi.,trans_give
+comp_sent_s_0148,seen,kili pona,ona li pana e kili pona tawa mi.,trans_give
+comp_sent_s_0149,seen,soweli wawa,ona li pana e soweli wawa tawa mi.,trans_give
+comp_sent_s_0150,seen,lipu pona,ona li pana e lipu pona tawa mi.,trans_give
+comp_sent_s_0151,seen,ma suli,ona li pana e ma suli tawa mi.,trans_give
+comp_sent_s_0152,seen,telo pona,ona li pana e telo pona tawa mi.,trans_give
+comp_sent_s_0153,seen,kasi lili,ona li pana e kasi lili tawa mi.,trans_give
+comp_sent_s_0154,seen,jan suli,ona li pana e jan suli tawa mi.,trans_give
+comp_sent_s_0155,seen,suno suli,ona li pana e suno suli tawa mi.,trans_give
+comp_sent_s_0156,seen,moku pona,ona li pana e moku pona tawa mi.,trans_give
+comp_sent_s_0157,seen,ona mute,ona li pana e ona mute tawa mi.,trans_give
+comp_sent_s_0158,seen,ma lili,ona li pana e ma lili tawa mi.,trans_give
+comp_sent_s_0159,seen,ilo pona,ona li pana e ilo pona tawa mi.,trans_give
+comp_sent_s_0160,seen,supa suli,ona li pana e supa suli tawa mi.,trans_give
+comp_sent_h_0161,heldout,telo nasa,sina wile ala wile e telo nasa?,trans_want
+comp_sent_h_0162,heldout,tomo telo,sina wile ala wile e tomo telo?,trans_want
+comp_sent_h_0163,heldout,jan utala,sina wile ala wile e jan utala?,trans_want
+comp_sent_h_0164,heldout,ilo moku,sina wile ala wile e ilo moku?,trans_want
+comp_sent_h_0165,heldout,tomo tawa,sina wile ala wile e tomo tawa?,trans_want
+comp_sent_h_0166,heldout,jan sona,sina wile ala wile e jan sona?,trans_want
+comp_sent_h_0167,heldout,tomo sona,sina wile ala wile e tomo sona?,trans_want
+comp_sent_h_0168,heldout,ilo suno,sina wile ala wile e ilo suno?,trans_want
+comp_sent_h_0169,heldout,ma tomo,sina wile ala wile e ma tomo?,trans_want
+comp_sent_h_0170,heldout,jan lawa,sina wile ala wile e jan lawa?,trans_want
+comp_sent_h_0171,heldout,supa lape,sina wile ala wile e supa lape?,trans_want
+comp_sent_h_0172,heldout,kiwen suwi,sina wile ala wile e kiwen suwi?,trans_want
+comp_sent_h_0173,heldout,telo kili,sina wile ala wile e telo kili?,trans_want
+comp_sent_h_0174,heldout,jan alasa,sina wile ala wile e jan alasa?,trans_want
+comp_sent_h_0175,heldout,kasi suli,sina wile ala wile e kasi suli?,trans_want
+comp_sent_h_0176,heldout,tomo moku,sina wile ala wile e tomo moku?,trans_want
+comp_sent_h_0177,heldout,lipu sona,sina wile ala wile e lipu sona?,trans_want
+comp_sent_h_0178,heldout,ma kasi,sina wile ala wile e ma kasi?,trans_want
+comp_sent_h_0179,heldout,telo pimeja,sina wile ala wile e telo pimeja?,trans_want
+comp_sent_h_0180,heldout,supa pali,sina wile ala wile e supa pali?,trans_want
+comp_sent_s_0181,seen,jan pona,sina wile ala wile e jan pona?,trans_want
+comp_sent_s_0182,seen,toki pona,sina wile ala wile e toki pona?,trans_want
+comp_sent_s_0183,seen,tomo suli,sina wile ala wile e tomo suli?,trans_want
+comp_sent_s_0184,seen,telo seli,sina wile ala wile e telo seli?,trans_want
+comp_sent_s_0185,seen,tenpo suno,sina wile ala wile e tenpo suno?,trans_want
+comp_sent_s_0186,seen,jan lili,sina wile ala wile e jan lili?,trans_want
+comp_sent_s_0187,seen,tenpo ni,sina wile ala wile e tenpo ni?,trans_want
+comp_sent_s_0188,seen,kili pona,sina wile ala wile e kili pona?,trans_want
+comp_sent_s_0189,seen,soweli wawa,sina wile ala wile e soweli wawa?,trans_want
+comp_sent_s_0190,seen,lipu pona,sina wile ala wile e lipu pona?,trans_want
+comp_sent_s_0191,seen,ma suli,sina wile ala wile e ma suli?,trans_want
+comp_sent_s_0192,seen,telo pona,sina wile ala wile e telo pona?,trans_want
+comp_sent_s_0193,seen,kasi lili,sina wile ala wile e kasi lili?,trans_want
+comp_sent_s_0194,seen,jan suli,sina wile ala wile e jan suli?,trans_want
+comp_sent_s_0195,seen,suno suli,sina wile ala wile e suno suli?,trans_want
+comp_sent_s_0196,seen,moku pona,sina wile ala wile e moku pona?,trans_want
+comp_sent_s_0197,seen,ona mute,sina wile ala wile e ona mute?,trans_want
+comp_sent_s_0198,seen,ma lili,sina wile ala wile e ma lili?,trans_want
+comp_sent_s_0199,seen,ilo pona,sina wile ala wile e ilo pona?,trans_want
+comp_sent_s_0200,seen,supa suli,sina wile ala wile e supa suli?,trans_want
+comp_sent_h_0201,heldout,telo nasa,telo nasa li pona mute tawa mi.,subj_pred
+comp_sent_h_0202,heldout,tomo telo,tomo telo li pona mute tawa mi.,subj_pred
+comp_sent_h_0203,heldout,jan utala,jan utala li pona mute tawa mi.,subj_pred
+comp_sent_h_0204,heldout,ilo moku,ilo moku li pona mute tawa mi.,subj_pred
+comp_sent_h_0205,heldout,tomo tawa,tomo tawa li pona mute tawa mi.,subj_pred
+comp_sent_h_0206,heldout,jan sona,jan sona li pona mute tawa mi.,subj_pred
+comp_sent_h_0207,heldout,tomo sona,tomo sona li pona mute tawa mi.,subj_pred
+comp_sent_h_0208,heldout,ilo suno,ilo suno li pona mute tawa mi.,subj_pred
+comp_sent_h_0209,heldout,ma tomo,ma tomo li pona mute tawa mi.,subj_pred
+comp_sent_h_0210,heldout,jan lawa,jan lawa li pona mute tawa mi.,subj_pred
+comp_sent_h_0211,heldout,supa lape,supa lape li pona mute tawa mi.,subj_pred
+comp_sent_h_0212,heldout,kiwen suwi,kiwen suwi li pona mute tawa mi.,subj_pred
+comp_sent_h_0213,heldout,telo kili,telo kili li pona mute tawa mi.,subj_pred
+comp_sent_h_0214,heldout,jan alasa,jan alasa li pona mute tawa mi.,subj_pred
+comp_sent_h_0215,heldout,kasi suli,kasi suli li pona mute tawa mi.,subj_pred
+comp_sent_h_0216,heldout,tomo moku,tomo moku li pona mute tawa mi.,subj_pred
+comp_sent_h_0217,heldout,lipu sona,lipu sona li pona mute tawa mi.,subj_pred
+comp_sent_h_0218,heldout,ma kasi,ma kasi li pona mute tawa mi.,subj_pred
+comp_sent_h_0219,heldout,telo pimeja,telo pimeja li pona mute tawa mi.,subj_pred
+comp_sent_h_0220,heldout,supa pali,supa pali li pona mute tawa mi.,subj_pred
+comp_sent_s_0221,seen,jan pona,jan pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0222,seen,toki pona,toki pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0223,seen,tomo suli,tomo suli li pona mute tawa mi.,subj_pred
+comp_sent_s_0224,seen,telo seli,telo seli li pona mute tawa mi.,subj_pred
+comp_sent_s_0225,seen,tenpo suno,tenpo suno li pona mute tawa mi.,subj_pred
+comp_sent_s_0226,seen,jan lili,jan lili li pona mute tawa mi.,subj_pred
+comp_sent_s_0227,seen,tenpo ni,tenpo ni li pona mute tawa mi.,subj_pred
+comp_sent_s_0228,seen,kili pona,kili pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0229,seen,soweli wawa,soweli wawa li pona mute tawa mi.,subj_pred
+comp_sent_s_0230,seen,lipu pona,lipu pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0231,seen,ma suli,ma suli li pona mute tawa mi.,subj_pred
+comp_sent_s_0232,seen,telo pona,telo pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0233,seen,kasi lili,kasi lili li pona mute tawa mi.,subj_pred
+comp_sent_s_0234,seen,jan suli,jan suli li pona mute tawa mi.,subj_pred
+comp_sent_s_0235,seen,suno suli,suno suli li pona mute tawa mi.,subj_pred
+comp_sent_s_0236,seen,moku pona,moku pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0237,seen,ona mute,ona mute li pona mute tawa mi.,subj_pred
+comp_sent_s_0238,seen,ma lili,ma lili li pona mute tawa mi.,subj_pred
+comp_sent_s_0239,seen,ilo pona,ilo pona li pona mute tawa mi.,subj_pred
+comp_sent_s_0240,seen,supa suli,supa suli li pona mute tawa mi.,subj_pred
+comp_sent_h_0241,heldout,telo nasa,telo nasa li tawa sewi.,subj_action
+comp_sent_h_0242,heldout,tomo telo,tomo telo li tawa sewi.,subj_action
+comp_sent_h_0243,heldout,jan utala,jan utala li tawa sewi.,subj_action
+comp_sent_h_0244,heldout,ilo moku,ilo moku li tawa sewi.,subj_action
+comp_sent_h_0245,heldout,tomo tawa,tomo tawa li tawa sewi.,subj_action
+comp_sent_h_0246,heldout,jan sona,jan sona li tawa sewi.,subj_action
+comp_sent_h_0247,heldout,tomo sona,tomo sona li tawa sewi.,subj_action
+comp_sent_h_0248,heldout,ilo suno,ilo suno li tawa sewi.,subj_action
+comp_sent_h_0249,heldout,ma tomo,ma tomo li tawa sewi.,subj_action
+comp_sent_h_0250,heldout,jan lawa,jan lawa li tawa sewi.,subj_action
+comp_sent_h_0251,heldout,supa lape,supa lape li tawa sewi.,subj_action
+comp_sent_h_0252,heldout,kiwen suwi,kiwen suwi li tawa sewi.,subj_action
+comp_sent_h_0253,heldout,telo kili,telo kili li tawa sewi.,subj_action
+comp_sent_h_0254,heldout,jan alasa,jan alasa li tawa sewi.,subj_action
+comp_sent_h_0255,heldout,kasi suli,kasi suli li tawa sewi.,subj_action
+comp_sent_h_0256,heldout,tomo moku,tomo moku li tawa sewi.,subj_action
+comp_sent_h_0257,heldout,lipu sona,lipu sona li tawa sewi.,subj_action
+comp_sent_h_0258,heldout,ma kasi,ma kasi li tawa sewi.,subj_action
+comp_sent_h_0259,heldout,telo pimeja,telo pimeja li tawa sewi.,subj_action
+comp_sent_h_0260,heldout,supa pali,supa pali li tawa sewi.,subj_action
+comp_sent_s_0261,seen,jan pona,jan pona li tawa sewi.,subj_action
+comp_sent_s_0262,seen,toki pona,toki pona li tawa sewi.,subj_action
+comp_sent_s_0263,seen,tomo suli,tomo suli li tawa sewi.,subj_action
+comp_sent_s_0264,seen,telo seli,telo seli li tawa sewi.,subj_action
+comp_sent_s_0265,seen,tenpo suno,tenpo suno li tawa sewi.,subj_action
+comp_sent_s_0266,seen,jan lili,jan lili li tawa sewi.,subj_action
+comp_sent_s_0267,seen,tenpo ni,tenpo ni li tawa sewi.,subj_action
+comp_sent_s_0268,seen,kili pona,kili pona li tawa sewi.,subj_action
+comp_sent_s_0269,seen,soweli wawa,soweli wawa li tawa sewi.,subj_action
+comp_sent_s_0270,seen,lipu pona,lipu pona li tawa sewi.,subj_action
+comp_sent_s_0271,seen,ma suli,ma suli li tawa sewi.,subj_action
+comp_sent_s_0272,seen,telo pona,telo pona li tawa sewi.,subj_action
+comp_sent_s_0273,seen,kasi lili,kasi lili li tawa sewi.,subj_action
+comp_sent_s_0274,seen,jan suli,jan suli li tawa sewi.,subj_action
+comp_sent_s_0275,seen,suno suli,suno suli li tawa sewi.,subj_action
+comp_sent_s_0276,seen,moku pona,moku pona li tawa sewi.,subj_action
+comp_sent_s_0277,seen,ona mute,ona mute li tawa sewi.,subj_action
+comp_sent_s_0278,seen,ma lili,ma lili li tawa sewi.,subj_action
+comp_sent_s_0279,seen,ilo pona,ilo pona li tawa sewi.,subj_action
+comp_sent_s_0280,seen,supa suli,supa suli li tawa sewi.,subj_action
+comp_sent_h_0281,heldout,telo nasa,telo nasa li lon ma ni.,subj_exist
+comp_sent_h_0282,heldout,tomo telo,tomo telo li lon ma ni.,subj_exist
+comp_sent_h_0283,heldout,jan utala,jan utala li lon ma ni.,subj_exist
+comp_sent_h_0284,heldout,ilo moku,ilo moku li lon ma ni.,subj_exist
+comp_sent_h_0285,heldout,tomo tawa,tomo tawa li lon ma ni.,subj_exist
+comp_sent_h_0286,heldout,jan sona,jan sona li lon ma ni.,subj_exist
+comp_sent_h_0287,heldout,tomo sona,tomo sona li lon ma ni.,subj_exist
+comp_sent_h_0288,heldout,ilo suno,ilo suno li lon ma ni.,subj_exist
+comp_sent_h_0289,heldout,ma tomo,ma tomo li lon ma ni.,subj_exist
+comp_sent_h_0290,heldout,jan lawa,jan lawa li lon ma ni.,subj_exist
+comp_sent_h_0291,heldout,supa lape,supa lape li lon ma ni.,subj_exist
+comp_sent_h_0292,heldout,kiwen suwi,kiwen suwi li lon ma ni.,subj_exist
+comp_sent_h_0293,heldout,telo kili,telo kili li lon ma ni.,subj_exist
+comp_sent_h_0294,heldout,jan alasa,jan alasa li lon ma ni.,subj_exist
+comp_sent_h_0295,heldout,kasi suli,kasi suli li lon ma ni.,subj_exist
+comp_sent_h_0296,heldout,tomo moku,tomo moku li lon ma ni.,subj_exist
+comp_sent_h_0297,heldout,lipu sona,lipu sona li lon ma ni.,subj_exist
+comp_sent_h_0298,heldout,ma kasi,ma kasi li lon ma ni.,subj_exist
+comp_sent_h_0299,heldout,telo pimeja,telo pimeja li lon ma ni.,subj_exist
+comp_sent_h_0300,heldout,supa pali,supa pali li lon ma ni.,subj_exist
+comp_sent_s_0301,seen,jan pona,jan pona li lon ma ni.,subj_exist
+comp_sent_s_0302,seen,toki pona,toki pona li lon ma ni.,subj_exist
+comp_sent_s_0303,seen,tomo suli,tomo suli li lon ma ni.,subj_exist
+comp_sent_s_0304,seen,telo seli,telo seli li lon ma ni.,subj_exist
+comp_sent_s_0305,seen,tenpo suno,tenpo suno li lon ma ni.,subj_exist
+comp_sent_s_0306,seen,jan lili,jan lili li lon ma ni.,subj_exist
+comp_sent_s_0307,seen,tenpo ni,tenpo ni li lon ma ni.,subj_exist
+comp_sent_s_0308,seen,kili pona,kili pona li lon ma ni.,subj_exist
+comp_sent_s_0309,seen,soweli wawa,soweli wawa li lon ma ni.,subj_exist
+comp_sent_s_0310,seen,lipu pona,lipu pona li lon ma ni.,subj_exist
+comp_sent_s_0311,seen,ma suli,ma suli li lon ma ni.,subj_exist
+comp_sent_s_0312,seen,telo pona,telo pona li lon ma ni.,subj_exist
+comp_sent_s_0313,seen,kasi lili,kasi lili li lon ma ni.,subj_exist
+comp_sent_s_0314,seen,jan suli,jan suli li lon ma ni.,subj_exist
+comp_sent_s_0315,seen,suno suli,suno suli li lon ma ni.,subj_exist
+comp_sent_s_0316,seen,moku pona,moku pona li lon ma ni.,subj_exist
+comp_sent_s_0317,seen,ona mute,ona mute li lon ma ni.,subj_exist
+comp_sent_s_0318,seen,ma lili,ma lili li lon ma ni.,subj_exist
+comp_sent_s_0319,seen,ilo pona,ilo pona li lon ma ni.,subj_exist
+comp_sent_s_0320,seen,supa suli,supa suli li lon ma ni.,subj_exist
+comp_sent_h_0321,heldout,telo nasa,jan lili li awen lon telo nasa.,prep_loc
+comp_sent_h_0322,heldout,tomo telo,jan lili li awen lon tomo telo.,prep_loc
+comp_sent_h_0323,heldout,jan utala,jan lili li awen lon jan utala.,prep_loc
+comp_sent_h_0324,heldout,ilo moku,jan lili li awen lon ilo moku.,prep_loc
+comp_sent_h_0325,heldout,tomo tawa,jan lili li awen lon tomo tawa.,prep_loc
+comp_sent_h_0326,heldout,jan sona,jan lili li awen lon jan sona.,prep_loc
+comp_sent_h_0327,heldout,tomo sona,jan lili li awen lon tomo sona.,prep_loc
+comp_sent_h_0328,heldout,ilo suno,jan lili li awen lon ilo suno.,prep_loc
+comp_sent_h_0329,heldout,ma tomo,jan lili li awen lon ma tomo.,prep_loc
+comp_sent_h_0330,heldout,jan lawa,jan lili li awen lon jan lawa.,prep_loc
+comp_sent_h_0331,heldout,supa lape,jan lili li awen lon supa lape.,prep_loc
+comp_sent_h_0332,heldout,kiwen suwi,jan lili li awen lon kiwen suwi.,prep_loc
+comp_sent_h_0333,heldout,telo kili,jan lili li awen lon telo kili.,prep_loc
+comp_sent_h_0334,heldout,jan alasa,jan lili li awen lon jan alasa.,prep_loc
+comp_sent_h_0335,heldout,kasi suli,jan lili li awen lon kasi suli.,prep_loc
+comp_sent_h_0336,heldout,tomo moku,jan lili li awen lon tomo moku.,prep_loc
+comp_sent_h_0337,heldout,lipu sona,jan lili li awen lon lipu sona.,prep_loc
+comp_sent_h_0338,heldout,ma kasi,jan lili li awen lon ma kasi.,prep_loc
+comp_sent_h_0339,heldout,telo pimeja,jan lili li awen lon telo pimeja.,prep_loc
+comp_sent_h_0340,heldout,supa pali,jan lili li awen lon supa pali.,prep_loc
+comp_sent_s_0341,seen,jan pona,jan lili li awen lon jan pona.,prep_loc
+comp_sent_s_0342,seen,toki pona,jan lili li awen lon toki pona.,prep_loc
+comp_sent_s_0343,seen,tomo suli,jan lili li awen lon tomo suli.,prep_loc
+comp_sent_s_0344,seen,telo seli,jan lili li awen lon telo seli.,prep_loc
+comp_sent_s_0345,seen,tenpo suno,jan lili li awen lon tenpo suno.,prep_loc
+comp_sent_s_0346,seen,jan lili,jan lili li awen lon jan lili.,prep_loc
+comp_sent_s_0347,seen,tenpo ni,jan lili li awen lon tenpo ni.,prep_loc
+comp_sent_s_0348,seen,kili pona,jan lili li awen lon kili pona.,prep_loc
+comp_sent_s_0349,seen,soweli wawa,jan lili li awen lon soweli wawa.,prep_loc
+comp_sent_s_0350,seen,lipu pona,jan lili li awen lon lipu pona.,prep_loc
+comp_sent_s_0351,seen,ma suli,jan lili li awen lon ma suli.,prep_loc
+comp_sent_s_0352,seen,telo pona,jan lili li awen lon telo pona.,prep_loc
+comp_sent_s_0353,seen,kasi lili,jan lili li awen lon kasi lili.,prep_loc
+comp_sent_s_0354,seen,jan suli,jan lili li awen lon jan suli.,prep_loc
+comp_sent_s_0355,seen,suno suli,jan lili li awen lon suno suli.,prep_loc
+comp_sent_s_0356,seen,moku pona,jan lili li awen lon moku pona.,prep_loc
+comp_sent_s_0357,seen,ona mute,jan lili li awen lon ona mute.,prep_loc
+comp_sent_s_0358,seen,ma lili,jan lili li awen lon ma lili.,prep_loc
+comp_sent_s_0359,seen,ilo pona,jan lili li awen lon ilo pona.,prep_loc
+comp_sent_s_0360,seen,supa suli,jan lili li awen lon supa suli.,prep_loc
+comp_sent_h_0361,heldout,telo nasa,ona li pali kepeken telo nasa.,prep_inst
+comp_sent_h_0362,heldout,tomo telo,ona li pali kepeken tomo telo.,prep_inst
+comp_sent_h_0363,heldout,jan utala,ona li pali kepeken jan utala.,prep_inst
+comp_sent_h_0364,heldout,ilo moku,ona li pali kepeken ilo moku.,prep_inst
+comp_sent_h_0365,heldout,tomo tawa,ona li pali kepeken tomo tawa.,prep_inst
+comp_sent_h_0366,heldout,jan sona,ona li pali kepeken jan sona.,prep_inst
+comp_sent_h_0367,heldout,tomo sona,ona li pali kepeken tomo sona.,prep_inst
+comp_sent_h_0368,heldout,ilo suno,ona li pali kepeken ilo suno.,prep_inst
+comp_sent_h_0369,heldout,ma tomo,ona li pali kepeken ma tomo.,prep_inst
+comp_sent_h_0370,heldout,jan lawa,ona li pali kepeken jan lawa.,prep_inst
+comp_sent_h_0371,heldout,supa lape,ona li pali kepeken supa lape.,prep_inst
+comp_sent_h_0372,heldout,kiwen suwi,ona li pali kepeken kiwen suwi.,prep_inst
+comp_sent_h_0373,heldout,telo kili,ona li pali kepeken telo kili.,prep_inst
+comp_sent_h_0374,heldout,jan alasa,ona li pali kepeken jan alasa.,prep_inst
+comp_sent_h_0375,heldout,kasi suli,ona li pali kepeken kasi suli.,prep_inst
+comp_sent_h_0376,heldout,tomo moku,ona li pali kepeken tomo moku.,prep_inst
+comp_sent_h_0377,heldout,lipu sona,ona li pali kepeken lipu sona.,prep_inst
+comp_sent_h_0378,heldout,ma kasi,ona li pali kepeken ma kasi.,prep_inst
+comp_sent_h_0379,heldout,telo pimeja,ona li pali kepeken telo pimeja.,prep_inst
+comp_sent_h_0380,heldout,supa pali,ona li pali kepeken supa pali.,prep_inst
+comp_sent_s_0381,seen,jan pona,ona li pali kepeken jan pona.,prep_inst
+comp_sent_s_0382,seen,toki pona,ona li pali kepeken toki pona.,prep_inst
+comp_sent_s_0383,seen,tomo suli,ona li pali kepeken tomo suli.,prep_inst
+comp_sent_s_0384,seen,telo seli,ona li pali kepeken telo seli.,prep_inst
+comp_sent_s_0385,seen,tenpo suno,ona li pali kepeken tenpo suno.,prep_inst
+comp_sent_s_0386,seen,jan lili,ona li pali kepeken jan lili.,prep_inst
+comp_sent_s_0387,seen,tenpo ni,ona li pali kepeken tenpo ni.,prep_inst
+comp_sent_s_0388,seen,kili pona,ona li pali kepeken kili pona.,prep_inst
+comp_sent_s_0389,seen,soweli wawa,ona li pali kepeken soweli wawa.,prep_inst
+comp_sent_s_0390,seen,lipu pona,ona li pali kepeken lipu pona.,prep_inst
+comp_sent_s_0391,seen,ma suli,ona li pali kepeken ma suli.,prep_inst
+comp_sent_s_0392,seen,telo pona,ona li pali kepeken telo pona.,prep_inst
+comp_sent_s_0393,seen,kasi lili,ona li pali kepeken kasi lili.,prep_inst
+comp_sent_s_0394,seen,jan suli,ona li pali kepeken jan suli.,prep_inst
+comp_sent_s_0395,seen,suno suli,ona li pali kepeken suno suli.,prep_inst
+comp_sent_s_0396,seen,moku pona,ona li pali kepeken moku pona.,prep_inst
+comp_sent_s_0397,seen,ona mute,ona li pali kepeken ona mute.,prep_inst
+comp_sent_s_0398,seen,ma lili,ona li pali kepeken ma lili.,prep_inst
+comp_sent_s_0399,seen,ilo pona,ona li pali kepeken ilo pona.,prep_inst
+comp_sent_s_0400,seen,supa suli,ona li pali kepeken supa suli.,prep_inst

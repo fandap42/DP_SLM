@@ -1,0 +1,1282 @@
+[
+  {
+    "item_id": "comp_pair_heldout_0001",
+    "compound": "telo nasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water)",
+    "grammatical": "ona li lukin e telo nasa.",
+    "ungrammatical": "ona li lukin e nasa telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0002",
+    "compound": "telo nasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water)",
+    "grammatical": "telo nasa li suli.",
+    "ungrammatical": "nasa telo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0003",
+    "compound": "telo nasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water)",
+    "grammatical": "mi wile e telo nasa.",
+    "ungrammatical": "mi wile e nasa telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0004",
+    "compound": "telo nasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water)",
+    "grammatical": "jan li moku e telo nasa.",
+    "ungrammatical": "jan li moku e nasa telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0005",
+    "compound": "tomo telo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo telo' (restroom / water building)",
+    "grammatical": "ona li lukin e tomo telo.",
+    "ungrammatical": "ona li lukin e telo tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0006",
+    "compound": "tomo telo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo telo' (restroom / water building)",
+    "grammatical": "tomo telo li suli.",
+    "ungrammatical": "telo tomo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0007",
+    "compound": "tomo telo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo telo' (restroom / water building)",
+    "grammatical": "mi wile e tomo telo.",
+    "ungrammatical": "mi wile e telo tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0008",
+    "compound": "tomo telo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo telo' (restroom / water building)",
+    "grammatical": "jan li moku e tomo telo.",
+    "ungrammatical": "jan li moku e telo tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0009",
+    "compound": "jan utala",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan utala' (soldier / warrior)",
+    "grammatical": "ona li lukin e jan utala.",
+    "ungrammatical": "ona li lukin e utala jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0010",
+    "compound": "jan utala",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan utala' (soldier / warrior)",
+    "grammatical": "jan utala li suli.",
+    "ungrammatical": "utala jan li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0011",
+    "compound": "jan utala",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan utala' (soldier / warrior)",
+    "grammatical": "mi wile e jan utala.",
+    "ungrammatical": "mi wile e utala jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0012",
+    "compound": "jan utala",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan utala' (soldier / warrior)",
+    "grammatical": "jan li moku e jan utala.",
+    "ungrammatical": "jan li moku e utala jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0013",
+    "compound": "ilo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil)",
+    "grammatical": "ona li lukin e ilo moku.",
+    "ungrammatical": "ona li lukin e moku ilo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0014",
+    "compound": "ilo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil)",
+    "grammatical": "ilo moku li suli.",
+    "ungrammatical": "moku ilo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0015",
+    "compound": "ilo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil)",
+    "grammatical": "mi wile e ilo moku.",
+    "ungrammatical": "mi wile e moku ilo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0016",
+    "compound": "ilo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil)",
+    "grammatical": "jan li moku e ilo moku.",
+    "ungrammatical": "jan li moku e moku ilo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0017",
+    "compound": "tomo tawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room)",
+    "grammatical": "ona li lukin e tomo tawa.",
+    "ungrammatical": "ona li lukin e tawa tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0018",
+    "compound": "tomo tawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room)",
+    "grammatical": "tomo tawa li suli.",
+    "ungrammatical": "tawa tomo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0019",
+    "compound": "tomo tawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room)",
+    "grammatical": "mi wile e tomo tawa.",
+    "ungrammatical": "mi wile e tawa tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0020",
+    "compound": "tomo tawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room)",
+    "grammatical": "jan li moku e tomo tawa.",
+    "ungrammatical": "jan li moku e tawa tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0021",
+    "compound": "jan sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan sona' (scientist / scholar)",
+    "grammatical": "ona li lukin e jan sona.",
+    "ungrammatical": "ona li lukin e sona jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0022",
+    "compound": "jan sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan sona' (scientist / scholar)",
+    "grammatical": "jan sona li suli.",
+    "ungrammatical": "sona jan li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0023",
+    "compound": "jan sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan sona' (scientist / scholar)",
+    "grammatical": "mi wile e jan sona.",
+    "ungrammatical": "mi wile e sona jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0024",
+    "compound": "jan sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan sona' (scientist / scholar)",
+    "grammatical": "jan li moku e jan sona.",
+    "ungrammatical": "jan li moku e sona jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0025",
+    "compound": "tomo sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo sona' (school / university)",
+    "grammatical": "ona li lukin e tomo sona.",
+    "ungrammatical": "ona li lukin e sona tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0026",
+    "compound": "tomo sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo sona' (school / university)",
+    "grammatical": "tomo sona li suli.",
+    "ungrammatical": "sona tomo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0027",
+    "compound": "tomo sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo sona' (school / university)",
+    "grammatical": "mi wile e tomo sona.",
+    "ungrammatical": "mi wile e sona tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0028",
+    "compound": "tomo sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo sona' (school / university)",
+    "grammatical": "jan li moku e tomo sona.",
+    "ungrammatical": "jan li moku e sona tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0029",
+    "compound": "ilo suno",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo suno' (flashlight / lamp)",
+    "grammatical": "ona li lukin e ilo suno.",
+    "ungrammatical": "ona li lukin e suno ilo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0030",
+    "compound": "ilo suno",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo suno' (flashlight / lamp)",
+    "grammatical": "ilo suno li suli.",
+    "ungrammatical": "suno ilo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0031",
+    "compound": "ilo suno",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo suno' (flashlight / lamp)",
+    "grammatical": "mi wile e ilo suno.",
+    "ungrammatical": "mi wile e suno ilo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0032",
+    "compound": "ilo suno",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ilo suno' (flashlight / lamp)",
+    "grammatical": "jan li moku e ilo suno.",
+    "ungrammatical": "jan li moku e suno ilo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0033",
+    "compound": "ma tomo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma tomo' (city / town)",
+    "grammatical": "ona li lukin e ma tomo.",
+    "ungrammatical": "ona li lukin e tomo ma."
+  },
+  {
+    "item_id": "comp_pair_heldout_0034",
+    "compound": "ma tomo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma tomo' (city / town)",
+    "grammatical": "ma tomo li suli.",
+    "ungrammatical": "tomo ma li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0035",
+    "compound": "ma tomo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma tomo' (city / town)",
+    "grammatical": "mi wile e ma tomo.",
+    "ungrammatical": "mi wile e tomo ma."
+  },
+  {
+    "item_id": "comp_pair_heldout_0036",
+    "compound": "ma tomo",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma tomo' (city / town)",
+    "grammatical": "jan li moku e ma tomo.",
+    "ungrammatical": "jan li moku e tomo ma."
+  },
+  {
+    "item_id": "comp_pair_heldout_0037",
+    "compound": "jan lawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan lawa' (leader / director)",
+    "grammatical": "ona li lukin e jan lawa.",
+    "ungrammatical": "ona li lukin e lawa jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0038",
+    "compound": "jan lawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan lawa' (leader / director)",
+    "grammatical": "jan lawa li suli.",
+    "ungrammatical": "lawa jan li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0039",
+    "compound": "jan lawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan lawa' (leader / director)",
+    "grammatical": "mi wile e jan lawa.",
+    "ungrammatical": "mi wile e lawa jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0040",
+    "compound": "jan lawa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan lawa' (leader / director)",
+    "grammatical": "jan li moku e jan lawa.",
+    "ungrammatical": "jan li moku e lawa jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0041",
+    "compound": "supa lape",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa lape' (bed / sleeping surface)",
+    "grammatical": "ona li lukin e supa lape.",
+    "ungrammatical": "ona li lukin e lape supa."
+  },
+  {
+    "item_id": "comp_pair_heldout_0042",
+    "compound": "supa lape",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa lape' (bed / sleeping surface)",
+    "grammatical": "supa lape li suli.",
+    "ungrammatical": "lape supa li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0043",
+    "compound": "supa lape",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa lape' (bed / sleeping surface)",
+    "grammatical": "mi wile e supa lape.",
+    "ungrammatical": "mi wile e lape supa."
+  },
+  {
+    "item_id": "comp_pair_heldout_0044",
+    "compound": "supa lape",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa lape' (bed / sleeping surface)",
+    "grammatical": "jan li moku e supa lape.",
+    "ungrammatical": "jan li moku e lape supa."
+  },
+  {
+    "item_id": "comp_pair_heldout_0045",
+    "compound": "kiwen suwi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock)",
+    "grammatical": "ona li lukin e kiwen suwi.",
+    "ungrammatical": "ona li lukin e suwi kiwen."
+  },
+  {
+    "item_id": "comp_pair_heldout_0046",
+    "compound": "kiwen suwi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock)",
+    "grammatical": "kiwen suwi li suli.",
+    "ungrammatical": "suwi kiwen li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0047",
+    "compound": "kiwen suwi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock)",
+    "grammatical": "mi wile e kiwen suwi.",
+    "ungrammatical": "mi wile e suwi kiwen."
+  },
+  {
+    "item_id": "comp_pair_heldout_0048",
+    "compound": "kiwen suwi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock)",
+    "grammatical": "jan li moku e kiwen suwi.",
+    "ungrammatical": "jan li moku e suwi kiwen."
+  },
+  {
+    "item_id": "comp_pair_heldout_0049",
+    "compound": "telo kili",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo kili' (juice / fruit water)",
+    "grammatical": "ona li lukin e telo kili.",
+    "ungrammatical": "ona li lukin e kili telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0050",
+    "compound": "telo kili",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo kili' (juice / fruit water)",
+    "grammatical": "telo kili li suli.",
+    "ungrammatical": "kili telo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0051",
+    "compound": "telo kili",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo kili' (juice / fruit water)",
+    "grammatical": "mi wile e telo kili.",
+    "ungrammatical": "mi wile e kili telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0052",
+    "compound": "telo kili",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo kili' (juice / fruit water)",
+    "grammatical": "jan li moku e telo kili.",
+    "ungrammatical": "jan li moku e kili telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0053",
+    "compound": "jan alasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan alasa' (hunter)",
+    "grammatical": "ona li lukin e jan alasa.",
+    "ungrammatical": "ona li lukin e alasa jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0054",
+    "compound": "jan alasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan alasa' (hunter)",
+    "grammatical": "jan alasa li suli.",
+    "ungrammatical": "alasa jan li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0055",
+    "compound": "jan alasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan alasa' (hunter)",
+    "grammatical": "mi wile e jan alasa.",
+    "ungrammatical": "mi wile e alasa jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0056",
+    "compound": "jan alasa",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'jan alasa' (hunter)",
+    "grammatical": "jan li moku e jan alasa.",
+    "ungrammatical": "jan li moku e alasa jan."
+  },
+  {
+    "item_id": "comp_pair_heldout_0057",
+    "compound": "kasi suli",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kasi suli' (tree / big plant)",
+    "grammatical": "ona li lukin e kasi suli.",
+    "ungrammatical": "ona li lukin e suli kasi."
+  },
+  {
+    "item_id": "comp_pair_heldout_0058",
+    "compound": "kasi suli",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kasi suli' (tree / big plant)",
+    "grammatical": "kasi suli li suli.",
+    "ungrammatical": "suli kasi li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0059",
+    "compound": "kasi suli",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kasi suli' (tree / big plant)",
+    "grammatical": "mi wile e kasi suli.",
+    "ungrammatical": "mi wile e suli kasi."
+  },
+  {
+    "item_id": "comp_pair_heldout_0060",
+    "compound": "kasi suli",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'kasi suli' (tree / big plant)",
+    "grammatical": "jan li moku e kasi suli.",
+    "ungrammatical": "jan li moku e suli kasi."
+  },
+  {
+    "item_id": "comp_pair_heldout_0061",
+    "compound": "tomo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall)",
+    "grammatical": "ona li lukin e tomo moku.",
+    "ungrammatical": "ona li lukin e moku tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0062",
+    "compound": "tomo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall)",
+    "grammatical": "tomo moku li suli.",
+    "ungrammatical": "moku tomo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0063",
+    "compound": "tomo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall)",
+    "grammatical": "mi wile e tomo moku.",
+    "ungrammatical": "mi wile e moku tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0064",
+    "compound": "tomo moku",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall)",
+    "grammatical": "jan li moku e tomo moku.",
+    "ungrammatical": "jan li moku e moku tomo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0065",
+    "compound": "lipu sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'lipu sona' (textbook / study guide)",
+    "grammatical": "ona li lukin e lipu sona.",
+    "ungrammatical": "ona li lukin e sona lipu."
+  },
+  {
+    "item_id": "comp_pair_heldout_0066",
+    "compound": "lipu sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'lipu sona' (textbook / study guide)",
+    "grammatical": "lipu sona li suli.",
+    "ungrammatical": "sona lipu li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0067",
+    "compound": "lipu sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'lipu sona' (textbook / study guide)",
+    "grammatical": "mi wile e lipu sona.",
+    "ungrammatical": "mi wile e sona lipu."
+  },
+  {
+    "item_id": "comp_pair_heldout_0068",
+    "compound": "lipu sona",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'lipu sona' (textbook / study guide)",
+    "grammatical": "jan li moku e lipu sona.",
+    "ungrammatical": "jan li moku e sona lipu."
+  },
+  {
+    "item_id": "comp_pair_heldout_0069",
+    "compound": "ma kasi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma kasi' (forest / jungle)",
+    "grammatical": "ona li lukin e ma kasi.",
+    "ungrammatical": "ona li lukin e kasi ma."
+  },
+  {
+    "item_id": "comp_pair_heldout_0070",
+    "compound": "ma kasi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma kasi' (forest / jungle)",
+    "grammatical": "ma kasi li suli.",
+    "ungrammatical": "kasi ma li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0071",
+    "compound": "ma kasi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma kasi' (forest / jungle)",
+    "grammatical": "mi wile e ma kasi.",
+    "ungrammatical": "mi wile e kasi ma."
+  },
+  {
+    "item_id": "comp_pair_heldout_0072",
+    "compound": "ma kasi",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'ma kasi' (forest / jungle)",
+    "grammatical": "jan li moku e ma kasi.",
+    "ungrammatical": "jan li moku e kasi ma."
+  },
+  {
+    "item_id": "comp_pair_heldout_0073",
+    "compound": "telo pimeja",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew)",
+    "grammatical": "ona li lukin e telo pimeja.",
+    "ungrammatical": "ona li lukin e pimeja telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0074",
+    "compound": "telo pimeja",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew)",
+    "grammatical": "telo pimeja li suli.",
+    "ungrammatical": "pimeja telo li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0075",
+    "compound": "telo pimeja",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew)",
+    "grammatical": "mi wile e telo pimeja.",
+    "ungrammatical": "mi wile e pimeja telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0076",
+    "compound": "telo pimeja",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew)",
+    "grammatical": "jan li moku e telo pimeja.",
+    "ungrammatical": "jan li moku e pimeja telo."
+  },
+  {
+    "item_id": "comp_pair_heldout_0077",
+    "compound": "supa pali",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa pali' (desk / workbench)",
+    "grammatical": "ona li lukin e supa pali.",
+    "ungrammatical": "ona li lukin e pali supa."
+  },
+  {
+    "item_id": "comp_pair_heldout_0078",
+    "compound": "supa pali",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa pali' (desk / workbench)",
+    "grammatical": "supa pali li suli.",
+    "ungrammatical": "pali supa li suli."
+  },
+  {
+    "item_id": "comp_pair_heldout_0079",
+    "compound": "supa pali",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa pali' (desk / workbench)",
+    "grammatical": "mi wile e supa pali.",
+    "ungrammatical": "mi wile e pali supa."
+  },
+  {
+    "item_id": "comp_pair_heldout_0080",
+    "compound": "supa pali",
+    "condition": "heldout",
+    "description": "Compositional head-initial ordering for 'supa pali' (desk / workbench)",
+    "grammatical": "jan li moku e supa pali.",
+    "ungrammatical": "jan li moku e pali supa."
+  },
+  {
+    "item_id": "comp_pair_seen_0081",
+    "compound": "jan pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan pona' (friend / good person)",
+    "grammatical": "ona li lukin e jan pona.",
+    "ungrammatical": "ona li lukin e pona jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0082",
+    "compound": "jan pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan pona' (friend / good person)",
+    "grammatical": "jan pona li suli.",
+    "ungrammatical": "pona jan li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0083",
+    "compound": "jan pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan pona' (friend / good person)",
+    "grammatical": "mi wile e jan pona.",
+    "ungrammatical": "mi wile e pona jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0084",
+    "compound": "jan pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan pona' (friend / good person)",
+    "grammatical": "jan li moku e jan pona.",
+    "ungrammatical": "jan li moku e pona jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0085",
+    "compound": "toki pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech)",
+    "grammatical": "ona li lukin e toki pona.",
+    "ungrammatical": "ona li lukin e pona toki."
+  },
+  {
+    "item_id": "comp_pair_seen_0086",
+    "compound": "toki pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech)",
+    "grammatical": "toki pona li suli.",
+    "ungrammatical": "pona toki li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0087",
+    "compound": "toki pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech)",
+    "grammatical": "mi wile e toki pona.",
+    "ungrammatical": "mi wile e pona toki."
+  },
+  {
+    "item_id": "comp_pair_seen_0088",
+    "compound": "toki pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech)",
+    "grammatical": "jan li moku e toki pona.",
+    "ungrammatical": "jan li moku e pona toki."
+  },
+  {
+    "item_id": "comp_pair_seen_0089",
+    "compound": "tomo suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tomo suli' (large building / palace)",
+    "grammatical": "ona li lukin e tomo suli.",
+    "ungrammatical": "ona li lukin e suli tomo."
+  },
+  {
+    "item_id": "comp_pair_seen_0090",
+    "compound": "tomo suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tomo suli' (large building / palace)",
+    "grammatical": "tomo suli li suli.",
+    "ungrammatical": "suli tomo li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0091",
+    "compound": "tomo suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tomo suli' (large building / palace)",
+    "grammatical": "mi wile e tomo suli.",
+    "ungrammatical": "mi wile e suli tomo."
+  },
+  {
+    "item_id": "comp_pair_seen_0092",
+    "compound": "tomo suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tomo suli' (large building / palace)",
+    "grammatical": "jan li moku e tomo suli.",
+    "ungrammatical": "jan li moku e suli tomo."
+  },
+  {
+    "item_id": "comp_pair_seen_0093",
+    "compound": "telo seli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo seli' (hot water / tea)",
+    "grammatical": "ona li lukin e telo seli.",
+    "ungrammatical": "ona li lukin e seli telo."
+  },
+  {
+    "item_id": "comp_pair_seen_0094",
+    "compound": "telo seli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo seli' (hot water / tea)",
+    "grammatical": "telo seli li suli.",
+    "ungrammatical": "seli telo li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0095",
+    "compound": "telo seli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo seli' (hot water / tea)",
+    "grammatical": "mi wile e telo seli.",
+    "ungrammatical": "mi wile e seli telo."
+  },
+  {
+    "item_id": "comp_pair_seen_0096",
+    "compound": "telo seli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo seli' (hot water / tea)",
+    "grammatical": "jan li moku e telo seli.",
+    "ungrammatical": "jan li moku e seli telo."
+  },
+  {
+    "item_id": "comp_pair_seen_0097",
+    "compound": "tenpo suno",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo suno' (day / daylight)",
+    "grammatical": "ona li lukin e tenpo suno.",
+    "ungrammatical": "ona li lukin e suno tenpo."
+  },
+  {
+    "item_id": "comp_pair_seen_0098",
+    "compound": "tenpo suno",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo suno' (day / daylight)",
+    "grammatical": "tenpo suno li suli.",
+    "ungrammatical": "suno tenpo li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0099",
+    "compound": "tenpo suno",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo suno' (day / daylight)",
+    "grammatical": "mi wile e tenpo suno.",
+    "ungrammatical": "mi wile e suno tenpo."
+  },
+  {
+    "item_id": "comp_pair_seen_0100",
+    "compound": "tenpo suno",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo suno' (day / daylight)",
+    "grammatical": "jan li moku e tenpo suno.",
+    "ungrammatical": "jan li moku e suno tenpo."
+  },
+  {
+    "item_id": "comp_pair_seen_0101",
+    "compound": "jan lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan lili' (child / young person)",
+    "grammatical": "ona li lukin e jan lili.",
+    "ungrammatical": "ona li lukin e lili jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0102",
+    "compound": "jan lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan lili' (child / young person)",
+    "grammatical": "jan lili li suli.",
+    "ungrammatical": "lili jan li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0103",
+    "compound": "jan lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan lili' (child / young person)",
+    "grammatical": "mi wile e jan lili.",
+    "ungrammatical": "mi wile e lili jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0104",
+    "compound": "jan lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan lili' (child / young person)",
+    "grammatical": "jan li moku e jan lili.",
+    "ungrammatical": "jan li moku e lili jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0105",
+    "compound": "tenpo ni",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo ni' (present / now)",
+    "grammatical": "ona li lukin e tenpo ni.",
+    "ungrammatical": "ona li lukin e ni tenpo."
+  },
+  {
+    "item_id": "comp_pair_seen_0106",
+    "compound": "tenpo ni",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo ni' (present / now)",
+    "grammatical": "tenpo ni li suli.",
+    "ungrammatical": "ni tenpo li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0107",
+    "compound": "tenpo ni",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo ni' (present / now)",
+    "grammatical": "mi wile e tenpo ni.",
+    "ungrammatical": "mi wile e ni tenpo."
+  },
+  {
+    "item_id": "comp_pair_seen_0108",
+    "compound": "tenpo ni",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'tenpo ni' (present / now)",
+    "grammatical": "jan li moku e tenpo ni.",
+    "ungrammatical": "jan li moku e ni tenpo."
+  },
+  {
+    "item_id": "comp_pair_seen_0109",
+    "compound": "kili pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kili pona' (good fruit)",
+    "grammatical": "ona li lukin e kili pona.",
+    "ungrammatical": "ona li lukin e pona kili."
+  },
+  {
+    "item_id": "comp_pair_seen_0110",
+    "compound": "kili pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kili pona' (good fruit)",
+    "grammatical": "kili pona li suli.",
+    "ungrammatical": "pona kili li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0111",
+    "compound": "kili pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kili pona' (good fruit)",
+    "grammatical": "mi wile e kili pona.",
+    "ungrammatical": "mi wile e pona kili."
+  },
+  {
+    "item_id": "comp_pair_seen_0112",
+    "compound": "kili pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kili pona' (good fruit)",
+    "grammatical": "jan li moku e kili pona.",
+    "ungrammatical": "jan li moku e pona kili."
+  },
+  {
+    "item_id": "comp_pair_seen_0113",
+    "compound": "soweli wawa",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'soweli wawa' (powerful animal)",
+    "grammatical": "ona li lukin e soweli wawa.",
+    "ungrammatical": "ona li lukin e wawa soweli."
+  },
+  {
+    "item_id": "comp_pair_seen_0114",
+    "compound": "soweli wawa",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'soweli wawa' (powerful animal)",
+    "grammatical": "soweli wawa li suli.",
+    "ungrammatical": "wawa soweli li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0115",
+    "compound": "soweli wawa",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'soweli wawa' (powerful animal)",
+    "grammatical": "mi wile e soweli wawa.",
+    "ungrammatical": "mi wile e wawa soweli."
+  },
+  {
+    "item_id": "comp_pair_seen_0116",
+    "compound": "soweli wawa",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'soweli wawa' (powerful animal)",
+    "grammatical": "jan li moku e soweli wawa.",
+    "ungrammatical": "jan li moku e wawa soweli."
+  },
+  {
+    "item_id": "comp_pair_seen_0117",
+    "compound": "lipu pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'lipu pona' (good book / document)",
+    "grammatical": "ona li lukin e lipu pona.",
+    "ungrammatical": "ona li lukin e pona lipu."
+  },
+  {
+    "item_id": "comp_pair_seen_0118",
+    "compound": "lipu pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'lipu pona' (good book / document)",
+    "grammatical": "lipu pona li suli.",
+    "ungrammatical": "pona lipu li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0119",
+    "compound": "lipu pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'lipu pona' (good book / document)",
+    "grammatical": "mi wile e lipu pona.",
+    "ungrammatical": "mi wile e pona lipu."
+  },
+  {
+    "item_id": "comp_pair_seen_0120",
+    "compound": "lipu pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'lipu pona' (good book / document)",
+    "grammatical": "jan li moku e lipu pona.",
+    "ungrammatical": "jan li moku e pona lipu."
+  },
+  {
+    "item_id": "comp_pair_seen_0121",
+    "compound": "ma suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma suli' (large country / land)",
+    "grammatical": "ona li lukin e ma suli.",
+    "ungrammatical": "ona li lukin e suli ma."
+  },
+  {
+    "item_id": "comp_pair_seen_0122",
+    "compound": "ma suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma suli' (large country / land)",
+    "grammatical": "ma suli li suli.",
+    "ungrammatical": "suli ma li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0123",
+    "compound": "ma suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma suli' (large country / land)",
+    "grammatical": "mi wile e ma suli.",
+    "ungrammatical": "mi wile e suli ma."
+  },
+  {
+    "item_id": "comp_pair_seen_0124",
+    "compound": "ma suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma suli' (large country / land)",
+    "grammatical": "jan li moku e ma suli.",
+    "ungrammatical": "jan li moku e suli ma."
+  },
+  {
+    "item_id": "comp_pair_seen_0125",
+    "compound": "telo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo pona' (pure water)",
+    "grammatical": "ona li lukin e telo pona.",
+    "ungrammatical": "ona li lukin e pona telo."
+  },
+  {
+    "item_id": "comp_pair_seen_0126",
+    "compound": "telo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo pona' (pure water)",
+    "grammatical": "telo pona li suli.",
+    "ungrammatical": "pona telo li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0127",
+    "compound": "telo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo pona' (pure water)",
+    "grammatical": "mi wile e telo pona.",
+    "ungrammatical": "mi wile e pona telo."
+  },
+  {
+    "item_id": "comp_pair_seen_0128",
+    "compound": "telo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'telo pona' (pure water)",
+    "grammatical": "jan li moku e telo pona.",
+    "ungrammatical": "jan li moku e pona telo."
+  },
+  {
+    "item_id": "comp_pair_seen_0129",
+    "compound": "kasi lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kasi lili' (small plant / flower)",
+    "grammatical": "ona li lukin e kasi lili.",
+    "ungrammatical": "ona li lukin e lili kasi."
+  },
+  {
+    "item_id": "comp_pair_seen_0130",
+    "compound": "kasi lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kasi lili' (small plant / flower)",
+    "grammatical": "kasi lili li suli.",
+    "ungrammatical": "lili kasi li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0131",
+    "compound": "kasi lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kasi lili' (small plant / flower)",
+    "grammatical": "mi wile e kasi lili.",
+    "ungrammatical": "mi wile e lili kasi."
+  },
+  {
+    "item_id": "comp_pair_seen_0132",
+    "compound": "kasi lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'kasi lili' (small plant / flower)",
+    "grammatical": "jan li moku e kasi lili.",
+    "ungrammatical": "jan li moku e lili kasi."
+  },
+  {
+    "item_id": "comp_pair_seen_0133",
+    "compound": "jan suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan suli' (adult / elder)",
+    "grammatical": "ona li lukin e jan suli.",
+    "ungrammatical": "ona li lukin e suli jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0134",
+    "compound": "jan suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan suli' (adult / elder)",
+    "grammatical": "jan suli li suli.",
+    "ungrammatical": "suli jan li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0135",
+    "compound": "jan suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan suli' (adult / elder)",
+    "grammatical": "mi wile e jan suli.",
+    "ungrammatical": "mi wile e suli jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0136",
+    "compound": "jan suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'jan suli' (adult / elder)",
+    "grammatical": "jan li moku e jan suli.",
+    "ungrammatical": "jan li moku e suli jan."
+  },
+  {
+    "item_id": "comp_pair_seen_0137",
+    "compound": "suno suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'suno suli' (bright sun)",
+    "grammatical": "ona li lukin e suno suli.",
+    "ungrammatical": "ona li lukin e suli suno."
+  },
+  {
+    "item_id": "comp_pair_seen_0138",
+    "compound": "suno suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'suno suli' (bright sun)",
+    "grammatical": "suno suli li suli.",
+    "ungrammatical": "suli suno li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0139",
+    "compound": "suno suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'suno suli' (bright sun)",
+    "grammatical": "mi wile e suno suli.",
+    "ungrammatical": "mi wile e suli suno."
+  },
+  {
+    "item_id": "comp_pair_seen_0140",
+    "compound": "suno suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'suno suli' (bright sun)",
+    "grammatical": "jan li moku e suno suli.",
+    "ungrammatical": "jan li moku e suli suno."
+  },
+  {
+    "item_id": "comp_pair_seen_0141",
+    "compound": "moku pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'moku pona' (good meal / healthy food)",
+    "grammatical": "ona li lukin e moku pona.",
+    "ungrammatical": "ona li lukin e pona moku."
+  },
+  {
+    "item_id": "comp_pair_seen_0142",
+    "compound": "moku pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'moku pona' (good meal / healthy food)",
+    "grammatical": "moku pona li suli.",
+    "ungrammatical": "pona moku li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0143",
+    "compound": "moku pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'moku pona' (good meal / healthy food)",
+    "grammatical": "mi wile e moku pona.",
+    "ungrammatical": "mi wile e pona moku."
+  },
+  {
+    "item_id": "comp_pair_seen_0144",
+    "compound": "moku pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'moku pona' (good meal / healthy food)",
+    "grammatical": "jan li moku e moku pona.",
+    "ungrammatical": "jan li moku e pona moku."
+  },
+  {
+    "item_id": "comp_pair_seen_0145",
+    "compound": "ona mute",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ona mute' (they / group)",
+    "grammatical": "ona li lukin e ona mute.",
+    "ungrammatical": "ona li lukin e mute ona."
+  },
+  {
+    "item_id": "comp_pair_seen_0146",
+    "compound": "ona mute",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ona mute' (they / group)",
+    "grammatical": "ona mute li suli.",
+    "ungrammatical": "mute ona li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0147",
+    "compound": "ona mute",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ona mute' (they / group)",
+    "grammatical": "mi wile e ona mute.",
+    "ungrammatical": "mi wile e mute ona."
+  },
+  {
+    "item_id": "comp_pair_seen_0148",
+    "compound": "ona mute",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ona mute' (they / group)",
+    "grammatical": "jan li moku e ona mute.",
+    "ungrammatical": "jan li moku e mute ona."
+  },
+  {
+    "item_id": "comp_pair_seen_0149",
+    "compound": "ma lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma lili' (small village / countryside)",
+    "grammatical": "ona li lukin e ma lili.",
+    "ungrammatical": "ona li lukin e lili ma."
+  },
+  {
+    "item_id": "comp_pair_seen_0150",
+    "compound": "ma lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma lili' (small village / countryside)",
+    "grammatical": "ma lili li suli.",
+    "ungrammatical": "lili ma li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0151",
+    "compound": "ma lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma lili' (small village / countryside)",
+    "grammatical": "mi wile e ma lili.",
+    "ungrammatical": "mi wile e lili ma."
+  },
+  {
+    "item_id": "comp_pair_seen_0152",
+    "compound": "ma lili",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ma lili' (small village / countryside)",
+    "grammatical": "jan li moku e ma lili.",
+    "ungrammatical": "jan li moku e lili ma."
+  },
+  {
+    "item_id": "comp_pair_seen_0153",
+    "compound": "ilo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ilo pona' (useful tool)",
+    "grammatical": "ona li lukin e ilo pona.",
+    "ungrammatical": "ona li lukin e pona ilo."
+  },
+  {
+    "item_id": "comp_pair_seen_0154",
+    "compound": "ilo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ilo pona' (useful tool)",
+    "grammatical": "ilo pona li suli.",
+    "ungrammatical": "pona ilo li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0155",
+    "compound": "ilo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ilo pona' (useful tool)",
+    "grammatical": "mi wile e ilo pona.",
+    "ungrammatical": "mi wile e pona ilo."
+  },
+  {
+    "item_id": "comp_pair_seen_0156",
+    "compound": "ilo pona",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'ilo pona' (useful tool)",
+    "grammatical": "jan li moku e ilo pona.",
+    "ungrammatical": "jan li moku e pona ilo."
+  },
+  {
+    "item_id": "comp_pair_seen_0157",
+    "compound": "supa suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'supa suli' (large table)",
+    "grammatical": "ona li lukin e supa suli.",
+    "ungrammatical": "ona li lukin e suli supa."
+  },
+  {
+    "item_id": "comp_pair_seen_0158",
+    "compound": "supa suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'supa suli' (large table)",
+    "grammatical": "supa suli li suli.",
+    "ungrammatical": "suli supa li suli."
+  },
+  {
+    "item_id": "comp_pair_seen_0159",
+    "compound": "supa suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'supa suli' (large table)",
+    "grammatical": "mi wile e supa suli.",
+    "ungrammatical": "mi wile e suli supa."
+  },
+  {
+    "item_id": "comp_pair_seen_0160",
+    "compound": "supa suli",
+    "condition": "seen",
+    "description": "Compositional head-initial ordering for 'supa suli' (large table)",
+    "grammatical": "jan li moku e supa suli.",
+    "ungrammatical": "jan li moku e suli supa."
+  }
+]

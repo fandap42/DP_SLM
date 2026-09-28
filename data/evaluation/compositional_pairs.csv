@@ -1,0 +1,161 @@
+item_id,compound,condition,description,grammatical,ungrammatical
+comp_pair_heldout_0001,telo nasa,heldout,Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water),ona li lukin e telo nasa.,ona li lukin e nasa telo.
+comp_pair_heldout_0002,telo nasa,heldout,Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water),telo nasa li suli.,nasa telo li suli.
+comp_pair_heldout_0003,telo nasa,heldout,Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water),mi wile e telo nasa.,mi wile e nasa telo.
+comp_pair_heldout_0004,telo nasa,heldout,Compositional head-initial ordering for 'telo nasa' (alcohol / crazy water),jan li moku e telo nasa.,jan li moku e nasa telo.
+comp_pair_heldout_0005,tomo telo,heldout,Compositional head-initial ordering for 'tomo telo' (restroom / water building),ona li lukin e tomo telo.,ona li lukin e telo tomo.
+comp_pair_heldout_0006,tomo telo,heldout,Compositional head-initial ordering for 'tomo telo' (restroom / water building),tomo telo li suli.,telo tomo li suli.
+comp_pair_heldout_0007,tomo telo,heldout,Compositional head-initial ordering for 'tomo telo' (restroom / water building),mi wile e tomo telo.,mi wile e telo tomo.
+comp_pair_heldout_0008,tomo telo,heldout,Compositional head-initial ordering for 'tomo telo' (restroom / water building),jan li moku e tomo telo.,jan li moku e telo tomo.
+comp_pair_heldout_0009,jan utala,heldout,Compositional head-initial ordering for 'jan utala' (soldier / warrior),ona li lukin e jan utala.,ona li lukin e utala jan.
+comp_pair_heldout_0010,jan utala,heldout,Compositional head-initial ordering for 'jan utala' (soldier / warrior),jan utala li suli.,utala jan li suli.
+comp_pair_heldout_0011,jan utala,heldout,Compositional head-initial ordering for 'jan utala' (soldier / warrior),mi wile e jan utala.,mi wile e utala jan.
+comp_pair_heldout_0012,jan utala,heldout,Compositional head-initial ordering for 'jan utala' (soldier / warrior),jan li moku e jan utala.,jan li moku e utala jan.
+comp_pair_heldout_0013,ilo moku,heldout,Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil),ona li lukin e ilo moku.,ona li lukin e moku ilo.
+comp_pair_heldout_0014,ilo moku,heldout,Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil),ilo moku li suli.,moku ilo li suli.
+comp_pair_heldout_0015,ilo moku,heldout,Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil),mi wile e ilo moku.,mi wile e moku ilo.
+comp_pair_heldout_0016,ilo moku,heldout,Compositional head-initial ordering for 'ilo moku' (cutlery / eating utensil),jan li moku e ilo moku.,jan li moku e moku ilo.
+comp_pair_heldout_0017,tomo tawa,heldout,Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room),ona li lukin e tomo tawa.,ona li lukin e tawa tomo.
+comp_pair_heldout_0018,tomo tawa,heldout,Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room),tomo tawa li suli.,tawa tomo li suli.
+comp_pair_heldout_0019,tomo tawa,heldout,Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room),mi wile e tomo tawa.,mi wile e tawa tomo.
+comp_pair_heldout_0020,tomo tawa,heldout,Compositional head-initial ordering for 'tomo tawa' (vehicle / moving room),jan li moku e tomo tawa.,jan li moku e tawa tomo.
+comp_pair_heldout_0021,jan sona,heldout,Compositional head-initial ordering for 'jan sona' (scientist / scholar),ona li lukin e jan sona.,ona li lukin e sona jan.
+comp_pair_heldout_0022,jan sona,heldout,Compositional head-initial ordering for 'jan sona' (scientist / scholar),jan sona li suli.,sona jan li suli.
+comp_pair_heldout_0023,jan sona,heldout,Compositional head-initial ordering for 'jan sona' (scientist / scholar),mi wile e jan sona.,mi wile e sona jan.
+comp_pair_heldout_0024,jan sona,heldout,Compositional head-initial ordering for 'jan sona' (scientist / scholar),jan li moku e jan sona.,jan li moku e sona jan.
+comp_pair_heldout_0025,tomo sona,heldout,Compositional head-initial ordering for 'tomo sona' (school / university),ona li lukin e tomo sona.,ona li lukin e sona tomo.
+comp_pair_heldout_0026,tomo sona,heldout,Compositional head-initial ordering for 'tomo sona' (school / university),tomo sona li suli.,sona tomo li suli.
+comp_pair_heldout_0027,tomo sona,heldout,Compositional head-initial ordering for 'tomo sona' (school / university),mi wile e tomo sona.,mi wile e sona tomo.
+comp_pair_heldout_0028,tomo sona,heldout,Compositional head-initial ordering for 'tomo sona' (school / university),jan li moku e tomo sona.,jan li moku e sona tomo.
+comp_pair_heldout_0029,ilo suno,heldout,Compositional head-initial ordering for 'ilo suno' (flashlight / lamp),ona li lukin e ilo suno.,ona li lukin e suno ilo.
+comp_pair_heldout_0030,ilo suno,heldout,Compositional head-initial ordering for 'ilo suno' (flashlight / lamp),ilo suno li suli.,suno ilo li suli.
+comp_pair_heldout_0031,ilo suno,heldout,Compositional head-initial ordering for 'ilo suno' (flashlight / lamp),mi wile e ilo suno.,mi wile e suno ilo.
+comp_pair_heldout_0032,ilo suno,heldout,Compositional head-initial ordering for 'ilo suno' (flashlight / lamp),jan li moku e ilo suno.,jan li moku e suno ilo.
+comp_pair_heldout_0033,ma tomo,heldout,Compositional head-initial ordering for 'ma tomo' (city / town),ona li lukin e ma tomo.,ona li lukin e tomo ma.
+comp_pair_heldout_0034,ma tomo,heldout,Compositional head-initial ordering for 'ma tomo' (city / town),ma tomo li suli.,tomo ma li suli.
+comp_pair_heldout_0035,ma tomo,heldout,Compositional head-initial ordering for 'ma tomo' (city / town),mi wile e ma tomo.,mi wile e tomo ma.
+comp_pair_heldout_0036,ma tomo,heldout,Compositional head-initial ordering for 'ma tomo' (city / town),jan li moku e ma tomo.,jan li moku e tomo ma.
+comp_pair_heldout_0037,jan lawa,heldout,Compositional head-initial ordering for 'jan lawa' (leader / director),ona li lukin e jan lawa.,ona li lukin e lawa jan.
+comp_pair_heldout_0038,jan lawa,heldout,Compositional head-initial ordering for 'jan lawa' (leader / director),jan lawa li suli.,lawa jan li suli.
+comp_pair_heldout_0039,jan lawa,heldout,Compositional head-initial ordering for 'jan lawa' (leader / director),mi wile e jan lawa.,mi wile e lawa jan.
+comp_pair_heldout_0040,jan lawa,heldout,Compositional head-initial ordering for 'jan lawa' (leader / director),jan li moku e jan lawa.,jan li moku e lawa jan.
+comp_pair_heldout_0041,supa lape,heldout,Compositional head-initial ordering for 'supa lape' (bed / sleeping surface),ona li lukin e supa lape.,ona li lukin e lape supa.
+comp_pair_heldout_0042,supa lape,heldout,Compositional head-initial ordering for 'supa lape' (bed / sleeping surface),supa lape li suli.,lape supa li suli.
+comp_pair_heldout_0043,supa lape,heldout,Compositional head-initial ordering for 'supa lape' (bed / sleeping surface),mi wile e supa lape.,mi wile e lape supa.
+comp_pair_heldout_0044,supa lape,heldout,Compositional head-initial ordering for 'supa lape' (bed / sleeping surface),jan li moku e supa lape.,jan li moku e lape supa.
+comp_pair_heldout_0045,kiwen suwi,heldout,Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock),ona li lukin e kiwen suwi.,ona li lukin e suwi kiwen.
+comp_pair_heldout_0046,kiwen suwi,heldout,Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock),kiwen suwi li suli.,suwi kiwen li suli.
+comp_pair_heldout_0047,kiwen suwi,heldout,Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock),mi wile e kiwen suwi.,mi wile e suwi kiwen.
+comp_pair_heldout_0048,kiwen suwi,heldout,Compositional head-initial ordering for 'kiwen suwi' (sugar / sweet rock),jan li moku e kiwen suwi.,jan li moku e suwi kiwen.
+comp_pair_heldout_0049,telo kili,heldout,Compositional head-initial ordering for 'telo kili' (juice / fruit water),ona li lukin e telo kili.,ona li lukin e kili telo.
+comp_pair_heldout_0050,telo kili,heldout,Compositional head-initial ordering for 'telo kili' (juice / fruit water),telo kili li suli.,kili telo li suli.
+comp_pair_heldout_0051,telo kili,heldout,Compositional head-initial ordering for 'telo kili' (juice / fruit water),mi wile e telo kili.,mi wile e kili telo.
+comp_pair_heldout_0052,telo kili,heldout,Compositional head-initial ordering for 'telo kili' (juice / fruit water),jan li moku e telo kili.,jan li moku e kili telo.
+comp_pair_heldout_0053,jan alasa,heldout,Compositional head-initial ordering for 'jan alasa' (hunter),ona li lukin e jan alasa.,ona li lukin e alasa jan.
+comp_pair_heldout_0054,jan alasa,heldout,Compositional head-initial ordering for 'jan alasa' (hunter),jan alasa li suli.,alasa jan li suli.
+comp_pair_heldout_0055,jan alasa,heldout,Compositional head-initial ordering for 'jan alasa' (hunter),mi wile e jan alasa.,mi wile e alasa jan.
+comp_pair_heldout_0056,jan alasa,heldout,Compositional head-initial ordering for 'jan alasa' (hunter),jan li moku e jan alasa.,jan li moku e alasa jan.
+comp_pair_heldout_0057,kasi suli,heldout,Compositional head-initial ordering for 'kasi suli' (tree / big plant),ona li lukin e kasi suli.,ona li lukin e suli kasi.
+comp_pair_heldout_0058,kasi suli,heldout,Compositional head-initial ordering for 'kasi suli' (tree / big plant),kasi suli li suli.,suli kasi li suli.
+comp_pair_heldout_0059,kasi suli,heldout,Compositional head-initial ordering for 'kasi suli' (tree / big plant),mi wile e kasi suli.,mi wile e suli kasi.
+comp_pair_heldout_0060,kasi suli,heldout,Compositional head-initial ordering for 'kasi suli' (tree / big plant),jan li moku e kasi suli.,jan li moku e suli kasi.
+comp_pair_heldout_0061,tomo moku,heldout,Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall),ona li lukin e tomo moku.,ona li lukin e moku tomo.
+comp_pair_heldout_0062,tomo moku,heldout,Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall),tomo moku li suli.,moku tomo li suli.
+comp_pair_heldout_0063,tomo moku,heldout,Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall),mi wile e tomo moku.,mi wile e moku tomo.
+comp_pair_heldout_0064,tomo moku,heldout,Compositional head-initial ordering for 'tomo moku' (restaurant / dining hall),jan li moku e tomo moku.,jan li moku e moku tomo.
+comp_pair_heldout_0065,lipu sona,heldout,Compositional head-initial ordering for 'lipu sona' (textbook / study guide),ona li lukin e lipu sona.,ona li lukin e sona lipu.
+comp_pair_heldout_0066,lipu sona,heldout,Compositional head-initial ordering for 'lipu sona' (textbook / study guide),lipu sona li suli.,sona lipu li suli.
+comp_pair_heldout_0067,lipu sona,heldout,Compositional head-initial ordering for 'lipu sona' (textbook / study guide),mi wile e lipu sona.,mi wile e sona lipu.
+comp_pair_heldout_0068,lipu sona,heldout,Compositional head-initial ordering for 'lipu sona' (textbook / study guide),jan li moku e lipu sona.,jan li moku e sona lipu.
+comp_pair_heldout_0069,ma kasi,heldout,Compositional head-initial ordering for 'ma kasi' (forest / jungle),ona li lukin e ma kasi.,ona li lukin e kasi ma.
+comp_pair_heldout_0070,ma kasi,heldout,Compositional head-initial ordering for 'ma kasi' (forest / jungle),ma kasi li suli.,kasi ma li suli.
+comp_pair_heldout_0071,ma kasi,heldout,Compositional head-initial ordering for 'ma kasi' (forest / jungle),mi wile e ma kasi.,mi wile e kasi ma.
+comp_pair_heldout_0072,ma kasi,heldout,Compositional head-initial ordering for 'ma kasi' (forest / jungle),jan li moku e ma kasi.,jan li moku e kasi ma.
+comp_pair_heldout_0073,telo pimeja,heldout,Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew),ona li lukin e telo pimeja.,ona li lukin e pimeja telo.
+comp_pair_heldout_0074,telo pimeja,heldout,Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew),telo pimeja li suli.,pimeja telo li suli.
+comp_pair_heldout_0075,telo pimeja,heldout,Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew),mi wile e telo pimeja.,mi wile e pimeja telo.
+comp_pair_heldout_0076,telo pimeja,heldout,Compositional head-initial ordering for 'telo pimeja' (coffee / dark brew),jan li moku e telo pimeja.,jan li moku e pimeja telo.
+comp_pair_heldout_0077,supa pali,heldout,Compositional head-initial ordering for 'supa pali' (desk / workbench),ona li lukin e supa pali.,ona li lukin e pali supa.
+comp_pair_heldout_0078,supa pali,heldout,Compositional head-initial ordering for 'supa pali' (desk / workbench),supa pali li suli.,pali supa li suli.
+comp_pair_heldout_0079,supa pali,heldout,Compositional head-initial ordering for 'supa pali' (desk / workbench),mi wile e supa pali.,mi wile e pali supa.
+comp_pair_heldout_0080,supa pali,heldout,Compositional head-initial ordering for 'supa pali' (desk / workbench),jan li moku e supa pali.,jan li moku e pali supa.
+comp_pair_seen_0081,jan pona,seen,Compositional head-initial ordering for 'jan pona' (friend / good person),ona li lukin e jan pona.,ona li lukin e pona jan.
+comp_pair_seen_0082,jan pona,seen,Compositional head-initial ordering for 'jan pona' (friend / good person),jan pona li suli.,pona jan li suli.
+comp_pair_seen_0083,jan pona,seen,Compositional head-initial ordering for 'jan pona' (friend / good person),mi wile e jan pona.,mi wile e pona jan.
+comp_pair_seen_0084,jan pona,seen,Compositional head-initial ordering for 'jan pona' (friend / good person),jan li moku e jan pona.,jan li moku e pona jan.
+comp_pair_seen_0085,toki pona,seen,Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech),ona li lukin e toki pona.,ona li lukin e pona toki.
+comp_pair_seen_0086,toki pona,seen,Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech),toki pona li suli.,pona toki li suli.
+comp_pair_seen_0087,toki pona,seen,Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech),mi wile e toki pona.,mi wile e pona toki.
+comp_pair_seen_0088,toki pona,seen,Compositional head-initial ordering for 'toki pona' (Toki Pona / good speech),jan li moku e toki pona.,jan li moku e pona toki.
+comp_pair_seen_0089,tomo suli,seen,Compositional head-initial ordering for 'tomo suli' (large building / palace),ona li lukin e tomo suli.,ona li lukin e suli tomo.
+comp_pair_seen_0090,tomo suli,seen,Compositional head-initial ordering for 'tomo suli' (large building / palace),tomo suli li suli.,suli tomo li suli.
+comp_pair_seen_0091,tomo suli,seen,Compositional head-initial ordering for 'tomo suli' (large building / palace),mi wile e tomo suli.,mi wile e suli tomo.
+comp_pair_seen_0092,tomo suli,seen,Compositional head-initial ordering for 'tomo suli' (large building / palace),jan li moku e tomo suli.,jan li moku e suli tomo.
+comp_pair_seen_0093,telo seli,seen,Compositional head-initial ordering for 'telo seli' (hot water / tea),ona li lukin e telo seli.,ona li lukin e seli telo.
+comp_pair_seen_0094,telo seli,seen,Compositional head-initial ordering for 'telo seli' (hot water / tea),telo seli li suli.,seli telo li suli.
+comp_pair_seen_0095,telo seli,seen,Compositional head-initial ordering for 'telo seli' (hot water / tea),mi wile e telo seli.,mi wile e seli telo.
+comp_pair_seen_0096,telo seli,seen,Compositional head-initial ordering for 'telo seli' (hot water / tea),jan li moku e telo seli.,jan li moku e seli telo.
+comp_pair_seen_0097,tenpo suno,seen,Compositional head-initial ordering for 'tenpo suno' (day / daylight),ona li lukin e tenpo suno.,ona li lukin e suno tenpo.
+comp_pair_seen_0098,tenpo suno,seen,Compositional head-initial ordering for 'tenpo suno' (day / daylight),tenpo suno li suli.,suno tenpo li suli.
+comp_pair_seen_0099,tenpo suno,seen,Compositional head-initial ordering for 'tenpo suno' (day / daylight),mi wile e tenpo suno.,mi wile e suno tenpo.
+comp_pair_seen_0100,tenpo suno,seen,Compositional head-initial ordering for 'tenpo suno' (day / daylight),jan li moku e tenpo suno.,jan li moku e suno tenpo.
+comp_pair_seen_0101,jan lili,seen,Compositional head-initial ordering for 'jan lili' (child / young person),ona li lukin e jan lili.,ona li lukin e lili jan.
+comp_pair_seen_0102,jan lili,seen,Compositional head-initial ordering for 'jan lili' (child / young person),jan lili li suli.,lili jan li suli.
+comp_pair_seen_0103,jan lili,seen,Compositional head-initial ordering for 'jan lili' (child / young person),mi wile e jan lili.,mi wile e lili jan.
+comp_pair_seen_0104,jan lili,seen,Compositional head-initial ordering for 'jan lili' (child / young person),jan li moku e jan lili.,jan li moku e lili jan.
+comp_pair_seen_0105,tenpo ni,seen,Compositional head-initial ordering for 'tenpo ni' (present / now),ona li lukin e tenpo ni.,ona li lukin e ni tenpo.
+comp_pair_seen_0106,tenpo ni,seen,Compositional head-initial ordering for 'tenpo ni' (present / now),tenpo ni li suli.,ni tenpo li suli.
+comp_pair_seen_0107,tenpo ni,seen,Compositional head-initial ordering for 'tenpo ni' (present / now),mi wile e tenpo ni.,mi wile e ni tenpo.
+comp_pair_seen_0108,tenpo ni,seen,Compositional head-initial ordering for 'tenpo ni' (present / now),jan li moku e tenpo ni.,jan li moku e ni tenpo.
+comp_pair_seen_0109,kili pona,seen,Compositional head-initial ordering for 'kili pona' (good fruit),ona li lukin e kili pona.,ona li lukin e pona kili.
+comp_pair_seen_0110,kili pona,seen,Compositional head-initial ordering for 'kili pona' (good fruit),kili pona li suli.,pona kili li suli.
+comp_pair_seen_0111,kili pona,seen,Compositional head-initial ordering for 'kili pona' (good fruit),mi wile e kili pona.,mi wile e pona kili.
+comp_pair_seen_0112,kili pona,seen,Compositional head-initial ordering for 'kili pona' (good fruit),jan li moku e kili pona.,jan li moku e pona kili.
+comp_pair_seen_0113,soweli wawa,seen,Compositional head-initial ordering for 'soweli wawa' (powerful animal),ona li lukin e soweli wawa.,ona li lukin e wawa soweli.
+comp_pair_seen_0114,soweli wawa,seen,Compositional head-initial ordering for 'soweli wawa' (powerful animal),soweli wawa li suli.,wawa soweli li suli.
+comp_pair_seen_0115,soweli wawa,seen,Compositional head-initial ordering for 'soweli wawa' (powerful animal),mi wile e soweli wawa.,mi wile e wawa soweli.
+comp_pair_seen_0116,soweli wawa,seen,Compositional head-initial ordering for 'soweli wawa' (powerful animal),jan li moku e soweli wawa.,jan li moku e wawa soweli.
+comp_pair_seen_0117,lipu pona,seen,Compositional head-initial ordering for 'lipu pona' (good book / document),ona li lukin e lipu pona.,ona li lukin e pona lipu.
+comp_pair_seen_0118,lipu pona,seen,Compositional head-initial ordering for 'lipu pona' (good book / document),lipu pona li suli.,pona lipu li suli.
+comp_pair_seen_0119,lipu pona,seen,Compositional head-initial ordering for 'lipu pona' (good book / document),mi wile e lipu pona.,mi wile e pona lipu.
+comp_pair_seen_0120,lipu pona,seen,Compositional head-initial ordering for 'lipu pona' (good book / document),jan li moku e lipu pona.,jan li moku e pona lipu.
+comp_pair_seen_0121,ma suli,seen,Compositional head-initial ordering for 'ma suli' (large country / land),ona li lukin e ma suli.,ona li lukin e suli ma.
+comp_pair_seen_0122,ma suli,seen,Compositional head-initial ordering for 'ma suli' (large country / land),ma suli li suli.,suli ma li suli.
+comp_pair_seen_0123,ma suli,seen,Compositional head-initial ordering for 'ma suli' (large country / land),mi wile e ma suli.,mi wile e suli ma.
+comp_pair_seen_0124,ma suli,seen,Compositional head-initial ordering for 'ma suli' (large country / land),jan li moku e ma suli.,jan li moku e suli ma.
+comp_pair_seen_0125,telo pona,seen,Compositional head-initial ordering for 'telo pona' (pure water),ona li lukin e telo pona.,ona li lukin e pona telo.
+comp_pair_seen_0126,telo pona,seen,Compositional head-initial ordering for 'telo pona' (pure water),telo pona li suli.,pona telo li suli.
+comp_pair_seen_0127,telo pona,seen,Compositional head-initial ordering for 'telo pona' (pure water),mi wile e telo pona.,mi wile e pona telo.
+comp_pair_seen_0128,telo pona,seen,Compositional head-initial ordering for 'telo pona' (pure water),jan li moku e telo pona.,jan li moku e pona telo.
+comp_pair_seen_0129,kasi lili,seen,Compositional head-initial ordering for 'kasi lili' (small plant / flower),ona li lukin e kasi lili.,ona li lukin e lili kasi.
+comp_pair_seen_0130,kasi lili,seen,Compositional head-initial ordering for 'kasi lili' (small plant / flower),kasi lili li suli.,lili kasi li suli.
+comp_pair_seen_0131,kasi lili,seen,Compositional head-initial ordering for 'kasi lili' (small plant / flower),mi wile e kasi lili.,mi wile e lili kasi.
+comp_pair_seen_0132,kasi lili,seen,Compositional head-initial ordering for 'kasi lili' (small plant / flower),jan li moku e kasi lili.,jan li moku e lili kasi.
+comp_pair_seen_0133,jan suli,seen,Compositional head-initial ordering for 'jan suli' (adult / elder),ona li lukin e jan suli.,ona li lukin e suli jan.
+comp_pair_seen_0134,jan suli,seen,Compositional head-initial ordering for 'jan suli' (adult / elder),jan suli li suli.,suli jan li suli.
+comp_pair_seen_0135,jan suli,seen,Compositional head-initial ordering for 'jan suli' (adult / elder),mi wile e jan suli.,mi wile e suli jan.
+comp_pair_seen_0136,jan suli,seen,Compositional head-initial ordering for 'jan suli' (adult / elder),jan li moku e jan suli.,jan li moku e suli jan.
+comp_pair_seen_0137,suno suli,seen,Compositional head-initial ordering for 'suno suli' (bright sun),ona li lukin e suno suli.,ona li lukin e suli suno.
+comp_pair_seen_0138,suno suli,seen,Compositional head-initial ordering for 'suno suli' (bright sun),suno suli li suli.,suli suno li suli.
+comp_pair_seen_0139,suno suli,seen,Compositional head-initial ordering for 'suno suli' (bright sun),mi wile e suno suli.,mi wile e suli suno.
+comp_pair_seen_0140,suno suli,seen,Compositional head-initial ordering for 'suno suli' (bright sun),jan li moku e suno suli.,jan li moku e suli suno.
+comp_pair_seen_0141,moku pona,seen,Compositional head-initial ordering for 'moku pona' (good meal / healthy food),ona li lukin e moku pona.,ona li lukin e pona moku.
+comp_pair_seen_0142,moku pona,seen,Compositional head-initial ordering for 'moku pona' (good meal / healthy food),moku pona li suli.,pona moku li suli.
+comp_pair_seen_0143,moku pona,seen,Compositional head-initial ordering for 'moku pona' (good meal / healthy food),mi wile e moku pona.,mi wile e pona moku.
+comp_pair_seen_0144,moku pona,seen,Compositional head-initial ordering for 'moku pona' (good meal / healthy food),jan li moku e moku pona.,jan li moku e pona moku.
+comp_pair_seen_0145,ona mute,seen,Compositional head-initial ordering for 'ona mute' (they / group),ona li lukin e ona mute.,ona li lukin e mute ona.
+comp_pair_seen_0146,ona mute,seen,Compositional head-initial ordering for 'ona mute' (they / group),ona mute li suli.,mute ona li suli.
+comp_pair_seen_0147,ona mute,seen,Compositional head-initial ordering for 'ona mute' (they / group),mi wile e ona mute.,mi wile e mute ona.
+comp_pair_seen_0148,ona mute,seen,Compositional head-initial ordering for 'ona mute' (they / group),jan li moku e ona mute.,jan li moku e mute ona.
+comp_pair_seen_0149,ma lili,seen,Compositional head-initial ordering for 'ma lili' (small village / countryside),ona li lukin e ma lili.,ona li lukin e lili ma.
+comp_pair_seen_0150,ma lili,seen,Compositional head-initial ordering for 'ma lili' (small village / countryside),ma lili li suli.,lili ma li suli.
+comp_pair_seen_0151,ma lili,seen,Compositional head-initial ordering for 'ma lili' (small village / countryside),mi wile e ma lili.,mi wile e lili ma.
+comp_pair_seen_0152,ma lili,seen,Compositional head-initial ordering for 'ma lili' (small village / countryside),jan li moku e ma lili.,jan li moku e lili ma.
+comp_pair_seen_0153,ilo pona,seen,Compositional head-initial ordering for 'ilo pona' (useful tool),ona li lukin e ilo pona.,ona li lukin e pona ilo.
+comp_pair_seen_0154,ilo pona,seen,Compositional head-initial ordering for 'ilo pona' (useful tool),ilo pona li suli.,pona ilo li suli.
+comp_pair_seen_0155,ilo pona,seen,Compositional head-initial ordering for 'ilo pona' (useful tool),mi wile e ilo pona.,mi wile e pona ilo.
+comp_pair_seen_0156,ilo pona,seen,Compositional head-initial ordering for 'ilo pona' (useful tool),jan li moku e ilo pona.,jan li moku e pona ilo.
+comp_pair_seen_0157,supa suli,seen,Compositional head-initial ordering for 'supa suli' (large table),ona li lukin e supa suli.,ona li lukin e suli supa.
+comp_pair_seen_0158,supa suli,seen,Compositional head-initial ordering for 'supa suli' (large table),supa suli li suli.,suli supa li suli.
+comp_pair_seen_0159,supa suli,seen,Compositional head-initial ordering for 'supa suli' (large table),mi wile e supa suli.,mi wile e suli supa.
+comp_pair_seen_0160,supa suli,seen,Compositional head-initial ordering for 'supa suli' (large table),jan li moku e supa suli.,jan li moku e suli supa.

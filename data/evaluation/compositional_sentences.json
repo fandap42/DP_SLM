@@ -1,0 +1,2802 @@
+[
+  {
+    "item_id": "comp_sent_h_0001",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "mi lukin e telo nasa lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0002",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "mi lukin e tomo telo lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0003",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "mi lukin e jan utala lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0004",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "mi lukin e ilo moku lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0005",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "mi lukin e tomo tawa lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0006",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "mi lukin e jan sona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0007",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "mi lukin e tomo sona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0008",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "mi lukin e ilo suno lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0009",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "mi lukin e ma tomo lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0010",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "mi lukin e jan lawa lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0011",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "mi lukin e supa lape lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0012",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "mi lukin e kiwen suwi lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0013",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "mi lukin e telo kili lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0014",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "mi lukin e jan alasa lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0015",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "mi lukin e kasi suli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0016",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "mi lukin e tomo moku lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0017",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "mi lukin e lipu sona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0018",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "mi lukin e ma kasi lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0019",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "mi lukin e telo pimeja lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0020",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "mi lukin e supa pali lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0021",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "mi lukin e jan pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0022",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "mi lukin e toki pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0023",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "mi lukin e tomo suli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0024",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "mi lukin e telo seli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0025",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "mi lukin e tenpo suno lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0026",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "mi lukin e jan lili lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0027",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "mi lukin e tenpo ni lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0028",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "mi lukin e kili pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0029",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "mi lukin e soweli wawa lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0030",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "mi lukin e lipu pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0031",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "mi lukin e ma suli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0032",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "mi lukin e telo pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0033",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "mi lukin e kasi lili lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0034",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "mi lukin e jan suli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0035",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "mi lukin e suno suli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0036",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "mi lukin e moku pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0037",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "mi lukin e ona mute lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0038",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "mi lukin e ma lili lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0039",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "mi lukin e ilo pona lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_s_0040",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "mi lukin e supa suli lon poka mi.",
+    "frame_type": "trans_obj"
+  },
+  {
+    "item_id": "comp_sent_h_0041",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "ona li moku e telo nasa lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0042",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "ona li moku e tomo telo lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0043",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "ona li moku e jan utala lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0044",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "ona li moku e ilo moku lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0045",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "ona li moku e tomo tawa lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0046",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "ona li moku e jan sona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0047",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "ona li moku e tomo sona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0048",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "ona li moku e ilo suno lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0049",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "ona li moku e ma tomo lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0050",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "ona li moku e jan lawa lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0051",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "ona li moku e supa lape lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0052",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "ona li moku e kiwen suwi lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0053",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "ona li moku e telo kili lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0054",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "ona li moku e jan alasa lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0055",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "ona li moku e kasi suli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0056",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "ona li moku e tomo moku lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0057",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "ona li moku e lipu sona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0058",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "ona li moku e ma kasi lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0059",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "ona li moku e telo pimeja lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0060",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "ona li moku e supa pali lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0061",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "ona li moku e jan pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0062",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "ona li moku e toki pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0063",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "ona li moku e tomo suli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0064",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "ona li moku e telo seli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0065",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "ona li moku e tenpo suno lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0066",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "ona li moku e jan lili lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0067",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "ona li moku e tenpo ni lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0068",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "ona li moku e kili pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0069",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "ona li moku e soweli wawa lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0070",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "ona li moku e lipu pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0071",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "ona li moku e ma suli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0072",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "ona li moku e telo pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0073",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "ona li moku e kasi lili lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0074",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "ona li moku e jan suli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0075",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "ona li moku e suno suli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0076",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "ona li moku e moku pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0077",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "ona li moku e ona mute lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0078",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "ona li moku e ma lili lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0079",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "ona li moku e ilo pona lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_s_0080",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "ona li moku e supa suli lon tomo.",
+    "frame_type": "trans_eat"
+  },
+  {
+    "item_id": "comp_sent_h_0081",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "jan ni li jo e telo nasa wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0082",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "jan ni li jo e tomo telo wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0083",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "jan ni li jo e jan utala wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0084",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "jan ni li jo e ilo moku wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0085",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "jan ni li jo e tomo tawa wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0086",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "jan ni li jo e jan sona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0087",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "jan ni li jo e tomo sona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0088",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "jan ni li jo e ilo suno wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0089",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "jan ni li jo e ma tomo wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0090",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "jan ni li jo e jan lawa wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0091",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "jan ni li jo e supa lape wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0092",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "jan ni li jo e kiwen suwi wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0093",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "jan ni li jo e telo kili wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0094",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "jan ni li jo e jan alasa wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0095",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "jan ni li jo e kasi suli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0096",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "jan ni li jo e tomo moku wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0097",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "jan ni li jo e lipu sona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0098",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "jan ni li jo e ma kasi wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0099",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "jan ni li jo e telo pimeja wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0100",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "jan ni li jo e supa pali wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0101",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "jan ni li jo e jan pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0102",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "jan ni li jo e toki pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0103",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "jan ni li jo e tomo suli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0104",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "jan ni li jo e telo seli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0105",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "jan ni li jo e tenpo suno wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0106",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "jan ni li jo e jan lili wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0107",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "jan ni li jo e tenpo ni wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0108",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "jan ni li jo e kili pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0109",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "jan ni li jo e soweli wawa wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0110",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "jan ni li jo e lipu pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0111",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "jan ni li jo e ma suli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0112",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "jan ni li jo e telo pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0113",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "jan ni li jo e kasi lili wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0114",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "jan ni li jo e jan suli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0115",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "jan ni li jo e suno suli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0116",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "jan ni li jo e moku pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0117",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "jan ni li jo e ona mute wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0118",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "jan ni li jo e ma lili wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0119",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "jan ni li jo e ilo pona wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_s_0120",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "jan ni li jo e supa suli wawa.",
+    "frame_type": "trans_have"
+  },
+  {
+    "item_id": "comp_sent_h_0121",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "ona li pana e telo nasa tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0122",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "ona li pana e tomo telo tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0123",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "ona li pana e jan utala tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0124",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "ona li pana e ilo moku tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0125",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "ona li pana e tomo tawa tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0126",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "ona li pana e jan sona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0127",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "ona li pana e tomo sona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0128",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "ona li pana e ilo suno tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0129",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "ona li pana e ma tomo tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0130",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "ona li pana e jan lawa tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0131",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "ona li pana e supa lape tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0132",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "ona li pana e kiwen suwi tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0133",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "ona li pana e telo kili tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0134",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "ona li pana e jan alasa tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0135",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "ona li pana e kasi suli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0136",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "ona li pana e tomo moku tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0137",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "ona li pana e lipu sona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0138",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "ona li pana e ma kasi tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0139",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "ona li pana e telo pimeja tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0140",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "ona li pana e supa pali tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0141",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "ona li pana e jan pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0142",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "ona li pana e toki pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0143",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "ona li pana e tomo suli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0144",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "ona li pana e telo seli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0145",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "ona li pana e tenpo suno tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0146",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "ona li pana e jan lili tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0147",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "ona li pana e tenpo ni tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0148",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "ona li pana e kili pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0149",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "ona li pana e soweli wawa tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0150",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "ona li pana e lipu pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0151",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "ona li pana e ma suli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0152",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "ona li pana e telo pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0153",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "ona li pana e kasi lili tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0154",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "ona li pana e jan suli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0155",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "ona li pana e suno suli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0156",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "ona li pana e moku pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0157",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "ona li pana e ona mute tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0158",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "ona li pana e ma lili tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0159",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "ona li pana e ilo pona tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_s_0160",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "ona li pana e supa suli tawa mi.",
+    "frame_type": "trans_give"
+  },
+  {
+    "item_id": "comp_sent_h_0161",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "sina wile ala wile e telo nasa?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0162",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "sina wile ala wile e tomo telo?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0163",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "sina wile ala wile e jan utala?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0164",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "sina wile ala wile e ilo moku?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0165",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "sina wile ala wile e tomo tawa?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0166",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "sina wile ala wile e jan sona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0167",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "sina wile ala wile e tomo sona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0168",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "sina wile ala wile e ilo suno?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0169",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "sina wile ala wile e ma tomo?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0170",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "sina wile ala wile e jan lawa?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0171",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "sina wile ala wile e supa lape?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0172",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "sina wile ala wile e kiwen suwi?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0173",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "sina wile ala wile e telo kili?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0174",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "sina wile ala wile e jan alasa?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0175",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "sina wile ala wile e kasi suli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0176",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "sina wile ala wile e tomo moku?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0177",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "sina wile ala wile e lipu sona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0178",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "sina wile ala wile e ma kasi?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0179",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "sina wile ala wile e telo pimeja?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0180",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "sina wile ala wile e supa pali?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0181",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "sina wile ala wile e jan pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0182",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "sina wile ala wile e toki pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0183",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "sina wile ala wile e tomo suli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0184",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "sina wile ala wile e telo seli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0185",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "sina wile ala wile e tenpo suno?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0186",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "sina wile ala wile e jan lili?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0187",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "sina wile ala wile e tenpo ni?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0188",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "sina wile ala wile e kili pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0189",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "sina wile ala wile e soweli wawa?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0190",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "sina wile ala wile e lipu pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0191",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "sina wile ala wile e ma suli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0192",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "sina wile ala wile e telo pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0193",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "sina wile ala wile e kasi lili?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0194",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "sina wile ala wile e jan suli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0195",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "sina wile ala wile e suno suli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0196",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "sina wile ala wile e moku pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0197",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "sina wile ala wile e ona mute?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0198",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "sina wile ala wile e ma lili?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0199",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "sina wile ala wile e ilo pona?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_s_0200",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "sina wile ala wile e supa suli?",
+    "frame_type": "trans_want"
+  },
+  {
+    "item_id": "comp_sent_h_0201",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "telo nasa li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0202",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "tomo telo li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0203",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "jan utala li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0204",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "ilo moku li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0205",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "tomo tawa li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0206",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "jan sona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0207",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "tomo sona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0208",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "ilo suno li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0209",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "ma tomo li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0210",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "jan lawa li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0211",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "supa lape li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0212",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "kiwen suwi li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0213",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "telo kili li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0214",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "jan alasa li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0215",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "kasi suli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0216",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "tomo moku li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0217",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "lipu sona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0218",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "ma kasi li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0219",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "telo pimeja li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0220",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "supa pali li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0221",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "jan pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0222",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "toki pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0223",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "tomo suli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0224",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "telo seli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0225",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "tenpo suno li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0226",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "jan lili li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0227",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "tenpo ni li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0228",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "kili pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0229",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "soweli wawa li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0230",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "lipu pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0231",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "ma suli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0232",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "telo pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0233",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "kasi lili li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0234",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "jan suli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0235",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "suno suli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0236",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "moku pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0237",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "ona mute li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0238",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "ma lili li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0239",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "ilo pona li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_s_0240",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "supa suli li pona mute tawa mi.",
+    "frame_type": "subj_pred"
+  },
+  {
+    "item_id": "comp_sent_h_0241",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "telo nasa li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0242",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "tomo telo li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0243",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "jan utala li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0244",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "ilo moku li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0245",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "tomo tawa li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0246",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "jan sona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0247",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "tomo sona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0248",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "ilo suno li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0249",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "ma tomo li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0250",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "jan lawa li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0251",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "supa lape li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0252",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "kiwen suwi li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0253",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "telo kili li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0254",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "jan alasa li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0255",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "kasi suli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0256",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "tomo moku li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0257",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "lipu sona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0258",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "ma kasi li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0259",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "telo pimeja li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0260",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "supa pali li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0261",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "jan pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0262",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "toki pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0263",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "tomo suli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0264",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "telo seli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0265",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "tenpo suno li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0266",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "jan lili li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0267",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "tenpo ni li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0268",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "kili pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0269",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "soweli wawa li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0270",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "lipu pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0271",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "ma suli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0272",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "telo pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0273",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "kasi lili li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0274",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "jan suli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0275",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "suno suli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0276",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "moku pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0277",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "ona mute li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0278",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "ma lili li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0279",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "ilo pona li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_s_0280",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "supa suli li tawa sewi.",
+    "frame_type": "subj_action"
+  },
+  {
+    "item_id": "comp_sent_h_0281",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "telo nasa li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0282",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "tomo telo li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0283",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "jan utala li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0284",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "ilo moku li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0285",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "tomo tawa li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0286",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "jan sona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0287",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "tomo sona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0288",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "ilo suno li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0289",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "ma tomo li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0290",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "jan lawa li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0291",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "supa lape li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0292",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "kiwen suwi li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0293",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "telo kili li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0294",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "jan alasa li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0295",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "kasi suli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0296",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "tomo moku li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0297",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "lipu sona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0298",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "ma kasi li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0299",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "telo pimeja li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0300",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "supa pali li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0301",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "jan pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0302",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "toki pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0303",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "tomo suli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0304",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "telo seli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0305",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "tenpo suno li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0306",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "jan lili li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0307",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "tenpo ni li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0308",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "kili pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0309",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "soweli wawa li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0310",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "lipu pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0311",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "ma suli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0312",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "telo pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0313",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "kasi lili li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0314",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "jan suli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0315",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "suno suli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0316",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "moku pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0317",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "ona mute li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0318",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "ma lili li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0319",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "ilo pona li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_s_0320",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "supa suli li lon ma ni.",
+    "frame_type": "subj_exist"
+  },
+  {
+    "item_id": "comp_sent_h_0321",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "jan lili li awen lon telo nasa.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0322",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "jan lili li awen lon tomo telo.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0323",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "jan lili li awen lon jan utala.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0324",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "jan lili li awen lon ilo moku.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0325",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "jan lili li awen lon tomo tawa.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0326",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "jan lili li awen lon jan sona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0327",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "jan lili li awen lon tomo sona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0328",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "jan lili li awen lon ilo suno.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0329",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "jan lili li awen lon ma tomo.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0330",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "jan lili li awen lon jan lawa.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0331",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "jan lili li awen lon supa lape.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0332",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "jan lili li awen lon kiwen suwi.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0333",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "jan lili li awen lon telo kili.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0334",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "jan lili li awen lon jan alasa.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0335",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "jan lili li awen lon kasi suli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0336",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "jan lili li awen lon tomo moku.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0337",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "jan lili li awen lon lipu sona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0338",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "jan lili li awen lon ma kasi.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0339",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "jan lili li awen lon telo pimeja.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0340",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "jan lili li awen lon supa pali.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0341",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "jan lili li awen lon jan pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0342",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "jan lili li awen lon toki pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0343",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "jan lili li awen lon tomo suli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0344",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "jan lili li awen lon telo seli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0345",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "jan lili li awen lon tenpo suno.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0346",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "jan lili li awen lon jan lili.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0347",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "jan lili li awen lon tenpo ni.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0348",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "jan lili li awen lon kili pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0349",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "jan lili li awen lon soweli wawa.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0350",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "jan lili li awen lon lipu pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0351",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "jan lili li awen lon ma suli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0352",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "jan lili li awen lon telo pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0353",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "jan lili li awen lon kasi lili.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0354",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "jan lili li awen lon jan suli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0355",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "jan lili li awen lon suno suli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0356",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "jan lili li awen lon moku pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0357",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "jan lili li awen lon ona mute.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0358",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "jan lili li awen lon ma lili.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0359",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "jan lili li awen lon ilo pona.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_s_0360",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "jan lili li awen lon supa suli.",
+    "frame_type": "prep_loc"
+  },
+  {
+    "item_id": "comp_sent_h_0361",
+    "condition": "heldout",
+    "compound": "telo nasa",
+    "text": "ona li pali kepeken telo nasa.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0362",
+    "condition": "heldout",
+    "compound": "tomo telo",
+    "text": "ona li pali kepeken tomo telo.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0363",
+    "condition": "heldout",
+    "compound": "jan utala",
+    "text": "ona li pali kepeken jan utala.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0364",
+    "condition": "heldout",
+    "compound": "ilo moku",
+    "text": "ona li pali kepeken ilo moku.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0365",
+    "condition": "heldout",
+    "compound": "tomo tawa",
+    "text": "ona li pali kepeken tomo tawa.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0366",
+    "condition": "heldout",
+    "compound": "jan sona",
+    "text": "ona li pali kepeken jan sona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0367",
+    "condition": "heldout",
+    "compound": "tomo sona",
+    "text": "ona li pali kepeken tomo sona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0368",
+    "condition": "heldout",
+    "compound": "ilo suno",
+    "text": "ona li pali kepeken ilo suno.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0369",
+    "condition": "heldout",
+    "compound": "ma tomo",
+    "text": "ona li pali kepeken ma tomo.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0370",
+    "condition": "heldout",
+    "compound": "jan lawa",
+    "text": "ona li pali kepeken jan lawa.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0371",
+    "condition": "heldout",
+    "compound": "supa lape",
+    "text": "ona li pali kepeken supa lape.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0372",
+    "condition": "heldout",
+    "compound": "kiwen suwi",
+    "text": "ona li pali kepeken kiwen suwi.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0373",
+    "condition": "heldout",
+    "compound": "telo kili",
+    "text": "ona li pali kepeken telo kili.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0374",
+    "condition": "heldout",
+    "compound": "jan alasa",
+    "text": "ona li pali kepeken jan alasa.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0375",
+    "condition": "heldout",
+    "compound": "kasi suli",
+    "text": "ona li pali kepeken kasi suli.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0376",
+    "condition": "heldout",
+    "compound": "tomo moku",
+    "text": "ona li pali kepeken tomo moku.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0377",
+    "condition": "heldout",
+    "compound": "lipu sona",
+    "text": "ona li pali kepeken lipu sona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0378",
+    "condition": "heldout",
+    "compound": "ma kasi",
+    "text": "ona li pali kepeken ma kasi.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0379",
+    "condition": "heldout",
+    "compound": "telo pimeja",
+    "text": "ona li pali kepeken telo pimeja.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_h_0380",
+    "condition": "heldout",
+    "compound": "supa pali",
+    "text": "ona li pali kepeken supa pali.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0381",
+    "condition": "seen",
+    "compound": "jan pona",
+    "text": "ona li pali kepeken jan pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0382",
+    "condition": "seen",
+    "compound": "toki pona",
+    "text": "ona li pali kepeken toki pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0383",
+    "condition": "seen",
+    "compound": "tomo suli",
+    "text": "ona li pali kepeken tomo suli.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0384",
+    "condition": "seen",
+    "compound": "telo seli",
+    "text": "ona li pali kepeken telo seli.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0385",
+    "condition": "seen",
+    "compound": "tenpo suno",
+    "text": "ona li pali kepeken tenpo suno.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0386",
+    "condition": "seen",
+    "compound": "jan lili",
+    "text": "ona li pali kepeken jan lili.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0387",
+    "condition": "seen",
+    "compound": "tenpo ni",
+    "text": "ona li pali kepeken tenpo ni.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0388",
+    "condition": "seen",
+    "compound": "kili pona",
+    "text": "ona li pali kepeken kili pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0389",
+    "condition": "seen",
+    "compound": "soweli wawa",
+    "text": "ona li pali kepeken soweli wawa.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0390",
+    "condition": "seen",
+    "compound": "lipu pona",
+    "text": "ona li pali kepeken lipu pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0391",
+    "condition": "seen",
+    "compound": "ma suli",
+    "text": "ona li pali kepeken ma suli.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0392",
+    "condition": "seen",
+    "compound": "telo pona",
+    "text": "ona li pali kepeken telo pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0393",
+    "condition": "seen",
+    "compound": "kasi lili",
+    "text": "ona li pali kepeken kasi lili.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0394",
+    "condition": "seen",
+    "compound": "jan suli",
+    "text": "ona li pali kepeken jan suli.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0395",
+    "condition": "seen",
+    "compound": "suno suli",
+    "text": "ona li pali kepeken suno suli.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0396",
+    "condition": "seen",
+    "compound": "moku pona",
+    "text": "ona li pali kepeken moku pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0397",
+    "condition": "seen",
+    "compound": "ona mute",
+    "text": "ona li pali kepeken ona mute.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0398",
+    "condition": "seen",
+    "compound": "ma lili",
+    "text": "ona li pali kepeken ma lili.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0399",
+    "condition": "seen",
+    "compound": "ilo pona",
+    "text": "ona li pali kepeken ilo pona.",
+    "frame_type": "prep_inst"
+  },
+  {
+    "item_id": "comp_sent_s_0400",
+    "condition": "seen",
+    "compound": "supa suli",
+    "text": "ona li pali kepeken supa suli.",
+    "frame_type": "prep_inst"
+  }
+]

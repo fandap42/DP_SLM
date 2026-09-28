@@ -1,0 +1,464 @@
+item_id,rule_id,sub_rule,category,description,grammatical,ungrammatical
+li_mi_sina_001,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi moku.,mi li moku.
+li_mi_sina_002,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi lape.,mi li lape.
+li_mi_sina_003,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi tawa.,mi li tawa.
+li_mi_sina_004,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi lukin.,mi li lukin.
+li_mi_sina_005,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi kute.,mi li kute.
+li_mi_sina_006,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi pali.,mi li pali.
+li_mi_sina_007,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi toki.,mi li toki.
+li_mi_sina_008,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi awen.,mi li awen.
+li_mi_sina_009,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi kalama.,mi li kalama.
+li_mi_sina_010,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi musi.,mi li musi.
+li_mi_sina_011,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi kama.,mi li kama.
+li_mi_sina_012,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi ante.,mi li ante.
+li_mi_sina_013,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi pilin.,mi li pilin.
+li_mi_sina_014,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,mi pona.,mi li pona.
+li_mi_sina_015,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi moku e kili.,mi li moku e kili.
+li_mi_sina_016,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi lukin e kili.,mi li lukin e kili.
+li_mi_sina_017,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pali e kili.,mi li pali e kili.
+li_mi_sina_018,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pana e kili.,mi li pana e kili.
+li_mi_sina_019,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi wile e kili.,mi li wile e kili.
+li_mi_sina_020,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi moku e telo.,mi li moku e telo.
+li_mi_sina_021,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi lukin e telo.,mi li lukin e telo.
+li_mi_sina_022,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pali e telo.,mi li pali e telo.
+li_mi_sina_023,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pana e telo.,mi li pana e telo.
+li_mi_sina_024,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi wile e telo.,mi li wile e telo.
+li_mi_sina_025,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi moku e pan.,mi li moku e pan.
+li_mi_sina_026,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi lukin e pan.,mi li lukin e pan.
+li_mi_sina_027,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pali e pan.,mi li pali e pan.
+li_mi_sina_028,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pana e pan.,mi li pana e pan.
+li_mi_sina_029,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi wile e pan.,mi li wile e pan.
+li_mi_sina_030,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi moku e lipu.,mi li moku e lipu.
+li_mi_sina_031,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi lukin e lipu.,mi li lukin e lipu.
+li_mi_sina_032,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pali e lipu.,mi li pali e lipu.
+li_mi_sina_033,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pana e lipu.,mi li pana e lipu.
+li_mi_sina_034,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi wile e lipu.,mi li wile e lipu.
+li_mi_sina_035,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi moku e mani.,mi li moku e mani.
+li_mi_sina_036,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi lukin e mani.,mi li lukin e mani.
+li_mi_sina_037,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pali e mani.,mi li pali e mani.
+li_mi_sina_038,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi pana e mani.,mi li pana e mani.
+li_mi_sina_039,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,mi wile e mani.,mi li wile e mani.
+li_mi_sina_040,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina moku.,sina li moku.
+li_mi_sina_041,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina lape.,sina li lape.
+li_mi_sina_042,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina tawa.,sina li tawa.
+li_mi_sina_043,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina lukin.,sina li lukin.
+li_mi_sina_044,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina kute.,sina li kute.
+li_mi_sina_045,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina pali.,sina li pali.
+li_mi_sina_046,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina toki.,sina li toki.
+li_mi_sina_047,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina awen.,sina li awen.
+li_mi_sina_048,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina kalama.,sina li kalama.
+li_mi_sina_049,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina musi.,sina li musi.
+li_mi_sina_050,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina kama.,sina li kama.
+li_mi_sina_051,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina ante.,sina li ante.
+li_mi_sina_052,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina pilin.,sina li pilin.
+li_mi_sina_053,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li,sina pona.,sina li pona.
+li_mi_sina_054,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina moku e kili.,sina li moku e kili.
+li_mi_sina_055,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina lukin e kili.,sina li lukin e kili.
+li_mi_sina_056,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pali e kili.,sina li pali e kili.
+li_mi_sina_057,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pana e kili.,sina li pana e kili.
+li_mi_sina_058,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina wile e kili.,sina li wile e kili.
+li_mi_sina_059,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina moku e telo.,sina li moku e telo.
+li_mi_sina_060,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina lukin e telo.,sina li lukin e telo.
+li_mi_sina_061,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pali e telo.,sina li pali e telo.
+li_mi_sina_062,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pana e telo.,sina li pana e telo.
+li_mi_sina_063,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina wile e telo.,sina li wile e telo.
+li_mi_sina_064,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina moku e pan.,sina li moku e pan.
+li_mi_sina_065,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina lukin e pan.,sina li lukin e pan.
+li_mi_sina_066,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pali e pan.,sina li pali e pan.
+li_mi_sina_067,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pana e pan.,sina li pana e pan.
+li_mi_sina_068,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina wile e pan.,sina li wile e pan.
+li_mi_sina_069,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina moku e lipu.,sina li moku e lipu.
+li_mi_sina_070,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina lukin e lipu.,sina li lukin e lipu.
+li_mi_sina_071,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pali e lipu.,sina li pali e lipu.
+li_mi_sina_072,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pana e lipu.,sina li pana e lipu.
+li_mi_sina_073,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina wile e lipu.,sina li wile e lipu.
+li_mi_sina_074,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina moku e mani.,sina li moku e mani.
+li_mi_sina_075,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina lukin e mani.,sina li lukin e mani.
+li_mi_sina_076,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pali e mani.,sina li pali e mani.
+li_mi_sina_077,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina pana e mani.,sina li pana e mani.
+li_mi_sina_078,particle_li,pronoun_no_li,particle_li,Standalone mi/sina rejects particle li in transitive sentence,sina wile e mani.,sina li wile e mani.
+li_3rd_omit_001,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li moku.,jan moku.
+li_3rd_omit_002,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li lape.,jan lape.
+li_3rd_omit_003,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li tawa.,jan tawa.
+li_3rd_omit_004,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li lukin.,jan lukin.
+li_3rd_omit_005,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li pali.,jan pali.
+li_3rd_omit_006,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li toki.,jan toki.
+li_3rd_omit_007,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li kalama.,jan kalama.
+li_3rd_omit_008,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,jan li awen.,jan awen.
+li_3rd_omit_009,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li moku.,soweli moku.
+li_3rd_omit_010,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li lape.,soweli lape.
+li_3rd_omit_011,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li tawa.,soweli tawa.
+li_3rd_omit_012,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li lukin.,soweli lukin.
+li_3rd_omit_013,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li pali.,soweli pali.
+li_3rd_omit_014,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li toki.,soweli toki.
+li_3rd_omit_015,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li kalama.,soweli kalama.
+li_3rd_omit_016,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,soweli li awen.,soweli awen.
+li_3rd_omit_017,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li moku.,waso moku.
+li_3rd_omit_018,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li lape.,waso lape.
+li_3rd_omit_019,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li tawa.,waso tawa.
+li_3rd_omit_020,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li lukin.,waso lukin.
+li_3rd_omit_021,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li pali.,waso pali.
+li_3rd_omit_022,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li toki.,waso toki.
+li_3rd_omit_023,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li kalama.,waso kalama.
+li_3rd_omit_024,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,waso li awen.,waso awen.
+li_3rd_omit_025,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li moku.,kasi moku.
+li_3rd_omit_026,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li lape.,kasi lape.
+li_3rd_omit_027,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li tawa.,kasi tawa.
+li_3rd_omit_028,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li lukin.,kasi lukin.
+li_3rd_omit_029,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li pali.,kasi pali.
+li_3rd_omit_030,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li toki.,kasi toki.
+li_3rd_omit_031,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li kalama.,kasi kalama.
+li_3rd_omit_032,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kasi li awen.,kasi awen.
+li_3rd_omit_033,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li moku.,kili moku.
+li_3rd_omit_034,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li lape.,kili lape.
+li_3rd_omit_035,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li tawa.,kili tawa.
+li_3rd_omit_036,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li lukin.,kili lukin.
+li_3rd_omit_037,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li pali.,kili pali.
+li_3rd_omit_038,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li toki.,kili toki.
+li_3rd_omit_039,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li kalama.,kili kalama.
+li_3rd_omit_040,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kili li awen.,kili awen.
+li_3rd_omit_041,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li moku.,ona moku.
+li_3rd_omit_042,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li lape.,ona lape.
+li_3rd_omit_043,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li tawa.,ona tawa.
+li_3rd_omit_044,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li lukin.,ona lukin.
+li_3rd_omit_045,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li pali.,ona pali.
+li_3rd_omit_046,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li toki.,ona toki.
+li_3rd_omit_047,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li kalama.,ona kalama.
+li_3rd_omit_048,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ona li awen.,ona awen.
+li_3rd_omit_049,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li moku.,kulupu moku.
+li_3rd_omit_050,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li lape.,kulupu lape.
+li_3rd_omit_051,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li tawa.,kulupu tawa.
+li_3rd_omit_052,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li lukin.,kulupu lukin.
+li_3rd_omit_053,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li pali.,kulupu pali.
+li_3rd_omit_054,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li toki.,kulupu toki.
+li_3rd_omit_055,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li kalama.,kulupu kalama.
+li_3rd_omit_056,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kulupu li awen.,kulupu awen.
+li_3rd_omit_057,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li moku.,ilo moku.
+li_3rd_omit_058,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li lape.,ilo lape.
+li_3rd_omit_059,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li tawa.,ilo tawa.
+li_3rd_omit_060,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li lukin.,ilo lukin.
+li_3rd_omit_061,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li pali.,ilo pali.
+li_3rd_omit_062,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li toki.,ilo toki.
+li_3rd_omit_063,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li kalama.,ilo kalama.
+li_3rd_omit_064,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ilo li awen.,ilo awen.
+li_3rd_omit_065,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li moku.,akesi moku.
+li_3rd_omit_066,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li lape.,akesi lape.
+li_3rd_omit_067,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li tawa.,akesi tawa.
+li_3rd_omit_068,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li lukin.,akesi lukin.
+li_3rd_omit_069,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li pali.,akesi pali.
+li_3rd_omit_070,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li toki.,akesi toki.
+li_3rd_omit_071,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li kalama.,akesi kalama.
+li_3rd_omit_072,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,akesi li awen.,akesi awen.
+li_3rd_omit_073,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li moku.,kala moku.
+li_3rd_omit_074,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li lape.,kala lape.
+li_3rd_omit_075,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li tawa.,kala tawa.
+li_3rd_omit_076,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li lukin.,kala lukin.
+li_3rd_omit_077,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li pali.,kala pali.
+li_3rd_omit_078,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li toki.,kala toki.
+li_3rd_omit_079,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li kalama.,kala kalama.
+li_3rd_omit_080,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,kala li awen.,kala awen.
+li_3rd_omit_081,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li moku.,pipi moku.
+li_3rd_omit_082,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li lape.,pipi lape.
+li_3rd_omit_083,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li tawa.,pipi tawa.
+li_3rd_omit_084,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li lukin.,pipi lukin.
+li_3rd_omit_085,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li pali.,pipi pali.
+li_3rd_omit_086,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li toki.,pipi toki.
+li_3rd_omit_087,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li kalama.,pipi kalama.
+li_3rd_omit_088,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,pipi li awen.,pipi awen.
+li_3rd_omit_089,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li moku.,tomo moku.
+li_3rd_omit_090,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li lape.,tomo lape.
+li_3rd_omit_091,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li tawa.,tomo tawa.
+li_3rd_omit_092,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li lukin.,tomo lukin.
+li_3rd_omit_093,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li pali.,tomo pali.
+li_3rd_omit_094,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li toki.,tomo toki.
+li_3rd_omit_095,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li kalama.,tomo kalama.
+li_3rd_omit_096,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,tomo li awen.,tomo awen.
+li_3rd_omit_097,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li moku.,mun moku.
+li_3rd_omit_098,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li lape.,mun lape.
+li_3rd_omit_099,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li tawa.,mun tawa.
+li_3rd_omit_100,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li lukin.,mun lukin.
+li_3rd_omit_101,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li pali.,mun pali.
+li_3rd_omit_102,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li toki.,mun toki.
+li_3rd_omit_103,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li kalama.,mun kalama.
+li_3rd_omit_104,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,mun li awen.,mun awen.
+li_3rd_omit_105,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li moku.,suno moku.
+li_3rd_omit_106,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li lape.,suno lape.
+li_3rd_omit_107,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li tawa.,suno tawa.
+li_3rd_omit_108,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li lukin.,suno lukin.
+li_3rd_omit_109,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li pali.,suno pali.
+li_3rd_omit_110,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li toki.,suno toki.
+li_3rd_omit_111,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li kalama.,suno kalama.
+li_3rd_omit_112,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,suno li awen.,suno awen.
+li_3rd_omit_113,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li moku.,ma moku.
+li_3rd_omit_114,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li lape.,ma lape.
+li_3rd_omit_115,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li tawa.,ma tawa.
+li_3rd_omit_116,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li lukin.,ma lukin.
+li_3rd_omit_117,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li pali.,ma pali.
+li_3rd_omit_118,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li toki.,ma toki.
+li_3rd_omit_119,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li kalama.,ma kalama.
+li_3rd_omit_120,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,ma li awen.,ma awen.
+li_3rd_omit_121,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li moku.,telo moku.
+li_3rd_omit_122,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li lape.,telo lape.
+li_3rd_omit_123,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li tawa.,telo tawa.
+li_3rd_omit_124,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li lukin.,telo lukin.
+li_3rd_omit_125,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li pali.,telo pali.
+li_3rd_omit_126,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li toki.,telo toki.
+li_3rd_omit_127,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li kalama.,telo kalama.
+li_3rd_omit_128,particle_li,3rd_person_requires_li,particle_li,3rd person and nominal subjects require particle li,telo li awen.,telo awen.
+li_spurious_e_001,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",jan li moku.,jan e moku.
+li_spurious_e_002,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",jan li lape.,jan e lape.
+li_spurious_e_003,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",jan li tawa.,jan e tawa.
+li_spurious_e_004,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",jan li lukin.,jan e lukin.
+li_spurious_e_005,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",jan li pali.,jan e pali.
+li_spurious_e_006,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",soweli li moku.,soweli e moku.
+li_spurious_e_007,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",soweli li lape.,soweli e lape.
+li_spurious_e_008,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",soweli li tawa.,soweli e tawa.
+li_spurious_e_009,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",soweli li lukin.,soweli e lukin.
+li_spurious_e_010,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",soweli li pali.,soweli e pali.
+li_spurious_e_011,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",waso li moku.,waso e moku.
+li_spurious_e_012,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",waso li lape.,waso e lape.
+li_spurious_e_013,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",waso li tawa.,waso e tawa.
+li_spurious_e_014,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",waso li lukin.,waso e lukin.
+li_spurious_e_015,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",waso li pali.,waso e pali.
+li_spurious_e_016,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",ona li moku.,ona e moku.
+li_spurious_e_017,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",ona li lape.,ona e lape.
+li_spurious_e_018,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",ona li tawa.,ona e tawa.
+li_spurious_e_019,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",ona li lukin.,ona e lukin.
+li_spurious_e_020,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",ona li pali.,ona e pali.
+li_spurious_e_021,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",kulupu li moku.,kulupu e moku.
+li_spurious_e_022,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",kulupu li lape.,kulupu e lape.
+li_spurious_e_023,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",kulupu li tawa.,kulupu e tawa.
+li_spurious_e_024,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",kulupu li lukin.,kulupu e lukin.
+li_spurious_e_025,particle_li,spurious_e_for_li,particle_li,"Subject marker must be li, not particle e",kulupu li pali.,kulupu e pali.
+e_object_001,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e kili.,jan li moku kili.
+e_object_002,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e telo.,jan li moku telo.
+e_object_003,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e pan.,jan li moku pan.
+e_object_004,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e lipu.,jan li moku lipu.
+e_object_005,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e mani.,jan li moku mani.
+e_object_006,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e waso.,jan li moku waso.
+e_object_007,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e soweli.,jan li moku soweli.
+e_object_008,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li moku e tomo.,jan li moku tomo.
+e_object_009,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e kili.,jan li lukin kili.
+e_object_010,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e telo.,jan li lukin telo.
+e_object_011,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e pan.,jan li lukin pan.
+e_object_012,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e lipu.,jan li lukin lipu.
+e_object_013,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e mani.,jan li lukin mani.
+e_object_014,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e waso.,jan li lukin waso.
+e_object_015,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e soweli.,jan li lukin soweli.
+e_object_016,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li lukin e tomo.,jan li lukin tomo.
+e_object_017,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e kili.,jan li kute kili.
+e_object_018,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e telo.,jan li kute telo.
+e_object_019,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e pan.,jan li kute pan.
+e_object_020,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e lipu.,jan li kute lipu.
+e_object_021,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e mani.,jan li kute mani.
+e_object_022,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e waso.,jan li kute waso.
+e_object_023,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e soweli.,jan li kute soweli.
+e_object_024,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li kute e tomo.,jan li kute tomo.
+e_object_025,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e kili.,jan li pali kili.
+e_object_026,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e telo.,jan li pali telo.
+e_object_027,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e pan.,jan li pali pan.
+e_object_028,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e lipu.,jan li pali lipu.
+e_object_029,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e mani.,jan li pali mani.
+e_object_030,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e waso.,jan li pali waso.
+e_object_031,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e soweli.,jan li pali soweli.
+e_object_032,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pali e tomo.,jan li pali tomo.
+e_object_033,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e kili.,jan li pana kili.
+e_object_034,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e telo.,jan li pana telo.
+e_object_035,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e pan.,jan li pana pan.
+e_object_036,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e lipu.,jan li pana lipu.
+e_object_037,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e mani.,jan li pana mani.
+e_object_038,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e waso.,jan li pana waso.
+e_object_039,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e soweli.,jan li pana soweli.
+e_object_040,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li pana e tomo.,jan li pana tomo.
+e_object_041,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e kili.,jan li alasa kili.
+e_object_042,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e telo.,jan li alasa telo.
+e_object_043,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e pan.,jan li alasa pan.
+e_object_044,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e lipu.,jan li alasa lipu.
+e_object_045,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e mani.,jan li alasa mani.
+e_object_046,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e waso.,jan li alasa waso.
+e_object_047,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e soweli.,jan li alasa soweli.
+e_object_048,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li alasa e tomo.,jan li alasa tomo.
+e_object_049,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e kili.,jan li wile kili.
+e_object_050,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e telo.,jan li wile telo.
+e_object_051,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e pan.,jan li wile pan.
+e_object_052,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e lipu.,jan li wile lipu.
+e_object_053,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e mani.,jan li wile mani.
+e_object_054,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e waso.,jan li wile waso.
+e_object_055,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e soweli.,jan li wile soweli.
+e_object_056,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li wile e tomo.,jan li wile tomo.
+e_object_057,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e kili.,jan li jo kili.
+e_object_058,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e telo.,jan li jo telo.
+e_object_059,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e pan.,jan li jo pan.
+e_object_060,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e lipu.,jan li jo lipu.
+e_object_061,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e mani.,jan li jo mani.
+e_object_062,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e waso.,jan li jo waso.
+e_object_063,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e soweli.,jan li jo soweli.
+e_object_064,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,jan li jo e tomo.,jan li jo tomo.
+e_object_065,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e kili.,soweli li moku kili.
+e_object_066,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e telo.,soweli li moku telo.
+e_object_067,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e pan.,soweli li moku pan.
+e_object_068,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e lipu.,soweli li moku lipu.
+e_object_069,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e mani.,soweli li moku mani.
+e_object_070,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e waso.,soweli li moku waso.
+e_object_071,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e soweli.,soweli li moku soweli.
+e_object_072,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li moku e tomo.,soweli li moku tomo.
+e_object_073,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e kili.,soweli li lukin kili.
+e_object_074,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e telo.,soweli li lukin telo.
+e_object_075,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e pan.,soweli li lukin pan.
+e_object_076,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e lipu.,soweli li lukin lipu.
+e_object_077,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e mani.,soweli li lukin mani.
+e_object_078,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e waso.,soweli li lukin waso.
+e_object_079,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e soweli.,soweli li lukin soweli.
+e_object_080,direct_object_e,mandatory_e_marker,direct_object_e,Direct object requires particle e marker,soweli li lukin e tomo.,soweli li lukin tomo.
+e_spurious_001,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,jan li tawa lon tomo.,jan li tawa e lon tomo.
+e_spurious_002,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,jan li tawa tawa ma.,jan li tawa e tawa ma.
+e_spurious_003,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,jan li tawa kepeken ilo.,jan li tawa e kepeken ilo.
+e_spurious_004,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,jan li tawa tan tomo.,jan li tawa e tan tomo.
+e_spurious_005,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,soweli li tawa lon tomo.,soweli li tawa e lon tomo.
+e_spurious_006,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,soweli li tawa tawa ma.,soweli li tawa e tawa ma.
+e_spurious_007,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,soweli li tawa kepeken ilo.,soweli li tawa e kepeken ilo.
+e_spurious_008,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,soweli li tawa tan tomo.,soweli li tawa e tan tomo.
+e_spurious_009,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,waso li tawa lon tomo.,waso li tawa e lon tomo.
+e_spurious_010,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,waso li tawa tawa ma.,waso li tawa e tawa ma.
+e_spurious_011,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,waso li tawa kepeken ilo.,waso li tawa e kepeken ilo.
+e_spurious_012,direct_object_e,no_e_before_preposition,direct_object_e,Prepositional complement must not take object particle e,waso li tawa tan tomo.,waso li tawa e tan tomo.
+order_subj_001,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,tomo suli li lon.,suli tomo li lon.
+order_obj_002,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e tomo suli.,mi lukin e suli tomo.
+order_trans_003,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e tomo suli.,jan li moku e suli tomo.
+order_subj_004,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,jan pona li lon.,pona jan li lon.
+order_obj_005,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e jan pona.,mi lukin e pona jan.
+order_trans_006,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e jan pona.,jan li moku e pona jan.
+order_subj_007,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,telo nasa li lon.,nasa telo li lon.
+order_obj_008,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e telo nasa.,mi lukin e nasa telo.
+order_trans_009,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e telo nasa.,jan li moku e nasa telo.
+order_subj_010,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,kasi laso li lon.,laso kasi li lon.
+order_obj_011,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e kasi laso.,mi lukin e laso kasi.
+order_trans_012,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e kasi laso.,jan li moku e laso kasi.
+order_subj_013,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,soweli wawa li lon.,wawa soweli li lon.
+order_obj_014,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e soweli wawa.,mi lukin e wawa soweli.
+order_trans_015,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e soweli wawa.,jan li moku e wawa soweli.
+order_subj_016,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,kili suwi li lon.,suwi kili li lon.
+order_obj_017,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e kili suwi.,mi lukin e suwi kili.
+order_trans_018,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e kili suwi.,jan li moku e suwi kili.
+order_subj_019,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,waso lili li lon.,lili waso li lon.
+order_obj_020,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e waso lili.,mi lukin e lili waso.
+order_trans_021,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e waso lili.,jan li moku e lili waso.
+order_subj_022,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,ilo sin li lon.,sin ilo li lon.
+order_obj_023,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e ilo sin.,mi lukin e sin ilo.
+order_trans_024,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e ilo sin.,jan li moku e sin ilo.
+order_subj_025,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,ma tomo li lon.,tomo ma li lon.
+order_obj_026,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e ma tomo.,mi lukin e tomo ma.
+order_trans_027,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e ma tomo.,jan li moku e tomo ma.
+order_subj_028,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,tenpo suno li lon.,suno tenpo li lon.
+order_obj_029,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e tenpo suno.,mi lukin e suno tenpo.
+order_trans_030,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e tenpo suno.,jan li moku e suno tenpo.
+order_subj_031,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,kiwen pimeja li lon.,pimeja kiwen li lon.
+order_obj_032,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e kiwen pimeja.,mi lukin e pimeja kiwen.
+order_trans_033,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e kiwen pimeja.,jan li moku e pimeja kiwen.
+order_subj_034,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,lipu lili li lon.,lili lipu li lon.
+order_obj_035,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e lipu lili.,mi lukin e lili lipu.
+order_trans_036,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e lipu lili.,jan li moku e lili lipu.
+order_subj_037,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,jan lili li lon.,lili jan li lon.
+order_obj_038,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e jan lili.,mi lukin e lili jan.
+order_trans_039,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e jan lili.,jan li moku e lili jan.
+order_subj_040,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,telo seli li lon.,seli telo li lon.
+order_obj_041,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e telo seli.,mi lukin e seli telo.
+order_trans_042,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e telo seli.,jan li moku e seli telo.
+order_subj_043,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,kulupu suli li lon.,suli kulupu li lon.
+order_obj_044,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e kulupu suli.,mi lukin e suli kulupu.
+order_trans_045,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e kulupu suli.,jan li moku e suli kulupu.
+order_subj_046,modifier_order,head_initial_subject,modifier_order,Toki Pona modifiers must follow the head noun in subject,akesi wawa li lon.,wawa akesi li lon.
+order_obj_047,modifier_order,head_initial_object,modifier_order,Toki Pona modifiers must follow the head noun in object,mi lukin e akesi wawa.,mi lukin e wawa akesi.
+order_trans_048,modifier_order,head_initial_transitive,modifier_order,Modifiers must follow head noun in transitive clause,jan li moku e akesi wawa.,jan li moku e wawa akesi.
+pi_single_001,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,tomo suli li pona.,tomo pi suli li pona.
+pi_single_trans_002,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e tomo suli.,mi lukin e tomo pi suli.
+pi_single_003,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,jan pona li pona.,jan pi pona li pona.
+pi_single_trans_004,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e jan pona.,mi lukin e jan pi pona.
+pi_single_005,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,kili suwi li pona.,kili pi suwi li pona.
+pi_single_trans_006,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e kili suwi.,mi lukin e kili pi suwi.
+pi_single_007,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,telo seli li pona.,telo pi seli li pona.
+pi_single_trans_008,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e telo seli.,mi lukin e telo pi seli.
+pi_single_009,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,ilo sin li pona.,ilo pi sin li pona.
+pi_single_trans_010,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e ilo sin.,mi lukin e ilo pi sin.
+pi_single_011,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,soweli wawa li pona.,soweli pi wawa li pona.
+pi_single_trans_012,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e soweli wawa.,mi lukin e soweli pi wawa.
+pi_single_013,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,waso lili li pona.,waso pi lili li pona.
+pi_single_trans_014,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e waso lili.,mi lukin e waso pi lili.
+pi_single_015,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,lipu lili li pona.,lipu pi lili li pona.
+pi_single_trans_016,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e lipu lili.,mi lukin e lipu pi lili.
+pi_single_017,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,kasi laso li pona.,kasi pi laso li pona.
+pi_single_trans_018,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e kasi laso.,mi lukin e kasi pi laso.
+pi_single_019,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,ma tomo li pona.,ma pi tomo li pona.
+pi_single_trans_020,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e ma tomo.,mi lukin e ma pi tomo.
+pi_single_021,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,kulupu lili li pona.,kulupu pi lili li pona.
+pi_single_trans_022,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e kulupu lili.,mi lukin e kulupu pi lili.
+pi_single_023,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden when only a single modifier follows,akesi suli li pona.,akesi pi suli li pona.
+pi_single_trans_024,modifier_pi,no_pi_with_single_modifier,modifier_pi,Particle pi is forbidden before single modifier in object,mi lukin e akesi suli.,mi lukin e akesi pi suli.
+pi_compound_subj_025,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,tomo pi telo nasa li suli.,tomo telo pi nasa li suli.
+pi_compound_obj_026,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e tomo pi telo nasa.,mi lukin e tomo telo pi nasa.
+pi_compound_chain_027,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,tomo pi telo nasa li pona.,tomo pi telo pi nasa li pona.
+pi_compound_subj_028,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,jan pi sona mute li suli.,jan sona pi mute li suli.
+pi_compound_obj_029,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e jan pi sona mute.,mi lukin e jan sona pi mute.
+pi_compound_chain_030,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,jan pi sona mute li pona.,jan pi sona pi mute li pona.
+pi_compound_subj_031,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,kili pi suwi mute li suli.,kili suwi pi mute li suli.
+pi_compound_obj_032,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e kili pi suwi mute.,mi lukin e kili suwi pi mute.
+pi_compound_chain_033,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,kili pi suwi mute li pona.,kili pi suwi pi mute li pona.
+pi_compound_subj_034,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,nasin pi toki pona li suli.,nasin toki pi pona li suli.
+pi_compound_obj_035,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e nasin pi toki pona.,mi lukin e nasin toki pi pona.
+pi_compound_chain_036,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,nasin pi toki pona li pona.,nasin pi toki pi pona li pona.
+pi_compound_subj_037,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,ilo pi sitelen sin li suli.,ilo sitelen pi sin li suli.
+pi_compound_obj_038,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e ilo pi sitelen sin.,mi lukin e ilo sitelen pi sin.
+pi_compound_chain_039,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,ilo pi sitelen sin li pona.,ilo pi sitelen pi sin li pona.
+pi_compound_subj_040,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,kulupu pi jan utala li suli.,kulupu jan pi utala li suli.
+pi_compound_obj_041,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e kulupu pi jan utala.,mi lukin e kulupu jan pi utala.
+pi_compound_chain_042,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,kulupu pi jan utala li pona.,kulupu pi jan pi utala li pona.
+pi_compound_subj_043,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,telo pi kasi laso li suli.,telo kasi pi laso li suli.
+pi_compound_obj_044,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e telo pi kasi laso.,mi lukin e telo kasi pi laso.
+pi_compound_chain_045,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,telo pi kasi laso li pona.,telo pi kasi pi laso li pona.
+pi_compound_subj_046,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers; cannot precede a single final modifier,lipu pi sona suli li suli.,lipu sona pi suli li suli.
+pi_compound_obj_047,modifier_pi,pi_requires_two_modifiers,modifier_pi,Particle pi must group 2+ modifiers in direct object position,mi lukin e lipu pi sona suli.,mi lukin e lipu sona pi suli.
+pi_compound_chain_048,modifier_pi,pi_requires_two_modifiers,modifier_pi,Chained pi before single modifiers is ungrammatical,lipu pi sona suli li pona.,lipu pi sona pi suli li pona.
+la_context_001,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo suno ni la mi pali.,tenpo suno ni e mi pali.
+la_context_002,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo suno ni la ona li kama.,tenpo suno ni e ona li kama.
+la_context_003,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo suno ni la kasi li suli.,tenpo suno ni e kasi li suli.
+la_context_004,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo suno ni la jan li lape.,tenpo suno ni e jan li lape.
+la_context_005,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo suno ni la soweli li tawa.,tenpo suno ni e soweli li tawa.
+la_context_006,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo pimeja la mi pali.,tenpo pimeja e mi pali.
+la_context_007,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo pimeja la ona li kama.,tenpo pimeja e ona li kama.
+la_context_008,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo pimeja la kasi li suli.,tenpo pimeja e kasi li suli.
+la_context_009,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo pimeja la jan li lape.,tenpo pimeja e jan li lape.
+la_context_010,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,tenpo pimeja la soweli li tawa.,tenpo pimeja e soweli li tawa.
+la_context_011,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,sina wile la mi pali.,sina wile li mi pali.
+la_context_012,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,sina wile la ona li kama.,sina wile li ona li kama.
+la_context_013,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,sina wile la kasi li suli.,sina wile li kasi li suli.
+la_context_014,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,sina wile la jan li lape.,sina wile li jan li lape.
+la_context_015,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,sina wile la soweli li tawa.,sina wile li soweli li tawa.
+la_context_016,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,mi lape la mi pali.,mi lape li mi pali.
+la_context_017,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,mi lape la ona li kama.,mi lape li ona li kama.
+la_context_018,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,mi lape la kasi li suli.,mi lape li kasi li suli.
+la_context_019,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,mi lape la jan li lape.,mi lape li jan li lape.
+la_context_020,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,mi lape la soweli li tawa.,mi lape li soweli li tawa.
+la_context_021,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,telo li lon la mi pali.,telo li lon e mi pali.
+la_context_022,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,telo li lon la ona li kama.,telo li lon e ona li kama.
+la_context_023,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,telo li lon la kasi li suli.,telo li lon e kasi li suli.
+la_context_024,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,telo li lon la jan li lape.,telo li lon e jan li lape.
+la_context_025,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,telo li lon la soweli li tawa.,telo li lon e soweli li tawa.
+la_context_026,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,ken la mi pali.,ken e mi pali.
+la_context_027,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,ken la ona li kama.,ken e ona li kama.
+la_context_028,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,ken la kasi li suli.,ken e kasi li suli.
+la_context_029,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,ken la jan li lape.,ken e jan li lape.
+la_context_030,context_la,context_marker_la,context_la,Context or conditional phrase requires marker la,ken la soweli li tawa.,ken e soweli li tawa.
+lex_valid_001,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,jan li moku e kili.,jan li moku e blorg.
+lex_valid_002,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,ona li lape lon tomo.,ona li lape lon grok.
+lex_valid_003,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,soweli li tawa noka.,soweli li tawa qwerty.
+lex_valid_004,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,waso lili li kalama.,waso lili li splat.
+lex_valid_005,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,mi lukin e suno.,mi lukin e zorp.
+lex_valid_006,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,kasi li suli lon ma.,kasi li suli lon florp.
+lex_valid_007,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,sina pana e mani tawa mi.,sina pana e snark tawa mi.
+lex_valid_008,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,ilo ni li pakala.,ilo ni li glub.
+lex_valid_009,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,kulupu li toki e toki.,kulupu li toki e plink.
+lex_valid_010,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,telo li kama lon lupa.,telo li vroom lon lupa.
+lex_valid_011,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,akesi li moku e pipi.,akesi li moku e krunk.
+lex_valid_012,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,jan pona mi li sona.,jan pona mi li blip.
+lex_valid_013,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,ona mute li olin.,ona mute li drap.
+lex_valid_014,lexical_validity,valid_tokipona_lexicon,lexical_validity,Toki Pona vocabulary word vs pseudo-word,lipu ni li pona.,lipu ni li frob.
