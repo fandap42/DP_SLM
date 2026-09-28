@@ -186,11 +186,20 @@ def run_pipeline(config_path: Path | str, project_root: Path | str):
                     }
                     results.append(row)
 
-                    # Update results.csv
-                    df_current = pd.DataFrame(results)
-                    df_current.to_csv(metrics_dir / "results.csv", index=False)
+                    # Update results.csv (merge with existing runs)
+                    csv_path = metrics_dir / "results.csv"
+                    df_new = pd.DataFrame(results)
+                    if csv_path.exists():
+                        try:
+                            df_prev = pd.read_csv(csv_path)
+                            df_current = pd.concat([df_prev, df_new], ignore_index=True).drop_duplicates(subset=["exp_id"], keep="last")
+                        except Exception:
+                            df_current = df_new
+                    else:
+                        df_current = df_new
+                    df_current.to_csv(csv_path, index=False)
                     with open(metrics_dir / "results.json", "w", encoding="utf-8") as f:
-                        json.dump(results, f, indent=2)
+                        json.dump(df_current.to_dict(orient="records"), f, indent=2)
 
                     del model, trainer, train_loader, val_loader
                     gc.collect()

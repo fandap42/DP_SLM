@@ -65,6 +65,12 @@ def demo_main():
         print(f"  Sample {i+1}: {out}")
 
 
+def chat_main():
+    root = _ensure_project_in_path()
+    from experiments.scripts.chat import main as chat_cli
+    chat_cli()
+
+
 def pack_main():
     root = _ensure_project_in_path()
     from experiments.scripts.pack_release_assets import main as pack_assets

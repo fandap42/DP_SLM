@@ -74,7 +74,7 @@ def load_tokenizer(filepath: str) -> BaseTokenizer:
         from .bpe_tokenizer import BPETokenizer
         tok = BPETokenizer.__new__(BPETokenizer)
         tok.merges = [tuple(m) for m in data.get("merges", [])]
-        tok.merges_dict = {tuple(m): idx for idx, m in enumerate(tok.merges)}
+        tok.bpe_ranks = {tuple(m): idx for idx, m in enumerate(tok.merges)}
     else:
         raise ValueError(f"Unknown tokenizer type: {t_type}")
 

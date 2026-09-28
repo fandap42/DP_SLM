@@ -1,0 +1,11 @@
+{
+  "experiment_name": "only_max",
+  "data_fractions": [1.00],
+  "model_sizes": ["large"],
+  "tokenizers": ["word"],
+  "seeds": [42],
+  "epochs": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "mixed_precision": true
+}

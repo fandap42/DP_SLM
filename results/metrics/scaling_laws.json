@@ -2,21 +2,21 @@
   "joint_scaling_law": {
     "success": true,
     "params": {
-      "E_irreducible_loss": 0.5553447725336087,
-      "A_param_scale": 77.04621046150046,
-      "B_data_scale": 93.77832642711842,
-      "alpha_param_exponent": 0.4618176302335951,
-      "beta_data_exponent": 0.3897276657381491
+      "E_irreducible_loss": 0.6436753927878567,
+      "A_param_scale": 784.997258604035,
+      "B_data_scale": 108.90811237695101,
+      "alpha_param_exponent": 0.681514599221556,
+      "beta_data_exponent": 0.4036218090739864
     },
     "std_errors": {
-      "E_err": 384484.54908119584,
-      "A_err": 666465934.8350946,
-      "B_err": 607012535.8680595,
-      "alpha_err": 847319.7816105116,
-      "beta_err": 603752.0735247496
+      "E_err": 15969158.627994169,
+      "A_err": 21441619780.519794,
+      "B_err": 15718352527.330078,
+      "alpha_err": 2521338.607325119,
+      "beta_err": 13353727.365569992
     },
-    "r_squared": 0.5714354860645129,
-    "equation": "BPC = 0.555 + (77.05 / N^0.462) + (93.78 / D^0.390)"
+    "r_squared": 0.6418825923895988,
+    "equation": "BPC = 0.644 + (785.00 / N^0.682) + (108.91 / D^0.404)"
   },
   "tokenizer_scaling_curves": {
     "bpe": {
@@ -32,10 +32,10 @@
       "formula": "BPC = 33.415 * D^(-0.238)"
     },
     "word": {
-      "a": 2.852536347762049,
-      "scaling_exponent_beta": 0.06514109735349798,
-      "r_squared": 0.5322414627742333,
-      "formula": "BPC = 2.853 * D^(-0.065)"
+      "a": 5.096433579005091,
+      "scaling_exponent_beta": 0.10990083514278778,
+      "r_squared": 0.6377265687437114,
+      "formula": "BPC = 5.096 * D^(-0.110)"
     }
   }
 }

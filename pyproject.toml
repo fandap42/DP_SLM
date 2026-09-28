@@ -31,4 +31,5 @@ include = ["src*"]
 slm-run = "src.cli:run_main"
 slm-analyze = "src.cli:analyze_main"
 slm-demo = "src.cli:demo_main"
+slm-chat = "src.cli:chat_main"
 slm-pack = "src.cli:pack_main"

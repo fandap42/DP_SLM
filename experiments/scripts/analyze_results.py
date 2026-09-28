@@ -29,6 +29,10 @@ def run_statistical_analysis(results_csv: Path | str, output_dir: Path | str, fi
     df = pd.read_csv(results_csv)
     print(f"[Analysis] Loaded {len(df)} experiment rows from {results_csv}")
 
+    if len(df) < 4:
+        print(f"[Notice] Skipping regression, ANOVA, and scaling charts: requires at least 4 runs across factor combinations (found N={len(df)}).")
+        return
+
     plt.style.use("seaborn-v0_8-whitegrid" if "seaborn-v0_8-whitegrid" in plt.style.available else "default")
     plt.rcParams.update({
         "font.family": "sans-serif",

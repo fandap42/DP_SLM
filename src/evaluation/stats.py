@@ -44,16 +44,19 @@ def fit_mixed_effects_model(df: pd.DataFrame) -> Dict[str, Any]:
             model_summary_str = f"MixedLM fallback ({e})"
 
     if not use_mixed:
-        ols_model = smf.ols(formula, data=df_clean)
-        result = ols_model.fit()
-        model_summary_str = str(result.summary())
-        for k, v in result.params.items():
-            coef_dict[k] = float(v)
-        for k, v in result.pvalues.items():
-            pvalues_dict[k] = float(v)
-        ci = result.conf_int()
-        for idx, row in ci.iterrows():
-            conf_int_dict[idx] = (float(row[0]), float(row[1]))
+        try:
+            ols_model = smf.ols(formula, data=df_clean)
+            result = ols_model.fit()
+            model_summary_str = str(result.summary())
+            for k, v in result.params.items():
+                coef_dict[k] = float(v)
+            for k, v in result.pvalues.items():
+                pvalues_dict[k] = float(v)
+            ci = result.conf_int()
+            for idx, row in ci.iterrows():
+                conf_int_dict[idx] = (float(row[0]), float(row[1]))
+        except Exception as e:
+            model_summary_str = f"OLS model fallback: {e}"
 
     return {
         "model_type": "MixedLM" if use_mixed else "OLS",
