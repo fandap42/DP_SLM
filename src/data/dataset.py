@@ -20,6 +20,7 @@ class TokiPonaDataset(Dataset):
         max_seq_len: int = 128,
         fraction: float = 1.0,
         seed: int = 42,
+        heldout_compounds: Optional[List[str]] = None,
     ):
         self.tokenizer = tokenizer
         self.max_seq_len = max_seq_len
@@ -30,6 +31,14 @@ class TokiPonaDataset(Dataset):
             for line in f:
                 if line.strip():
                     self.samples.append(json.loads(line))
+
+        if heldout_compounds:
+            import re
+            patterns = [re.compile(r"\b" + re.escape(c) + r"\b") for c in heldout_compounds]
+            self.samples = [
+                s for s in self.samples
+                if not any(p.search(s["text"]) for p in patterns)
+            ]
 
         if fraction < 1.0:
             import random
@@ -48,10 +57,12 @@ class TokiPonaDataset(Dataset):
         tokens = self.tokenizer.encode(text, add_special_tokens=True)
         if len(tokens) > self.max_seq_len:
             tokens = tokens[: self.max_seq_len - 1] + [self.tokenizer.eos_token_id]
+            # When truncated, char_len must match the decoded character length of modeled tokens
+            char_len = len(self.tokenizer.decode(tokens, skip_special_tokens=True))
 
         return {
             "tokens": tokens,
-            "char_len": char_len,
+            "char_len": max(1, char_len),
             "source": item.get("source", "unknown"),
         }
 
@@ -93,6 +104,7 @@ def create_dataloader(
     shuffle: bool = True,
     seed: int = 42,
     num_workers: int = 0,
+    heldout_compounds: Optional[List[str]] = None,
 ) -> DataLoader:
     dataset = TokiPonaDataset(
         data_path=data_path,
@@ -100,6 +112,7 @@ def create_dataloader(
         max_seq_len=max_seq_len,
         fraction=fraction,
         seed=seed,
+        heldout_compounds=heldout_compounds,
     )
     return DataLoader(
         dataset,
