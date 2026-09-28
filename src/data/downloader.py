@@ -146,12 +146,28 @@ def split_by_source(
     val_ratio: float = 0.10,
     test_ratio: float = 0.10,
     seed: int = 42,
+    heldout_compounds: Optional[List[str]] = None,
 ) -> Tuple[List[CorpusItem], List[CorpusItem], List[CorpusItem]]:
     import random
+    import re
+
+    # If heldout compounds specified, filter them out of training candidates
+    heldout_items: List[CorpusItem] = []
+    regular_items: List[CorpusItem] = []
+
+    if heldout_compounds:
+        patterns = [re.compile(r"\b" + re.escape(c) + r"\b") for c in heldout_compounds]
+        for item in items:
+            if any(p.search(item.text) for p in patterns):
+                heldout_items.append(item)
+            else:
+                regular_items.append(item)
+    else:
+        regular_items = list(items)
 
     rng = random.Random(seed)
     source_groups: Dict[str, List[CorpusItem]] = {}
-    for item in items:
+    for item in regular_items:
         source_groups.setdefault(item.source, []).append(item)
 
     train_set: List[CorpusItem] = []
@@ -168,6 +184,9 @@ def split_by_source(
         val_set.extend(group[n_train : n_train + n_val])
         test_set.extend(group[n_train + n_val :])
 
+    # Heldout compound items are allocated exclusively to test set for evaluation
+    test_set.extend(heldout_items)
+
     rng.shuffle(train_set)
     rng.shuffle(val_set)
     rng.shuffle(test_set)
@@ -182,6 +201,7 @@ def build_and_save_corpus(
     val_ratio: float = 0.10,
     test_ratio: float = 0.10,
     seed: int = 42,
+    heldout_compounds: Optional[List[str]] = None,
 ) -> Dict:
     raw_dir = Path(raw_dir)
     output_dir = Path(output_dir)
@@ -196,7 +216,12 @@ def build_and_save_corpus(
 
     print("[Corpus] Performing source-stratified train/val/test split...")
     train_items, val_items, test_items = split_by_source(
-        clean_items, train_ratio=train_ratio, val_ratio=val_ratio, test_ratio=test_ratio, seed=seed
+        clean_items,
+        train_ratio=train_ratio,
+        val_ratio=val_ratio,
+        test_ratio=test_ratio,
+        seed=seed,
+        heldout_compounds=heldout_compounds,
     )
 
     output_dir.mkdir(parents=True, exist_ok=True)
