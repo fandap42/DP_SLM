@@ -1,0 +1,64 @@
+=== GLMM (Binomial Logit with Clustered Robust Items) Grammatical Acceptability Model ===
+Model Type: Binomial Logit with Item-Clustered Robust Covariance (GLMM-Cluster)
+Formula: correct ~ C(tokenizer, Treatment(reference='word')) + log_N + C(category)
+Pseudo R-squared (McFadden): 0.2907
+Observations: 6019
+Item Clusters (Groups): 463
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:                correct   No. Observations:                 6019
+Model:                          Logit   Df Residuals:                     6010
+Method:                           MLE   Df Model:                            8
+Date:                Mon, 28 Sep 2026   Pseudo R-squ.:                  0.2907
+Time:                        22:30:36   Log-Likelihood:                -1550.4
+converged:                       True   LL-Null:                       -2185.9
+Covariance Type:              cluster   LLR p-value:                4.292e-269
+=====================================================================================================================
+                                                        coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            -3.3356      0.492     -6.780      0.000      -4.300      -2.371
+C(tokenizer, Treatment(reference='word'))[T.bpe]     -1.9100      0.330     -5.796      0.000      -2.556      -1.264
+C(tokenizer, Treatment(reference='word'))[T.char]    -3.8294      0.349    -10.961      0.000      -4.514      -3.145
+C(category)[T.direct_object_e]                       -0.1864      0.250     -0.745      0.456      -0.677       0.304
+C(category)[T.lexical_validity]                       3.6416      1.011      3.603      0.000       1.661       5.623
+C(category)[T.modifier_order]                         1.1136      0.348      3.198      0.001       0.431       1.796
+C(category)[T.modifier_pi]                            1.2910      0.395      3.268      0.001       0.517       2.065
+C(category)[T.particle_li]                           -0.0395      0.256     -0.154      0.877      -0.540       0.461
+log_N                                                 0.6290      0.047     13.436      0.000       0.537       0.721
+=====================================================================================================================
+
+--- Linguistic Rule Difficulty Hierarchy (Ordered by Odds Ratio vs Ref) ---
+  - Rule: direct_object_e      | Odds Ratio vs Ref: 0.830
+  - Rule: particle_li          | Odds Ratio vs Ref: 0.961
+  - Rule: modifier_order       | Odds Ratio vs Ref: 3.045
+  - Rule: modifier_pi          | Odds Ratio vs Ref: 3.637
+  - Rule: lexical_validity     | Odds Ratio vs Ref: 38.153
+
+=== Longitudinal Generalized Estimating Equations (GEE) Summary ===
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                     correct   No. Observations:                 6019
+Model:                                 GEE   No. clusters:                      463
+Method:                        Generalized   Min. cluster size:                  13
+                      Estimating Equations   Max. cluster size:                  13
+Family:                           Binomial   Mean cluster size:                13.0
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Mon, 28 Sep 2026   Scale:                           1.000
+Covariance type:                    robust   Time:                         22:30:36
+=====================================================================================================================
+                                                        coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            -3.3356      0.491     -6.792      0.000      -4.298      -2.373
+C(tokenizer, Treatment(reference='word'))[T.bpe]     -1.9100      0.329     -5.806      0.000      -2.555      -1.265
+C(tokenizer, Treatment(reference='word'))[T.char]    -3.8294      0.349    -10.980      0.000      -4.513      -3.146
+C(category)[T.direct_object_e]                       -0.1864      0.250     -0.746      0.455      -0.676       0.303
+C(category)[T.lexical_validity]                       3.6416      1.009      3.609      0.000       1.664       5.619
+C(category)[T.modifier_order]                         1.1136      0.348      3.204      0.001       0.432       1.795
+C(category)[T.modifier_pi]                            1.2910      0.394      3.274      0.001       0.518       2.064
+C(category)[T.particle_li]                           -0.0395      0.255     -0.155      0.877      -0.539       0.461
+log_N                                                 0.6290      0.047     13.460      0.000       0.537       0.721
+==============================================================================
+Skew:                         -1.5849   Kurtosis:                       3.3035
+Centered skew:                -1.0264   Centered kurtosis:              1.7713
+==============================================================================

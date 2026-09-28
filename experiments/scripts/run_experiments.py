@@ -208,6 +208,11 @@ def run_pipeline(config_path: Path | str, project_root: Path | str):
 
                     run_idx += 1
 
+    print("\n[Evaluation] Running comprehensive 4-pillar evaluation across all checkpoints...")
+    from src.evaluation.evaluator import UnifiedEvaluator
+    evaluator = UnifiedEvaluator(project_root)
+    evaluator.evaluate_all_runs()
+
     print("\n[Analysis] Generating statistical analysis and figures...")
     try:
         from experiments.scripts.analyze_results import run_statistical_analysis

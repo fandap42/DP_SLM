@@ -1,0 +1,464 @@
+exp_id,tokenizer,model_size,non_embedding_params,seed,item_id,rule_id,category,grammatical,ungrammatical,logp_grammatical,logp_ungrammatical,margin,correct
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_001,particle_li,particle_li,mi moku.,mi li moku.,-15.283,-17.997,2.714,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_002,particle_li,particle_li,mi lape.,mi li lape.,-17.5,-19.338,1.838,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_003,particle_li,particle_li,mi tawa.,mi li tawa.,-12.011,-14.792,2.781,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_004,particle_li,particle_li,mi lukin.,mi li lukin.,-15.781,-18.125,2.344,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_005,particle_li,particle_li,mi kute.,mi li kute.,-12.956,-15.76,2.804,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_006,particle_li,particle_li,mi pali.,mi li pali.,-12.99,-15.271,2.281,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_007,particle_li,particle_li,mi toki.,mi li toki.,-12.048,-15.859,3.811,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_008,particle_li,particle_li,mi awen.,mi li awen.,-15.313,-17.139,1.826,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_009,particle_li,particle_li,mi kalama.,mi li kalama.,-16.895,-19.058,2.163,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_010,particle_li,particle_li,mi musi.,mi li musi.,-13.856,-15.524,1.668,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_011,particle_li,particle_li,mi kama.,mi li kama.,-12.36,-14.917,2.558,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_012,particle_li,particle_li,mi ante.,mi li ante.,-16.125,-17.943,1.818,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_013,particle_li,particle_li,mi pilin.,mi li pilin.,-14.46,-16.781,2.32,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_014,particle_li,particle_li,mi pona.,mi li pona.,-11.498,-14.043,2.544,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_015,particle_li,particle_li,mi moku e kili.,mi li moku e kili.,-23.562,-27.278,3.715,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_016,particle_li,particle_li,mi lukin e kili.,mi li lukin e kili.,-24.033,-27.169,3.136,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_017,particle_li,particle_li,mi pali e kili.,mi li pali e kili.,-21.995,-25.34,3.346,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_018,particle_li,particle_li,mi pana e kili.,mi li pana e kili.,-22.569,-24.684,2.115,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_019,particle_li,particle_li,mi wile e kili.,mi li wile e kili.,-21.125,-25.226,4.102,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_020,particle_li,particle_li,mi moku e telo.,mi li moku e telo.,-24.654,-28.142,3.489,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_021,particle_li,particle_li,mi lukin e telo.,mi li lukin e telo.,-25.048,-27.468,2.42,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_022,particle_li,particle_li,mi pali e telo.,mi li pali e telo.,-22.511,-25.412,2.901,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_023,particle_li,particle_li,mi pana e telo.,mi li pana e telo.,-23.081,-24.76,1.679,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_024,particle_li,particle_li,mi wile e telo.,mi li wile e telo.,-20.93,-25.048,4.118,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_025,particle_li,particle_li,mi moku e pan.,mi li moku e pan.,-24.079,-27.606,3.526,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_026,particle_li,particle_li,mi lukin e pan.,mi li lukin e pan.,-24.21,-27.108,2.897,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_027,particle_li,particle_li,mi pali e pan.,mi li pali e pan.,-21.018,-24.453,3.436,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_028,particle_li,particle_li,mi pana e pan.,mi li pana e pan.,-21.578,-23.848,2.27,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_029,particle_li,particle_li,mi wile e pan.,mi li wile e pan.,-20.4,-24.576,4.176,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_030,particle_li,particle_li,mi moku e lipu.,mi li moku e lipu.,-27.348,-31.273,3.925,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_031,particle_li,particle_li,mi lukin e lipu.,mi li lukin e lipu.,-27.269,-30.627,3.359,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_032,particle_li,particle_li,mi pali e lipu.,mi li pali e lipu.,-25.578,-28.97,3.392,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_033,particle_li,particle_li,mi pana e lipu.,mi li pana e lipu.,-26.338,-28.381,2.043,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_034,particle_li,particle_li,mi wile e lipu.,mi li wile e lipu.,-24.688,-28.951,4.263,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_035,particle_li,particle_li,mi moku e mani.,mi li moku e mani.,-25.69,-28.425,2.735,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_036,particle_li,particle_li,mi lukin e mani.,mi li lukin e mani.,-25.671,-27.417,1.747,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_037,particle_li,particle_li,mi pali e mani.,mi li pali e mani.,-22.507,-25.158,2.652,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_038,particle_li,particle_li,mi pana e mani.,mi li pana e mani.,-22.621,-24.192,1.571,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_039,particle_li,particle_li,mi wile e mani.,mi li wile e mani.,-21.836,-25.261,3.425,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_040,particle_li,particle_li,sina moku.,sina li moku.,-17.582,-18.966,1.383,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_041,particle_li,particle_li,sina lape.,sina li lape.,-17.569,-20.202,2.633,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_042,particle_li,particle_li,sina tawa.,sina li tawa.,-12.93,-14.394,1.464,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_043,particle_li,particle_li,sina lukin.,sina li lukin.,-16.483,-19.03,2.547,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_044,particle_li,particle_li,sina kute.,sina li kute.,-16.004,-18.01,2.006,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_045,particle_li,particle_li,sina pali.,sina li pali.,-14.293,-15.65,1.357,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_046,particle_li,particle_li,sina toki.,sina li toki.,-14.142,-16.116,1.975,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_047,particle_li,particle_li,sina awen.,sina li awen.,-15.216,-18.276,3.061,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_048,particle_li,particle_li,sina kalama.,sina li kalama.,-18.004,-19.256,1.253,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_049,particle_li,particle_li,sina musi.,sina li musi.,-15.439,-16.757,1.318,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_050,particle_li,particle_li,sina kama.,sina li kama.,-14.057,-15.14,1.083,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_051,particle_li,particle_li,sina ante.,sina li ante.,-18.01,-19.322,1.312,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_052,particle_li,particle_li,sina pilin.,sina li pilin.,-15.57,-17.817,2.247,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_053,particle_li,particle_li,sina pona.,sina li pona.,-13.149,-14.746,1.597,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_054,particle_li,particle_li,sina moku e kili.,sina li moku e kili.,-25.816,-27.765,1.95,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_055,particle_li,particle_li,sina lukin e kili.,sina li lukin e kili.,-25.587,-27.825,2.238,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_056,particle_li,particle_li,sina pali e kili.,sina li pali e kili.,-23.664,-25.451,1.787,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_057,particle_li,particle_li,sina pana e kili.,sina li pana e kili.,-23.1,-25.539,2.439,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_058,particle_li,particle_li,sina wile e kili.,sina li wile e kili.,-23.795,-26.406,2.611,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_059,particle_li,particle_li,sina moku e telo.,sina li moku e telo.,-26.788,-28.824,2.037,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_060,particle_li,particle_li,sina lukin e telo.,sina li lukin e telo.,-25.654,-28.391,2.737,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_061,particle_li,particle_li,sina pali e telo.,sina li pali e telo.,-23.758,-25.819,2.06,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_062,particle_li,particle_li,sina pana e telo.,sina li pana e telo.,-23.329,-25.925,2.596,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_063,particle_li,particle_li,sina wile e telo.,sina li wile e telo.,-23.752,-26.408,2.656,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_064,particle_li,particle_li,sina moku e pan.,sina li moku e pan.,-26.393,-28.573,2.18,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_065,particle_li,particle_li,sina lukin e pan.,sina li lukin e pan.,-25.408,-27.786,2.377,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_066,particle_li,particle_li,sina pali e pan.,sina li pali e pan.,-22.809,-24.991,2.182,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_067,particle_li,particle_li,sina pana e pan.,sina li pana e pan.,-22.319,-25.133,2.813,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_068,particle_li,particle_li,sina wile e pan.,sina li wile e pan.,-23.45,-26.213,2.762,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_069,particle_li,particle_li,sina moku e lipu.,sina li moku e lipu.,-29.622,-31.481,1.859,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_070,particle_li,particle_li,sina lukin e lipu.,sina li lukin e lipu.,-28.995,-31.082,2.088,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_071,particle_li,particle_li,sina pali e lipu.,sina li pali e lipu.,-27.247,-28.88,1.634,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_072,particle_li,particle_li,sina pana e lipu.,sina li pana e lipu.,-26.739,-29.043,2.304,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_073,particle_li,particle_li,sina wile e lipu.,sina li wile e lipu.,-27.457,-29.808,2.351,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_074,particle_li,particle_li,sina moku e mani.,sina li moku e mani.,-28.093,-29.59,1.498,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_075,particle_li,particle_li,sina lukin e mani.,sina li lukin e mani.,-26.829,-29.097,2.269,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_076,particle_li,particle_li,sina pali e mani.,sina li pali e mani.,-24.333,-25.957,1.624,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_077,particle_li,particle_li,sina pana e mani.,sina li pana e mani.,-23.587,-25.628,2.041,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_mi_sina_078,particle_li,particle_li,sina wile e mani.,sina li wile e mani.,-25.169,-27.333,2.164,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_001,particle_li,particle_li,jan li moku.,jan moku.,-17.136,-16.631,-0.506,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_002,particle_li,particle_li,jan li lape.,jan lape.,-18.705,-17.127,-1.578,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_003,particle_li,particle_li,jan li tawa.,jan tawa.,-13.235,-12.692,-0.543,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_004,particle_li,particle_li,jan li lukin.,jan lukin.,-17.157,-16.561,-0.596,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_005,particle_li,particle_li,jan li pali.,jan pali.,-14.08,-13.822,-0.258,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_006,particle_li,particle_li,jan li toki.,jan toki.,-13.544,-12.211,-1.333,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_007,particle_li,particle_li,jan li kalama.,jan kalama.,-18.32,-18.511,0.191,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_008,particle_li,particle_li,jan li awen.,jan awen.,-17.098,-17.128,0.029,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_009,particle_li,particle_li,soweli li moku.,soweli moku.,-25.26,-23.487,-1.773,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_010,particle_li,particle_li,soweli li lape.,soweli lape.,-27.196,-25.052,-2.144,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_011,particle_li,particle_li,soweli li tawa.,soweli tawa.,-21.425,-19.574,-1.851,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_012,particle_li,particle_li,soweli li lukin.,soweli lukin.,-25.533,-23.685,-1.848,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_013,particle_li,particle_li,soweli li pali.,soweli pali.,-22.876,-20.484,-2.392,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_014,particle_li,particle_li,soweli li toki.,soweli toki.,-22.528,-20.322,-2.206,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_015,particle_li,particle_li,soweli li kalama.,soweli kalama.,-26.452,-25.383,-1.069,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_016,particle_li,particle_li,soweli li awen.,soweli awen.,-24.875,-22.545,-2.331,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_017,particle_li,particle_li,waso li moku.,waso moku.,-25.475,-23.98,-1.495,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_018,particle_li,particle_li,waso li lape.,waso lape.,-26.941,-25.082,-1.859,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_019,particle_li,particle_li,waso li tawa.,waso tawa.,-20.783,-19.838,-0.945,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_020,particle_li,particle_li,waso li lukin.,waso lukin.,-25.111,-22.488,-2.623,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_021,particle_li,particle_li,waso li pali.,waso pali.,-22.153,-21.137,-1.016,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_022,particle_li,particle_li,waso li toki.,waso toki.,-22.578,-20.996,-1.582,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_023,particle_li,particle_li,waso li kalama.,waso kalama.,-25.795,-24.804,-0.99,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_024,particle_li,particle_li,waso li awen.,waso awen.,-24.467,-21.598,-2.87,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_025,particle_li,particle_li,kasi li moku.,kasi moku.,-26.206,-24.534,-1.672,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_026,particle_li,particle_li,kasi li lape.,kasi lape.,-27.358,-24.85,-2.508,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_027,particle_li,particle_li,kasi li tawa.,kasi tawa.,-21.499,-19.937,-1.562,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_028,particle_li,particle_li,kasi li lukin.,kasi lukin.,-26.011,-22.925,-3.086,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_029,particle_li,particle_li,kasi li pali.,kasi pali.,-22.841,-21.455,-1.387,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_030,particle_li,particle_li,kasi li toki.,kasi toki.,-23.411,-21.753,-1.658,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_031,particle_li,particle_li,kasi li kalama.,kasi kalama.,-26.289,-24.55,-1.739,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_032,particle_li,particle_li,kasi li awen.,kasi awen.,-25.386,-21.78,-3.606,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_033,particle_li,particle_li,kili li moku.,kili moku.,-24.403,-22.737,-1.666,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_034,particle_li,particle_li,kili li lape.,kili lape.,-25.955,-23.693,-2.263,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_035,particle_li,particle_li,kili li tawa.,kili tawa.,-19.96,-18.626,-1.334,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_036,particle_li,particle_li,kili li lukin.,kili lukin.,-24.309,-21.717,-2.592,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_037,particle_li,particle_li,kili li pali.,kili pali.,-21.359,-20.182,-1.177,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_038,particle_li,particle_li,kili li toki.,kili toki.,-21.767,-20.203,-1.564,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_039,particle_li,particle_li,kili li kalama.,kili kalama.,-24.692,-23.453,-1.239,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_040,particle_li,particle_li,kili li awen.,kili awen.,-24.313,-21.437,-2.876,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_041,particle_li,particle_li,ona li moku.,ona moku.,-17.707,-17.598,-0.11,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_042,particle_li,particle_li,ona li lape.,ona lape.,-19.315,-18.061,-1.254,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_043,particle_li,particle_li,ona li tawa.,ona tawa.,-13.573,-13.049,-0.525,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_044,particle_li,particle_li,ona li lukin.,ona lukin.,-17.878,-17.773,-0.104,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_045,particle_li,particle_li,ona li pali.,ona pali.,-14.685,-14.698,0.013,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_046,particle_li,particle_li,ona li toki.,ona toki.,-14.393,-13.58,-0.812,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_047,particle_li,particle_li,ona li kalama.,ona kalama.,-18.64,-19.491,0.851,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_048,particle_li,particle_li,ona li awen.,ona awen.,-17.678,-17.82,0.141,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_049,particle_li,particle_li,kulupu li moku.,kulupu moku.,-30.797,-29.73,-1.067,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_050,particle_li,particle_li,kulupu li lape.,kulupu lape.,-32.925,-30.915,-2.01,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_051,particle_li,particle_li,kulupu li tawa.,kulupu tawa.,-26.823,-25.39,-1.433,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_052,particle_li,particle_li,kulupu li lukin.,kulupu lukin.,-30.76,-28.772,-1.988,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_053,particle_li,particle_li,kulupu li pali.,kulupu pali.,-28.325,-26.128,-2.197,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_054,particle_li,particle_li,kulupu li toki.,kulupu toki.,-28.098,-26.76,-1.338,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_055,particle_li,particle_li,kulupu li kalama.,kulupu kalama.,-32.168,-31.236,-0.932,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_056,particle_li,particle_li,kulupu li awen.,kulupu awen.,-30.875,-28.995,-1.879,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_057,particle_li,particle_li,ilo li moku.,ilo moku.,-21.805,-21.183,-0.622,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_058,particle_li,particle_li,ilo li lape.,ilo lape.,-23.788,-21.96,-1.828,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_059,particle_li,particle_li,ilo li tawa.,ilo tawa.,-18.41,-17.377,-1.034,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_060,particle_li,particle_li,ilo li lukin.,ilo lukin.,-22.454,-21.476,-0.978,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_061,particle_li,particle_li,ilo li pali.,ilo pali.,-19.621,-19.062,-0.559,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_062,particle_li,particle_li,ilo li toki.,ilo toki.,-19.369,-18.62,-0.748,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_063,particle_li,particle_li,ilo li kalama.,ilo kalama.,-23.409,-23.305,-0.104,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_064,particle_li,particle_li,ilo li awen.,ilo awen.,-21.988,-21.005,-0.982,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_065,particle_li,particle_li,akesi li moku.,akesi moku.,-32.485,-30.872,-1.612,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_066,particle_li,particle_li,akesi li lape.,akesi lape.,-32.945,-30.159,-2.786,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_067,particle_li,particle_li,akesi li tawa.,akesi tawa.,-27.676,-26.241,-1.435,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_068,particle_li,particle_li,akesi li lukin.,akesi lukin.,-32.453,-29.621,-2.832,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_069,particle_li,particle_li,akesi li pali.,akesi pali.,-29.265,-26.491,-2.774,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_070,particle_li,particle_li,akesi li toki.,akesi toki.,-29.829,-28.115,-1.713,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_071,particle_li,particle_li,akesi li kalama.,akesi kalama.,-32.579,-31.251,-1.328,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_072,particle_li,particle_li,akesi li awen.,akesi awen.,-31.86,-28.427,-3.433,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_073,particle_li,particle_li,kala li moku.,kala moku.,-23.783,-22.546,-1.236,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_074,particle_li,particle_li,kala li lape.,kala lape.,-24.596,-22.27,-2.325,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_075,particle_li,particle_li,kala li tawa.,kala tawa.,-18.755,-17.5,-1.254,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_076,particle_li,particle_li,kala li lukin.,kala lukin.,-23.749,-21.699,-2.05,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_077,particle_li,particle_li,kala li pali.,kala pali.,-20.074,-18.907,-1.166,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_078,particle_li,particle_li,kala li toki.,kala toki.,-20.506,-19.0,-1.505,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_079,particle_li,particle_li,kala li kalama.,kala kalama.,-23.598,-22.263,-1.336,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_080,particle_li,particle_li,kala li awen.,kala awen.,-23.439,-20.832,-2.607,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_081,particle_li,particle_li,pipi li moku.,pipi moku.,-24.874,-23.395,-1.479,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_082,particle_li,particle_li,pipi li lape.,pipi lape.,-26.454,-24.41,-2.044,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_083,particle_li,particle_li,pipi li tawa.,pipi tawa.,-20.444,-19.381,-1.063,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_084,particle_li,particle_li,pipi li lukin.,pipi lukin.,-24.845,-22.037,-2.808,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_085,particle_li,particle_li,pipi li pali.,pipi pali.,-21.585,-20.357,-1.228,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_086,particle_li,particle_li,pipi li toki.,pipi toki.,-22.057,-20.525,-1.532,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_087,particle_li,particle_li,pipi li kalama.,pipi kalama.,-25.27,-23.943,-1.326,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_088,particle_li,particle_li,pipi li awen.,pipi awen.,-24.135,-21.119,-3.016,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_089,particle_li,particle_li,tomo li moku.,tomo moku.,-21.647,-20.344,-1.303,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_090,particle_li,particle_li,tomo li lape.,tomo lape.,-23.799,-22.813,-0.986,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_091,particle_li,particle_li,tomo li tawa.,tomo tawa.,-17.073,-16.864,-0.209,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_092,particle_li,particle_li,tomo li lukin.,tomo lukin.,-21.976,-21.144,-0.832,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_093,particle_li,particle_li,tomo li pali.,tomo pali.,-18.716,-18.725,0.009,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_094,particle_li,particle_li,tomo li toki.,tomo toki.,-18.314,-17.144,-1.17,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_095,particle_li,particle_li,tomo li kalama.,tomo kalama.,-22.729,-23.365,0.636,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_096,particle_li,particle_li,tomo li awen.,tomo awen.,-22.254,-21.145,-1.11,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_097,particle_li,particle_li,mun li moku.,mun moku.,-22.79,-22.892,0.103,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_098,particle_li,particle_li,mun li lape.,mun lape.,-24.915,-24.274,-0.641,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_099,particle_li,particle_li,mun li tawa.,mun tawa.,-19.201,-19.066,-0.135,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_100,particle_li,particle_li,mun li lukin.,mun lukin.,-23.09,-22.73,-0.359,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_101,particle_li,particle_li,mun li pali.,mun pali.,-20.312,-20.699,0.387,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_102,particle_li,particle_li,mun li toki.,mun toki.,-19.791,-19.464,-0.327,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_103,particle_li,particle_li,mun li kalama.,mun kalama.,-24.161,-25.03,0.869,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_104,particle_li,particle_li,mun li awen.,mun awen.,-23.033,-23.307,0.274,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_105,particle_li,particle_li,suno li moku.,suno moku.,-24.761,-24.101,-0.66,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_106,particle_li,particle_li,suno li lape.,suno lape.,-26.604,-24.68,-1.924,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_107,particle_li,particle_li,suno li tawa.,suno tawa.,-20.363,-19.792,-0.571,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_108,particle_li,particle_li,suno li lukin.,suno lukin.,-24.614,-22.412,-2.202,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_109,particle_li,particle_li,suno li pali.,suno pali.,-21.673,-21.01,-0.663,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_110,particle_li,particle_li,suno li toki.,suno toki.,-22.05,-20.766,-1.284,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_111,particle_li,particle_li,suno li kalama.,suno kalama.,-25.75,-25.808,0.057,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_112,particle_li,particle_li,suno li awen.,suno awen.,-24.116,-22.058,-2.058,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_113,particle_li,particle_li,ma li moku.,ma moku.,-20.793,-17.848,-2.946,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_114,particle_li,particle_li,ma li lape.,ma lape.,-21.879,-20.2,-1.678,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_115,particle_li,particle_li,ma li tawa.,ma tawa.,-17.307,-15.006,-2.302,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_116,particle_li,particle_li,ma li lukin.,ma lukin.,-20.671,-18.854,-1.817,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_117,particle_li,particle_li,ma li pali.,ma pali.,-17.765,-15.453,-2.311,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_118,particle_li,particle_li,ma li toki.,ma toki.,-18.235,-14.486,-3.749,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_119,particle_li,particle_li,ma li kalama.,ma kalama.,-21.467,-19.551,-1.916,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_120,particle_li,particle_li,ma li awen.,ma awen.,-19.838,-17.869,-1.969,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_121,particle_li,particle_li,telo li moku.,telo moku.,-21.079,-19.54,-1.539,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_122,particle_li,particle_li,telo li lape.,telo lape.,-23.044,-21.694,-1.35,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_123,particle_li,particle_li,telo li tawa.,telo tawa.,-16.973,-16.537,-0.436,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_124,particle_li,particle_li,telo li lukin.,telo lukin.,-21.425,-19.765,-1.661,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_125,particle_li,particle_li,telo li pali.,telo pali.,-18.326,-18.213,-0.113,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_126,particle_li,particle_li,telo li toki.,telo toki.,-18.023,-16.792,-1.231,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_127,particle_li,particle_li,telo li kalama.,telo kalama.,-22.046,-22.171,0.125,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_3rd_omit_128,particle_li,particle_li,telo li awen.,telo awen.,-21.749,-19.824,-1.925,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_001,particle_li,particle_li,jan li moku.,jan e moku.,-17.136,-21.47,4.333,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_002,particle_li,particle_li,jan li lape.,jan e lape.,-18.705,-22.456,3.751,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_003,particle_li,particle_li,jan li tawa.,jan e tawa.,-13.235,-17.686,4.451,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_004,particle_li,particle_li,jan li lukin.,jan e lukin.,-17.157,-20.136,2.979,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_005,particle_li,particle_li,jan li pali.,jan e pali.,-14.08,-17.572,3.492,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_006,particle_li,particle_li,soweli li moku.,soweli e moku.,-25.26,-27.16,1.9,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_007,particle_li,particle_li,soweli li lape.,soweli e lape.,-27.196,-28.517,1.321,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_008,particle_li,particle_li,soweli li tawa.,soweli e tawa.,-21.425,-22.842,1.417,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_009,particle_li,particle_li,soweli li lukin.,soweli e lukin.,-25.533,-26.95,1.418,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_010,particle_li,particle_li,soweli li pali.,soweli e pali.,-22.876,-23.992,1.117,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_011,particle_li,particle_li,waso li moku.,waso e moku.,-25.475,-28.857,3.382,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_012,particle_li,particle_li,waso li lape.,waso e lape.,-26.941,-30.111,3.171,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_013,particle_li,particle_li,waso li tawa.,waso e tawa.,-20.783,-24.557,3.774,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_014,particle_li,particle_li,waso li lukin.,waso e lukin.,-25.111,-27.974,2.863,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_015,particle_li,particle_li,waso li pali.,waso e pali.,-22.153,-25.345,3.192,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_016,particle_li,particle_li,ona li moku.,ona e moku.,-17.707,-21.698,3.991,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_017,particle_li,particle_li,ona li lape.,ona e lape.,-19.315,-22.464,3.149,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_018,particle_li,particle_li,ona li tawa.,ona e tawa.,-13.573,-17.344,3.771,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_019,particle_li,particle_li,ona li lukin.,ona e lukin.,-17.878,-20.313,2.435,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_020,particle_li,particle_li,ona li pali.,ona e pali.,-14.685,-17.557,2.872,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_021,particle_li,particle_li,kulupu li moku.,kulupu e moku.,-30.797,-32.528,1.731,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_022,particle_li,particle_li,kulupu li lape.,kulupu e lape.,-32.925,-34.183,1.258,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_023,particle_li,particle_li,kulupu li tawa.,kulupu e tawa.,-26.823,-28.307,1.484,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_024,particle_li,particle_li,kulupu li lukin.,kulupu e lukin.,-30.76,-31.885,1.125,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,li_spurious_e_025,particle_li,particle_li,kulupu li pali.,kulupu e pali.,-28.325,-29.411,1.085,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_001,direct_object_e,direct_object_e,jan li moku e kili.,jan li moku kili.,-25.591,-23.771,-1.82,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_002,direct_object_e,direct_object_e,jan li moku e telo.,jan li moku telo.,-27.118,-24.837,-2.281,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_003,direct_object_e,direct_object_e,jan li moku e pan.,jan li moku pan.,-26.919,-23.386,-3.533,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_004,direct_object_e,direct_object_e,jan li moku e lipu.,jan li moku lipu.,-29.596,-27.288,-2.308,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_005,direct_object_e,direct_object_e,jan li moku e mani.,jan li moku mani.,-27.639,-26.623,-1.015,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_006,direct_object_e,direct_object_e,jan li moku e waso.,jan li moku waso.,-29.765,-27.091,-2.673,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_007,direct_object_e,direct_object_e,jan li moku e soweli.,jan li moku soweli.,-30.732,-28.23,-2.503,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_008,direct_object_e,direct_object_e,jan li moku e tomo.,jan li moku tomo.,-27.055,-24.375,-2.68,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_009,direct_object_e,direct_object_e,jan li lukin e kili.,jan li lukin kili.,-25.383,-23.817,-1.566,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_010,direct_object_e,direct_object_e,jan li lukin e telo.,jan li lukin telo.,-26.359,-23.875,-2.483,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_011,direct_object_e,direct_object_e,jan li lukin e pan.,jan li lukin pan.,-26.349,-22.731,-3.618,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_012,direct_object_e,direct_object_e,jan li lukin e lipu.,jan li lukin lipu.,-28.902,-26.758,-2.144,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_013,direct_object_e,direct_object_e,jan li lukin e mani.,jan li lukin mani.,-26.622,-25.47,-1.153,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_014,direct_object_e,direct_object_e,jan li lukin e waso.,jan li lukin waso.,-29.227,-26.399,-2.828,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_015,direct_object_e,direct_object_e,jan li lukin e soweli.,jan li lukin soweli.,-30.158,-27.916,-2.242,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_016,direct_object_e,direct_object_e,jan li lukin e tomo.,jan li lukin tomo.,-26.852,-24.229,-2.624,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_017,direct_object_e,direct_object_e,jan li kute e kili.,jan li kute kili.,-24.753,-22.243,-2.511,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_018,direct_object_e,direct_object_e,jan li kute e telo.,jan li kute telo.,-25.602,-22.627,-2.976,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_019,direct_object_e,direct_object_e,jan li kute e pan.,jan li kute pan.,-25.411,-21.381,-4.029,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_020,direct_object_e,direct_object_e,jan li kute e lipu.,jan li kute lipu.,-28.471,-25.677,-2.794,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_021,direct_object_e,direct_object_e,jan li kute e mani.,jan li kute mani.,-26.745,-25.388,-1.356,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_022,direct_object_e,direct_object_e,jan li kute e waso.,jan li kute waso.,-27.904,-24.664,-3.24,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_023,direct_object_e,direct_object_e,jan li kute e soweli.,jan li kute soweli.,-29.318,-26.487,-2.831,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_024,direct_object_e,direct_object_e,jan li kute e tomo.,jan li kute tomo.,-25.512,-22.258,-3.254,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_025,direct_object_e,direct_object_e,jan li pali e kili.,jan li pali kili.,-23.402,-21.167,-2.234,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_026,direct_object_e,direct_object_e,jan li pali e telo.,jan li pali telo.,-24.158,-21.307,-2.851,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_027,direct_object_e,direct_object_e,jan li pali e pan.,jan li pali pan.,-23.231,-19.277,-3.954,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_028,direct_object_e,direct_object_e,jan li pali e lipu.,jan li pali lipu.,-27.124,-24.515,-2.608,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_029,direct_object_e,direct_object_e,jan li pali e mani.,jan li pali mani.,-24.118,-22.397,-1.722,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_030,direct_object_e,direct_object_e,jan li pali e waso.,jan li pali waso.,-26.347,-23.37,-2.977,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_031,direct_object_e,direct_object_e,jan li pali e soweli.,jan li pali soweli.,-27.66,-24.761,-2.899,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_032,direct_object_e,direct_object_e,jan li pali e tomo.,jan li pali tomo.,-23.916,-20.873,-3.043,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_033,direct_object_e,direct_object_e,jan li pana e kili.,jan li pana kili.,-24.018,-21.768,-2.251,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_034,direct_object_e,direct_object_e,jan li pana e telo.,jan li pana telo.,-24.817,-22.05,-2.767,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_035,direct_object_e,direct_object_e,jan li pana e pan.,jan li pana pan.,-23.878,-19.895,-3.983,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_036,direct_object_e,direct_object_e,jan li pana e lipu.,jan li pana lipu.,-27.792,-25.113,-2.679,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_037,direct_object_e,direct_object_e,jan li pana e mani.,jan li pana mani.,-24.431,-22.612,-1.82,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_038,direct_object_e,direct_object_e,jan li pana e waso.,jan li pana waso.,-26.946,-24.081,-2.864,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_039,direct_object_e,direct_object_e,jan li pana e soweli.,jan li pana soweli.,-28.724,-25.982,-2.742,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_040,direct_object_e,direct_object_e,jan li pana e tomo.,jan li pana tomo.,-24.745,-21.985,-2.76,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_041,direct_object_e,direct_object_e,jan li alasa e kili.,jan li alasa kili.,-28.123,-25.712,-2.41,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_042,direct_object_e,direct_object_e,jan li alasa e telo.,jan li alasa telo.,-28.465,-25.255,-3.21,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_043,direct_object_e,direct_object_e,jan li alasa e pan.,jan li alasa pan.,-27.774,-23.421,-4.353,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_044,direct_object_e,direct_object_e,jan li alasa e lipu.,jan li alasa lipu.,-31.875,-29.226,-2.65,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_045,direct_object_e,direct_object_e,jan li alasa e mani.,jan li alasa mani.,-28.208,-26.079,-2.128,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_046,direct_object_e,direct_object_e,jan li alasa e waso.,jan li alasa waso.,-30.782,-27.648,-3.134,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_047,direct_object_e,direct_object_e,jan li alasa e soweli.,jan li alasa soweli.,-32.27,-29.068,-3.202,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_048,direct_object_e,direct_object_e,jan li alasa e tomo.,jan li alasa tomo.,-28.779,-25.498,-3.281,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_049,direct_object_e,direct_object_e,jan li wile e kili.,jan li wile kili.,-23.892,-22.271,-1.622,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_050,direct_object_e,direct_object_e,jan li wile e telo.,jan li wile telo.,-24.319,-22.153,-2.166,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_051,direct_object_e,direct_object_e,jan li wile e pan.,jan li wile pan.,-24.087,-20.735,-3.352,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_052,direct_object_e,direct_object_e,jan li wile e lipu.,jan li wile lipu.,-27.599,-25.559,-2.04,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_053,direct_object_e,direct_object_e,jan li wile e mani.,jan li wile mani.,-24.848,-24.222,-0.626,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_054,direct_object_e,direct_object_e,jan li wile e waso.,jan li wile waso.,-27.11,-24.487,-2.623,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_055,direct_object_e,direct_object_e,jan li wile e soweli.,jan li wile soweli.,-27.8,-25.444,-2.356,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_056,direct_object_e,direct_object_e,jan li wile e tomo.,jan li wile tomo.,-24.319,-21.708,-2.611,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_057,direct_object_e,direct_object_e,jan li jo e kili.,jan li jo kili.,-22.664,-21.299,-1.365,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_058,direct_object_e,direct_object_e,jan li jo e telo.,jan li jo telo.,-24.132,-22.008,-2.124,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_059,direct_object_e,direct_object_e,jan li jo e pan.,jan li jo pan.,-22.89,-19.712,-3.178,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_060,direct_object_e,direct_object_e,jan li jo e lipu.,jan li jo lipu.,-26.162,-24.058,-2.104,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_061,direct_object_e,direct_object_e,jan li jo e mani.,jan li jo mani.,-24.805,-23.094,-1.71,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_062,direct_object_e,direct_object_e,jan li jo e waso.,jan li jo waso.,-27.147,-24.473,-2.674,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_063,direct_object_e,direct_object_e,jan li jo e soweli.,jan li jo soweli.,-27.881,-26.12,-1.76,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_064,direct_object_e,direct_object_e,jan li jo e tomo.,jan li jo tomo.,-23.785,-22.093,-1.692,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_065,direct_object_e,direct_object_e,soweli li moku e kili.,soweli li moku kili.,-33.787,-32.092,-1.695,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_066,direct_object_e,direct_object_e,soweli li moku e telo.,soweli li moku telo.,-35.167,-32.628,-2.54,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_067,direct_object_e,direct_object_e,soweli li moku e pan.,soweli li moku pan.,-35.369,-31.914,-3.455,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_068,direct_object_e,direct_object_e,soweli li moku e lipu.,soweli li moku lipu.,-37.892,-35.524,-2.368,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_069,direct_object_e,direct_object_e,soweli li moku e mani.,soweli li moku mani.,-35.614,-34.364,-1.25,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_070,direct_object_e,direct_object_e,soweli li moku e waso.,soweli li moku waso.,-38.068,-35.024,-3.044,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_071,direct_object_e,direct_object_e,soweli li moku e soweli.,soweli li moku soweli.,-38.564,-36.156,-2.408,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_072,direct_object_e,direct_object_e,soweli li moku e tomo.,soweli li moku tomo.,-35.243,-32.781,-2.462,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_073,direct_object_e,direct_object_e,soweli li lukin e kili.,soweli li lukin kili.,-34.311,-32.577,-1.733,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_074,direct_object_e,direct_object_e,soweli li lukin e telo.,soweli li lukin telo.,-34.962,-32.375,-2.587,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_075,direct_object_e,direct_object_e,soweli li lukin e pan.,soweli li lukin pan.,-34.849,-31.495,-3.354,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_076,direct_object_e,direct_object_e,soweli li lukin e lipu.,soweli li lukin lipu.,-37.845,-35.305,-2.54,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_077,direct_object_e,direct_object_e,soweli li lukin e mani.,soweli li lukin mani.,-35.332,-34.024,-1.309,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_078,direct_object_e,direct_object_e,soweli li lukin e waso.,soweli li lukin waso.,-37.949,-34.903,-3.047,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_079,direct_object_e,direct_object_e,soweli li lukin e soweli.,soweli li lukin soweli.,-38.732,-36.468,-2.265,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_object_080,direct_object_e,direct_object_e,soweli li lukin e tomo.,soweli li lukin tomo.,-35.601,-32.813,-2.787,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_001,direct_object_e,direct_object_e,jan li tawa lon tomo.,jan li tawa e lon tomo.,-23.927,-27.113,3.186,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_002,direct_object_e,direct_object_e,jan li tawa tawa ma.,jan li tawa e tawa ma.,-20.509,-23.942,3.433,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_003,direct_object_e,direct_object_e,jan li tawa kepeken ilo.,jan li tawa e kepeken ilo.,-36.161,-38.69,2.529,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_004,direct_object_e,direct_object_e,jan li tawa tan tomo.,jan li tawa e tan tomo.,-24.96,-28.509,3.549,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_005,direct_object_e,direct_object_e,soweli li tawa lon tomo.,soweli li tawa e lon tomo.,-32.911,-36.143,3.232,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_006,direct_object_e,direct_object_e,soweli li tawa tawa ma.,soweli li tawa e tawa ma.,-29.025,-32.859,3.835,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_007,direct_object_e,direct_object_e,soweli li tawa kepeken ilo.,soweli li tawa e kepeken ilo.,-44.183,-47.292,3.109,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_008,direct_object_e,direct_object_e,soweli li tawa tan tomo.,soweli li tawa e tan tomo.,-34.49,-38.01,3.519,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_009,direct_object_e,direct_object_e,waso li tawa lon tomo.,waso li tawa e lon tomo.,-31.453,-35.26,3.807,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_010,direct_object_e,direct_object_e,waso li tawa tawa ma.,waso li tawa e tawa ma.,-28.24,-31.68,3.44,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_011,direct_object_e,direct_object_e,waso li tawa kepeken ilo.,waso li tawa e kepeken ilo.,-43.557,-46.253,2.696,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,e_spurious_012,direct_object_e,direct_object_e,waso li tawa tan tomo.,waso li tawa e tan tomo.,-32.666,-36.927,4.262,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_001,modifier_order,modifier_order,tomo suli li lon.,suli tomo li lon.,-23.399,-25.32,1.921,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_002,modifier_order,modifier_order,mi lukin e tomo suli.,mi lukin e suli tomo.,-31.278,-31.566,0.288,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_003,modifier_order,modifier_order,jan li moku e tomo suli.,jan li moku e suli tomo.,-33.336,-33.803,0.468,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_004,modifier_order,modifier_order,jan pona li lon.,pona jan li lon.,-18.473,-21.993,3.521,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_005,modifier_order,modifier_order,mi lukin e jan pona.,mi lukin e pona jan.,-26.59,-26.993,0.403,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_006,modifier_order,modifier_order,jan li moku e jan pona.,jan li moku e pona jan.,-28.687,-29.412,0.725,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_007,modifier_order,modifier_order,telo nasa li lon.,nasa telo li lon.,-26.604,-26.37,-0.234,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_008,modifier_order,modifier_order,mi lukin e telo nasa.,mi lukin e nasa telo.,-34.528,-33.043,-1.485,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_009,modifier_order,modifier_order,jan li moku e telo nasa.,jan li moku e nasa telo.,-37.32,-35.844,-1.476,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_010,modifier_order,modifier_order,kasi laso li lon.,laso kasi li lon.,-28.841,-29.303,0.462,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_011,modifier_order,modifier_order,mi lukin e kasi laso.,mi lukin e laso kasi.,-34.976,-34.984,0.009,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_012,modifier_order,modifier_order,jan li moku e kasi laso.,jan li moku e laso kasi.,-37.369,-37.406,0.038,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_013,modifier_order,modifier_order,soweli wawa li lon.,wawa soweli li lon.,-27.923,-30.389,2.466,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_014,modifier_order,modifier_order,mi lukin e soweli wawa.,mi lukin e wawa soweli.,-36.138,-35.24,-0.898,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_015,modifier_order,modifier_order,jan li moku e soweli wawa.,jan li moku e wawa soweli.,-38.243,-37.134,-1.109,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_016,modifier_order,modifier_order,kili suwi li lon.,suwi kili li lon.,-28.783,-28.191,-0.592,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_017,modifier_order,modifier_order,mi lukin e kili suwi.,mi lukin e suwi kili.,-33.197,-33.315,0.118,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_018,modifier_order,modifier_order,jan li moku e kili suwi.,jan li moku e suwi kili.,-34.655,-35.281,0.626,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_019,modifier_order,modifier_order,waso lili li lon.,lili waso li lon.,-25.577,-28.279,2.701,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_020,modifier_order,modifier_order,mi lukin e waso lili.,mi lukin e lili waso.,-33.697,-33.093,-0.604,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_021,modifier_order,modifier_order,jan li moku e waso lili.,jan li moku e lili waso.,-35.869,-35.537,-0.332,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_022,modifier_order,modifier_order,ilo sin li lon.,sin ilo li lon.,-23.06,-27.57,4.51,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_023,modifier_order,modifier_order,mi lukin e ilo sin.,mi lukin e sin ilo.,-30.153,-32.192,2.039,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_024,modifier_order,modifier_order,jan li moku e ilo sin.,jan li moku e sin ilo.,-32.493,-33.538,1.045,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_025,modifier_order,modifier_order,ma tomo li lon.,tomo ma li lon.,-21.271,-22.216,0.946,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_026,modifier_order,modifier_order,mi lukin e ma tomo.,mi lukin e tomo ma.,-30.433,-29.103,-1.33,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_027,modifier_order,modifier_order,jan li moku e ma tomo.,jan li moku e tomo ma.,-31.682,-31.303,-0.379,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_028,modifier_order,modifier_order,tenpo suno li lon.,suno tenpo li lon.,-22.972,-26.439,3.467,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_029,modifier_order,modifier_order,mi lukin e tenpo suno.,mi lukin e suno tenpo.,-32.944,-33.775,0.831,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_030,modifier_order,modifier_order,jan li moku e tenpo suno.,jan li moku e suno tenpo.,-35.667,-36.727,1.06,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_031,modifier_order,modifier_order,kiwen pimeja li lon.,pimeja kiwen li lon.,-36.899,-39.13,2.231,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_032,modifier_order,modifier_order,mi lukin e kiwen pimeja.,mi lukin e pimeja kiwen.,-42.533,-45.705,3.172,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_033,modifier_order,modifier_order,jan li moku e kiwen pimeja.,jan li moku e pimeja kiwen.,-45.282,-47.978,2.696,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_034,modifier_order,modifier_order,lipu lili li lon.,lili lipu li lon.,-26.648,-28.227,1.579,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_035,modifier_order,modifier_order,mi lukin e lipu lili.,mi lukin e lili lipu.,-33.206,-33.609,0.403,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_036,modifier_order,modifier_order,jan li moku e lipu lili.,jan li moku e lili lipu.,-35.681,-35.842,0.161,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_037,modifier_order,modifier_order,jan lili li lon.,lili jan li lon.,-18.285,-22.522,4.237,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_038,modifier_order,modifier_order,mi lukin e jan lili.,mi lukin e lili jan.,-27.446,-27.617,0.171,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_039,modifier_order,modifier_order,jan li moku e jan lili.,jan li moku e lili jan.,-29.56,-29.913,0.354,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_040,modifier_order,modifier_order,telo seli li lon.,seli telo li lon.,-23.272,-24.414,1.142,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_041,modifier_order,modifier_order,mi lukin e telo seli.,mi lukin e seli telo.,-32.208,-31.351,-0.857,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_042,modifier_order,modifier_order,jan li moku e telo seli.,jan li moku e seli telo.,-34.303,-33.504,-0.799,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_043,modifier_order,modifier_order,kulupu suli li lon.,suli kulupu li lon.,-32.446,-33.453,1.007,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_044,modifier_order,modifier_order,mi lukin e kulupu suli.,mi lukin e suli kulupu.,-37.678,-38.26,0.582,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_045,modifier_order,modifier_order,jan li moku e kulupu suli.,jan li moku e suli kulupu.,-39.999,-40.266,0.268,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_subj_046,modifier_order,modifier_order,akesi wawa li lon.,wawa akesi li lon.,-33.514,-34.877,1.363,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_obj_047,modifier_order,modifier_order,mi lukin e akesi wawa.,mi lukin e wawa akesi.,-37.641,-38.343,0.703,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,order_trans_048,modifier_order,modifier_order,jan li moku e akesi wawa.,jan li moku e wawa akesi.,-40.137,-40.435,0.298,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_001,modifier_pi,modifier_pi,tomo suli li pona.,tomo pi suli li pona.,-23.637,-27.483,3.847,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_002,modifier_pi,modifier_pi,mi lukin e tomo suli.,mi lukin e tomo pi suli.,-31.278,-35.23,3.951,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_003,modifier_pi,modifier_pi,jan pona li pona.,jan pi pona li pona.,-18.577,-22.088,3.511,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_004,modifier_pi,modifier_pi,mi lukin e jan pona.,mi lukin e jan pi pona.,-26.59,-29.962,3.372,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_005,modifier_pi,modifier_pi,kili suwi li pona.,kili pi suwi li pona.,-29.213,-33.93,4.717,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_006,modifier_pi,modifier_pi,mi lukin e kili suwi.,mi lukin e kili pi suwi.,-33.197,-38.173,4.976,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_007,modifier_pi,modifier_pi,telo seli li pona.,telo pi seli li pona.,-23.457,-27.707,4.25,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_008,modifier_pi,modifier_pi,mi lukin e telo seli.,mi lukin e telo pi seli.,-32.208,-36.644,4.436,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_009,modifier_pi,modifier_pi,ilo sin li pona.,ilo pi sin li pona.,-23.355,-29.495,6.141,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_010,modifier_pi,modifier_pi,mi lukin e ilo sin.,mi lukin e ilo pi sin.,-30.153,-35.237,5.083,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_011,modifier_pi,modifier_pi,soweli wawa li pona.,soweli pi wawa li pona.,-28.346,-32.802,4.456,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_012,modifier_pi,modifier_pi,mi lukin e soweli wawa.,mi lukin e soweli pi wawa.,-36.138,-40.154,4.015,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_013,modifier_pi,modifier_pi,waso lili li pona.,waso pi lili li pona.,-25.809,-30.31,4.501,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_014,modifier_pi,modifier_pi,mi lukin e waso lili.,mi lukin e waso pi lili.,-33.697,-38.349,4.652,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_015,modifier_pi,modifier_pi,lipu lili li pona.,lipu pi lili li pona.,-26.864,-30.654,3.79,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_016,modifier_pi,modifier_pi,mi lukin e lipu lili.,mi lukin e lipu pi lili.,-33.206,-36.929,3.723,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_017,modifier_pi,modifier_pi,kasi laso li pona.,kasi pi laso li pona.,-29.006,-34.178,5.173,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_018,modifier_pi,modifier_pi,mi lukin e kasi laso.,mi lukin e kasi pi laso.,-34.976,-40.417,5.441,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_019,modifier_pi,modifier_pi,ma tomo li pona.,ma pi tomo li pona.,-21.32,-28.253,6.933,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_020,modifier_pi,modifier_pi,mi lukin e ma tomo.,mi lukin e ma pi tomo.,-30.433,-34.306,3.873,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_021,modifier_pi,modifier_pi,kulupu lili li pona.,kulupu pi lili li pona.,-31.429,-36.572,5.143,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_022,modifier_pi,modifier_pi,mi lukin e kulupu lili.,mi lukin e kulupu pi lili.,-37.578,-40.759,3.181,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_023,modifier_pi,modifier_pi,akesi suli li pona.,akesi pi suli li pona.,-33.881,-39.096,5.215,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_single_trans_024,modifier_pi,modifier_pi,mi lukin e akesi suli.,mi lukin e akesi pi suli.,-39.125,-44.109,4.984,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_025,modifier_pi,modifier_pi,tomo pi telo nasa li suli.,tomo telo pi nasa li suli.,-41.024,-40.47,-0.554,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_026,modifier_pi,modifier_pi,mi lukin e tomo pi telo nasa.,mi lukin e tomo telo pi nasa.,-46.233,-45.614,-0.619,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_027,modifier_pi,modifier_pi,tomo pi telo nasa li pona.,tomo pi telo pi nasa li pona.,-38.455,-41.521,3.065,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_028,modifier_pi,modifier_pi,jan pi sona mute li suli.,jan sona pi mute li suli.,-30.33,-30.344,0.014,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_029,modifier_pi,modifier_pi,mi lukin e jan pi sona mute.,mi lukin e jan sona pi mute.,-36.478,-36.898,0.419,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_030,modifier_pi,modifier_pi,jan pi sona mute li pona.,jan pi sona pi mute li pona.,-28.432,-32.658,4.226,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_031,modifier_pi,modifier_pi,kili pi suwi mute li suli.,kili suwi pi mute li suli.,-41.211,-41.038,-0.173,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_032,modifier_pi,modifier_pi,mi lukin e kili pi suwi mute.,mi lukin e kili suwi pi mute.,-44.371,-44.237,-0.134,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_033,modifier_pi,modifier_pi,kili pi suwi mute li pona.,kili pi suwi pi mute li pona.,-39.445,-44.534,5.09,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_034,modifier_pi,modifier_pi,nasin pi toki pona li suli.,nasin toki pi pona li suli.,-37.98,-38.884,0.904,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_035,modifier_pi,modifier_pi,mi lukin e nasin pi toki pona.,mi lukin e nasin toki pi pona.,-42.422,-42.289,-0.133,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_036,modifier_pi,modifier_pi,nasin pi toki pona li pona.,nasin pi toki pi pona li pona.,-35.745,-40.141,4.396,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_037,modifier_pi,modifier_pi,ilo pi sitelen sin li suli.,ilo sitelen pi sin li suli.,-44.583,-46.848,2.264,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_038,modifier_pi,modifier_pi,mi lukin e ilo pi sitelen sin.,mi lukin e ilo sitelen pi sin.,-48.242,-49.97,1.728,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_039,modifier_pi,modifier_pi,ilo pi sitelen sin li pona.,ilo pi sitelen pi sin li pona.,-42.094,-47.986,5.892,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_040,modifier_pi,modifier_pi,kulupu pi jan utala li suli.,kulupu jan pi utala li suli.,-46.792,-46.526,-0.266,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_041,modifier_pi,modifier_pi,mi lukin e kulupu pi jan utala.,mi lukin e kulupu jan pi utala.,-49.608,-49.208,-0.4,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_042,modifier_pi,modifier_pi,kulupu pi jan utala li pona.,kulupu pi jan pi utala li pona.,-44.71,-48.234,3.524,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_043,modifier_pi,modifier_pi,telo pi kasi laso li suli.,telo kasi pi laso li suli.,-41.096,-42.152,1.056,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_044,modifier_pi,modifier_pi,mi lukin e telo pi kasi laso.,mi lukin e telo kasi pi laso.,-47.397,-48.246,0.849,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_045,modifier_pi,modifier_pi,telo pi kasi laso li pona.,telo pi kasi pi laso li pona.,-38.553,-43.905,5.352,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_subj_046,modifier_pi,modifier_pi,lipu pi sona suli li suli.,lipu sona pi suli li suli.,-39.684,-39.403,-0.282,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_obj_047,modifier_pi,modifier_pi,mi lukin e lipu pi sona suli.,mi lukin e lipu sona pi suli.,-43.38,-43.46,0.08,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,pi_compound_chain_048,modifier_pi,modifier_pi,lipu pi sona suli li pona.,lipu pi sona pi suli li pona.,-37.974,-42.536,4.562,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_001,context_la,context_la,tenpo suno ni la mi pali.,tenpo suno ni e mi pali.,-33.313,-33.671,0.358,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_002,context_la,context_la,tenpo suno ni la ona li kama.,tenpo suno ni e ona li kama.,-36.952,-38.069,1.118,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_003,context_la,context_la,tenpo suno ni la kasi li suli.,tenpo suno ni e kasi li suli.,-43.143,-44.469,1.326,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_004,context_la,context_la,tenpo suno ni la jan li lape.,tenpo suno ni e jan li lape.,-41.149,-41.334,0.185,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_005,context_la,context_la,tenpo suno ni la soweli li tawa.,tenpo suno ni e soweli li tawa.,-42.656,-43.47,0.815,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_006,context_la,context_la,tenpo pimeja la mi pali.,tenpo pimeja e mi pali.,-34.785,-33.902,-0.883,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_007,context_la,context_la,tenpo pimeja la ona li kama.,tenpo pimeja e ona li kama.,-38.618,-37.944,-0.674,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_008,context_la,context_la,tenpo pimeja la kasi li suli.,tenpo pimeja e kasi li suli.,-44.241,-43.839,-0.402,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_009,context_la,context_la,tenpo pimeja la jan li lape.,tenpo pimeja e jan li lape.,-41.761,-41.103,-0.658,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_010,context_la,context_la,tenpo pimeja la soweli li tawa.,tenpo pimeja e soweli li tawa.,-44.366,-43.351,-1.015,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_011,context_la,context_la,sina wile la mi pali.,sina wile li mi pali.,-27.134,-26.465,-0.668,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_012,context_la,context_la,sina wile la ona li kama.,sina wile li ona li kama.,-30.128,-29.765,-0.363,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_013,context_la,context_la,sina wile la kasi li suli.,sina wile li kasi li suli.,-37.193,-36.65,-0.543,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_014,context_la,context_la,sina wile la jan li lape.,sina wile li jan li lape.,-34.739,-34.247,-0.492,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_015,context_la,context_la,sina wile la soweli li tawa.,sina wile li soweli li tawa.,-36.461,-35.63,-0.831,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_016,context_la,context_la,mi lape la mi pali.,mi lape li mi pali.,-29.81,-28.699,-1.111,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_017,context_la,context_la,mi lape la ona li kama.,mi lape li ona li kama.,-32.175,-31.298,-0.877,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_018,context_la,context_la,mi lape la kasi li suli.,mi lape li kasi li suli.,-39.959,-39.113,-0.846,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_019,context_la,context_la,mi lape la jan li lape.,mi lape li jan li lape.,-36.919,-36.077,-0.842,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_020,context_la,context_la,mi lape la soweli li tawa.,mi lape li soweli li tawa.,-39.316,-38.124,-1.192,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_021,context_la,context_la,telo li lon la mi pali.,telo li lon e mi pali.,-29.1,-28.145,-0.955,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_022,context_la,context_la,telo li lon la ona li kama.,telo li lon e ona li kama.,-32.575,-32.257,-0.318,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_023,context_la,context_la,telo li lon la kasi li suli.,telo li lon e kasi li suli.,-39.058,-38.862,-0.196,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_024,context_la,context_la,telo li lon la jan li lape.,telo li lon e jan li lape.,-37.305,-36.668,-0.638,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_025,context_la,context_la,telo li lon la soweli li tawa.,telo li lon e soweli li tawa.,-38.285,-37.761,-0.524,0
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_026,context_la,context_la,ken la mi pali.,ken e mi pali.,-23.428,-23.877,0.449,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_027,context_la,context_la,ken la ona li kama.,ken e ona li kama.,-25.716,-26.267,0.551,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_028,context_la,context_la,ken la kasi li suli.,ken e kasi li suli.,-32.025,-34.662,2.637,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_029,context_la,context_la,ken la jan li lape.,ken e jan li lape.,-30.288,-31.025,0.737,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,la_context_030,context_la,context_la,ken la soweli li tawa.,ken e soweli li tawa.,-31.95,-32.306,0.356,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_001,lexical_validity,lexical_validity,jan li moku e kili.,jan li moku e blorg.,-25.591,-49.453,23.862,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_002,lexical_validity,lexical_validity,ona li lape lon tomo.,ona li lape lon grok.,-30.816,-46.436,15.619,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_003,lexical_validity,lexical_validity,soweli li tawa noka.,soweli li tawa qwerty.,-30.378,-58.457,28.078,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_004,lexical_validity,lexical_validity,waso lili li kalama.,waso lili li splat.,-30.671,-53.042,22.371,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_005,lexical_validity,lexical_validity,mi lukin e suno.,mi lukin e zorp.,-26.974,-45.438,18.464,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_006,lexical_validity,lexical_validity,kasi li suli lon ma.,kasi li suli lon florp.,-31.677,-60.736,29.059,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_007,lexical_validity,lexical_validity,sina pana e mani tawa mi.,sina pana e snark tawa mi.,-31.698,-54.016,22.318,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_008,lexical_validity,lexical_validity,ilo ni li pakala.,ilo ni li glub.,-27.992,-44.379,16.386,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_009,lexical_validity,lexical_validity,kulupu li toki e toki.,kulupu li toki e plink.,-37.401,-55.89,18.489,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_010,lexical_validity,lexical_validity,telo li kama lon lupa.,telo li vroom lon lupa.,-30.176,-56.885,26.709,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_011,lexical_validity,lexical_validity,akesi li moku e pipi.,akesi li moku e krunk.,-43.323,-61.893,18.57,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_012,lexical_validity,lexical_validity,jan pona mi li sona.,jan pona mi li blip.,-22.413,-41.763,19.35,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_013,lexical_validity,lexical_validity,ona mute li olin.,ona mute li drap.,-25.124,-40.895,15.771,1
+exp_001_d25_micro_char_s42,char,micro,98624,42,lex_valid_014,lexical_validity,lexical_validity,lipu ni li pona.,lipu ni li frob.,-24.78,-45.965,21.186,1

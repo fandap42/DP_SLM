@@ -1,41 +1,104 @@
 {
-  "joint_scaling_law": {
-    "success": true,
-    "params": {
-      "E_irreducible_loss": 0.6436753927878567,
-      "A_param_scale": 784.997258604035,
-      "B_data_scale": 108.90811237695101,
-      "alpha_param_exponent": 0.681514599221556,
-      "beta_data_exponent": 0.4036218090739864
+  "scaling_law": {
+    "metric_used": "test_bpc",
+    "n_samples": 13,
+    "joint_linear_scaling": {
+      "formula": "ln(BPC) = beta_0 - alpha * ln(N) - beta * ln(D)",
+      "beta_0": 3.0155425088684984,
+      "alpha_param_exponent": 0.064249727225384,
+      "beta_data_exponent": 0.13510645463034038,
+      "alpha_pvalue": 0.060140605716304585,
+      "beta_pvalue": 0.23102730507024927,
+      "r_squared": 0.43089980716673704,
+      "adj_r_squared": 0.31707976860008447,
+      "f_pvalue": 0.06943572367526947,
+      "summary_text": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                log_bpc   R-squared:                       0.431\nModel:                            OLS   Adj. R-squared:                  0.317\nMethod:                 Least Squares   F-statistic:                     3.524\nDate:                Mon, 28 Sep 2026   Prob (F-statistic):             0.0694\nTime:                        22:30:36   Log-Likelihood:                 4.4859\nNo. Observations:                  13   AIC:                            -2.972\nDf Residuals:                      10   BIC:                            -1.277\nDf Model:                           2                                         \nCovariance Type:                  HC3                                         \n==============================================================================\n                 coef    std err          z      P>|z|      [0.025      0.975]\n------------------------------------------------------------------------------\nIntercept      3.0155      1.463      2.061      0.039       0.148       5.883\nlog_N         -0.0642      0.034     -1.880      0.060      -0.131       0.003\nlog_D         -0.1351      0.113     -1.198      0.231      -0.356       0.086\n==============================================================================\nOmnibus:                        0.054   Durbin-Watson:                   2.442\nProb(Omnibus):                  0.973   Jarque-Bera (JB):                0.286\nSkew:                          -0.002   Prob(JB):                        0.867\nKurtosis:                       2.273   Cond. No.                         438.\n==============================================================================\n\nNotes:\n[1] Standard Errors are heteroscedasticity robust (HC3)"
     },
-    "std_errors": {
-      "E_err": 15969158.627994169,
-      "A_err": 21441619780.519794,
-      "B_err": 15718352527.330078,
-      "alpha_err": 2521338.607325119,
-      "beta_err": 13353727.365569992
+    "per_tokenizer_scaling": {
+      "bpe": {
+        "intercept": 3.1509900267308337,
+        "alpha_param_exponent": 0.07376873127030759,
+        "beta_data_exponent": 0.13514764769946794,
+        "r_squared": 0.9985957164525463,
+        "alpha_pvalue": 0.0332082941762498,
+        "beta_pvalue": 0.03427785500543732,
+        "equation": "ln(BPC) = 3.151 - (0.074)*ln(N) - (0.135)*ln(D)"
+      },
+      "char": {
+        "intercept": 5.464665305579853,
+        "alpha_param_exponent": 0.13564950631832923,
+        "beta_data_exponent": 0.23742126164071684,
+        "r_squared": 0.9999228084253017,
+        "alpha_pvalue": 0.007621010402099256,
+        "beta_pvalue": 0.00823449085634767,
+        "equation": "ln(BPC) = 5.465 - (0.136)*ln(N) - (0.237)*ln(D)"
+      },
+      "word": {
+        "intercept": 1.2993398580090536,
+        "alpha_param_exponent": 0.02580562300337967,
+        "beta_data_exponent": 0.05865184261094081,
+        "r_squared": 0.9944373144267245,
+        "alpha_pvalue": 0.00754000950057727,
+        "beta_pvalue": 0.01914421296170742,
+        "equation": "ln(BPC) = 1.299 - (0.026)*ln(N) - (0.059)*ln(D)"
+      }
     },
-    "r_squared": 0.6418825923895988,
-    "equation": "BPC = 0.644 + (785.00 / N^0.682) + (108.91 / D^0.404)"
+    "slope_heterogeneity_test": {
+      "formula": "log_bpc ~ log_N * C(tokenizer, Treatment(reference='word')) + log_D * C(tokenizer, Treatment(reference='word'))",
+      "r_squared": 0.9996228399426617,
+      "summary_text": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                log_bpc   R-squared:                       1.000\nModel:                            OLS   Adj. R-squared:                  0.999\nMethod:                 Least Squares   F-statistic:                     1040.\nDate:                Mon, 28 Sep 2026   Prob (F-statistic):           2.31e-06\nTime:                        22:30:36   Log-Likelihood:                 52.060\nNo. Observations:                  13   AIC:                            -86.12\nDf Residuals:                       4   BIC:                            -81.04\nDf Model:                           8                                         \nCovariance Type:                  HC3                                         \n===========================================================================================================================\n                                                              coef    std err          z      P>|z|      [0.025      0.975]\n---------------------------------------------------------------------------------------------------------------------------\nIntercept                                                   1.2993      0.178      7.289      0.000       0.950       1.649\nC(tokenizer, Treatment(reference='word'))[T.bpe]            1.8517      0.281      6.594      0.000       1.301       2.402\nC(tokenizer, Treatment(reference='word'))[T.char]           4.1653      0.200     20.790      0.000       3.773       4.558\nlog_N                                                      -0.0258      0.006     -4.530      0.000      -0.037      -0.015\nlog_N:C(tokenizer, Treatment(reference='word'))[T.bpe]     -0.0480      0.010     -5.006      0.000      -0.067      -0.029\nlog_N:C(tokenizer, Treatment(reference='word'))[T.char]    -0.1098      0.007    -16.751      0.000      -0.123      -0.097\nlog_D                                                      -0.0587      0.011     -5.129      0.000      -0.081      -0.036\nlog_D:C(tokenizer, Treatment(reference='word'))[T.bpe]     -0.0765      0.019     -4.131      0.000      -0.113      -0.040\nlog_D:C(tokenizer, Treatment(reference='word'))[T.char]    -0.1788      0.013    -13.773      0.000      -0.204      -0.153\n==============================================================================\nOmnibus:                        0.789   Durbin-Watson:                   1.249\nProb(Omnibus):                  0.674   Jarque-Bera (JB):                0.631\nSkew:                          -0.096   Prob(JB):                        0.730\nKurtosis:                       1.938   Cond. No.                     1.61e+03\n==============================================================================\n\nNotes:\n[1] Standard Errors are heteroscedasticity robust (HC3)\n[2] The condition number is large, 1.61e+03. This might indicate that there are\nstrong multicollinearity or other numerical problems.",
+      "coefficients": {
+        "Intercept": 1.2993398580092044,
+        "C(tokenizer, Treatment(reference='word'))[T.bpe]": 1.8516501687217732,
+        "C(tokenizer, Treatment(reference='word'))[T.char]": 4.165325447570882,
+        "log_N": -0.02580562300338111,
+        "log_N:C(tokenizer, Treatment(reference='word'))[T.bpe]": -0.04796310826693378,
+        "log_N:C(tokenizer, Treatment(reference='word'))[T.char]": -0.1098438833149545,
+        "log_D": -0.058651842610948746,
+        "log_D:C(tokenizer, Treatment(reference='word'))[T.bpe]": -0.07649580508852231,
+        "log_D:C(tokenizer, Treatment(reference='word'))[T.char]": -0.17876941902977864
+      },
+      "p_values": {
+        "Intercept": 3.1114566123625206e-13,
+        "C(tokenizer, Treatment(reference='word'))[T.bpe]": 4.278071347994706e-11,
+        "C(tokenizer, Treatment(reference='word'))[T.char]": 5.3572454114268536e-96,
+        "log_N": 5.895132748739389e-06,
+        "log_N:C(tokenizer, Treatment(reference='word'))[T.bpe]": 5.548425433489208e-07,
+        "log_N:C(tokenizer, Treatment(reference='word'))[T.char]": 5.53671396689774e-63,
+        "log_D": 2.9068926392351885e-07,
+        "log_D:C(tokenizer, Treatment(reference='word'))[T.bpe]": 3.6183453447987054e-05,
+        "log_D:C(tokenizer, Treatment(reference='word'))[T.char]": 3.710021087154516e-43
+      }
+    },
+    "kaplan_power_law": {
+      "success": true,
+      "E_irreducible_loss": 0.5078700623836939,
+      "A_param_scale": 33.0870897517355,
+      "B_data_scale": 102.67752745153835,
+      "alpha_param_exponent": 0.35963124808377805,
+      "beta_data_exponent": 0.3828851601171441,
+      "r_squared": 0.4038483158850331,
+      "equation": "BPC = 0.508 + (33.09 / N^0.360) + (102.68 / D^0.383)"
+    }
   },
-  "tokenizer_scaling_curves": {
+  "tokenizer_curves": {
     "bpe": {
-      "a": 8.842744825921951,
-      "scaling_exponent_beta": 0.13752146349427047,
-      "r_squared": 0.4886578412616892,
-      "formula": "BPC = 8.843 * D^(-0.138)"
+      "a": 9.2635303833265,
+      "scaling_exponent_beta": 0.13514764769946822,
+      "r_squared": 0.4834458402451017,
+      "formula": "BPC = 9.264 * D^(-0.135)"
     },
     "char": {
-      "a": 33.41514245599731,
-      "scaling_exponent_beta": 0.23778349015071776,
-      "r_squared": 0.45927957887670834,
-      "formula": "BPC = 33.415 * D^(-0.238)"
+      "a": 43.11649695618756,
+      "scaling_exponent_beta": 0.23742126164071756,
+      "r_squared": 0.46132628603810183,
+      "formula": "BPC = 43.116 * D^(-0.237)"
     },
     "word": {
-      "a": 5.096433579005091,
-      "scaling_exponent_beta": 0.10990083514278778,
-      "r_squared": 0.6377265687437114,
-      "formula": "BPC = 5.096 * D^(-0.110)"
+      "a": 4.94334640481987,
+      "scaling_exponent_beta": 0.1066446570956703,
+      "r_squared": 0.6297261770579333,
+      "formula": "BPC = 4.943 * D^(-0.107)"
     }
   }
 }

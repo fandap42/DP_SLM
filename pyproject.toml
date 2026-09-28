@@ -30,6 +30,8 @@ include = ["src*"]
 [project.scripts]
 slm-run = "src.cli:run_main"
 slm-analyze = "src.cli:analyze_main"
+slm-eval = "src.cli:eval_main"
+slm-generate-tests = "src.cli:generate_tests_main"
 slm-demo = "src.cli:demo_main"
 slm-chat = "src.cli:chat_main"
 slm-pack = "src.cli:pack_main"

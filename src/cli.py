@@ -3,7 +3,11 @@ Command-line interface (CLI) entry points for the diplomka-slm monorepo.
 Can be invoked directly or via package console scripts:
   - slm-run
   - slm-analyze
+  - slm-eval
+  - slm-generate-tests
   - slm-demo
+  - slm-chat
+  - slm-pack
 """
 
 from __future__ import annotations
@@ -37,6 +41,33 @@ def run_main():
     if not cfg_path.is_absolute():
         cfg_path = root / cfg_path
     run_pipeline(cfg_path, root)
+
+
+def eval_main():
+    root = _ensure_project_in_path()
+    from src.evaluation.evaluator import UnifiedEvaluator
+    parser = argparse.ArgumentParser(description="Unified SLM Evaluator across all 4 thesis pillars")
+    parser.add_argument("--run", type=str, default=None, help="Name of specific run to evaluate")
+    parser.add_argument("--all", action="store_true", help="Evaluate all model checkpoints in results/models")
+    parser.add_argument("--batch-size", type=int, default=64, help="Batch size for test evaluation")
+    args = parser.parse_args()
+
+    evaluator = UnifiedEvaluator(root)
+    if args.run:
+        evaluator.evaluate_checkpoint(args.run, batch_size=args.batch_size)
+    else:
+        evaluator.evaluate_all_runs()
+
+
+def generate_tests_main():
+    root = _ensure_project_in_path()
+    from src.evaluation.grammar_generator import generate_all_grammar_pairs, save_grammar_suite
+    from src.evaluation.compositional import save_compositional_suite
+    target_dir = root / "data" / "evaluation"
+    print(f"[CLI] Generating synthetic test suites into {target_dir}...")
+    save_grammar_suite(generate_all_grammar_pairs(), target_dir)
+    save_compositional_suite(target_dir)
+    print("[CLI] All test suites successfully generated!")
 
 
 def analyze_main():
@@ -79,4 +110,3 @@ def pack_main():
 
 if __name__ == "__main__":
     run_main()
-
