@@ -1,0 +1,155 @@
+# ==============================================================================
+# Prezentace: Výzkumný záměr diplomové práce (5 minut)
+# Katedra statistiky a pravděpodobnosti FIS VŠE
+#
+# Generování PPTX i PDF:
+#   python slides/template/generate.py slides/vyzkumny_zamer.yaml -o slides/vyzkumny_zamer.pptx
+# ==============================================================================
+
+meta:
+  author: "Bc. Jan Pavlík"
+  department: "Katedra statistiky a pravděpodobnosti"
+  email: "pavj15@vse.cz"
+
+slides:
+  # ----------------------------------------------------------------------------
+  # Slide 1: Název práce a motivace (Minuta 1)
+  # ----------------------------------------------------------------------------
+  - type: title
+    title: "Small Language Models (SLM) na malých datech"
+    subtitle: "Statistická analýza výkonu, architektury a tokenizace\nVedoucí práce: Ing. Karel Šafr, Ph.D."
+    author: "Bc. Jan Pavlík"
+    department: "Katedra statistiky a pravděpodobnosti"
+    notes: |
+      [MINUTA 1 – ÚVOD, PROBLÉM A CÍL]
+      Vážená komise, pane předsedo,
+      v rámci svého výzkumného záměru diplomové práce se věnuji tématu Small Language Models na malých datech pod vedením pana inženýra Šafra.
+
+      PROBLÉM:
+      Současný trend ve vývoji jazykových modelů se soustředí téměř výhradně na škálování do obřích rozměrů a trénování na trilionových korpusech. V reálné praxi – ať už jde o specifické domény, interní firemní data či nízkozdrojové jazyky – však narážíme na zcela opačný režim: režim s extrémním nedostatkem trénovacích dat.
+
+      CÍL VÝZKUMU:
+      Cílem práce je empiricky a statisticky popsat, jak se chovají malé jazykové modely v rozsahu 100 tisíc až 5 milionů parametrů při tréninku od zkrutky (from scratch) na malém, fixním datovém rozpočtu.
+
+      POROVNÁVANÉ ARCHITEKTURY:
+      Systematicky budeme porovnávat tři klíčové rodiny architektur: zavedený dekodérový Transformer s Grouped-Query Attention jako referenční baseline, moderní sub-kvadratickou stavovou architekturu Mamba-2 a jejich hybridní spojení.
+
+  # ----------------------------------------------------------------------------
+  # Slide 2: Metodický průlom – Toki Pona jako „čistá laboratoř“ (Minuta 2)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Metodický průlom: Toki Pona jako „čistá laboratoř“"
+    bullets:
+      - "**Proč trénujeme na umělém jazyku Toki Pona?**"
+      - text: "**Eliminace Vocabulary Bottlenecku:**"
+        items:
+          - "U běžných jazyků spolkne matice embeddingů (při slovníku 32k–50k) většinu kapacity malého modelu."
+          - "U 1M modelu by embeddingy tvořily až 80 % parametrů sítě."
+      - text: "**Maximální využití kapacity sítě pro sekvenční modelování:**"
+        items:
+          - "Toki Pona má **uzavřený slovník o pouhých ~137 slovech**."
+          - "Embeddingy tvoří **méně než 5 % parametrů** – přes 95 % kapacity sítě směřuje do výpočetních vrstev."
+      - text: "**Nulový OOV a striktně pravidelná syntax:**"
+        items:
+          - "Žádné nepravidelné ohýbání, výjimky ani neznámá slova (out-of-vocabulary)."
+          - "Umožňuje měřit **čisté architektonické vlastnosti** bez rušivého lingvistického šumu."
+    notes: |
+      [MINUTA 2 – METODICKÝ PRŮLOM A TOKI PONA]
+      Zásadním metodickým prvkem práce je využití umělého jazyka Toki Pona jako přísně kontrolované experimentální laboratoře.
+
+      Proč právě Toki Pona? U malých jazykových modelů narážíme při použití běžných jazyků, jako je čeština či angličtina, na tzv. Vocabulary Bottleneck. Standardní tokenizer má slovník o 32 až 50 tisících tokenech. Pokud stavíte mikro-model o milionu parametrů, matice embeddingů pohltí 70 až 80 % veškeré kapacity sítě do pouhé vyhledávací tabulky slov, a na samotné transformační vrstvy nezbývá téměř žádná kapacita.
+
+      Toki Pona tento problém dokonale eliminuje: disponuje uzavřeným slovníkem o pouhých zhruba 137 slovech. Díky tomu embeddingy tvoří méně než 5 % parametrů a celých 95 % kapacity sítě se plně využije pro sekvenční modelování a syntaktické vztahy. Jazyk má navíc zcela pravidelnou gramatiku bez výjimek, což z něj činí ideální analytické prostředí.
+
+  # ----------------------------------------------------------------------------
+  # Slide 3: Experimentální design – Plný faktorový pokus (Minuta 3)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Experimentální design: Plný faktorový pokus (3 × 3 × 4)"
+    bullets:
+      - "**Struktura faktorového plánu s opakovanými běhy (multiple seeds):**"
+      - text: "**Faktor A – Architektura (3 úrovně):**"
+        items:
+          - "GQA Transformer (moderní Llama-style referenční baseline)"
+          - "Čistá Mamba-2 (selektivní model stavového prostoru, SSM)"
+          - "Hybrid Mamba-2 + Attention (střídaný blok v poměru 3:1)"
+      - text: "**Faktor B – Tokenizace (3 úrovně):**"
+        items:
+          - "Znaková (**CHAR**)"
+          - "Podslovní (**BPE** s minimalizovaným slovníkem V ≈ 64–100)"
+          - "Celoslovní (**WORD** s uzavřeným slovníkem V ≈ 137)"
+      - text: "**Faktor C – Opakované epochy (4 úrovně):**"
+        items:
+          - "1, 4, 16 a 64 epoch na fixním korpusu o rozsahu **1 milion tokenů**"
+          - "Cíl: Exaktní otestování limitů přefitování (overfitting regimes)"
+    notes: |
+      [MINUTA 3 – EXPERIMENTÁLNÍ DESIGN]
+      Experimentální návrh je koncipován jako plný faktorový pokus typu 3 × 3 × 4, doplněný o opakované běhy s různými inicializačními semínky pro zachycení náhodné variability.
+
+      Manipulujeme třemi ortogonálními faktory:
+      1. Faktorem A je Architektura na třech úrovních: klasický Transformer s Grouped-Query Attention, moderní čistá Mamba-2 a hybridní architektura střídající tři bloky Mamby a jeden blok Attention.
+      2. Faktorem B je Tokenizace: zkoumáme znakový model CHAR, podslovní BPE s minimalizovaným slovníkem a čistě celoslovní WORD model.
+      3. Faktorem C je Trénovací rozpočet: trénujeme na fixním korpusu o rozsahu 1 milion tokenů po dobu 1, 4, 16 a 64 epoch.
+
+      Právě multi-epochový trénink je klíčový pro ověření, jak se jednotlivé architektury chovají při opakovaném průchodu malými daty a kde leží bod přetrénování.
+
+  # ----------------------------------------------------------------------------
+  # Slide 4: Výzkumné otázky a hodnotící metriky (Minuta 4)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Výzkumné otázky a hodnotící metriky"
+    bullets:
+      - text: "**1. Datová efektivita (Bits Per Character – BPC / BPB):**"
+        items:
+          - "Měření křížové entropie normalizované na fyzický znak textu."
+          - "**Nestranné srovnání:** Odstraňuje zkreslení vznikající z odlišné velikosti slovníku u CHAR, BPE a WORD tokenizátorů."
+      - text: "**2. Syntaktická kompetence (BLiMP adaptace pro Toki Pona):**"
+        items:
+          - "Evaluace na lingvistických minimálních párech vět (gramatická vs. negramatická varianta)."
+          - "Testování porozumění klíčovým strukturním markerům (např. gramatická přítomnost částic *li* a *e*)."
+      - text: "**3. Odolnost vůči přefitování (Multi-epoch scaling):**"
+        items:
+          - "Zjištění bodu zlomu (U-křivky přefitování) podle Muennighoffových zákonů opakovaného tréninku."
+          - "Definice optimálního zastavovacího pravidla v podmínkách nedostatku dat."
+    notes: |
+      [MINUTA 4 – VÝZKUMNÉ OTÁZKY A METRIKY]
+      K zodpovězení výzkumných otázek využíváme tři exaktní metriky.
+
+      Zaprvé je to Datová efektivita. Standardní křížová entropie (loss na token) je mezi tokenizátory nesrovnatelná, protože celoslovní token nese mnohem více informace než znakový. Proto metriku přepočítáváme na bity na fyzický znak (Bits Per Character – BPC). Tím získáváme spravedlivé a vzájemně porovnatelné měřítko.
+
+      Zadruhé měříme Syntaktickou kompetenci. Vyvíjíme adaptaci uznávaného benchmarku BLiMP pro Toki Pona. Evaluace probíhá formou minimálních párů vět, kde se správná a chybná věta liší pouze přítomností či absencí povinné gramatické částice, například částice 'li' oddělující podmět od přísudku nebo částice 'e' uvádějící předmět.
+
+      Zatřetí analyzujeme dynamiku přefitování při multi-epochovém tréninku a ověřujeme platnost škálovacích hypotéz formulovaných Muennighoffem.
+
+  # ----------------------------------------------------------------------------
+  # Slide 5: Statistická inference a přínos práce (Minuta 5)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Statistická inference a očekávaný přínos práce"
+    bullets:
+      - "**Statistický aparát (Katedra statistiky a pravděpodobnosti):**"
+      - text: "**Faktorová ANOVA & post-hoc testy:**"
+        items:
+          - "Testování hlavních efektů a interakcí vyšších řádů (Architektura × Tokenizace × Epochy)."
+      - text: "**Lineární modely se smíšenými efekty (LMEM / GLMM):**"
+        items:
+          - "Kontrola náhodné variability způsobené inicializačními semínky (*seeds*) a lingvistickými testovacími položkami."
+      - text: "**Odhad škálovacích zákonů (Power-law scaling):**"
+        items:
+          - "Nelineární regrese mocninných funkcí korigovaných na opakování dat."
+      - text: "**Hlavní přínos diplomové práce:**"
+        items:
+          - "**Empirický důkaz:** Zda sub-kvadratická Mamba-2 dokáže na mikro-škále konkurovat Transformeru."
+          - "**Metodická pravidla:** Exaktní doporučení pro volbu tokenizace a trénovací strategie při extrémním nedostatku dat."
+    notes: |
+      [MINUTA 5 – STATISTICKÁ INFERENCE A PŘÍNOS]
+      Jako studenti Katedry statistiky a pravděpodobnosti nebudeme výsledky hodnotit pouze prostým pohledem na tabulku čísel, ale nasadíme rigorózní statistický aparát.
+
+      Pomocí faktorové analýzy rozptylu (ANOVA) otestujeme statistickou významnost hlavních efektů i klíčových interakcí – zejména interakce architektury a tokenizace.
+      Prostřednictvím lineárních modelů se smíšenými efekty (LMEM) izolujeme náhodnou variabilitu způsobenou náhodnými semínky a jednotlivými testovacími větami.
+      V neposlední řadě nelineární regresí odhadneme koeficienty škálovacích mocninných zákonů pro nízkoobjemová data.
+
+      HLAVNÍ PŘÍNOS PRÁCE:
+      Výsledkem práce bude jednoznačný empirický a statisticky podložený důkaz o tom, zda moderní stavové architektury dokáží na mikro-škále překonat Transformer, a ucelený soubor doporučení pro trénink jazykových modelů v datově chudých doménách.
+
+      Děkuji vám za pozornost a rád zodpovím vaše dotazy.

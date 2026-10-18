@@ -134,12 +134,18 @@ class FISPresentation:
         self.layout_blank = m2_layouts[6]               # Prázdný
         self.layout_picture_caption = m2_layouts[8]     # Obrázek s titulkem
 
+    def _set_notes(self, slide, notes: Optional[str]):
+        """Pomocná metoda pro nastavení poznámek řečníka (speaker notes)."""
+        if notes:
+            slide.notes_slide.notes_text_frame.text = notes.strip()
+
     def add_title_slide(
         self,
         title: str,
         subtitle: Optional[str] = None,
         author: Optional[str] = None,
         department: Optional[str] = None,
+        notes: Optional[str] = None,
     ):
         """Vytvoří úvodní titulní snímek prezentace."""
         slide = self.prs.slides.add_slide(self.master_title)
@@ -155,9 +161,15 @@ class FISPresentation:
             elif idx == 14:  # Katedra / oddělení
                 ph.text = department if department is not None else self.default_department
 
+        self._set_notes(slide, notes)
         return slide
 
-    def add_section_slide(self, title: str, subtitle: Optional[str] = None):
+    def add_section_slide(
+        self,
+        title: str,
+        subtitle: Optional[str] = None,
+        notes: Optional[str] = None,
+    ):
         """Vytvoří předělový snímek oddílu (mezititulek na modrém pozadí)."""
         slide = self.prs.slides.add_slide(self.master_section)
 
@@ -171,6 +183,7 @@ class FISPresentation:
                 # Vyprázdnit nepotřebné zástupné texty z masteru
                 ph.text = ""
 
+        self._set_notes(slide, notes)
         return slide
 
     def add_closing_slide(
@@ -178,6 +191,7 @@ class FISPresentation:
         title: str = "Děkuji za pozornost",
         author: Optional[str] = None,
         email: Optional[str] = None,
+        notes: Optional[str] = None,
     ):
         """Vytvoří závěrečný snímek s poděkováním a kontaktem."""
         slide = self.prs.slides.add_slide(self.master_section)
@@ -196,7 +210,9 @@ class FISPresentation:
             elif idx == 16:
                 ph.text = mail
 
+        self._set_notes(slide, notes)
         return slide
+
 
     def _fill_text_frame(self, tf, items: Union[str, Sequence[Any]]):
         """Pomocná funkce pro naplnění textového rámce odrážkami s podporou úrovní a Markdownu."""
@@ -283,6 +299,7 @@ class FISPresentation:
         image: Optional[Any] = None,
         image_side: str = "right",
         image_caption: Optional[str] = None,
+        notes: Optional[str] = None,
     ):
         """
         Vytvoří standardní obsahový snímek.
@@ -292,7 +309,7 @@ class FISPresentation:
         """
         # Případ 1: Pouze obrázek bez textu
         if image and not items:
-            return self.add_image_slide(title=title, image=image, caption=image_caption)
+            return self.add_image_slide(title=title, image=image, caption=image_caption, notes=notes)
 
         # Případ 2: Pouze text/odrážky
         if items and not image:
@@ -302,6 +319,7 @@ class FISPresentation:
                     ph.text = title
                 elif ph.placeholder_format.idx == 1:
                     self._fill_text_frame(ph.text_frame, items)
+            self._set_notes(slide, notes)
             return slide
 
         # Případ 3: Text i obrázek dohromady (dvousloupcový layout)
@@ -332,6 +350,7 @@ class FISPresentation:
         if image_caption:
             self._add_caption(slide, image_caption, img_box[0], img_box[1] + img_box[3], img_box[2])
 
+        self._set_notes(slide, notes)
         return slide
 
     def add_two_column_slide(
@@ -343,6 +362,7 @@ class FISPresentation:
         right_image: Optional[Any] = None,
         left_title: Optional[str] = None,
         right_title: Optional[str] = None,
+        notes: Optional[str] = None,
     ):
         """Vytvoří dvousloupcový snímek s nezávislým obsahem (text, odrážky nebo obrázky)."""
         if left_title or right_title:
@@ -359,6 +379,7 @@ class FISPresentation:
                     ph.text = right_title
                 elif idx == 4 and right_items:
                     self._fill_text_frame(ph.text_frame, right_items)
+            self._set_notes(slide, notes)
             return slide
 
         slide = self.prs.slides.add_slide(self.layout_two_content)
@@ -385,6 +406,7 @@ class FISPresentation:
         elif right_items:
             self._fill_text_frame(ph_right.text_frame, right_items)
 
+        self._set_notes(slide, notes)
         return slide
 
     def add_image_slide(
@@ -392,6 +414,7 @@ class FISPresentation:
         title: str,
         image: Any,
         caption: Optional[str] = None,
+        notes: Optional[str] = None,
     ):
         """Vloží velký obrázek nebo graf na střed snímku s volitelným popiskem."""
         slide = self.prs.slides.add_slide(self.layout_title_only)
@@ -412,6 +435,7 @@ class FISPresentation:
             cap_top = pic.top + pic.height + Inches(0.08)
             self._add_caption(slide, caption, pic.left, cap_top, pic.width)
 
+        self._set_notes(slide, notes)
         return slide
 
     def _add_caption(self, slide, text: str, left, top, width):
@@ -433,6 +457,7 @@ class FISPresentation:
         headers: Sequence[str],
         rows: Sequence[Sequence[Any]],
         col_widths: Optional[Sequence[float]] = None,
+        notes: Optional[str] = None,
     ):
         """Vloží tabulku s daty a hlavičkou."""
         slide = self.prs.slides.add_slide(self.layout_title_only)
@@ -482,16 +507,19 @@ class FISPresentation:
                 else:
                     cell.fill.fore_color.rgb = RGBColor(255, 255, 255)
 
+        self._set_notes(slide, notes)
         return slide
 
-    def add_blank_slide(self, title: Optional[str] = None):
+    def add_blank_slide(self, title: Optional[str] = None, notes: Optional[str] = None):
         """Vytvoří prázdný snímek (volitelně s nadpisem)."""
         slide = self.prs.slides.add_slide(self.layout_blank)
         if title:
             for ph in slide.placeholders:
                 if ph.placeholder_format.idx == 0:
                     ph.text = title
+        self._set_notes(slide, notes)
         return slide
+
 
     def save(self, output_path: Union[str, Path], export_pdf: bool = True) -> Path:
         """

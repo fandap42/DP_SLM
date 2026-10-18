@@ -49,6 +49,7 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
     for s_idx, slide_cfg in enumerate(slides, start=1):
         stype = slide_cfg.get("type", "content").lower()
         title = slide_cfg.get("title", f"Snímek {s_idx}")
+        notes = slide_cfg.get("notes")
 
         if stype == "title":
             pres.add_title_slide(
@@ -56,12 +57,14 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
                 subtitle=slide_cfg.get("subtitle"),
                 author=slide_cfg.get("author"),
                 department=slide_cfg.get("department"),
+                notes=notes,
             )
 
         elif stype == "section":
             pres.add_section_slide(
                 title=title,
                 subtitle=slide_cfg.get("subtitle"),
+                notes=notes,
             )
 
         elif stype in ("content", "standard"):
@@ -71,6 +74,7 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
                 image=slide_cfg.get("image"),
                 image_side=slide_cfg.get("image_side", "right"),
                 image_caption=slide_cfg.get("caption"),
+                notes=notes,
             )
 
         elif stype in ("two_column", "two_columns", "columns"):
@@ -82,6 +86,7 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
                 right_image=slide_cfg.get("right_image"),
                 left_title=slide_cfg.get("left_title"),
                 right_title=slide_cfg.get("right_title"),
+                notes=notes,
             )
 
         elif stype in ("image", "figure", "chart", "graf"):
@@ -92,6 +97,7 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
                 title=title,
                 image=image_src,
                 caption=slide_cfg.get("caption"),
+                notes=notes,
             )
 
         elif stype in ("table", "tabulka"):
@@ -103,16 +109,18 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
                 headers=headers,
                 rows=rows,
                 col_widths=col_widths,
+                notes=notes,
             )
 
         elif stype == "blank":
-            pres.add_blank_slide(title=title)
+            pres.add_blank_slide(title=title, notes=notes)
 
         elif stype in ("closing", "end", "thanks"):
             pres.add_closing_slide(
                 title=title,
                 author=slide_cfg.get("author"),
                 email=slide_cfg.get("email"),
+                notes=notes,
             )
 
         else:
@@ -120,7 +128,9 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
             pres.add_content_slide(
                 title=title,
                 items=slide_cfg.get("bullets") or slide_cfg.get("text"),
+                notes=notes,
             )
+
 
     out_file = pres.save(output_path, export_pdf=export_pdf)
     print(f"Prezentace byla vygenerována: {out_file}")
