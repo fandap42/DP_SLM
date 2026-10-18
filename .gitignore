@@ -20,6 +20,8 @@ results/models/*
 *.pt
 *.bin
 *.safetensors
+*.tar.gz
+!release_assets/*.tar.gz
 
 # Temporary test runs
 experiments/test_run/

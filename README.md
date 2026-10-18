@@ -142,7 +142,7 @@ Rscript experiments/scripts/analysis_models.R
 
 ---
 
-## 📊 Přehled výsledků faktorového pokusu (13 běhů)
+## 📊 Přehled výsledků faktorového pokusu (14 běhů)
 
 | Tokenizér | Model | Frakce korpusu | Test BPC ↓ | In-Domain BPC ↓ | Out-of-Domain BPC ↓ | Gramatika (BLiMP) ↑ | Kompozice (Pair Acc) ↑ |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -158,6 +158,7 @@ Rscript experiments/scripts/analysis_models.R
 | **WORD** | mini (~787k) | 25 % | 1.2127 | 1.1149 | 1.2608 | 96.4 % | 95.6 % |
 | **WORD** | micro (~98k) | 75 % | 1.2088 | 1.1098 | 1.2576 | 97.8 % | 99.4 % |
 | **WORD** | mini (~787k) | 75 % | 1.1357 | 1.0396 | 1.1831 | 98.7 % | 98.8 % |
+| **WORD** | medium (~14.5M)| 100 % | 1.0357 | 0.9486 | 1.0786 | 99.4 % | 99.4 % |
 | **WORD** | large (~37.7M)| 100 % | **1.0231** | **0.9412** | **1.0634** | **98.4 %** | **98.8 %** |
 
 **Empirický Kaplanův zákon pro Toki Pona:**

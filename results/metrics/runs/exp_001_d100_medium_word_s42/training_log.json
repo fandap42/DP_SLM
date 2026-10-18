@@ -1,0 +1,116 @@
+{
+  "total_epochs": 5,
+  "total_steps": 13740,
+  "total_tokens_seen": 8488575,
+  "total_training_time_sec": 612.51,
+  "best_val_bpc": 1.0202,
+  "final_val_bpc": 1.0202,
+  "final_grammar_acc": 0.9935,
+  "history": [
+    {
+      "epoch": 1,
+      "step": 2748,
+      "total_tokens": 1697715,
+      "train_loss": 3.0315,
+      "val_loss": 2.7978,
+      "val_bpc": 1.1241,
+      "val_ppl_char": 2.18,
+      "val_ppl_tok": 16.41,
+      "grammar_acc": 0.9935,
+      "grammar_categories": {
+        "context_la": 1.0,
+        "direct_object_e": 0.9783,
+        "lexical_validity": 1.0,
+        "modifier_order": 1.0,
+        "modifier_pi": 1.0,
+        "particle_li": 0.9957
+      },
+      "epoch_time_sec": 114.91,
+      "lr": 0.0004536
+    },
+    {
+      "epoch": 2,
+      "step": 5496,
+      "total_tokens": 3395430,
+      "train_loss": 2.782,
+      "val_loss": 2.6762,
+      "val_bpc": 1.0752,
+      "val_ppl_char": 2.11,
+      "val_ppl_tok": 14.53,
+      "grammar_acc": 0.9741,
+      "grammar_categories": {
+        "context_la": 1.0,
+        "direct_object_e": 0.9783,
+        "lexical_validity": 0.9286,
+        "modifier_order": 1.0,
+        "modifier_pi": 1.0,
+        "particle_li": 0.961
+      },
+      "epoch_time_sec": 115.18,
+      "lr": 0.0003289
+    },
+    {
+      "epoch": 3,
+      "step": 8244,
+      "total_tokens": 5093145,
+      "train_loss": 2.6731,
+      "val_loss": 2.5977,
+      "val_bpc": 1.0437,
+      "val_ppl_char": 2.06,
+      "val_ppl_tok": 13.43,
+      "grammar_acc": 0.9914,
+      "grammar_categories": {
+        "context_la": 1.0,
+        "direct_object_e": 1.0,
+        "lexical_validity": 1.0,
+        "modifier_order": 1.0,
+        "modifier_pi": 1.0,
+        "particle_li": 0.9827
+      },
+      "epoch_time_sec": 115.61,
+      "lr": 0.0001738
+    },
+    {
+      "epoch": 4,
+      "step": 10992,
+      "total_tokens": 6790860,
+      "train_loss": 2.5863,
+      "val_loss": 2.5484,
+      "val_bpc": 1.0239,
+      "val_ppl_char": 2.03,
+      "val_ppl_tok": 12.79,
+      "grammar_acc": 0.9935,
+      "grammar_categories": {
+        "context_la": 1.0,
+        "direct_object_e": 0.9891,
+        "lexical_validity": 1.0,
+        "modifier_order": 1.0,
+        "modifier_pi": 1.0,
+        "particle_li": 0.9913
+      },
+      "epoch_time_sec": 115.03,
+      "lr": 4.81e-05
+    },
+    {
+      "epoch": 5,
+      "step": 13740,
+      "total_tokens": 8488575,
+      "train_loss": 2.5318,
+      "val_loss": 2.5393,
+      "val_bpc": 1.0202,
+      "val_ppl_char": 2.03,
+      "val_ppl_tok": 12.67,
+      "grammar_acc": 0.9935,
+      "grammar_categories": {
+        "context_la": 1.0,
+        "direct_object_e": 0.9891,
+        "lexical_validity": 1.0,
+        "modifier_order": 1.0,
+        "modifier_pi": 1.0,
+        "particle_li": 0.9913
+      },
+      "epoch_time_sec": 115.14,
+      "lr": 0.0
+    }
+  ]
+}

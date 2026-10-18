@@ -357,10 +357,19 @@ class UnifiedEvaluator:
             except Exception as e:
                 print(f"  [Error] Failed to evaluate {exp_id}: {e}")
 
-        df = pd.DataFrame(records)
+        df_new = pd.DataFrame(records)
 
-        # Save results.csv and results.json
+        # Save results.csv and results.json (merge with existing runs)
         csv_path = self.metrics_dir / "results.csv"
+        if csv_path.exists() and not df_new.empty:
+            try:
+                df_prev = pd.read_csv(csv_path)
+                df = pd.concat([df_prev, df_new], ignore_index=True).drop_duplicates(subset=["exp_id"], keep="last")
+            except Exception:
+                df = df_new
+        else:
+            df = df_new
+
         df.to_csv(csv_path, index=False)
         with open(self.metrics_dir / "results.json", "w", encoding="utf-8") as f:
             json.dump(df.to_dict(orient="records"), f, indent=2)
