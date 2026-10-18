@@ -152,4 +152,13 @@ slides:
       HLAVNÍ PŘÍNOS PRÁCE:
       Výsledkem práce bude jednoznačný empirický a statisticky podložený důkaz o tom, zda moderní stavové architektury dokáží na mikro-škále překonat Transformer, a ucelený soubor doporučení pro trénink jazykových modelů v datově chudých doménách.
 
-      Děkuji vám za pozornost a rád zodpovím vaše dotazy.
+  # ----------------------------------------------------------------------------
+  # Slide 6: Závěrečný snímek
+  # ----------------------------------------------------------------------------
+  - type: closing
+    title: "Děkuji za pozornost"
+    author: "Bc. Jan Pavlík"
+    email: "pavj15@vse.cz"
+    notes: |
+      Děkuji vám za pozornost. Nyní jsem připraven zodpovědět jakékoliv vaše dotazy a připomínky k výzkumnému záměru.
+

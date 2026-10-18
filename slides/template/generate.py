@@ -131,6 +131,21 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
                 notes=notes,
             )
 
+    # Automatické doplnění závěrečného snímku "Děkuji za pozornost", pokud chybí
+    has_closing = False
+    if slides:
+        last_type = slides[-1].get("type", "").lower()
+        last_title = slides[-1].get("title", "").lower()
+        if last_type in ("closing", "end", "thanks") or "děkuji" in last_title or "dekuji" in last_title:
+            has_closing = True
+
+    auto_closing = meta.get("auto_closing", True)
+    if auto_closing and not has_closing:
+        pres.add_closing_slide(
+            title="Děkuji za pozornost",
+            author=author,
+            email=email,
+        )
 
     out_file = pres.save(output_path, export_pdf=export_pdf)
     print(f"Prezentace byla vygenerována: {out_file}")
@@ -139,6 +154,7 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
         if pdf_file.exists():
             print(f"PDF bylo vygenerováno: {pdf_file}")
     return out_file
+
 
 
 def create_demo_presentation(output_path: str, export_pdf: bool = True):

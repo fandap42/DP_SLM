@@ -10,6 +10,7 @@ Podporuje:
 """
 
 import io
+import math
 import os
 import re
 import subprocess
@@ -20,7 +21,7 @@ from typing import Any, List, Optional, Sequence, Tuple, Union
 import pptx
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
-from pptx.enum.text import PP_ALIGN
+from pptx.enum.text import PP_ALIGN, MSO_AUTO_SIZE
 from PIL import Image
 
 try:
@@ -37,12 +38,11 @@ FIS_LIGHT_BLUE = RGBColor(0, 169, 224) # Světle modrá akcent
 TEXT_DARK = RGBColor(30, 41, 59)     # Tmavý text
 
 
-def _parse_markdown_runs(paragraph, text: str):
+def _parse_markdown_runs(paragraph, text: str, font_size_pt: Optional[float] = None):
     """
     Rozparsuje jednoduchý Markdown (**bold**, *italic*, `code`)
     a vloží formátované runy do zadaného odstavce.
     """
-    # Regex pro **bold**, *italic*, `code`
     token_pattern = re.compile(r'(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)')
     tokens = token_pattern.split(text)
 
@@ -50,6 +50,8 @@ def _parse_markdown_runs(paragraph, text: str):
         if not token:
             continue
         run = paragraph.add_run()
+        if font_size_pt:
+            run.font.size = Pt(font_size_pt)
         if token.startswith('**') and token.endswith('**') and len(token) >= 4:
             run.text = token[2:-2]
             run.font.bold = True
@@ -61,6 +63,7 @@ def _parse_markdown_runs(paragraph, text: str):
             run.font.name = "Consolas"
         else:
             run.text = token
+
 
 
 def _prepare_image_source(image_input: Any) -> Tuple[Union[str, io.BytesIO], Tuple[int, int]]:
@@ -214,9 +217,49 @@ class FISPresentation:
         return slide
 
 
-    def _fill_text_frame(self, tf, items: Union[str, Sequence[Any]]):
-        """Pomocná funkce pro naplnění textového rámce odrážkami s podporou úrovní a Markdownu."""
+    @staticmethod
+    def _calculate_optimal_font_size(
+        flattened_items: Sequence[Tuple[str, int]],
+        box_width_in: float = 11.34,
+        box_height_in: float = 4.8,
+        max_font_size: int = 20,
+        min_font_size: int = 11,
+    ) -> int:
+        """
+        Vypočítá optimální velikost písma (v Pt) tak, aby se odrážky vešly
+        do vymezené výšky a šířky snímku bez přetečení přes okraj.
+        """
+        box_w_pt = box_width_in * 72
+        box_h_pt = box_height_in * 72
+
+        for fs in range(max_font_size, min_font_size - 1, -1):
+            total_h = 0
+            for text, level in flattened_items:
+                avail_w = max(box_w_pt - (level * 28) - 24, 72)
+                char_w = 0.50 * (fs if level == 0 else max(fs - 2, 9))
+                chars_per_line = max(15, int(avail_w / max(char_w, 1)))
+                num_lines = math.ceil(len(text) / chars_per_line)
+                line_h = (fs if level == 0 else max(fs - 2, 9)) * 1.25
+                space_after = fs * 0.35
+                total_h += (num_lines * line_h) + space_after
+
+            if total_h <= box_h_pt:
+                return fs
+
+        return min_font_size
+
+    def _fill_text_frame(
+        self,
+        tf,
+        items: Union[str, Sequence[Any]],
+        box_width_in: float = 11.34,
+        box_height_in: float = 4.8,
+        auto_fit: bool = True,
+    ):
+        """Pomocná funkce pro naplnění textového rámce odrážkami s dynamickým škálováním a Markdownem."""
         tf.text = ""  # Vyčistit výchozí text
+        tf.word_wrap = True
+        tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
 
         if isinstance(items, str):
             items = [line for line in items.split("\n") if line.strip()]
@@ -252,6 +295,13 @@ class FISPresentation:
             return flat
 
         flattened = flatten_items(items)
+        if not flattened:
+            return
+
+        opt_fs = None
+        if auto_fit:
+            opt_fs = self._calculate_optimal_font_size(flattened, box_width_in, box_height_in)
+
         first = True
         for text, level in flattened:
             if not text.strip():
@@ -263,7 +313,13 @@ class FISPresentation:
                 p = tf.add_paragraph()
 
             p.level = min(max(level, 0), 4)
-            _parse_markdown_runs(p, text)
+            if opt_fs:
+                p.space_after = Pt(opt_fs * 0.35)
+                level_fs = opt_fs if level == 0 else max(opt_fs - 2, 9)
+                _parse_markdown_runs(p, text, font_size_pt=level_fs)
+            else:
+                _parse_markdown_runs(p, text)
+
 
 
     def _insert_fitted_image(
@@ -318,7 +374,7 @@ class FISPresentation:
                 if ph.placeholder_format.idx == 0:
                     ph.text = title
                 elif ph.placeholder_format.idx == 1:
-                    self._fill_text_frame(ph.text_frame, items)
+                    self._fill_text_frame(ph.text_frame, items, box_width_in=11.34, box_height_in=4.8)
             self._set_notes(slide, notes)
             return slide
 
@@ -344,7 +400,7 @@ class FISPresentation:
             sp = ph_left._element
             sp.getparent().remove(sp)
 
-        self._fill_text_frame(text_ph.text_frame, items)
+        self._fill_text_frame(text_ph.text_frame, items, box_width_in=5.67, box_height_in=4.8)
         self._insert_fitted_image(slide, image, *img_box)
 
         if image_caption:
@@ -374,11 +430,11 @@ class FISPresentation:
                 elif idx == 1 and left_title:
                     ph.text = left_title
                 elif idx == 2 and left_items:
-                    self._fill_text_frame(ph.text_frame, left_items)
+                    self._fill_text_frame(ph.text_frame, left_items, box_width_in=5.67, box_height_in=4.2)
                 elif idx == 3 and right_title:
                     ph.text = right_title
                 elif idx == 4 and right_items:
-                    self._fill_text_frame(ph.text_frame, right_items)
+                    self._fill_text_frame(ph.text_frame, right_items, box_width_in=5.67, box_height_in=4.2)
             self._set_notes(slide, notes)
             return slide
 
@@ -396,7 +452,7 @@ class FISPresentation:
             sp.getparent().remove(sp)
             self._insert_fitted_image(slide, left_image, *img_box)
         elif left_items:
-            self._fill_text_frame(ph_left.text_frame, left_items)
+            self._fill_text_frame(ph_left.text_frame, left_items, box_width_in=5.67, box_height_in=4.8)
 
         if right_image:
             img_box = (ph_right.left, ph_right.top, ph_right.width, ph_right.height)
@@ -404,7 +460,8 @@ class FISPresentation:
             sp.getparent().remove(sp)
             self._insert_fitted_image(slide, right_image, *img_box)
         elif right_items:
-            self._fill_text_frame(ph_right.text_frame, right_items)
+            self._fill_text_frame(ph_right.text_frame, right_items, box_width_in=5.67, box_height_in=4.8)
+
 
         self._set_notes(slide, notes)
         return slide
