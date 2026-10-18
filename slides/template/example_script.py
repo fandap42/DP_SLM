@@ -15,9 +15,9 @@ from builder import FISPresentation
 def main():
     # 1. Vytvoření instance prezentace s výchozími metadaty
     prs = FISPresentation(
-        author="Bc. Jan Pavlík",
-        department="Katedra informačních technologií (FIS VŠE)",
-        email="pavj15@vse.cz",
+        author="Bc. František Pavlík",
+        department="Katedra statistiky a pravděpodobnosti (FIS VŠE)",
+        email="pavf05@vse.cz",
     )
 
     # 2. Úvodní snímek
@@ -113,8 +113,8 @@ def main():
     # 9. Závěrečný snímek
     prs.add_closing_slide(
         title="Děkuji za pozornost",
-        author="Bc. Jan Pavlík",
-        email="pavj15@vse.cz",
+        author="Bc. František Pavlík",
+        email="pavf05@vse.cz",
     )
 
     plt.close(fig)

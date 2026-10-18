@@ -7,9 +7,9 @@
 # ==============================================================================
 
 meta:
-  author: "Bc. Jan Pavlík"
+  author: "Bc. František Pavlík"
   department: "Katedra statistiky a pravděpodobnosti"
-  email: "pavj15@vse.cz"
+  email: "pavf05@vse.cz"
 
 slides:
   # ----------------------------------------------------------------------------
@@ -157,8 +157,8 @@ slides:
   # ----------------------------------------------------------------------------
   - type: closing
     title: "Děkuji za pozornost"
-    author: "Bc. Jan Pavlík"
-    email: "pavj15@vse.cz"
+    author: "Bc. František Pavlík"
+    email: "pavf05@vse.cz"
     notes: |
       Děkuji vám za pozornost. Nyní jsem připraven zodpovědět jakékoliv vaše dotazy a připomínky k výzkumnému záměru.
 

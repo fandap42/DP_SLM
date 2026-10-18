@@ -38,9 +38,9 @@ cp slides/template/example_presentation.yaml slides/moje_prezentace.yaml
 ### 2. Upravte texty v YAML
 ```yaml
 meta:
-  author: "Bc. Jan Pavlík"
-  department: "Katedra informačních technologií (FIS VŠE)"
-  email: "pavj15@vse.cz"
+  author: "Bc. František Pavlík"
+  department: "Katedra statistiky a pravděpodobnosti (FIS VŠE)"
+  email: "pavf05@vse.cz"
 
 slides:
   - type: title
@@ -110,9 +110,9 @@ from slides.template import FISPresentation
 
 # 1. Inicializace
 prs = FISPresentation(
-    author="Bc. Jan Pavlík",
-    department="Katedra informačních technologií",
-    email="pavj15@vse.cz"
+    author="Bc. František Pavlík",
+    department="Katedra statistiky a pravděpodobnosti",
+    email="pavf05@vse.cz"
 )
 
 # 2. Titulní snímek

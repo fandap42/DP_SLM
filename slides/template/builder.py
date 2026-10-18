@@ -111,7 +111,7 @@ class FISPresentation:
         self,
         template_path: Optional[Union[str, Path]] = None,
         author: str = "",
-        department: str = "Katedra informačních technologií",
+        department: str = "Katedra statistiky a pravděpodobnosti",
         email: str = "",
     ):
         path = Path(template_path) if template_path else DEFAULT_TEMPLATE_PATH

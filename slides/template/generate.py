@@ -30,9 +30,9 @@ def build_from_dict(config: Dict[str, Any], output_path: str, export_pdf: bool =
     """Sestaví prezentaci ze zadaného konfiguračního slovníku."""
 
     meta = config.get("meta", {})
-    author = meta.get("author", "Bc. Jan Pavlík")
-    department = meta.get("department", "Katedra informačních technologií")
-    email = meta.get("email", "pavj15@vse.cz")
+    author = meta.get("author", "Bc. František Pavlík")
+    department = meta.get("department", "Katedra statistiky a pravděpodobnosti")
+    email = meta.get("email", "pavf05@vse.cz")
     template_path = meta.get("template_path")
 
     pres = FISPresentation(
@@ -178,17 +178,17 @@ def create_demo_presentation(output_path: str, export_pdf: bool = True):
     fig.tight_layout()
 
     pres = FISPresentation(
-        author="Bc. Jan Pavlík",
-        department="Katedra informačních technologií",
-        email="pavj15@vse.cz",
+        author="Bc. František Pavlík",
+        department="Katedra statistiky a pravděpodobnosti",
+        email="pavf05@vse.cz",
     )
 
     # 1. Titulní snímek
     pres.add_title_slide(
         title="Vývoj Small Language Modelu pro češtinu",
         subtitle="Diplomová práce – obhajoba a prezentace výsledků",
-        author="Bc. Jan Pavlík",
-        department="Katedra informačních technologií (FIS VŠE)",
+        author="Bc. František Pavlík",
+        department="Katedra statistiky a pravděpodobnosti (FIS VŠE)",
     )
 
     # 2. Předěl / Sekce
@@ -269,8 +269,8 @@ def create_demo_presentation(output_path: str, export_pdf: bool = True):
     # 9. Závěrečný snímek
     pres.add_closing_slide(
         title="Děkuji za pozornost",
-        author="Bc. Jan Pavlík",
-        email="pavj15@vse.cz",
+        author="Bc. František Pavlík",
+        email="pavf05@vse.cz",
     )
 
     plt.close(fig)

@@ -6,9 +6,9 @@
 # ==============================================================================
 
 meta:
-  author: "Bc. Jan Pavlík"
-  department: "Katedra informačních technologií (FIS VŠE)"
-  email: "pavj15@vse.cz"
+  author: "Bc. František Pavlík"
+  department: "Katedra statistiky a pravděpodobnosti (FIS VŠE)"
+  email: "pavf05@vse.cz"
 
 slides:
   # ----------------------------------------------------------------------------
@@ -116,5 +116,5 @@ slides:
   # ----------------------------------------------------------------------------
   - type: closing
     title: "Děkuji za pozornost"
-    author: "Bc. Jan Pavlík"
-    email: "pavj15@vse.cz"
+    author: "Bc. František Pavlík"
+    email: "pavf05@vse.cz"
