@@ -51,3 +51,14 @@ thesis/chapters/*.aux
 .idea/
 .vscode/
 *.DS_Store
+
+# Presentations & generated slides (keep template tracked)
+slides/*.pptx
+slides/*.pdf
+slides/**/*.pptx
+slides/**/*.pdf
+!slides/template/
+!slides/template/**
+slides/template/__pycache__/
+
+

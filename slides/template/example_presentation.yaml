@@ -1,0 +1,120 @@
+# ==============================================================================
+# Ukázková konfigurace prezentace FIS VŠE
+# 
+# Spuštění generování:
+#   python slides/template/generate.py slides/template/example_presentation.yaml -o slides/moje_prezentace.pptx
+# ==============================================================================
+
+meta:
+  author: "Bc. Jan Pavlík"
+  department: "Katedra informačních technologií (FIS VŠE)"
+  email: "pavj15@vse.cz"
+
+slides:
+  # ----------------------------------------------------------------------------
+  # 1. Úvodní / Titulní snímek
+  # ----------------------------------------------------------------------------
+  - type: title
+    title: "Vývoj a evaluace Small Language Modelu"
+    subtitle: "Diplomová práce – obhajoba a prezentace výsledků"
+    # author a department lze přepsat individuálně, jinak se použijí hodnoty z meta
+
+  # ----------------------------------------------------------------------------
+  # 2. Předělový snímek sekce (mezititulek na tmavém pozadí)
+  # ----------------------------------------------------------------------------
+  - type: section
+    title: "1. Motivace a výzkumné cíle"
+
+  # ----------------------------------------------------------------------------
+  # 3. Standardní obsahový snímek s odrážkami (podporuje **bold**, *italic*, vnoření)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Kontext a motivace práce"
+    bullets:
+      - "**Stav poznání v oblasti LLM:** Současné špičkové modely (70B+) mají obrovské nároky na VRAM a infrastrukturu."
+      - text: "**Potřeba specializovaných SLM pro češtinu:**"
+        items:
+          - "Běžné vícejazyčné modely mají vysokou fragmentaci českých tokenů."
+          - "Menší modely často generují gramatické a stylistické chyby v češtině."
+      - text: "**Hlavní cíl diplomové práce:**"
+        items:
+          - "Natrénovat kompaktní model (1–2 miliardy parametrů) s nativní podporou češtiny."
+          - "Ověřit možnost plynulé inference na běžném spotřebním hardware (notebook / workstation)."
+
+
+  # ----------------------------------------------------------------------------
+  # 4. Obsahový snímek: Text vlevo, obrázek/graf vpravo
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Metodika a pipeline trénování"
+    bullets:
+      - text: "**Sběr a filtrace dat:**"
+        items:
+          - "Český webový korpus a Wikipedia"
+          - "Deduplikace min-hash a heuristická filtrace kvality"
+      - text: "**Příprava tokenizeru:**"
+        items:
+          - "BPE tokenizer se slovníkem 32 000 tokenů"
+      - text: "**Trénování:**"
+        items:
+          - "Optimalizátor AdamW, cosine annealing LR"
+          - "Trénováno na clusteru s 4× NVIDIA A100"
+
+    # Cesta k obrázku nebo grafu (PNG, JPG, SVG...)
+    # image: "results/figures/pipeline.png"
+    # caption: "Obr. 1: Schéma architektury a trénovací pipeline"
+
+  # ----------------------------------------------------------------------------
+  # 5. Dvousloupcový snímek (např. srovnání dvou přístupů)
+  # ----------------------------------------------------------------------------
+  - type: two_column
+    title: "Srovnání: Běžné cloudové LLM vs. Náš lokální SLM"
+    left_title: "Klasické velké LLM (7B+)"
+    left_bullets:
+      - "Vyžadují vzdálené GPU servery a API klíče"
+      - "Latence závislá na síťovém připojení"
+      - "Riziko úniku citlivých interních dat"
+      - "Vysoké provozní a licenční náklady"
+    right_title: "Specializovaný český SLM (1.5B)"
+    right_bullets:
+      - "**Plně lokální běh** (notebook s RTX nebo Apple Silicon)"
+      - "**Vysoká rychlost inference** (> 50 tokenů/s)"
+      - "**100% ochrana soukromí** a interních dat organizace"
+      - "Nulové provozní poplatky za volání API"
+
+  # ----------------------------------------------------------------------------
+  # 6. Tabulka s výsledky
+  # ----------------------------------------------------------------------------
+  - type: table
+    title: "Kvantitativní evaluace na českých benchmarcích"
+    headers: ["Model", "Parametry", "CZ-MMLU (%)", "CZ-Hellaswag", "Rychlost (tok/s)"]
+    rows:
+      - ["Baseline Qwen 2.5", "1.5B", "48.2 %", "54.1 %", "62"]
+      - ["Baseline Llama 3.2", "1.2B", "44.6 %", "50.8 %", "71"]
+      - ["Náš navržený model", "1.5B", "**59.4 %**", "**63.7 %**", "**58**"]
+      - ["Referenční Llama 3.1", "8.0B", "63.1 %", "67.5 %", "18"]
+
+  # ----------------------------------------------------------------------------
+  # 7. Předělový snímek sekce
+  # ----------------------------------------------------------------------------
+  - type: section
+    title: "2. Závěr a přínosy práce"
+
+  # ----------------------------------------------------------------------------
+  # 8. Shrnutí a přínosy práce
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Shrnutí hlavních přínosů"
+    bullets:
+      - "**Kompaktní český model:** Prokázána schopnost dosáhnout konkurenceschopných výsledků i při 1.5B parametrech."
+      - "**Efektivní tokenizace:** Snížení počtu tokenů na českou větu o ~35 % oproti anglickým tokenizerům."
+      - "**Praktická využitelnost:** Model je připraven pro nasazení v lokálních aplikacích bez nákladného cloudového hardware."
+      - "**Otevřený kód a data:** Reprodukovatelné skripty pro replikaci celého experimentu."
+
+  # ----------------------------------------------------------------------------
+  # 9. Závěrečný snímek
+  # ----------------------------------------------------------------------------
+  - type: closing
+    title: "Děkuji za pozornost"
+    author: "Bc. Jan Pavlík"
+    email: "pavj15@vse.cz"
