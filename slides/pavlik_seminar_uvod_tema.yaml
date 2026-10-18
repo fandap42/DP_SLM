@@ -1,0 +1,177 @@
+# ==============================================================================
+# Prezentace diplomové práce FIS VŠE
+# Generování bez PDF:
+#   python slides/template/generate.py slides/pavlik_seminar_uvod_tema.yaml -o slides/pavlik_seminar_uvod_tema.pptx --no-pdf
+# ==============================================================================
+
+meta:
+  author: "Bc. František Pavlík"
+  department: "Katedra statistiky a pravděpodobnosti"
+  email: "pavf05@vse.cz"
+  auto_closing: true
+
+slides:
+  # ----------------------------------------------------------------------------
+  # Titulní snímek
+  # ----------------------------------------------------------------------------
+  - type: title
+    title: "Small Language Models (SLM) na malých datech"
+    subtitle: "Statistická analýza výkonu a škálování\nVedoucí práce: Ing. Karel Šafr, Ph.D."
+
+  # ----------------------------------------------------------------------------
+  # Úvodní modul: Hlavní větvě současného AI výzkumu
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Úvodní modul: Hlavní větvě současného AI výzkumu"
+    bullets:
+      - "**Sub-kvadratické sekvenční architektury (SSM / Mamba-3):** Nahrazování kvadratické Attention O(N²) lineární rekurzí O(N)."
+      - "**Optimalizace mezipaměti vyvozování (KV Cache / MLA):** Řešení paměťové zdi u dlouhých kontextů pomocí latentní komprese."
+      - "**Škálování v datové tísni (Data-Constrained Scaling Laws):** Výzkum multi-epochového tréninku a limitů přefitování."
+      - "**Syntetická data a automatická destilace:** Využití silných učitelských LLM pro tvorbu kvalitních tréninkových i testovacích dat."
+      - "**Propojení s diplomovou prací:** Testování fundamentálních vlastností těchto trendů v izolovaném a statisticky řízeném prostředí."
+    notes: |
+      Dobrý den. Na úvod bych rád zasadil svůj diplomový výzkum do širšího kontextu toho, kde se dnes nachází celosvětový AI výzkum. V posledních dvou letech došlo k zásadnímu posunu: výzkum se už nesoustředí jen na extenzivní zvětšování počtu parametrů, ale na strukturální efektivitu.
+
+      Dnes rezonují čtyři hlavní témata:
+      - Boj s kvadratickou složitostí: Standardní Transformer naráží na limity O(N²), proto nastupují sub-kvadratické modely stavového prostoru jako Mamba-3.
+      - Paměťová zeď: U dlouhého kontextu spolyká KV cache mezipaměť stovky gigabytů VRAM, což řeší architektury jako Multi-Head Latent Attention (MLA).
+      - Datová stěna: Docházejí nová unikátní data z internetu, takže musíme trénovat ve více epochách a zkoumat, kdy nastupuje přefitování.
+      - Syntetická data: Učitelé jako GPT-4 či Gemini generují tréninkový text i testovací benchmarky.
+
+      Můj výzkum bere tyto čtyři globální pilíře a testuje jejich základní fyzikální a statistické principy v čistém, kontrolovaném prostředí.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 1: Toki Pona jako izolovaná laboratoř (Proč tento jazyk?)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 1: Toki Pona jako izolovaná laboratoř (Proč tento jazyk?)"
+    bullets:
+      - "**Umělý minimalistický jazyk:** Pravidelná syntax bez nepravidelností, uzavřený slovník (~137 slov)."
+      - text: "**Eliminace úzkého hrdla embeddingů (Embedding Bottleneck):**"
+        items:
+          - "U běžných jazyků tvoří slovník 30–50 % parametrů malých modelů."
+          - "U Toki Pona tvoří embeddingy pod 2 % parametrů ⇒ přes 98 % kapacity směřuje do skrytých vrstev sítě."
+      - "**Čistá izolace sekvenčního jádra:** Měření reprezentativní schopnosti bez zkreslení šumem neúplných slovníků."
+    notes: |
+      Prvním klíčovým konceptem mé práce je volba testovacího prostředí. Proč právě Toki Pona? Když trénujete malý jazykový model na angličtině, musíte mu dát slovník o 32 000 až 128 000 tokenů. U modelů s 5 až 10 miliony parametrů pak matice embeddingů pohltí 30 až 50 % všech parametrů! Vy pak netestujete, jak dobře síť uvažuje, ale jak velkou má paměť na slovíčka.
+
+      Toki Pona má pouze 137 základních kořenových slov. Díky tomu tvoří matice vnoření méně než 2 % parametrů a přes 98 % celé kapacity modelu směřuje přímo do skrytých sekvenčních vrstev. Toki Pona funguje jako 'čistá fyzikální laboratoř', kde můžeme bez rušivého šumu měřit reálný výkon Mamby a Transformeru.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 2: Srovnání architektur (Transformer vs. Mamba-3 vs. Střídaný Hybrid)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 2: Srovnání architektur (Transformer vs. Mamba-3 vs. Střídaný Hybrid)"
+    bullets:
+      - text: "**Parametricky a výpočetně vybalancovaný experiment (Iso-FLOP):**"
+        items:
+          - "**Causal Transformer:** Globální self-attention s přesným vybavováním, ale kvadratickou náročností O(N²)."
+          - "**Mamba-3 (Selective SSM):** Rekurentní skrytý stav s konstantní pamětí O(1), lichoběžníkovou diskretizací a fázovými rotacemi v komplexním prostoru."
+          - "**Střídaný Hybrid (Interleaved 5:1):** Periodické střídání 5 vrstev Mamby-3 a 1 vrstvy Attention."
+    notes: |
+      V druhém bloku porovnávám tři sekvenční architektury při striktně shodném počtu parametrů a výpočetním rozpočtu.
+      - Transformer je náš benchmark – má perfektní paměť, ale je pomalý a paměťově náročný.
+      - Mamba-3 reprezentuje nejnovější generaci modelů stavového prostoru z roku 2026. Na rozdíl od starší Mamby zavádí přesnější lichoběžníkovou diskretizaci a komplexní stavové rotace, které fungují jako datově závislé RoPE přímo v rekurzi. Díky tomu má konstantní paměť O(1) a lineární rychlost.
+      - Střídaný Hybrid propojuje to nejlepší z obou světů: 5 vrstev Mamby zpracovává plynulý text a 1 vrstva Attention udržuje globální index pro přesné vybavování. Sledujeme, zda Mamba-3 na malých datech dokáže Transformer plně nahradit.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 3: Vliv tokenizace (CHAR vs. BPE vs. WORD)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 3: Vliv tokenizace (CHAR vs. BPE vs. WORD)"
+    bullets:
+      - text: "**Tři úrovně reprezentace textu:**"
+        items:
+          - "**Znaková (CHAR, |V| ≈ 30):** 5× delší sekvence, stresové testování rekurze Mamby-3, nulový OOV."
+          - "**Podslovní BPE (|V| ≈ 100):** Kompoziční podslovní jednotky tvořící slabiky."
+          - "**Celoslovní WORD (|V| ≈ 137):** Atomická sémantická úroveň (1 token = 1 celé slovo)."
+      - "**Výzkumná otázka:** Vyčíslení kompromisu mezi explicitní kompozicí v tokenizéru a implicitní kompozicí ve vrstvách sítě."
+    notes: |
+      Třetím rozměrem je tokenizace. Zkoumám, jak úroveň abstrakce textu ovlivňuje učení sítě:
+      - WORD tokenizace je u Toki Pona unikátní – díky 137 slovům máme slovník, kde 1 token znamená 1 celé slovo, aniž bychom potřebovali obří matici. To je teoretický ideál.
+      - CHAR tokenizace naopak text rozseká na jednotlivá písmena. Sekvence je 5× až 7× delší, což představuje brutální stres-test pro Mambu-3 – zkoumáme, zda její rekurze udrží syntaktický kontext i na extrémně dlouhých řetězcích.
+      - BPE tvoří střední cestu. Cílem je změřit, zda je pro model výhodnější mít gramatiku 'předpřipravenou' v tokenizéru, nebo nechat síť, aby si ji složila sama ve skrytých vrstvách.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 4: Overfitting v opakovaných epochách (Škálování v datové tísni)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 4: Overfitting v opakovaných epochách (Škálování v datové tísni)"
+    bullets:
+      - "**Limity malých dat (Data-Constrained Regimes):** Multi-epochový trénink (1, 4, 16, 64 epoch) při omezeném korpusu."
+      - "**Klesající výnosy z opakování:** Sledování efektivní velikosti dat (D_eff) podle Muennighoffových zákonů."
+      - "**Detekce přefitování (R_crit):** Hledání bodu zlomu na U-křivce validační ztráty, kdy si model začne data memorovat nazpaměť."
+    notes: |
+      Čtvrtý nápad řeší problém, který nastane, když vám dojdou unikátní data. Tradiční Chinchilla zákony předpokládaly, že každý token vidí model jen jednou. V praxi ale malé modely trénujeme přes více epoch.
+
+      Podle výzkumů Muennighoffa z NeurIPS přináší opakování dat po 4 až 16 epochách klesající výnosy a model se začíná přefitovávat. V našem experimentu trénujeme modely na frakcích korpusu až po 64 epoch a přesně měříme kritický bod zlomu (R_crit). Zjišťujeme, zda je Mamba-3 vůči memorování a přefitování odolnější než Transformer.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 5: Syntetická data a destilace (Boj s overfittingem a automatická evaluace)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 5: Syntetická data a destilace (Boj s overfittingem a evaluace)"
+    bullets:
+      - text: "**Využití velkých učitelských LLM (GPT-4 / Gemini):**"
+        items:
+          - "**Destilace BLiMP benchmarku:** Automatické vygenerování a verifikace rozmanitých minimálních párů pro Toki Pona."
+          - text: "**Syntetická augmentace (Ablační pokus):**"
+            items:
+              - "Skupina A: 4 epochy tréninku na opakovaném organickém textu."
+              - "Skupina B: 1 epocha organických dat + 3 epochy synteticky vygenerovaných parafrází a dialogů."
+      - "**Cíl:** Potvrzení hypotézy Kiyomaru et al. (2026) o zvýšení jakosti dat (D_q) a potlačení overfittingu."
+    notes: |
+      Pátý nápad ukazuje, jak lze využít velké pokročilé modely k pomoci těm malým. Využíváme je ke dvěma věcem:
+      - Destilace testovací sady: Pomocí LLM vygenerujeme a ověříme rozsáhlou sadu syntaktických minimálních párů BLiMP pro Toki Pona.
+      - Boj s přefitováním: Místo abychom model trénovali 4 epochy na stále stejných organických větách (což vede k memorování), nahradíme 3 epochy syntetickými parafrázemi vygenerovanými Gemini/GPT-4.
+
+      Testujeme nejnovější poznatky z roku 2026, které říkají, že kvalitní syntetické parafráze dokáží plně nahradit chybějící přírodní data a zabránit přetrénování sítě.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 6: Metodika evaluace a statistické vyhodnocení
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 6: Metodika evaluace a statistické vyhodnocení"
+    bullets:
+      - text: "**Metriky nezávislé na tokenizaci:**"
+        items:
+          - "**Bits Per Character (BPC):** Normalizovaná křížová entropie na fyzický znak pro férové srovnání CHAR, BPE a WORD."
+          - "**Slovně normalizovaná Perplexita (PPL):** Sledování konvergence přepočítané na slovní úroveň."
+      - "**BLiMP-Toki Pona (Zero-shot akceptabilita):** Testy na minimálních párech (P(S⁺) > P(S⁻)) ověřující indikátory *li*, *e* a slovosled."
+      - "**Empirické mocninné škálovací zákony (Power Laws):** Odhadování parametrů ztrátových funkcí."
+      - "**Zobecněné lineární modely se smíšenými efekty (GLMM / LMEM):** Statistická inference izolující fixní efekty od náhodného šumu inicializačních semínek a větných položek."
+    notes: |
+      Šestý blok popisuje naši metodiku – přesně tak, jak byla schválena v původním projektu. Jako statistici neporovnáváme obyčejnou perplexitu, protože ta závisí na velikosti slovníku. Používáme Bits Per Character (BPC) – křížovou entropii přepočítanou na fyzický znak, což nám dává 100% férové srovnání mezi znakovou, podslovní i celoslovní tokenizací.
+
+      Pro měření reálného gramatického porozumění používáme BLiMP-Toki Pona – zero-shot test na minimálních párech vět, kde zkoumáme, zda model dává vyšší pravděpodobnost gramaticky správné větě.
+
+      A konečně, abychom se vyhnuli chybám a falešným závěrům z náhodného šumu, aplikujeme Zobecněné lineární modely se smíšenými efekty (GLMM/LMEM). Ty dokáží přesně odseparovat reálný vliv architektury od náhodné variability způsobené inicializačním seedem nebo konkrétní větnou šablonou.
+
+  # ----------------------------------------------------------------------------
+  # Nápad 7: Průmyslový přesah na obří hybridy (Mamba-3 + MLA)
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Nápad 7: Průmyslový přesah na obří hybridy (Mamba-3 + MLA)"
+    bullets:
+      - text: "**Most mezi mikro-výzkumem a obří praxí (2025–2026):**"
+        items:
+          - text: "**Synergie Mamba-3 + MLA (Multi-Head Latent Attention):**"
+            items:
+              - "Mamba-3 zajišťuje lineární časový průchod O(N)."
+              - "MLA stlačuje mezipaměť KV cache o 93–98 % pomocí latentních vektorů c_t^KV."
+          - "**Odstranění amnézie (Recall Gap):** 100% úspěšnost ve vyhledávání z dlouhého kontextu (100k+ tokenů)."
+      - "**Závěr:** Náš experiment na Toki Pona testuje základní stavební kameny architektur, které velký průmysl (např. DeepSeek-V3 / MiMo-V2.6) škáluje na obřích akcelerátorech."
+    notes: |
+      Na závěr ukazuji, jak naše zjištění z mikro-modelů přesahují do nejmodernější průmyslové praxe let 2025–2026. Obří modely jako DeepSeek-V3 dnes staví na Multi-Head Latent Attention (MLA), která stlačuje paměť KV cache až o 98 %.
+
+      Když tuto latentní kompresi spojíte s rekurzivní Mambou-3 v poměru 3:1, získáte systém, který zpracovává text v lineárním čase O(N), šetří 98 % paměti VRAM a přitom neztrácí schopnost přesného vyhledávání v dlouhém kontextu nad 100 000 tokenů.
+
+      Náš výzkum na Toki Pona izoluje a ověřuje právě tyto fundamentální stavební kameny, ze kterých se skládá budoucnost efektivních jazykových modelů. Děkuji za pozornost a těším se na vaše dotazy.
+
+  # ----------------------------------------------------------------------------
+  # Závěrečný snímek
+  # ----------------------------------------------------------------------------
+  - type: closing
+    title: "Děkuji za pozornost"
+    author: "Bc. František Pavlík"
+    email: "pavf05@vse.cz"
