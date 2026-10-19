@@ -142,6 +142,60 @@ class FISPresentation:
         if notes:
             slide.notes_slide.notes_text_frame.text = notes.strip()
 
+    def _set_slide_title(self, slide, title: str):
+        """
+        Nastaví nadpis snímku a automaticky upraví velikost písma a pozici,
+        aby víceřádkový nebo dlouhý nadpis nepřekrýval obsah pod ním.
+        """
+        title_ph = None
+        for ph in slide.placeholders:
+            if ph.placeholder_format.idx == 0:
+                title_ph = ph
+                break
+
+        if title_ph is None:
+            return
+
+        tf = title_ph.text_frame
+        tf.word_wrap = True
+        tf.text = title
+
+        # Výpočet optimální velikosti písma nadpisu (výchozí v šabloně je 40 pt,
+        # což se láme na 2. řádek už kolem 39 znaků a přetéká do obsahu).
+        n_chars = len(title)
+        if n_chars <= 36:
+            title_fs = 36
+        else:
+            # Plynulé zmenšení písma (20 až 35 pt), aby se nadpis ideálně vešel na 1 řádek
+            # a při případném zalomení na 2 řádky měl kompaktní výšku.
+            title_fs = max(20, min(35, int(720 / (n_chars * 0.53))))
+
+        if n_chars > 50:
+            try:
+                t_left, t_top, t_w, t_h = title_ph.left, title_ph.top, title_ph.width, title_ph.height
+                if t_top >= Inches(1.15):
+                    title_ph.left = t_left
+                    title_ph.top = Inches(1.05)
+                    title_ph.width = t_w
+                    title_ph.height = Inches(0.95)
+                # Posuneme obsahové placeholdery mírně níže, aby nedošlo k překryvu ani u 2řádkového nadpisu
+                for ph in slide.placeholders:
+                    if ph.placeholder_format.idx in (1, 2) and Inches(1.9) <= ph.top <= Inches(2.15):
+                        p_left, p_top, p_w, p_h = ph.left, ph.top, ph.width, ph.height
+                        delta = Inches(2.22) - p_top
+                        ph.left = p_left
+                        ph.top = Inches(2.22)
+                        ph.width = p_w
+                        if p_h > delta:
+                            ph.height = p_h - delta
+            except Exception:
+                pass
+
+        for p in tf.paragraphs:
+            p.font.size = Pt(title_fs)
+            for run in p.runs:
+                run.font.size = Pt(title_fs)
+
     def add_title_slide(
         self,
         title: str,
@@ -271,7 +325,9 @@ class FISPresentation:
                     stripped = item.lstrip()
                     indent = len(item) - len(stripped)
                     lvl = current_level + min(indent // 2, 4)
-                    flat.append((stripped.lstrip("-*• "), lvl))
+                    # Odstranit případnou odrážku (- , • , * ), ale zachovat **bold** a *italic*
+                    cleaned = re.sub(r"^(?:[-•]|\*(?!\*))\s+", "", stripped)
+                    flat.append((cleaned, lvl))
                 elif isinstance(item, tuple) and len(item) >= 2:
                     flat.append((str(item[0]), int(item[1])))
                 elif isinstance(item, dict):
@@ -370,19 +426,17 @@ class FISPresentation:
         # Případ 2: Pouze text/odrážky
         if items and not image:
             slide = self.prs.slides.add_slide(self.layout_title_and_content)
+            self._set_slide_title(slide, title)
             for ph in slide.placeholders:
-                if ph.placeholder_format.idx == 0:
-                    ph.text = title
-                elif ph.placeholder_format.idx == 1:
-                    self._fill_text_frame(ph.text_frame, items, box_width_in=11.34, box_height_in=4.8)
+                if ph.placeholder_format.idx == 1:
+                    box_h = ph.height.inches if ph.height else 4.8
+                    self._fill_text_frame(ph.text_frame, items, box_width_in=11.34, box_height_in=box_h)
             self._set_notes(slide, notes)
             return slide
 
         # Případ 3: Text i obrázek dohromady (dvousloupcový layout)
         slide = self.prs.slides.add_slide(self.layout_two_content)
-        for ph in slide.placeholders:
-            if ph.placeholder_format.idx == 0:
-                ph.text = title
+        self._set_slide_title(slide, title)
 
         # Placeholder 1 (levý), Placeholder 2 (pravý)
         ph_left = slide.placeholders[1]
@@ -400,7 +454,8 @@ class FISPresentation:
             sp = ph_left._element
             sp.getparent().remove(sp)
 
-        self._fill_text_frame(text_ph.text_frame, items, box_width_in=5.67, box_height_in=4.8)
+        box_h = text_ph.height.inches if text_ph.height else 4.8
+        self._fill_text_frame(text_ph.text_frame, items, box_width_in=5.67, box_height_in=box_h)
         self._insert_fitted_image(slide, image, *img_box)
 
         if image_caption:
@@ -423,11 +478,10 @@ class FISPresentation:
         """Vytvoří dvousloupcový snímek s nezávislým obsahem (text, odrážky nebo obrázky)."""
         if left_title or right_title:
             slide = self.prs.slides.add_slide(self.layout_comparison)
+            self._set_slide_title(slide, title)
             for ph in slide.placeholders:
                 idx = ph.placeholder_format.idx
-                if idx == 0:
-                    ph.text = title
-                elif idx == 1 and left_title:
+                if idx == 1 and left_title:
                     ph.text = left_title
                 elif idx == 2 and left_items:
                     self._fill_text_frame(ph.text_frame, left_items, box_width_in=5.67, box_height_in=4.2)
@@ -439,9 +493,7 @@ class FISPresentation:
             return slide
 
         slide = self.prs.slides.add_slide(self.layout_two_content)
-        for ph in slide.placeholders:
-            if ph.placeholder_format.idx == 0:
-                ph.text = title
+        self._set_slide_title(slide, title)
 
         ph_left = slide.placeholders[1]
         ph_right = slide.placeholders[2]
@@ -475,15 +527,13 @@ class FISPresentation:
     ):
         """Vloží velký obrázek nebo graf na střed snímku s volitelným popiskem."""
         slide = self.prs.slides.add_slide(self.layout_title_only)
-        for ph in slide.placeholders:
-            if ph.placeholder_format.idx == 0:
-                ph.text = title
+        self._set_slide_title(slide, title)
 
         # Využitelná plocha: šířka ~11.5", výška ~4.8"
         left = Inches(0.92)
-        top = Inches(2.0)
+        top = Inches(2.15)
         max_w = Inches(11.5)
-        max_h = Inches(4.5 if caption else 4.9)
+        max_h = Inches(4.4 if caption else 4.75)
 
         pic = self._insert_fitted_image(slide, image, left, top, max_w, max_h)
 
@@ -518,15 +568,13 @@ class FISPresentation:
     ):
         """Vloží tabulku s daty a hlavičkou."""
         slide = self.prs.slides.add_slide(self.layout_title_only)
-        for ph in slide.placeholders:
-            if ph.placeholder_format.idx == 0:
-                ph.text = title
+        self._set_slide_title(slide, title)
 
         num_rows = len(rows) + 1
         num_cols = len(headers)
 
         table_left = Inches(0.92)
-        table_top = Inches(2.1)
+        table_top = Inches(2.2)
         table_width = Inches(11.5)
         table_height = Inches(0.5 * num_rows)
 
@@ -571,9 +619,7 @@ class FISPresentation:
         """Vytvoří prázdný snímek (volitelně s nadpisem)."""
         slide = self.prs.slides.add_slide(self.layout_blank)
         if title:
-            for ph in slide.placeholders:
-                if ph.placeholder_format.idx == 0:
-                    ph.text = title
+            self._set_slide_title(slide, title)
         self._set_notes(slide, notes)
         return slide
 

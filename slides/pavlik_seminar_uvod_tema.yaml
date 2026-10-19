@@ -41,6 +41,37 @@ slides:
       Můj výzkum bere tyto čtyři globální pilíře a testuje jejich základní fyzikální a statistické principy v čistém, kontrolovaném prostředí.
 
   # ----------------------------------------------------------------------------
+  # Fáze výcviku LLM a vymezení rozsahu diplomové práce
+  # ----------------------------------------------------------------------------
+  - type: content
+    title: "Fáze výcviku LLM a vymezení rozsahu diplomové práce"
+    bullets:
+      - text: "**Přehled životního cyklu výcviku LLM:**"
+        items:
+          - "**1. Předtrénink od zkrutky (Pre-training from scratch):** Učení základní statistické a syntaktické struktury jazyka na syrovém textu."
+          - "**2. Mezifáze (Mid-training):** Rozšiřování kontextového okna a adaptace na specifické domény."
+          - "**3. Instrukční dolaďování (Post-training / SFT):** Učení formátu otázka–odpověď a následování instrukcí."
+          - "**4. Posilované učení & Uvažování (RL & Reasoning):** Optimalizace pomocí odměnových modelů (RLHF/GRPO) pro uvažování krok za krokem."
+          - "**5. Vyvozování v čase odpovědi (Test-Time Compute):** Prohledávání stromu hypotéz a verifikace při samotné inferenci."
+      - text: "**Vymezení rozsahu diplomové práce (Scope Isolation):**"
+        items:
+          - "**Práce se zaměřuje výhradně na FÁZI 1 (Čistý Pre-training od zkrutky).**"
+          - "**Cíl:** Izolace základní reprezentativní kapacity sítě (Mamba-3 vs. Transformer) a tokenizace (CHAR/BPE/WORD) od šumu vneseného navazujícím RL dolaďováním a instrukčními daty."
+    notes: |
+      Pro správné pochopení mého výzkumu je nutné si ujasnit, z jakých fází se skládá trénink moderního jazykového modelu a kde přesně leží hranice mé diplomové práce.
+
+      Vývoj dnešních velkých modelů probíhá v pěti návazných krocích:
+      - Pre-training: Model se učí předpovídat následující token na obřím objemu textu. Tady si síť osvojuje gramatiku, strukturu a fundamentální znalosti.
+      - Mid-training: Model se dotrénovává na delších kontextech nebo specifických korpusech.
+      - SFT: Model se učí odpovídat jako asistent skrze lidmi psané dialogy.
+      - RL: Model se přes posilované učení učí opravovat vlastní chyby a uvažovat krok za krokem (přístup DeepSeek-R1 nebo o1).
+      - Test-Time Compute: Model při generování odpovědi zkouší více cest a ověřuje je přes verifikátory.
+
+      Kde leží moje práce? Moje diplomová práce se přísně vymezuje výhradně do FÁZE 1 – tedy do čistého základního předtréninku od zkrutky (from scratch) na korpusu Toki Pona.
+
+      Proč je to důležité? V pozdějších fázích (jako je RL nebo SFT) vstupuje do modelu obrovské množství šumu, lidských preferencí a zkreslení z instrukčních dat. Pokud chceme jako statistikové čistokrevně změřit, zda je Mamba-3 lepší než Transformer, nebo zda má celoslovní tokenizace vyšší datovou efektivitu než BPE, musíme tyto pozdější vrstvy úplně odfiltrovat. Zkoumáme čistou fyzikální podstatu a reprezentativní kapacitu samotného sekvenčního jádra sítě.
+
+  # ----------------------------------------------------------------------------
   # Nápad 1: Toki Pona jako izolovaná laboratoř (Proč tento jazyk?)
   # ----------------------------------------------------------------------------
   - type: content
