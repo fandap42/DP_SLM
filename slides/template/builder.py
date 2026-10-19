@@ -142,10 +142,27 @@ class FISPresentation:
         if notes:
             slide.notes_slide.notes_text_frame.text = notes.strip()
 
-    def _set_slide_title(self, slide, title: str):
+    @staticmethod
+    def _estimate_title_lines(title: str, max_chars_per_line: int = 38) -> int:
+        """Odhadne počet řádků nadpisu při výchozím 40pt písmu šablony."""
+        lines = 1
+        current_len = 0
+        for word in title.split():
+            w_len = len(word)
+            if current_len == 0:
+                current_len = w_len
+            elif current_len + 1 + w_len <= max_chars_per_line:
+                current_len += 1 + w_len
+            else:
+                lines += 1
+                current_len = w_len
+        return lines
+
+    def _set_slide_title(self, slide, title: str) -> float:
         """
-        Nastaví nadpis snímku a automaticky upraví velikost písma a pozici,
-        aby víceřádkový nebo dlouhý nadpis nepřekrýval obsah pod ním.
+        Nastaví nadpis snímku se zachováním původní velikosti písma (40 pt)
+        a v případě víceřádkového nadpisu posune začátek obsahu pod ním níže.
+        Vrací doporučenou Y pozici (v palcích) pro začátek obsahu pod nadpisem.
         """
         title_ph = None
         for ph in slide.placeholders:
@@ -153,48 +170,38 @@ class FISPresentation:
                 title_ph = ph
                 break
 
+        num_lines = self._estimate_title_lines(title)
+        extra_in = max(0, num_lines - 1) * 0.55
+        content_top_in = 2.10 + extra_in
+
         if title_ph is None:
-            return
+            return content_top_in
 
-        tf = title_ph.text_frame
-        tf.word_wrap = True
-        tf.text = title
+        title_ph.text = title
 
-        # Výpočet optimální velikosti písma nadpisu (výchozí v šabloně je 40 pt,
-        # což se láme na 2. řádek už kolem 39 znaků a přetéká do obsahu).
-        n_chars = len(title)
-        if n_chars <= 36:
-            title_fs = 36
-        else:
-            # Plynulé zmenšení písma (20 až 35 pt), aby se nadpis ideálně vešel na 1 řádek
-            # a při případném zalomení na 2 řádky měl kompaktní výšku.
-            title_fs = max(20, min(35, int(720 / (n_chars * 0.53))))
-
-        if n_chars > 50:
+        if num_lines > 1:
             try:
                 t_left, t_top, t_w, t_h = title_ph.left, title_ph.top, title_ph.width, title_ph.height
-                if t_top >= Inches(1.15):
-                    title_ph.left = t_left
-                    title_ph.top = Inches(1.05)
-                    title_ph.width = t_w
-                    title_ph.height = Inches(0.95)
-                # Posuneme obsahové placeholdery mírně níže, aby nedošlo k překryvu ani u 2řádkového nadpisu
+                title_ph.left = t_left
+                title_ph.top = t_top
+                title_ph.width = t_w
+                title_ph.height = Inches(0.75 + extra_in)
+
+                # Posuneme obsahové placeholdery pod víceřádkový nadpis
                 for ph in slide.placeholders:
-                    if ph.placeholder_format.idx in (1, 2) and Inches(1.9) <= ph.top <= Inches(2.15):
+                    if ph.placeholder_format.idx in (1, 2, 3, 4) and ph.top < Inches(content_top_in):
                         p_left, p_top, p_w, p_h = ph.left, ph.top, ph.width, ph.height
-                        delta = Inches(2.22) - p_top
+                        new_top = Inches(content_top_in)
+                        delta = new_top - p_top
                         ph.left = p_left
-                        ph.top = Inches(2.22)
+                        ph.top = new_top
                         ph.width = p_w
                         if p_h > delta:
                             ph.height = p_h - delta
             except Exception:
                 pass
 
-        for p in tf.paragraphs:
-            p.font.size = Pt(title_fs)
-            for run in p.runs:
-                run.font.size = Pt(title_fs)
+        return content_top_in
 
     def add_title_slide(
         self,
@@ -527,13 +534,14 @@ class FISPresentation:
     ):
         """Vloží velký obrázek nebo graf na střed snímku s volitelným popiskem."""
         slide = self.prs.slides.add_slide(self.layout_title_only)
-        self._set_slide_title(slide, title)
+        content_top_in = self._set_slide_title(slide, title)
 
-        # Využitelná plocha: šířka ~11.5", výška ~4.8"
+        # Využitelná plocha: šířka ~11.5", výška dle počtu řádků nadpisu
         left = Inches(0.92)
-        top = Inches(2.15)
+        top = Inches(content_top_in)
         max_w = Inches(11.5)
-        max_h = Inches(4.4 if caption else 4.75)
+        avail_h = max(2.5, (6.5 if caption else 6.85) - content_top_in)
+        max_h = Inches(avail_h)
 
         pic = self._insert_fitted_image(slide, image, left, top, max_w, max_h)
 
@@ -568,13 +576,13 @@ class FISPresentation:
     ):
         """Vloží tabulku s daty a hlavičkou."""
         slide = self.prs.slides.add_slide(self.layout_title_only)
-        self._set_slide_title(slide, title)
+        content_top_in = self._set_slide_title(slide, title)
 
         num_rows = len(rows) + 1
         num_cols = len(headers)
 
         table_left = Inches(0.92)
-        table_top = Inches(2.2)
+        table_top = Inches(content_top_in)
         table_width = Inches(11.5)
         table_height = Inches(0.5 * num_rows)
 
