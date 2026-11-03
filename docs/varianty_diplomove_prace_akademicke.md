@@ -1,235 +1,250 @@
-# Tři finální varianty diplomové práce (DP_SLM) – Vědecká a technická specifikace
+# Tři varianty diplomové práce (DP_SLM) – Vědecká a technická specifikace
 
 > **Garantující pracoviště:** Katedra statistiky a pravděpodobnosti (KSTP), Fakulta informatiky a statistiky VŠE v Praze  
 > **Vedoucí práce:** Ing. Karel Šafr, Ph.D.  
 > **Autor:** Bc. František Pavlík  
-> **Účel dokumentu:** Formální akademická, metodická a technická specifikace variant diplomové práce. Slouží jako přímý podklad pro schválení zadání v InSIS, zpracování textu práce i rigorózní exekuci a reprodukovatelnost experimentů.
+> **Účel dokumentu:** Akademická, metodická a technická specifikace variant diplomové práce. Slouží jako podklad pro konzultaci zadání s vedoucím, psaní textu práce a realizaci experimentů.
+
+> [!NOTE]
+> Hodnoty označené jako **(předběžné)** jsou výchozí volby, které se ověří nebo upraví v pilotní fázi (viz 4.8). Nejde o výsledky ani o závazné parametry.
 
 ---
 
-## 1. Společné metodické ukotvení: Proč toki pona a co přináší pro SLM/LLM
+## 1. Společné metodické ukotvení: Proč toki pona
 
-Při trénování malých jazykových modelů (SLM, řádově $10^5$ až $10^7$ parametrů) na standardních přirozených jazycích vzniká zásadní metodická komplikace zvaná **úzké hrdlo parametrů vnoření (embedding bottleneck)**. Standardní podslovní slovníky s 32 000 až 128 000 tokeny vyžadují rozsáhlé matice vnoření $V \times d_{\text{model}}$ (vstupní vnoření a výstupní klasifikační hlava), které u modelů s jednotkami milionů parametrů pohltí 50 % až 85 % celkového parametrického rozpočtu. Model pak netestuje sekvenční uvažování a komputaci skrytých vrstev, nýbrž paměťovou kapacitu pro memorování obřího lexikonu.
+Při trénování malých jazykových modelů (řádově $10^5$ až $10^7$ parametrů) na přirozených jazycích vzniká **úzké hrdlo parametrů vnoření (embedding bottleneck)**. Podslovní slovníky s 32 000 až 128 000 tokeny vyžadují matice vnoření o velikosti $V \times d_{\text{model}}$ (vstup a případně netied výstupní hlava), které u modelů s jednotkami milionů parametrů tvoří většinu, nebo dokonce překračují celý parametrický rozpočet. Velká část kapacity modelu pak připadá na reprezentaci lexikonu, nikoli na sekvenční výpočet ve skrytých vrstvách.
 
-Minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 základních slov (*pu* a frekventovaná *ku suli*) a vysoce pravidelnou analytickou syntaxí bez flektivní morfologie tento problém řeší:
-* **Redukce úzkého hrdla parametrů vnoření:** Při celoslovní tokenizaci ($V \approx 137$) tvoří matice vnoření méně než 2 % celkového počtu parametrů. Drtivá většina kapacity sítě (98 %+) směřuje přímo do sekvenčního výpočetního jádra (Self-Attention, selektivní stavové vrstvy SSM, dopředné sítě FFN).
-* **Obnova strukturální proporcionality vůči velkým modelům:** U velkých modelů (např. 70B+) tvoří matice vnoření rovněž jen 1–2 % celkového parametrického rozpočtu. Snížením velikosti slovníku úměrně k velikosti sítě se v laboratorním prostředí obnovuje strukturální rozložení parametrů typické pro velká LLM.
-* **Kontrolované laboratorní prostředí pro měření induktivního zkreslení:** Na rozdíl od syntetických korpusů typu TinyStories (Eldan & Li, 2023) nebo čistě znakových modelů na angličtině umožňuje toki pona zkoumat znakovou, podslovní (BPE) i celoslovní tokenizaci v přirozeném lidském jazyce. Pravidelná analytická syntax bez tvarosloví umožňuje měřit osvojení syntaktických struktur pomocí syntetických minimálních párů (inspirovaných benchmarkem BLiMP; Warstadt et al., 2020) bez rušivého morfologického šumu.
-* **Vymezení limitů a vnější validita:** Jazyk toki pona slouží jako kontrolovaný laboratorní model pro studium fundamentálních vlastností architektur, optimalizátorů a tokenizací v podmínkách datové nouze, nikoli jako univerzální reprezentace morfologicky bohatých jazyků. Získané závěry mají platnost pro sekvenční modelování v nízkozdrojovém režimu a formulaci komputačních zákonitostí.
+Toki pona má jádrovou slovní zásobu zhruba 120 slov (*pu*), resp. přibližně 137 slov (*ku suli*), a pravidelnou analytickou syntax bez flexe. To přináší:
+
+* **Řádově nižší podíl parametrů vnoření.** Při celoslovní tokenizaci ($V \approx 140$ včetně speciálních tokenů) se podíl vnoření mění s velikostí modelu:
+
+  | Konfigurace (předběžné) | $d_{\text{model}}$ | Vnoření, $V=140$, netied ($2Vd$) | Podíl při $V=140$ | Vnoření, $V=32\,000$ |
+  | :--- | ---: | ---: | ---: | ---: |
+  | $N \approx 10^5$ | 64 | ≈ 18 tis. | ≈ 15–18 % | ≈ 4,1 mil. (> celý model) |
+  | $N \approx 10^6$ | 128 | ≈ 36 tis. | ≈ 3–4 % | ≈ 8,2 mil. (> celý model) |
+  | $N \approx 10^7$ | 384 | ≈ 108 tis. | ≈ 1 % | ≈ 24,6 mil. (> celý model) |
+
+  Teprve u největších konfigurací se podíl blíží proporcím velkých modelů (u modelů 70B+ jde o jednotky procent nebo méně). Pro nejmenší modely je podíl stále nezanedbatelný, a proto se v analýzách uvádí **počet parametrů bez vnoření** ($N_{\text{non-emb}}$) i celkový počet.
+* **Srovnatelnost tokenizací v jednom jazyce.** Malý slovník umožňuje v jednom přirozeném jazyce porovnat znakovou, podslovní (BPE) i celoslovní tokenizaci bez obřích slovníků. To není u angličtiny ani u syntetických korpusů typu TinyStories (Eldan & Li, 2023) prakticky možné.
+* **Testovatelnost syntaxe.** Pravidelná syntax s gramatickými částicemi (*li*, *e*, *pi*, *la*) umožňuje konstruovat syntaktické minimální páry po vzoru BLiMP (Warstadt et al., 2020). Jazyk má i víceznačnosti (kompozita, vynechání *li* po *mi*/*sina*, variabilita mezi mluvčími), takže gramatičnost párů je nutné ověřit (viz 4.7).
+* **Limity a vnější validita.** Toki pona je kontrolované laboratorní prostředí, nikoli reprezentace přirozených jazyků obecně. Závěry platí pro nízkozdrojový režim a malé modely. Jejich přenos na morfologicky bohaté jazyky nebo velké modely je otázkou dalšího výzkumu.
 
 ---
 
 ## 2. Přehledové srovnání tří variant
 
-| Kritérium | Varianta 1: Čistá statistická hloubka (Transformer) | Varianta 2: Architektonický duel (Transformer vs. Mamba SSM) | Varianta 3: Optimalizace a dynamika tréninku (Hybrid Muon+AdamW vs. AdamW) |
+| Kritérium | Varianta 1: Statistická hloubka (Transformer) | Varianta 2: Transformer vs. Mamba | Varianta 3: Hybrid Muon+AdamW vs. AdamW |
 | :--- | :--- | :--- | :--- |
-| **Zaměření** | Statistické modelování škálování (data-constrained scaling), vliv tokenizace, dynamika opakování dat a syntaktická kompetence | Srovnání globální pozornosti a rekurentní stavové komprese při striktně vyrovnaném počtu parametrů skrytých vrstev | Vliv maticové spektrální optimalizace (Muon) na tokenovou a výpočetní efektivitu konvergence a posun bodu přeučení při opakování dat |
-| **Architektura** | 1× Kauzální Decoder-Only Transformer | 2× Kauzální Transformer vs. selektivní stavový model Mamba (vyrovnaný počet non-embedding parametrů) | 1× Kauzální Decoder-Only Transformer |
-| **Zkoumané osy** | Kapacita sítě ($N$) $\times$ Objem dat ($D$) $\times$ Tokenizace $\times$ Opakování epoch ($E$) $\times$ Inicializační semínka ($S$) | Architektura $\times$ Kapacita sítě ($N$) $\times$ Objem dat ($D$) $\times$ Tokenizace $\times$ Opakování epoch ($E$) $\times$ Semínka ($S$) | Optimalizátor $\times$ Kapacita sítě ($N$) $\times$ Tokenizace $\times$ Opakování epoch ($E$) $\times$ Semínka ($S$) |
-| **Statistický aparát** | LMM s autoregresní strukturou AR(1) pro křivky učení, GLMM pro položkové minimální páry, nelineární regrese (NLS + bootstrap) pro data-constrained scaling, ANOVA | LMM (interakce architektura $\times$ epocha), GLMM (interakce architektura $\times$ syntaktické pravidlo), nelineární regrese / `nlme` (srovnání škálovacích exponentů), ANOVA | LMM (trajektorie konvergence a posun minima), GLMM (syntaktické testy), nelineární regrese dynamiky ztráty, párové testy rychlosti poklesu BPC na krok a FLOP |
-| **Implementační náročnost** | Nízká až střední (čistý PyTorch, stabilní pipeline, maximální soustředění na statistické modelování) | Střední až vyšší (kompilace a správa CUDA kernelů pro Mamba-1/2, párování non-embedding parametrů a FLOPs) | Střední (implementace Newtonovy-Schulzovy ortogonalizace, separátní ladění learning rate pro maticové a 1D váhy) |
-| **Soulad se schváleným InSIS** | Plný soulad (přesně odpovídá původnímu znění v InSIS) | Soulad s rozšířením (rozšíření o srovnávací architekturu Mamba v rámci schváleného tématu) | Soulad s rozšířením (rozšíření o srovnávací optimalizátor Muon v rámci schváleného tématu) |
+| **Zaměření** | Škálování při opakování dat, vliv tokenizace, dynamika přeučení, osvojení syntaxe | Srovnání globální pozornosti a rekurentního stavu při vyrovnaném počtu parametrů bez vnoření | Vliv maticové ortogonalizace aktualizací na rychlost konvergence a přeučení |
+| **Architektura** | Kauzální Decoder-Only Transformer | Kauzální Transformer vs. selektivní stavový model Mamba | Kauzální Decoder-Only Transformer |
+| **Zkoumané osy** | $N$ × $D$ × Tokenizace × Epochy × Semínka | Architektura × $N$ × $D$ × Tokenizace × Epochy × Semínka | Optimalizátor × $N$ × Tokenizace × Epochy × Semínka |
+| **Statistický aparát** | LMM s AR(1), GLMM pro minimální páry, nelineární regrese škálovacích zákonů, ANOVA koncových metrik | LMM (Architektura × Epocha), GLMM (Architektura × Pravidlo), nelineární regrese s grupováním podle architektury, ANOVA | LMM trajektorií, GLMM, analýza času do prahu ztráty, ANOVA |
+| **Implementační náročnost** | Nízká až střední | Střední až vyšší (CUDA jádra `mamba-ssm`, párování parametrů, měření FLOPs) | Střední (Newtonova–Schulzova iterace, oddělené rychlosti učení pro 2D a ostatní parametry) |
+| **Vztah k zadání v InSIS** | Odpovídá schválenému znění | Rozšíření o srovnávací architekturu | Rozšíření o srovnávací optimalizátor |
 
 ---
 
-## 3. Detailní specifikace variant (Abstrakty, výzkumné otázky a shrnutí)
+## 3. Detailní specifikace variant
 
 ---
 
-### VARIANTA 1: Čistá statistická hloubka (Transformer)
+### VARIANTA 1: Statistická hloubka (Transformer)
 
 #### 3.1 Abstrakt (Původní vs. aktualizovaná verze)
 > **Původní verze:**  
 > Minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 slov a pravidelnou analytickou syntaxí slouží v této diplomové práci jako kontrolované prostředí pro výzkum malých jazykových modelů. Malý rozsah slovníku odstraňuje nepoměr v počtu parametrů vnoření a umožňuje soustředit kapacitu sítě do jejích skrytých vrstev, což odpovídá strukturálním proporcím velkých modelů. Cílem práce je statisticky popsat a kvantifikovat, jak objem dat, opakování dat ve více epochách, velikost modelu a úroveň tokenizace ovlivňují ztrátu, datovou efektivitu, dynamiku přeučení a škálování. Nad deduplikovaným korpusem rozděleným podle zdrojů je proveden faktorový experiment s několika velikostmi modelů architektury Transformer, znakovou, podslovní a slovní tokenizací a více náhodnými inicializacemi. Výkon je v průběhu tréninku hodnocen křížovou entropií normalizovanou na znaky, slovní perplexitou, doménovou generalizací a automaticky generovanými testy gramatické přijatelnosti a kompozice. Pomocí analýzy rozptylu, lineárních smíšených modelů, zobecněných lineárních smíšených modelů a nelineární regrese práce odhaduje parametry škálovacích zákonů, určuje kritický bod přeučení při opakování dat a modeluje vztah mezi klesající křížovou entropií a úspěšností v testech gramatiky.
 >
 > **Aktualizovaná verze:**  
-> Většina dosavadních poznatků o škálovacích zákonech a dynamice víceepochového tréninku jazykových modelů vychází z rozsáhlých korpusů přirozených jazyků a modelů s miliardami parametrů. Chování malých jazykových modelů v nízkozdrojovém režimu zůstává nedostatečně prozkoumáno, mimo jiné kvůli úzkému hrdlu parametrů vnoření. V této diplomové práci slouží minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 slov a vysoce pravidelnou analytickou syntaxí jako kontrolované laboratorní prostředí pro výzkum malých modelů architektury Transformer. Malý rozsah slovníku redukuje matice vnoření na méně než 2 % parametrů a obnovuje strukturální rozložení parametrů typické pro velká LLM. Cílem práce je statisticky popsat a kvantifikovat, jak objem tréninkových dat, opakování dat ve více epochách, velikost modelu a úroveň granularity tokenizace ovlivňují ztrátu normalizovanou na znaky, datovou efektivitu, dynamiku přeučení a osvojení syntaktických struktur. Nad deduplikovaným korpusem rozděleným na trénovací, validační a doménově odloženou testovací sadu je realizován faktorový experiment s několika velikostmi modelů Transformer ($10^5$ až $10^7$ parametrů), třemi strategiemi tokenizace (znaková, podslovní BPE a celoslovní) a více náhodnými inicializacemi. Výkonnost je v průběhu tréninku monitorována křížovou entropií normalizovanou na znaky (BPC), slovní perplexitou a automaticky generovanými testy syntaktické přijatelnosti na bázi minimálních párů. Pomocí smíšených lineárních modelů (LMM) s autoregresní strukturou reziduí, logistických zobecněných smíšených modelů (GLMM) a nelineární regrese práce odhaduje parametry data-constrained škálovacích zákonů, určuje polohu kritického bodu přeučení ($R_{\text{crit}}$) a analyzuje funkční závislost mezi spojitou křížovou entropií a diskrétní úspěšností v testech gramatické přijatelnosti.
+> Poznatky o škálovacích zákonech a opakovaném tréninku na stejných datech pocházejí převážně z velkých modelů a rozsáhlých korpusů. U malých modelů je zkoumání komplikováno tím, že velkou část parametrů spotřebují matice vnoření. Práce využívá minimalistický jazyk toki pona s jádrovou slovní zásobou zhruba 137 slov a pravidelnou analytickou syntaxí jako kontrolované prostředí, v němž je podíl parametrů vnoření řádově nižší. Cílem je statisticky kvantifikovat, jak objem dat, počet opakování dat, velikost modelu a granularita tokenizace ovlivňují ztrátu, nástup přeučení a osvojení syntaxe u modelů architektury Transformer. Faktorový experiment zahrnuje modely o velikosti $10^5$ až $10^7$ parametrů, znakovou, podslovní a celoslovní tokenizaci a více náhodných inicializací. Výkon se průběžně měří křížovou entropií v bitech na znak a syntaktickými minimálními páry, a to na odložených datech ze stejných i z nových zdrojů. Smíšené modely pro opakovaná měření a položkové logistické modely doplňuje nelineární regrese škálovacích zákonů pro opakovaná data. Práce odhaduje parametry těchto zákonů, polohu minima validační ztráty a vztah mezi ztrátou a úspěšností v gramatických testech.
 
-#### 3.2 Výzkumné otázky a formalizované hypotézy
-* **VO1 (Interakce tokenizace a měřítka):** Jak závisí odhadnuté parametry mocninných škálovacích zákonů na zvolené granularitě tokenizace (znaková, podslovní BPE, celoslovní) a dochází v testovaném rozsahu parametrů a dat k bodu překřížení, kdy podslovní či znaková reprezentace překoná celoslovní model?  
-  * **H1:** Znaková tokenizace vykazuje pomalejší počáteční pokles BPC v nízkoobjemovém režimu, avšak s rostoucí kapacitou parametrů dosahuje vyššího škálovacího exponentu ($\alpha_{\text{CHAR}} > \alpha_{\text{WORD}}$) a v určitém bodě překoná celoslovní reprezentaci.
-* **VO2 (Opakování dat a kritický bod přeučení):** Jak ovlivňuje tokenizační strategie a kapacita sítě polohu minima validační ztráty (kritického bodu přeučení $R_{\text{crit}}$) a dynamiku klesajícího mezního výnosu při opakovaném tréninku podle data-constrained škálovacích zákonů?  
-  * **H2:** Modely s jemnější granularitou (znaky, podslova) dosahují minima validační ztráty ($R_{\text{crit}}$) při statisticky významně vyšším počtu opakování epoch než modely celoslovní ($R_{\text{crit, CHAR}} > R_{\text{crit, WORD}}$).
-* **VO3 (Vztah spojité ztráty a diskrétní gramatiky):** Jaká je funkční závislost mezi klesající křížovou entropií (BPC) a pravděpodobností úspěchu v syntaktických minimálních párech po zohlednění tréninkového kroku, a liší se tato dynamika mezi jednotlivými gramatickými pravidly?  
-  * **H3:** Pravděpodobnost správné volby v minimálních párech roste s klesající BPC nelineárně (logisticky), přičemž práh ztráty nutný pro zvládnutí pravidla je statisticky významně nižší pro lokální částicové vazby (*li*, *e*) než pro hierarchickou větnou modifikaci (*pi*).
-* **VO4 (Rozklad rozptylu a vliv inicializace):** Jaký podíl celkového rozptylu validační ztráty je vysvětlen systematickými faktory (kapacita, data, tokenizace) v porovnání s náhodnou variabilitou danou inicializačními semínky?  
-  * **H4:** Více než 95 % celkového rozptylu validační BPC je vysvětleno systematickými experimentálními faktory; vnitrotřídní korelační koeficient (ICC) náhodných semínek klesá s rostoucí kapacitou sítě.
+#### 3.2 Výzkumné otázky a hypotézy
+* **VO1 (Tokenizace a měřítko):** Jak závisí parametry škálovacího zákona na granularitě tokenizace a dochází v testovaném rozsahu $N$ a $D$ k překřížení křivek BPC mezi tokenizacemi?  
+  * **H1 (konfirmační, nesměrová):** Škálovací exponent $\alpha$ se mezi tokenizacemi liší. Poloha případného překřížení se analyzuje explorativně a uvádí se jen v rámci testovaného rozsahu (bez extrapolace).
+* **VO2 (Opakování dat a přeučení):** Jak tokenizace a velikost modelu ovlivňují počet epoch do minima validační ztráty ($R_{\text{crit}}$) a saturační konstantu opakování $R_D^*$?  
+  * **H2 (konfirmační, nesměrová):** $R_{\text{crit}}$ se liší mezi tokenizacemi a závisí na $N$ (interakce Tokenizace × $N$).
+* **VO3 (Ztráta a gramatika):** Jaký je vztah mezi BPC a pravděpodobností úspěchu v minimálních párech po oddělení efektu tréninkového času, a liší se mezi gramatickými pravidly?  
+  * **H3 (konfirmační):** Pravděpodobnost úspěchu klesá s rostoucí BPC i po kontrole kroku tréninku a mezi běhy. Rozdíly mezi pravidly (lokální *li*/*e* vs. *pi*, *la*) se analyzují explorativně.
+* **VO4 (Rozklad rozptylu):** Jaký podíl rozptylu validační ztráty vysvětlují systematické faktory oproti variabilitě mezi semínky?  
+  * **Explorativní:** Odhad komponent rozptylu a ICC, včetně toho, zda se variabilita mezi semínky mění s $N$.
 
 #### 3.3 Shrnutí varianty
-Varianta s minimálním implementačním a technickým rizikem a stoprocentním souladem se schváleným zadáním v InSISu. Veškeré úsilí je alokováno do precizní statistické analýzy (LMM s časovou korelací, logistické GLMM pro položkové hodnocení minimálních párů, data-constrained nelineární regrese s bootstrapem).
+Varianta s nejnižším implementačním rizikem, odpovídající schválenému zadání. Těžiště práce leží ve statistické analýze: smíšené modely křivek učení, položkové GLMM a nelineární regrese škálovacích zákonů.
 
 ---
 
-### VARIANTA 2: Architektonický duel (Transformer vs. Mamba SSM)
+### VARIANTA 2: Transformer vs. Mamba
 
 #### 3.1 Abstrakt (Původní vs. aktualizovaná verze)
 > **Původní verze:**  
 > Minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 slov a pravidelnou analytickou syntaxí slouží v této diplomové práci jako kontrolované prostředí pro výzkum malých jazykových modelů. Malý rozsah slovníku eliminuje zkreslení dané velikostí matice vnoření a umožňuje zkoumat vlastnosti sekvenčního jádra sítě. Cílem práce je v podmínkách omezeného objemu dat statisticky porovnat dvě odlišná sekvenční paradigmata, kauzální Transformer s globální pozorností a rekurzivní model stavového prostoru Mamba, a vyhodnotit jejich interakci s tokenizací, kapacitou sítě a opakováním dat. Nad deduplikovaným korpusem rozděleným podle zdrojů je proveden faktorový experiment při striktně vyrovnaném počtu parametrů obou architektur, se znakovou, podslovní a slovní tokenizací a více náhodnými inicializacemi. Výkon je hodnocen křížovou entropií normalizovanou na znaky, slovní perplexitou, doménovou generalizací a automatickými testy gramatické přijatelnosti a kompozice. Pomocí analýzy rozptylu, lineárních a zobecněných lineárních smíšených modelů a nelineární regrese práce odhaduje architektonicky specifické škálovací zákony, testuje vliv rekurzivního stavu na odolnost vůči přeučení při opakování dat a formuluje doporučení pro volbu sekvenční architektury při práci s malými daty.
 >
 > **Aktualizovaná verze:**  
-> Při modelování sekvencí představuje volba mezi globální kauzální pozorností a rekurentním stavem fundamentální architektonický kompromis mezi modelovací flexibilitou a paměťovou efektivitou. V podmínkách malých jazykových modelů a omezených dat však přímé srovnání těchto architektur často naráží na zkreslení způsobené rozsáhlými maticemi vnoření. V této diplomové práci slouží minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 slov a vysoce pravidelnou analytickou syntaxí jako kontrolované prostředí pro rigorózní architektonické srovnání. Malý rozsah slovníku redukuje matice vnoření na zanedbatelnou část kapacity sítě a umožňuje měřit vlastnosti sekvenčního jádra. Cílem práce je v podmínkách omezeného objemu dat statisticky porovnat dvě odlišná paradigmata: kauzální Decoder-Only Transformer s kvadratickou pozorností a selektivní stavový model Mamba s lineární časovou složitostí a fixní dimenzí rekurentního stavu. Faktorový experiment je realizován při striktním párování parametrů bez vnoření (non-embedding parameters $\pm 1\,\%$) napříč kapacitou sítě ($10^5$ až $10^7$ parametrů), objemem dat, třemi úrovněmi tokenizace (znaková, podslovní BPE, celoslovní) a více náhodnými inicializacemi. Výkonnost je hodnocena křížovou entropií normalizovanou na znaky (BPC), slovní perplexitou, doménovou generalizací na odložených textech a automaticky generovanými testy syntaktické přijatelnosti na bázi minimálních párů. Pomocí smíšených lineárních modelů (LMM), logistických zobecněných smíšených modelů (GLMM) a nelineární regrese práce odhaduje architektonicky specifické parametry škálovacích zákonů, testuje rozdíly v trajektoriích přeučení při opakování dat a vyhodnocuje úspěšnost obou architektur na lokálních i dlouhých větných vazbách.
+> Transformery s globální pozorností a stavové modely s rekurentním stavem představují dva odlišné přístupy k modelování sekvencí. Jejich srovnání u malých modelů a omezených dat však zkresluje velký podíl parametrů vnoření. Práce využívá minimalistický jazyk toki pona s jádrovou slovní zásobou zhruba 137 slov a pravidelnou analytickou syntaxí jako kontrolované prostředí, v němž je tento podíl řádově nižší. Cílem je statisticky porovnat kauzální Transformer a selektivní stavový model Mamba a vyhodnotit jejich interakci s tokenizací, velikostí modelu, objemem dat a opakováním dat. Faktorový experiment páruje obě architektury podle počtu parametrů bez vnoření a zahrnuje modely o velikosti $10^5$ až $10^7$ parametrů, několik objemů dat, znakovou, podslovní a celoslovní tokenizaci a více náhodných inicializací. Výkon se měří křížovou entropií v bitech na znak, výkonem na textech z nových zdrojů a syntaktickými minimálními páry. Pomocí smíšených modelů a nelineární regrese práce odhaduje škálovací zákony obou architektur, porovnává jejich průběh přeučení a testuje rozdíly v úspěšnosti mezi gramatickými jevy. Závěry se vztahují k testovanému prostředí.
 
-#### 3.2 Výzkumné otázky a formalizované hypotézy
-* **VO1 (Interakce architektury a sekvenční délky):** Jak ovlivňuje přechod od krátkých celoslovních sekvencí k výrazně delším znakovým sekvencím relativní predikční výkonnost (BPC) a tréninkovou propustnost modelu Mamba vůči Transformeru při shodném počtu parametrů skrytých vrstev?  
-  * **H1:** Relativní výpočetní a predikční efektivita modelu Mamba vůči Transformeru statisticky významně roste s rostoucí délkou sekvence (při přechodu od celoslovní ke znakové tokenizaci).
-* **VO2 (Dynamika přeučení napříč architekturami):** Liší se průběh validační ztráty a poloha kritického bodu přeučení ($R_{\text{crit}}$) při opakovaném procházení korpusu mezi modelem s globální pozorností (Transformer) a modelem s fixním rekurentním stavem (Mamba)?  
-  * **H2:** Model Mamba vykazuje odlišnou trajektorii přeučení projevující se statisticky významným posunem $R_{\text{crit}}$ do vyšších tréninkových epoch ve srovnání s Transformerem disponujícím přímou pozorností přes celý kontext.
-* **VO3 (Architektonické škálovací exponenty):** Liší se statisticky významně odhadnuté parametry data-constrained škálovacích zákonů (výkonnostní exponent kapacity $\alpha$ a objemu dat $\beta$) mezi architekturou Transformer a modelem Mamba v režimu omezených dat?  
-  * **H3:** Architektury vykazují srovnatelné škálovací exponenty kapacity $\alpha$, avšak Transformer dosahuje statisticky významně nižší asymptotické neredukovatelné ztráty $E$ při nasycení kapacity parametrů.
-* **VO4 (Syntaktická kompetence na dlouhých vazbách):** Zjišťují logistické smíšené modely (GLMM) systematický rozdíl v úspěšnosti obou architektur u syntaktických testů v závislosti na strukturální vzdálenosti závislých elementů (např. oddělení větného kontextu částicí *la* vs. lokální vazby *li*/*e*)?  
-  * **H4:** V položkovém modelu GLMM se projevuje statisticky významná interakce `Architecture × Rule`, kdy Transformer vykazuje vyšší úspěšnost u syntaktických konstrukcí s dlouhými hierarchickými vazbami, zatímco na lokálních větných vztazích dosahují obě architektury srovnatelné přesnosti.
+#### 3.2 Výzkumné otázky a hypotézy
+* **VO1 (Architektura × délka sekvence):** Jak se mění relativní BPC a propustnost tréninku Mamby vůči Transformeru při přechodu od celoslovních ke znakovým sekvencím?  
+  * **H1 (konfirmační, nesměrová):** Existuje interakce Architektura × Tokenizace v BPC. Propustnost (znaky/s) se reportuje deskriptivně.
+* **VO2 (Průběh přeučení):** Liší se trajektorie validační ztráty a $R_{\text{crit}}$ mezi architekturami?  
+  * **Explorativní:** Teoretický mechanismus, který by spojoval konečný rekurentní stav s odolností vůči memorování trénovacích dat, není ustálený (memorování je vlastnost parametrů, ne délky kontextové paměti). Otázka je proto formulována jako empirické srovnání.
+* **VO3 (Škálovací parametry):** Liší se parametry škálovacího zákona ($\alpha$, $\beta$, $E$) mezi architekturami?  
+  * **H3 (konfirmační, nesměrová):** Alespoň jeden z exponentů $\alpha$, $\beta$ se mezi architekturami liší. Test probíhá přes model se společnými a architektonicky specifickými parametry (viz 4.4).
+* **VO4 (Syntaktické jevy):** Liší se úspěšnost architektur mezi gramatickými jevy podle vzdálenosti závislých prvků?  
+  * **H4 (konfirmační, nesměrová):** Interakce Architektura × Pravidlo v GLMM je nenulová. Kontext v experimentu je krátký (≈ 280 znaků, viz 4.1), takže „dlouhé vazby“ znamenají vazby v rámci několika vět, ne dlouhý kontext.
 
 #### 3.3 Shrnutí varianty
-Přináší vysoce aktuální vědecké srovnání dvou fundamentálních architektur současného deep learningu (globální pozornost vs. stavová rekurze). Metodicky čisté díky striktní podmínce vyrovnání parametrů bez vnoření ($N_{\text{non-emb}} \pm 1\,\%$) a jednotnému protokolu evaluace normalizovanému na fyzické znaky.
+Srovnání dvou současných přístupů k modelování sekvencí. Párování podle parametrů bez vnoření (±1 %) nezaručuje shodný výpočet ani shodné vyladění, proto se navíc měří FLOPs a rychlost učení se ladí pro každou architekturu zvlášť (4.6).
 
 ---
 
-### VARIANTA 3: Optimalizace a dynamika tréninku (Hybrid Muon+AdamW vs. AdamW)
+### VARIANTA 3: Hybrid Muon+AdamW vs. AdamW
 
 #### 3.1 Abstrakt (Původní vs. aktualizovaná verze)
 > **Původní verze:**  
 > Minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 slov a pravidelnou analytickou syntaxí slouží v této diplomové práci jako kontrolované prostředí pro výzkum tréninku jazykových modelů v podmínkách nedostatku dat. Malý slovník soustředí kapacitu modelu do jeho výpočetních vrstev, což umožňuje zkoumat optimalizační dynamiku bez zkreslení rozsáhlými maticemi vnoření. Cílem práce je statisticky popsat a kvantifikovat, jak volba optimalizačního algoritmu, srovnání standardního prvkového algoritmu AdamW s maticovým spektrálním optimalizátorem Muon, úroveň tokenizace a kapacita modelu ovlivňují efektivitu učení, průběh validační ztráty a nástup přeučení při opakování dat. Nad deduplikovaným korpusem rozděleným podle zdrojů je proveden faktorový experiment s architekturou Transformer, sledující vývoj metrik napříč tréninkovými epochami. Výkon je hodnocen křížovou entropií normalizovanou na znaky, perplexitou a automaticky generovanými testy gramatické přijatelnosti a kompozice. Pomocí analýzy rozptylu, lineárních smíšených modelů a nelineární regrese práce kvantifikuje rozdíl v rychlosti konvergence, vyhodnocuje posun bodu přeučení a stanovuje postupy pro efektivní trénink při opakování omezeného korpusu.
 >
 > **Aktualizovaná verze:**  
-> Standardní prvkový optimalizátor AdamW aktualizuje váhy jazykových modelů po jednotlivých souřadnicích bez zohlednění maticové geometrie vah. Nově navržený optimalizátor Muon aplikuje spektrální ortogonalizaci pomocí Newtonovy-Schulzovy iterace na 2D váhové matice, zatímco vnoření a jednorozměrné parametry přenechává algoritmu AdamW. V konvenčních malých modelech na přirozených jazycích je však vliv maticové spektrální optimalizace utlumen tím, že rozsáhlé matice vnoření spotřebují většinu kapacity sítě. V této diplomové práci slouží minimalistický jazyk toki pona s uzavřenou slovní zásobou zhruba 137 slov a vysoce pravidelnou analytickou syntaxí jako kontrolované laboratorní prostředí pro výzkum optimalizační dynamiky. Malý rozsah slovníku redukuje parametry vnoření na méně než 2 %, díky čemuž hybridní konfigurace Muon+AdamW řídí spektrální ortogonalizací přes 98 % všech vah modelu. Cílem práce je statisticky porovnat hybridní optimalizátor Muon+AdamW s referenčním algoritmem AdamW a kvantifikovat jejich vliv na rychlost poklesu normalizované ztráty, hardwarovou a tokenovou efektivitu, průběh validačních křivek a nástup přeučení při opakování dat. Nad deduplikovaným korpusem rozděleným na trénovací, validační a doménově odloženou testovací sadu je proveden faktorový experiment s architekturou Transformer napříč různou kapacitou sítě ($10^5$ až $10^7$ parametrů), třemi úrovněmi tokenizace (znaková, podslovní BPE, celoslovní) a více náhodnými inicializacemi. Výkonnost je hodnocena křížovou entropií normalizovanou na znaky (BPC), slovní perplexitou a automaticky generovanými testy syntaktické přijatelnosti. Pomocí smíšených lineárních modelů (LMM), logistických smíšených modelů (GLMM) a nelineární regrese práce kvantifikuje rozdíly v tokenové i výpočetní efektivitě konvergence, vyhodnocuje posun kritického bodu přeučení ($R_{\text{crit}}$) a testuje robustnost spektrální optimalizace vůči změnám granularity tokenizace.
+> Optimalizátor Muon ortogonalizuje aktualizace dvourozměrných váhových matic Newtonovou–Schulzovou iterací. Vnoření, výstupní hlavu a jednorozměrné parametry ponechává algoritmu AdamW. Jeho chování u malých modelů trénovaných opakovaně na omezených datech zatím není dostatečně popsáno. Práce využívá minimalistický jazyk toki pona s jádrovou slovní zásobou zhruba 137 slov a pravidelnou analytickou syntaxí jako kontrolované prostředí. Díky malému slovníku spadá pod Muon většina parametrů modelu, u větších konfigurací přes 95 %. Cílem je statisticky porovnat hybridní konfiguraci Muon+AdamW s čistým AdamW a kvantifikovat jejich vliv na rychlost poklesu ztráty na zpracovaný znak i na jednotku výpočtu, na průběh validační ztráty a na nástup přeučení. Faktorový experiment s architekturou Transformer zahrnuje modely o velikosti $10^5$ až $10^7$ parametrů, znakovou, podslovní a celoslovní tokenizaci a více náhodných inicializací. Oba optimalizátory se ladí samostatně. Výkon se měří křížovou entropií v bitech na znak a syntaktickými minimálními páry. Pomocí smíšených modelů, položkových logistických modelů a analýzy času do dosažení prahu ztráty práce porovnává efektivitu konvergence a polohu minima validační ztráty v testovaném prostředí.
 
-#### 3.2 Výzkumné otázky a formalizované hypotézy
-* **VO1 (Tokenová a výpočetní efektivita konvergence):** Dosahuje hybridní optimalizátor Muon+AdamW v raných a středních fázích tréninku statisticky významně rychlejšího poklesu BPC na stejný počet zpracovaných znaků i na jednotku reálného výpočetního času (zohledňujícího režii Newtonovy-Schulzovy ortogonalizace) ve srovnání s čistým AdamW?  
-  * **H1:** Muon+AdamW dosahuje daného prahu validační BPC za statisticky významně nižší počet kroků optimalizátoru i celkových FLOPs než AdamW; časová režie ortogonalizace představuje méně než 5 % celkového času tréninkového kroku.
-* **VO2 (Vliv spektrální ortogonalizace na trajektorii přeučení):** Posouvá ortogonalizace maticových aktualizací v algoritmu Muon polohu minima validační ztráty ($R_{\text{crit}}$) do vyšších tréninkových epoch, a oddaluje tak nástup přeučení při opakování dat?  
-  * **H2:** Běhy optimalizované algoritmem Muon vykazují statisticky významný posun minima validační BPC ($R_{\text{crit}}$) do vyšších epoch a stabilnější trajektorii validační ztráty po dosažení minima ve srovnání s algoritmem AdamW.
-* **VO3 (Interakce optimalizátoru a granularity tokenizace):** Liší se relativní přínos optimalizátoru Muon vůči AdamW mezi krátkými sekvencemi celých slov a dlouhými sekvencemi jednotlivých znaků?  
-  * **H3:** Relativní výhoda algoritmu Muon v rychlosti konvergence je invariantní vůči zvolené granularitě tokenizace při zachování konstantního objemu fyzických znaků na optimalizační krok.
-* **VO4 (Stabilita a škálování s kapacitou modelu):** Zůstává relativní výhoda spektrálního optimalizátoru stabilní při škálování kapacity modelu od stovek tisíc po jednotky milionů parametrů?  
-  * **H4:** Relativní zrychlení konvergence dosažené algoritmem Muon vůči AdamW roste s rostoucí dimenzí skrytých vrstev sítě (kapacitou parametrů $N$).
+#### 3.2 Výzkumné otázky a hypotézy
+* **VO1 (Efektivita konvergence):** Dosahuje Muon+AdamW zvoleného prahu validační BPC za méně zpracovaných znaků a za méně FLOPs / kratší reálný čas než AdamW?  
+  * **H1 (konfirmační, jednostranná):** Muon+AdamW potřebuje k dosažení prahu méně kroků (směr podle dosavadní literatury, Jordan 2024; Liu et al. 2025). Režie Newtonovy–Schulzovy iterace se měří a reportuje. Hypotéza o její výši se nestanovuje.
+* **VO2 (Přeučení):** Liší se $R_{\text{crit}}$ a průběh validační ztráty po minimu mezi optimalizátory?  
+  * **Explorativní:** Muon ortogonalizuje aktualizace, ne samotné váhy. Mechanismus vlivu na přeučení proto není předem dán.
+* **VO3 (Optimalizátor × tokenizace):** Liší se přínos Muonu mezi tokenizacemi při stejném počtu znaků na krok?  
+  * **H3 (konfirmační, nesměrová):** Test interakce Optimalizátor × Tokenizace.
+* **VO4 (Optimalizátor × velikost modelu):** Mění se relativní přínos Muonu s $N$?  
+  * **H4 (konfirmační, nesměrová):** Test interakce Optimalizátor × $\log N$. Vyžaduje ladění rychlosti učení pro každou velikost, nebo µP parametrizaci (4.6).
 
 #### 3.3 Shrnutí varianty
-Soustředí se na geometrii optimalizace a chování moderních spektrálních metod při tréninku z omezených dat. V prostředí toki pona má Muon maximální teoretický i praktický dopad, neboť díky zanedbatelné velikosti matic vnoření řídí ortogonálními updaty prakticky celou síť.
+Zaměřuje se na optimalizační dynamiku při tréninku z omezených dat. Toki pona je pro tuto otázku vhodné, protože při malém slovníku spadá pod Muon většina parametrů a srovnání se tak méně ředí parametry optimalizovanými AdamW.
 
 ---
 
-## 4. Technická a metodická pravidla pro realizaci kódu a výpočtů
+## 4. Technická a metodická pravidla
 
-Pro zajištění vědecké validity, eliminaci metodických pastí a zajištění plné reprodukovatelnosti musí experimentální protokol a kód dodržovat následujících sedm zásad:
+### 4.1 Vyrovnání objemu textu na krok a délky kontextu
+V toki pona připadá na slovo v průměru zhruba 4,4 znaku včetně mezery (předběžné, ověří se na korpusu). Při stejném počtu tokenů v kontextu by tedy znakový model viděl asi 4,4× méně textu než celoslovní.
 
-### 4.1 Vyvážení výpočetního kroku a kontextu (Iso-Character a Iso-Context Update)
-Znaková tokenizace produkuje podstatně delší sekvence než podslovní nebo celoslovní tokenizace. V toki pona činí průměrná délka slova zhruba 4,4 znaku (včetně mezislovních mezer). Pokud by byl nastaven shodný počet sekvencí v dávce (`batch_size = 32`) a shodná délka kontextu v tokenech, znakový model by v jednom kroku zpracoval zhruba 4,4× méně textu než model celoslovní.
+* **Stejný počet znaků na krok:** $\text{batch}_{\text{CHAR}} L_{\text{CHAR}} \approx \text{batch}_{\text{BPE}} L_{\text{BPE}} \approx \text{batch}_{\text{WORD}} L_{\text{WORD}} \approx C_{\text{step}}$.
+* **Stejný úsek textu v kontextu:** $L$ se v tokenech volí tak, aby kontext pokrýval stejný počet znaků. Příklad (předběžné):
 
-* **Pravidlo pro objem dávky (Iso-Character Step):** Efektivní velikost dávky na jeden optimalizační krok musí být striktně normalizována na konstantní počet fyzických znaků textu:
-  $$\text{batch\_size}_{\text{CHAR}} \times L_{\text{CHAR}} \approx \text{batch\_size}_{\text{BPE}} \times L_{\text{BPE}} \approx \text{batch\_size}_{\text{WORD}} \times L_{\text{WORD}} \approx C_{\text{step}}$$
-  *Příklad:*
-  * `WORD`: $L_{\text{WORD}} = 64$ slov ($\approx 280$ znaků textu), $\text{batch} = 64 \implies 4\,096$ slov $\approx 18\,000$ znaků.
-  * `BPE` ($V = 256$, průměr $\approx 2,2$ znaku/token): $L_{\text{BPE}} = 128$ tokenů ($\approx 280$ znaků textu), $\text{batch} = 64 \implies 8\,192$ tokenů $\approx 18\,000$ znaků.
-  * `CHAR`: $L_{\text{CHAR}} = 280$ znaků, $\text{batch} = 64 \implies 17\,920$ znaků.
-* **Pravidlo pro sémantický kontext (Iso-Context Window):** Délka kontextového okna $L$ v jednotlivých tokenizacích je volena tak, aby modelům poskytovala shodný sémantický úsek textu (zhruba 60–65 celých vět toki pona $\approx 280$ znaků).
-* **Škálování rychlosti učení:** Pokud je z paměťových důvodů nutné změnit velikost dávky, rychlost učení se škáluje podle pravidla odmocniny ze součinu velikosti dávky ($\eta \propto \sqrt{\text{batch}}$).
+  | Tokenizace | $L$ (tokeny) | Znaky v kontextu | Batch | Znaky na krok |
+  | :--- | ---: | ---: | ---: | ---: |
+  | WORD | 64 | ≈ 280 (≈ 64 slov, několik vět) | 64 | ≈ 18 000 |
+  | BPE | dle naměřeného poměru znaků/token | ≈ 280 | 64 | ≈ 18 000 |
+  | CHAR | 280 | 280 | 64 | 17 920 |
 
-### 4.2 Rigorózní definice BPC a eliminace OOV zkreslení
-Srovnání křížové entropie napříč různými tokenizacemi vyžaduje striktní normalizaci na fyzické znaky nezávisle na použitém tokenizéru.
+* Když jsou délka kontextu ve znacích i batch u všech tokenizací stejné, má každý krok stejný objem textu i stejný počet sekvencí. Rychlost učení se pak mezi tokenizacemi kvůli velikosti dávky nemusí přepočítávat. Ladí se ale kvůli jiné statistice gradientu (4.6).
 
-* **Matematická definice BPC:** Pro testovací text o celkové délce $C_{\text{raw}}$ znaků (podle standardu Unicode NFC se zachováním mezer a interpunkce) je hodnota BPC (Bits Per Character) definována jako:
-  $$\text{BPC} = \frac{\sum_{t=1}^T -\log_2 P(x_t \mid x_{<t})}{C_{\text{raw}}}$$
-  kde $T$ je počet tokenů, do nichž daný tokenizér text rozložil, a $P(x_t \mid x_{<t})$ je modelová pravděpodobnost přiřazená $t$-tému tokenu. Jmenovatel $C_{\text{raw}}$ je pro daný text naprosto identický pro znakový, podslovní i celoslovní model.
-* **Převeditelnost na slovní perplexitu:** Slovní perplexita nepředstavuje nezávislou metriku, ale je jednoznačným přepočtem z BPC:
-  $$\text{PPL}_{\text{word}} = 2^{\text{BPC} \times \bar{c}_{\text{word}}}$$
-  kde $\bar{c}_{\text{word}} = C_{\text{raw}} / W$ je průměrný počet znaků na slovo v testovacím korpusu ($W$ je počet slov).
-* **Ošetření mimoslovníkových tokenů (OOV) u celoslovního modelu:**
-  Lexikon toki pona obsahuje 137 kanonických slov. Vlastní jména (*nimi ma*, *nimi jan*) a cizí výpůjčky tvoří otevřenou třídu. Nahrazení celého víceznakového jména jediným levným tokenem `<unk>` by uměle a nepřípustně snížilo ztrátu celoslovního modelu.
-  * **Pravidlo (Fallback spelling):** Celoslovní tokenizér implementuje znakový fallback (při narazení na mimoslovníkové slovo tokenizuje toto slovo po jednotlivých znacích), čímž je zachována uzavřenost slovníku i férovost výpočtu BPC. Alternativně se při použití `<unk>` přičítá uniformní entropická penalizace délky slova:
-    $$-\log_2 P(\text{word}) = -\log_2 P(\langle\text{unk}\rangle) + |\text{word}| \cdot \log_2 |\Sigma_{\text{char}}|$$
+### 4.2 Definice BPC a ošetření slov mimo slovník
+* **Normalizace textu:** Unicode NFC, zachování velkých písmen, interpunkce a mezer, jednotné konce řádků. Normalizace je společná pro všechny tokenizéry.
+* **BPC:** $\text{BPC} = \frac{1}{C_{\text{raw}}}\sum_{t=1}^{T} -\log_2 P(x_t \mid x_{<t})$, kde $C_{\text{raw}}$ je počet znaků normalizovaného textu, stejný pro všechny tokenizace.
+* **Slovní perplexita** je přepočet: $\text{PPL}_{\text{word}} = 2^{\text{BPC}\cdot C_{\text{raw}}/W}$. Uvádí se jen pro srovnání s literaturou, nejde o samostatnou metriku.
+* **Slova mimo slovník (OOV) u celoslovní tokenizace:** vlastní jména a nestandardní slova se rozepisují po znacích (znakový fallback). Celoslovní slovník je tedy „~137 slov + znaková abeceda“. Model nikdy nedostane `<unk>`, takže BPC není uměle snížené.
 
-### 4.3 Tréninkový protokol, learning rate schedule a detekce $R_{\text{crit}}$
-V abstraktu se deklaruje určení kritického bodu přeučení při opakování dat ($R_{\text{crit}}$). Standardní trénink s kosinovým útlumem (cosine annealing) naplánovaným na pevný počet kroků však vede k metodické chybě: v epoše $e < E_{\max}$ má model uměle vysoký learning rate, takže jeho ztráta nereprezentuje optimálně dotrénovaný model pro daný počet epoch (Hoffmann et al., 2022).
+### 4.3 Plán učení a detekce $R_{\text{crit}}$
+Při kosinovém útlumu nastaveném na $E_{\max}$ má model v dřívějších epochách stále vysokou rychlost učení. Jeho ztráta proto neodpovídá modelu dotrénovanému na daný počet epoch (Hoffmann et al., 2022).
 
-* **Plán učení (Learning Rate Schedule):** Pro korektní vyhodnocení dynamiky přeučení se použije **Warmup-Stable-Decay (WSD)** plán:
-  1. *Warmup:* Lineární náběh během prvních 2 % kroků.
-  2. *Stable:* Konstantní rychlost učení $\eta_{\max}$ po celou dobu tréninku.
-  3. *Decay:* V libovolném kontrolním bodě (nebo na konci tréninku) proběhne krátký útlum (cooldown, 5–10 % kroků) na minimální rychlost učení.
-* **Detekce a vyhlazení $R_{\text{crit}}$:**
-  Validační BPC se měří a loguje **na konci každé jednotlivé epochy** $e \in \{1, \dots, E_{\max}\}$. Aby náhodný šum jednotlivé epochy nezpůsobil falešné minimum, křivka validační BPC se vyhladí pomocí lokální polynomiální regrese (LOESS) nebo kubického splajnu $\widehat{\text{BPC}}_{\text{val}}(e)$:
-  $$R_{\text{crit}} = \arg\min_{e \in \{1, \dots, E_{\max}\}} \widehat{\text{BPC}}_{\text{val}}(e)$$
-* **Ošetření pravostranného cenzoringu:** Pokud validační křivka klesá až do $E_{\max}$, hodnota $R_{\text{crit}}$ je pravostranně cenzorovaná ($R_{\text{crit}} \ge E_{\max}$). V statistických analýzách se takové běhy ošetřují pomocí modelů analýzy přežití nebo Tobitovy regrese, nikoli pouhým dosazením hodnoty $E_{\max}$.
-* **Dvoustupňová evaluace:** Kontrolní bod $R_{\text{crit}}$ se určuje výhradně na validační sadě. Finální generalizační ztráta, slovní perplexita a syntaktické minimální páry se pro tento kontrolní bod vyhodnocují na **striktně odložené testovací sadě**.
+* **Plán učení WSD:** lineární warmup (≈ 2 % kroků, předběžné), poté konstantní rychlost učení, poté krátký útlum (≈ 10 % kroků, předběžné).
+* **Útlumové větve:** z kontrolních bodů konstantní fáze v předem vybraných epochách (např. logaritmicky rozložených) se spustí krátké větve s útlumem. Validační ztráta po útlumu je hodnota pro daný počet epoch. Náklady jsou zhruba 10 % původního běhu na každou větev a započítávají se do rozpočtu (4.8). Validační ztráta v konstantní fázi se loguje v každé epoše jako doplňková křivka.
+* **$R_{\text{crit}}$:** epocha minima vyhlazené křivky validační BPC z útlumových větví (vyhlazení splajnem). Pokud minimum do $E_{\max}$ nenastane, jde o pravostranně cenzorované pozorování. Ve statistických analýzách se ošetří modelem pro cenzorovaná data (analýza přežití nebo Tobitův model), nikoli dosazením $E_{\max}$.
+* **Testovací metriky** se počítají pro kontrolní bod v $R_{\text{crit}}$ na testovacích sadách (4.7), ne na validační sadě, na které se bod vybíral.
 
-### 4.4 Škálovací zákony v režimu opakovaných dat (Data-Constrained Scaling)
-Standardní formulace škálovacího zákona Chinchilla (Hoffmann et al., 2022) $L(N, D) = E + A N^{-\alpha} + B D^{-\beta}$ předpokládá trénink v jediné epoše nad unikátními daty. V režimu opakování dat dochází k nasycení efektivní velikosti korpusu.
+### 4.4 Škálovací zákony pro opakovaná data
+Tvar Chinchilla $L = E + A N^{-\alpha} + B D^{-\beta}$ předpokládá jednu epochu nad unikátními daty. Pro opakování se použije formulace Muennighoff et al. (2023):
 
-* **Data-Constrained formulace (Muennighoff et al., 2023):**
-  Při $R$ průchodech daty ($R = \text{epochy}$) se efektivní objem dat $D'$ modeluje jako:
-  $$D' = D_U \cdot R_D^* \left(1 - \exp\left(-\frac{R}{R_D^*}\right)\right)$$
-  kde $D_U$ je objem unikátních dat v tokenech a $R_D^*$ je saturační konstanta opakování. Výsledná ztráta je dána vztahem:
-  $$L(N, D_U, R) = E + \frac{A}{N^\alpha} + \frac{B}{(D')^\beta}$$
-* **Identifikovatelnost a odhad parametrů:**
-  Parametry $E, A, B, \alpha, \beta$ a $R_D^*$ se odhadují nelineární metodou nejmenších čtverců (Levenberg-Marquardtův algoritmus) s logaritmickou Huberovou ztrátou $\rho(\ln \hat{L} - \ln L)$ pro potlačení heteroskedasticity a odlehlých hodnot.
-* **Nejistota odhadu:** Intervaly spolehlivosti pro odhadnuté exponenty $\alpha$ a $\beta$ a test hypotézy o rozdílu exponentů napříč architekturami (V2 VO3) se konstruují neparametrickým bootstrapem vzorkováním trénovacích semínek (1 000 replikací).
+$$D' = U_D + U_D\,R_D^*\left(1 - e^{-R_D/R_D^*}\right), \qquad R_D = \text{počet epoch} - 1$$
 
-### 4.5 Rigorózní formulace statistických modelů
+$$L(N, U_D, R_D) = E + \frac{A}{N^{\alpha}} + \frac{B}{(D')^{\beta}}$$
 
-#### A. Longitudinální analýza křivek učení (LMM)
-Opakovaná měření v čase (napříč epochami uvnitř tréninkového běhu) vykazují silnou autokorelaci. Model v R (`nlme`) nesmí předpokládat lineární vliv epochy, nýbrž nelineární trajektorii s náhodnými sklony a autoregresní chybovou strukturou AR(1):
+kde $U_D$ je počet unikátních znaků a $R_D^*$ je saturační konstanta opakování. Analogickou korekci pro parametry ($N'$) z původní práce zde nepoužíváme, protože $N$ se volí pro každý objem dat zvlášť.
+
+* **Odhad:** minimalizace Huberovy ztráty mezi $\log \hat L$ a $\log L$ (postup Chinchilly) metodou L-BFGS z mřížky počátečních hodnot. Výsledné parametry se kontrolují na stabilitu vůči volbě startu.
+* **Identifikovatelnost:** při rozsahu $N$ jen přes dva řády a několika úrovních $D$ jsou parametry silně korelované. Reportuje se korelační matice odhadů. Pokud fit plného modelu není stabilní, fixují se méně důležité parametry (např. $E$ podle největšího modelu).
+* **Nejistota:** intervaly spolehlivosti se počítají bootstrapem přes **jednotlivé běhy** (resampling bodů křivky v rámci buněk návrhu), ne jen přes semínka. Při 3–5 semíncích by bootstrap přes semínka nedával věrohodné intervaly.
+* **Srovnání skupin (V1 tokenizace, V2 architektura):** model se společnými a skupinově specifickými parametry, porovnání vnořených modelů testem věrohodnostním poměrem nebo podle AIC, doplněné bootstrapovým intervalem pro rozdíl exponentů.
+
+### 4.5 Statistické modely
+
+#### A. Křivky učení (LMM)
 ```r
-# R (balík nlme): Model longitudinální trajektorie validační BPC
 library(nlme)
-lmm_trajectories <- lme(
-  fixed = BPC ~ Tokenizer * log(Params) + poly(log(Epoch), 2),
+lme(
+  fixed  = BPC ~ Tokenizer * log(Params) * ns(log(Epoch), df = 3) + log(DataSize),
   random = ~ 1 + log(Epoch) | Run_ID,
   correlation = corAR1(form = ~ Epoch | Run_ID),
   data = training_logs
 )
 ```
-*Identifikátory:* `Run_ID` unikátně identifikuje konkrétní trénovací běh (kombinaci faktorů $N$, $D$, tokenizace a konkrétního semínka). Rozklad rozptylu (VO4) se provádí pomocí vnitrotřídního korelačního koeficientu (ICC) rozložením komponent rozptylu mezi systematické faktory a náhodná inicializační semínka.
+* `Run_ID` označuje jeden trénovací běh (konfigurace + semínko). Semínko určuje inicializaci i pořadí dat. Samostatný náhodný efekt `Seed` se nepoužívá, protože totéž číslo semínka v různých konfiguracích není stejná jednotka.
+* Interakce s `ns(log(Epoch))` odpovídá na VO2 (různý tvar křivky podle tokenizace a $N$).
+* Ve V2 a V3 se `Tokenizer` doplní o `Architecture`, resp. `Optimizer`, a jejich interakce s epochou.
+* **VO4 (rozklad rozptylu):** na koncové metrice (BPC v $R_{\text{crit}}$) se odhadne model `BPC ~ (1 | Config) + (1 | Config:Run_ID)`. Komponenta mezi konfiguracemi představuje systematické faktory, komponenta uvnitř konfigurace semínka. Uvádí se jejich poměr a ICC, případně zvlášť pro každé $N$.
 
-#### B. Položková analýza syntaktické přijatelnosti (GLMM)
-Výsledky testů syntaktických minimálních párů představují binární odezvu $Y_{ijk} \in \{0, 1\}$ (1 = model přiřadil vyšší normalizovanou pravděpodobnost gramatické větě než negramatické větě z páru). Model obsahuje náhodný efekt konkrétní větné dvojice (`Item_ID`, vnořený v pravidle) a náhodný efekt modelu (`Run_ID`):
+#### B. Minimální páry (GLMM)
+Odezva je 1, pokud model přiřadí gramatické větě vyšší skóre než negramatické.
+Skóre věty: $\text{Score}(S) = \sum_t \log P(x_t \mid x_{<t})$ přes všechny tokeny věty. Páry jsou konstruovány tak, aby se obě věty lišily co nejméně. U párů s různou délkou (např. vynechané *li*) se jako citlivostní analýza použije i skóre normalizované počtem znaků.
 
-* **Pro Variantu 1:**
-  ```r
-  glmer(Correct ~ Tokenizer * Rule + scale(BPC_val) + (1 | Item_ID) + (1 | Run_ID), 
-        family = binomial(link = "logit"), data = grammar_results)
-  ```
-* **Pro Variantu 2:**
-  ```r
-  glmer(Correct ~ Architecture * Rule + Tokenizer + (1 | Item_ID) + (1 | Run_ID), 
-        family = binomial(link = "logit"), data = grammar_results)
-  ```
-* **Pro Variantu 3:**
-  ```r
-  glmer(Correct ~ Optimizer * Rule + Tokenizer + (1 | Item_ID) + (1 | Run_ID), 
-        family = binomial(link = "logit"), data = grammar_results)
-  ```
+```r
+# V1 (VO3): vztah BPC a úspěchu, oddělení vlivu uvnitř a mezi běhy
+glmer(Correct ~ Tokenizer * Rule + BPC_within + BPC_between + log(Step) +
+        (1 | Rule:Item_ID) + (1 | Run_ID),
+      family = binomial, data = grammar_results)
 
-*Vyhodnocení minimálního páru napříč tokenizacemi:* Skóre věty $S$ je definováno jako suma log-pravděpodobností tokenů normalizovaná celkovým počtem znaků věty:
-$$\text{Score}(S) = \frac{1}{|S|_{\text{char}}} \sum_{t=1}^{|S|_{\text{tok}}} \log P(x_t \mid x_{<t})$$
-Model uspěje v testu minimálního páru, pokud $\text{Score}(S_{\text{grammatical}}) > \text{Score}(S_{\text{ungrammatical}})$.
+# V2
+glmer(Correct ~ Architecture * Rule + Tokenizer + (1 | Rule:Item_ID) + (1 | Run_ID),
+      family = binomial, data = grammar_results)
 
-#### C. Faktorová analýza rozptylu (ANOVA)
-Faktorová ANOVA se aplikuje výhradně na agregované skalární metriky v optimálním bodě (např. minimální validační BPC v bodě $R_{\text{crit}}$, hodnota $R_{\text{crit}}$). Reportují se parciální velikosti účinku $\eta_p^2$ a post-hoc párová srovnání s Holm-Bonferroniho korekcí pro mnohonásobné testování hypotéz.
+# V3
+glmer(Correct ~ Optimizer * Rule + Tokenizer + (1 | Rule:Item_ID) + (1 | Run_ID),
+      family = binomial, data = grammar_results)
+```
+`BPC_within` je odchylka BPC kontrolního bodu od průměru jeho běhu, `BPC_between` je průměr BPC běhu. Bez tohoto rozdělení by vztah BPC a gramatiky byl jen důsledkem toho, že obojí se zlepšuje s časem.
 
-### 4.6 Protokol ladění hyperparametrů a férového srovnání
-Srovnání architektur (V2) či optimalizátorů (V3) při fixních hyperparametrech vede k artefaktům, neboť optimální rychlost učení se mezi modely zásadně liší.
+#### C. ANOVA a mnohonásobné testy
+* Faktorová ANOVA se používá jen na koncové skalární metriky (BPC v $R_{\text{crit}}$, testovací BPC) s parciálním $\eta_p^2$.
+* Konfirmační hypotézy každé varianty tvoří jednu rodinu s Holmovou korekcí. Explorativní analýzy se reportují bez korekce a s výslovným označením.
 
-* **Separátní ladění learning rate:** Na střední velikosti modelu ($N \approx 1\text{M}$) se provede systematický grid search optimální hodnoty $\eta_{\max}$:
-  * Pro AdamW: $\eta \in \{1 \times 10^{-4}, 3 \times 10^{-4}, 6 \times 10^{-4}, 1 \times 10^{-3}, 3 \times 10^{-3}\}$.
-  * Pro hybridní Muon+AdamW: pro 2D matice $\eta_{\text{Muon}} \in \{0.02, 0.05, 0.1\}$, pro vnoření a biasy $\eta_{\text{AdamW}} \in \{3 \times 10^{-4}, 1 \times 10^{-3}\}$.
-* **Fixní regularizace pro determinismus škálování:** Všechny modely používají identický weight decay ($0.1$) a gradient clipping ($1.0$). Dropout je nastaven na $0$, aby nedocházelo k deformaci škálovacích křivek stochastickým vypínáním neuronů.
-* **Párování parametrů u Mamba vs. Transformer (V2):** Počty parametrů obou architektur se vyrovnávají výhradně na úrovni parametrů skrytých vrstev (**non-embedding parameters** v toleranci $\pm 1\,\%$). Zároveň se měří reálné tréninkové FLOPs na krok pro kontrolu hardwarové efektivity.
+#### D. V3: čas do prahu
+Počet znaků (resp. FLOPs) do dosažení zvoleného prahu validační BPC se modeluje jako čas do události (Coxův model nebo AFT model) s cenzurou pro běhy, které prahu nedosáhnou.
 
-### 4.7 Hygiena dat, rozdělení korpusu a prevence úniku dat
-* **Deduplikace korpusu:** Před rozdělením korpusu se provede exaktní deduplikace i fuzzy deduplikace (MinHash LSH s Jaccardovým prahem 0.8), aby se vyloučilo memorování shodných textů mezi trénovací a testovací sadou.
-* **Třísložkové hierarchické dělení:**
-  1. *Trénovací sada (80 %)*
-  2. *In-domain validační sada (10 %):* Náhodný stratifikovaný výběr z tréninkových zdrojů pro detekci $R_{\text{crit}}$ a ladění hyperparametrů.
-  3. *Out-of-domain testovací sada (10 %):* Kompletně odložené specifické zdroje (např. překlady beletrie, ucelené konverzační korpusy), sloužící výhradně pro finální vyhodnocení doménové generalizace a syntaktických testů.
-* **Konzistence tokenizéru:** Podslovní tokenizér (BPE) se trénuje **striktně pouze na trénovací sadě korpusu**. Aplikace BPE natrénovaného na celém korpusu představuje nepřípustný únik informací (data leakage).
+### 4.6 Ladění hyperparametrů a férové srovnání
+* **Rychlost učení:** ladí se samostatně pro každou architekturu (V2) a každý optimalizátor (V3) a pro každou tokenizaci. Ladění probíhá na pilotní mřížce **pro nejmenší, střední a největší $N$**, mezi nimi se interpoluje. Alternativou je µP parametrizace, která umožňuje přenos rychlosti učení mezi šířkami. Volba se zdokumentuje.
+* **Výchozí mřížky (předběžné):** AdamW $\eta \in \{3\text{e-}4, 1\text{e-}3, 3\text{e-}3\}$. Muon (2D matice) $\eta \in \{0{,}01, 0{,}02, 0{,}05\}$ spolu s AdamW pro ostatní parametry. Mřížka se rozšíří, pokud optimum vyjde na jejím okraji.
+* **Regularizace:** weight decay a dropout jsou u všech porovnávaných skupin stejné a fixní, protože obojí přímo ovlivňuje polohu $R_{\text{crit}}$. Výchozí volba je dropout 0, aby se přeučení projevilo v čisté podobě a nebylo maskováno regularizací (předběžné). Weight decay se pro Muon a AdamW parametrizuje tak, aby byl efektivně srovnatelný. Postup se uvede.
+* **V2 párování:** počet parametrů bez vnoření ±1 %. Měří se a reportují FLOPs na znak a propustnost. Kvůli výkonu malých `d_model` se ověří, zda se použijí CUDA jádra `mamba-ssm`, nebo referenční implementace scanu.
+
+### 4.7 Data, rozdělení a minimální páry
+* **Korpus:** v práci se uvedou zdroje, licence, celkový rozsah (počet znaků a slov), podíl slov mimo *ku suli* a ošetření dialektových variant. Rozsah korpusu přímo omezuje maximální $D$ a tím i rozsah škálování.
+* **Deduplikace:** exaktní a přibližná (např. MinHash, práh předběžně 0,8). Zvlášť se ohlídají vícenásobné překlady téhož textu (mohou přenášet obsah mezi sadami).
+* **Rozdělení:**
+  1. trénovací sada,
+  2. validační sada ze stejných zdrojů (výběr $R_{\text{crit}}$, ladění),
+  3. **testovací sada ze stejných zdrojů** (hlavní testovací metrika),
+  4. **testovací sada z odložených zdrojů** (generalizace na nové zdroje).
+  
+  Poměry se určí podle velikosti korpusu.
+* **Tokenizér BPE** se trénuje jen na trénovací sadě. Velikost slovníku BPE se zvolí pod ~137, aby šlo skutečně o podslovní jednotky. Případná varianta nad úrovní slov se uvede zvlášť.
+* **Minimální páry:** seznam jevů (např. *li*, *e*, *pi*, *la*, předložky, pořadí modifikátorů), cílově desítky až stovky párů na jev (předběžné), generování podle šablon z lexikonu. Gramatičnost ověří alespoň jeden zkušený mluvčí, v ideálním případě dva s výpočtem shody. Páry se publikují spolu s prací.
+* **Baselines:** n-gramový model s Kneser–Neyho vyhlazením (na znacích i slovech) a unigramový model. Uvádějí se v BPC kvůli kontextu výsledků.
+
+### 4.8 Pilot, rozpočet a reprodukovatelnost
+* **Pilotní fáze:** ověření poměru znaků na token, mřížky rychlostí učení, $E_{\max}$ (musí přesáhnout typické $R_{\text{crit}}$) a doby běhu.
+* **Rozpočet:** v práci se uvede tabulka úrovní faktorů, počet buněk × semínek = počet běhů, počet útlumových větví a odhad GPU hodin. Pokud rozpočet nestačí, redukuje se plný faktorový návrh (např. menší počet úrovní $D$ u některých $N$). Neúplný návrh se pak výslovně zohlední v modelech.
+* **Počet semínek:** minimálně 3, cílově 5 (předběžné). Dostatečnost se posoudí podle variability v pilotu.
+* **Reprodukovatelnost:** fixní semínka, verze knihoven, konfigurační soubory každého běhu, zveřejnění kódu, logů a minimálních párů.
 
 ---
 
-## 5. Klíčová akademická literatura
+## 5. Klíčová literatura
 
-1. **Hoffmann, J., et al. (2022).** *Training Compute-Optimal Large Language Models.* DeepMind. [Chinchilla Scaling Laws, arXiv:2203.15556]
-2. **Muennighoff, N., et al. (2023).** *Scaling Data-Constrained Language Models.* NeurIPS 2023. [Data-Constrained Scaling Laws, arXiv:2305.16264]
-3. **Kaplan, J., et al. (2020).** *Scaling Laws for Neural Language Models.* OpenAI. [arXiv:2001.08361]
-4. **Gu, A., & Dao, T. (2023).** *Mamba: Linear-Time Sequence Modeling with Selective State Spaces.* [arXiv:2312.00752]
-5. **Jordan, K. (2024) / Liu, et al. (2025).** *Muon: An optimizer for hidden layers in neural networks.* [Spectral Orthogonalized Matrix Optimization]
-6. **Warstadt, A., et al. (2020).** *BLiMP: The Benchmark of Linguistic Minimal Pairs for English.* TACL, 8, 377–392.
-7. **Eldan, R., & Li, Y. (2023).** *TinyStories: How Small Can Language Models Be and Still Speak Coherent English?* Microsoft Research. [arXiv:2305.07759]
+1. Hoffmann, J., et al. (2022). *Training Compute-Optimal Large Language Models.* arXiv:2203.15556.
+2. Muennighoff, N., et al. (2023). *Scaling Data-Constrained Language Models.* NeurIPS 2023. arXiv:2305.16264.
+3. Kaplan, J., et al. (2020). *Scaling Laws for Neural Language Models.* arXiv:2001.08361.
+4. Gu, A., & Dao, T. (2023). *Mamba: Linear-Time Sequence Modeling with Selective State Spaces.* arXiv:2312.00752.
+5. Jordan, K., et al. (2024). *Muon: An optimizer for hidden layers in neural networks.* (blog / technická zpráva).
+6. Liu, J., et al. (2025). *Muon is Scalable for LLM Training.* arXiv:2502.16982.
+7. Warstadt, A., et al. (2020). *BLiMP: The Benchmark of Linguistic Minimal Pairs for English.* TACL 8, 377–392.
+8. Eldan, R., & Li, Y. (2023). *TinyStories: How Small Can Language Models Be and Still Speak Coherent English?* arXiv:2305.07759.
+9. Yang, G., et al. (2022). *Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer (µP).* arXiv:2203.03466.
+10. Hägele, A., et al. (2024). *Scaling Laws and Compute-Optimal Training Beyond Fixed Training Durations (WSD).* arXiv:2405.18392.
